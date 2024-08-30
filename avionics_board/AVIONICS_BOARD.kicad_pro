@@ -41,10 +41,10 @@
           "height": 1.524,
           "width": 1.524
         },
-        "silk_line_width": 0.12,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.6,
+        "silk_text_size_v": 0.8,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
@@ -191,6 +191,7 @@
         0.2,
         0.3,
         0.3333,
+        0.4,
         0.5,
         1.0
       ],
@@ -477,7 +478,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.199,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -487,8 +488,59 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
+        "track_width": 0.3,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.4,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "50 Ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.333,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Mini Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.7,
         "via_drill": 0.4,
         "wire_width": 6
       }
@@ -540,7 +592,7 @@
         "pattern": "/STM32L4/5V_ACS_COIL"
       },
       {
-        "netclass": "Default",
+        "netclass": "Power",
         "pattern": "/STM32L4/ACS/PWR_COIL"
       },
       {
@@ -824,7 +876,7 @@
         "pattern": "/STM32L4/Sheet639EBCAF/5V0_2"
       },
       {
-        "netclass": "Default",
+        "netclass": "Mini Power",
         "pattern": "/STM32L4/TEMPERATURE_ADC/INTRNL_VDD"
       },
       {
@@ -1070,6 +1122,42 @@
       {
         "netclass": "Default",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_CAN"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "5V_CAN"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "5V_ACS_COIL"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_ACS_LOGIC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_GPS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_SUN_SENSOR"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_MRAM"
+      },
+      {
+        "netclass": "Mini Power",
+        "pattern": "TEMP_PWR"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V_STM_CORE"
       }
     ]
   },
@@ -1377,6 +1465,10 @@
     [
       "8a47ccc3-f8e0-403c-b9fa-fe30da676570",
       "USB"
+    ],
+    [
+      "c43e73ca-9c1e-4d37-880f-a2757d61b5eb",
+      "CAN_POWER5"
     ]
   ],
   "text_variables": {}

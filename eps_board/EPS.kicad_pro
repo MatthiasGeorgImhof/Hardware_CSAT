@@ -37,21 +37,27 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
-        "silk_text_size_v": 1.0,
+        "silk_text_size_h": 0.6,
+        "silk_text_size_v": 0.8,
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.2
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -115,7 +121,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.075,
         "min_hole_clearance": 0.25,
@@ -128,8 +134,8 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.4,
+        "min_via_annular_width": 0.3,
+        "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
@@ -183,8 +189,10 @@
       "track_widths": [
         0.0,
         0.2,
-        0.25,
-        0.4
+        0.3,
+        0.333,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -218,8 +226,16 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.5,
+          "diameter": 0.6,
           "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false
@@ -2009,11 +2025,95 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mfr. #",
+          "name": "Mfr. #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Order",
+          "name": "Order",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Amps",
+          "name": "Amps",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufactorer",
+          "name": "Manufactorer",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -2087,8 +2187,8 @@
       "sheet616870B0"
     ],
     [
-      "00000000-0000-0000-0000-00005f301ac2",
-      "SOLAR_MPPT_5V"
+      "98ebd8c9-d8ee-4e14-8c73-12acf231d11b",
+      "5V BOOST1"
     ],
     [
       "00000000-0000-0000-0000-00005fbffcb6",
@@ -2213,6 +2313,34 @@
     [
       "00000000-0000-0000-0000-00005f8870a6",
       "5V BOOST"
+    ],
+    [
+      "dffa178b-07a8-4735-b10c-32a6042c7f6e",
+      "USB"
+    ],
+    [
+      "7ff60e90-d7e1-4395-9fc2-090dd6f49528",
+      "CURRENT_MONITORS_5V"
+    ],
+    [
+      "fbf130d2-d8a4-4c88-9e32-7494a59e2a9e",
+      "Untitled Sheet"
+    ],
+    [
+      "69752e4d-9910-405a-a8d2-0b5b27cb58bd",
+      "Untitled Sheet1"
+    ],
+    [
+      "50e784dd-9dc5-4cf2-a3eb-9d79c3c2e787",
+      "Untitled Sheet2"
+    ],
+    [
+      "17eaa29e-6d79-4e5a-8640-52ffcb1a20e4",
+      "CAN_TRANSCEIVER1"
+    ],
+    [
+      "56132d16-ece4-4423-ada0-0be3156238f3",
+      "Untitled Sheet3"
     ]
   ],
   "text_variables": {}

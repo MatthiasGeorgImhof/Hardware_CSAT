@@ -1,0 +1,508 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ba0fdedb-609e-4a73-867d-848fdcffe07e")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 85.725 67.31) (xy 85.725 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed54aaf-7c6c-43bb-a640-93d6a11eee48")
+	)
+	(wire
+		(pts
+			(xy 78.105 67.31) (xy 78.105 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f174f6-8894-4ebf-a21d-e0c06660962c")
+	)
+	(wire
+		(pts
+			(xy 74.93 67.31) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6964eb05-6b3c-4048-bb2a-461691ca73d5")
+	)
+	(wire
+		(pts
+			(xy 67.31 67.31) (xy 67.31 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f131380d-47d7-4af9-957a-50506ae435f9")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 63.5 53.975 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f3131ea-f624-468e-af47-ed7e082b89bf")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 63.5 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "98d037cb-693b-4f91-ba61-0b0b406c3d03")
+	)
+	(hierarchical_label "VOUT"
+		(shape input)
+		(at 88.9 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d3fee768-b49b-47b0-9adb-399c51685825")
+	)
+	(hierarchical_label "VIN"
+		(shape input)
+		(at 63.5 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fdb5730a-b73d-4382-9a70-b7ca224de2d5")
+	)
+	(hierarchical_label "PG"
+		(shape input)
+		(at 88.9 53.975 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fdca1da9-701b-4ef2-85fb-1b49a25c477b")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 71.12 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d50c494-c3e9-4898-acc1-70f6dea191e8")
+		(property "Reference" "R108"
+			(at 69.8499 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "910K"
+			(at 76.2 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 71.12 68.072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "125c1ed4-62e5-4ab3-8455-18da2839429c")
+		)
+		(pin "1"
+			(uuid "6a028757-3ad9-4bc3-beab-c2ce6a276dac")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/687c1244-a40f-4ea6-a397-edb054278cad"
+					(reference "R108")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/92098451-3a27-4684-bd37-f9eb10b34fd4"
+					(reference "R81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 81.915 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4fb4616-0f2e-4519-88d6-f04491f6365a")
+		(property "Reference" "R109"
+			(at 80.6449 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200K"
+			(at 87.63 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 81.915 68.072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.915 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 81.915 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee1d1845-e435-4d1b-9cd9-32f3d8c73bff")
+		)
+		(pin "1"
+			(uuid "c2587c08-7252-4d32-b26e-f3c7c7eed705")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/687c1244-a40f-4ea6-a397-edb054278cad"
+					(reference "R109")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/92098451-3a27-4684-bd37-f9eb10b34fd4"
+					(reference "R82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 49.53)
+		(size 25.4 17.78)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fa0c859f-9099-4c13-9c72-8c9f60f942c0")
+		(property "Sheetname" "Boost Regulator"
+			(at 63.5 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "boost_regulator.kicad_sch"
+			(at 62.865 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VIN" input
+			(at 63.5 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cfb476d8-1235-4535-83c8-d77b388b88ea")
+		)
+		(pin "R3_FB" passive
+			(at 78.105 67.31 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "26bf65e9-d4c9-4ccf-9f69-11664956b95a")
+		)
+		(pin "R3_GND" passive
+			(at 85.725 67.31 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3c059641-c3b9-49df-8f46-a0791ea6aaae")
+		)
+		(pin "VOUT" output
+			(at 88.9 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "825bf623-ed98-4a61-8e33-f134860da00d")
+		)
+		(pin "R2_FB" passive
+			(at 74.93 67.31 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b7296f88-7bff-4cf5-b6c7-f1472290053c")
+		)
+		(pin "R2_OUT" passive
+			(at 67.31 67.31 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6d05c94b-0de3-4d63-8360-7a3fc530d07f")
+		)
+		(pin "*PG" output
+			(at 88.9 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "346d328e-ad22-4c39-aecd-1406028436f1")
+		)
+		(pin "EN" input
+			(at 63.5 53.975 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "423adc68-6795-4524-968e-a15269a3173b")
+		)
+		(pin "GND" input
+			(at 63.5 57.15 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "83f92c7c-2b0b-45d7-b2a7-b0628e07ccaa")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/687c1244-a40f-4ea6-a397-edb054278cad"
+					(page "75")
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/92098451-3a27-4684-bd37-f9eb10b34fd4"
+					(page "77")
+				)
+			)
+		)
+	)
+)

@@ -1189,48 +1189,67 @@
 				)
 			)
 		)
-		(symbol "EPS-rescue:FPF2123-1K_Custom_Symbol"
+		(symbol "Project:MIC2009YM6-TR"
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 13.97 0)
+				(at 35.56 10.16 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "1K_Custom_Symbol_FPF2123"
-				(at 0 11.43 0)
+			(property "Value" "MIC2009YM6-TR"
+				(at 35.56 7.62 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-				(at 1.27 -24.13 0)
+			(property "Footprint" "SOT-23-6_M6_MCH"
+				(at 11.938 5.842 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 7.62 0)
+			(property "Datasheet" "MIC2009YM6-TR"
+				(at 12.7 5.588 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
 			(property "Description" ""
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MIC2009YM6-TR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1239,8 +1258,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mfr. #" "FPF2123"
-				(at 0 -30.48 0)
+			(property "ki_fp_filters" "SOT-23-6_M6_MCH SOT-23-6_M6_MCH-M SOT-23-6_M6_MCH-L"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1248,80 +1267,10 @@
 					(hide yes)
 				)
 			)
-			(property "Order" "https://www.digikey.com/product-detail/en/on-semiconductor/FPF2123/FPF2123CT-ND/1033703"
-				(at -7.62 -26.67 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FPF2123-1K_Custom_Symbol_0_0"
-				(text "OFF"
-					(at -3.81 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "ON"
-					(at 1.27 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "FPF2123-1K_Custom_Symbol_0_1"
-				(rectangle
-					(start -6.35 10.16)
-					(end 6.35 -6.35)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -1.27) (xy -1.27 -1.27) (xy -1.27 2.54) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FPF2123-1K_Custom_Symbol_1_1"
+			(symbol "MIC2009YM6-TR_0_1"
 				(pin power_in line
-					(at -8.89 7.62 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -8.89 90)
-					(length 2.54)
+					(at 38.1 -10.16 180)
+					(length 7.62)
 					(name "GND"
 						(effects
 							(font
@@ -1338,9 +1287,9 @@
 					)
 				)
 				(pin input line
-					(at -8.89 3.81 0)
-					(length 2.54)
-					(name "ON"
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "ENABLE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1355,10 +1304,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 8.89 3.81 180)
-					(length 2.54)
-					(name "ISET"
+				(pin output line
+					(at 38.1 -2.54 180)
+					(length 7.62)
+					(name "*FAULT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1373,10 +1322,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 8.89 7.62 180)
-					(length 2.54)
-					(name "VOUT"
+				(pin input line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "ILIMIT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1384,6 +1333,55 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MIC2009YM6-TR_1_1"
+				(rectangle
+					(start 7.62 3.81)
+					(end 30.48 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 1.27 0)
+					(length 7.62)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 38.1 1.27 180)
+					(length 7.62)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1407,13 +1405,13 @@
 		(uuid "08fa9e04-ca45-4142-aab6-9385c65d5a48")
 	)
 	(junction
-		(at 160.02 71.12)
+		(at 171.45 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "090f1d07-20fb-4da9-ae68-2c39e3c023e0")
 	)
 	(junction
-		(at 169.545 54.61)
+		(at 180.975 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "190666be-c7ef-4ced-85cb-3f9b5da07843")
@@ -1437,6 +1435,12 @@
 		(uuid "310adbeb-3f33-43df-8eba-692522329a49")
 	)
 	(junction
+		(at 133.35 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31fc2e19-097c-491c-8608-33ef4c8a6242")
+	)
+	(junction
 		(at 90.805 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1447,6 +1451,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "51d26b67-db36-481b-90ca-5b50bbe9a2ff")
+	)
+	(junction
+		(at 125.095 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5310c2f9-3999-452b-8a89-d2d95163525c")
 	)
 	(junction
 		(at 60.325 55.88)
@@ -1473,16 +1483,10 @@
 		(uuid "9f06964b-7ab0-44ce-8f03-19e7f3a2d138")
 	)
 	(junction
-		(at 144.78 71.12)
+		(at 171.45 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c166d9c0-9361-4bfa-afac-8674c604b6c5")
-	)
-	(junction
-		(at 125.095 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc5e555f-738c-439c-8026-bde46ef63cd0")
+		(uuid "d72ef2b1-ca22-43b1-88f1-03e12cb72383")
 	)
 	(junction
 		(at 116.84 58.42)
@@ -1523,16 +1527,6 @@
 			(type default)
 		)
 		(uuid "080a7f48-a650-4641-ace6-dbdb47234d6b")
-	)
-	(wire
-		(pts
-			(xy 144.78 58.42) (xy 144.78 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a45ab31-3efa-4074-b94d-045f04d4f08c")
 	)
 	(wire
 		(pts
@@ -1626,13 +1620,23 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 41.91) (xy 169.545 41.91)
+			(xy 165.1 41.91) (xy 171.45 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "311c14f1-1024-495d-83a1-761aa886450a")
+	)
+	(wire
+		(pts
+			(xy 133.35 71.12) (xy 171.45 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32d80f38-9675-42bd-9554-acd832e8a9a4")
 	)
 	(wire
 		(pts
@@ -1656,7 +1660,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 41.91) (xy 135.89 41.91)
+			(xy 125.095 41.91) (xy 133.35 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1676,7 +1680,17 @@
 	)
 	(wire
 		(pts
-			(xy 169.545 41.91) (xy 169.545 54.61)
+			(xy 133.35 64.135) (xy 133.35 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d246b21-4a1a-4234-a29a-89238d4a852e")
+	)
+	(wire
+		(pts
+			(xy 180.975 41.91) (xy 180.975 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1716,16 +1730,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 71.12) (xy 144.78 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5159573c-189a-469d-b9ae-e21879df4db9")
-	)
-	(wire
-		(pts
 			(xy 61.595 118.11) (xy 61.595 120.015)
 		)
 		(stroke
@@ -1733,6 +1737,16 @@
 			(type default)
 		)
 		(uuid "594366bf-3056-4a0e-8460-5d20d9480339")
+	)
+	(wire
+		(pts
+			(xy 171.45 41.91) (xy 180.975 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b870aba-4f9f-4ebc-94d5-1dfabdeecb5a")
 	)
 	(polyline
 		(pts
@@ -1796,17 +1810,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 56.515) (xy 160.02 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "680c7d2c-ade1-4fd5-a317-6b0a2baedd61")
-	)
-	(wire
-		(pts
-			(xy 144.78 71.12) (xy 160.02 71.12)
+			(xy 125.095 71.12) (xy 133.35 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1916,7 +1920,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 169.545 71.12)
+			(xy 171.45 71.12) (xy 180.975 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1976,16 +1980,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.095 68.58) (xy 125.095 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7b026da-72bb-42f9-aaa3-98aab80e8aac")
-	)
-	(wire
-		(pts
 			(xy 83.82 55.88) (xy 85.725 55.88)
 		)
 		(stroke
@@ -2016,7 +2010,7 @@
 	)
 	(wire
 		(pts
-			(xy 169.545 54.61) (xy 210.185 54.61)
+			(xy 180.975 54.61) (xy 210.185 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2046,7 +2040,7 @@
 	)
 	(wire
 		(pts
-			(xy 169.545 54.61) (xy 169.545 60.96)
+			(xy 180.975 54.61) (xy 180.975 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2056,13 +2050,33 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 45.72) (xy 135.89 45.72)
+			(xy 133.35 56.515) (xy 133.35 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe6f6f7-fb71-458b-b912-003f2579ecd0")
+	)
+	(wire
+		(pts
+			(xy 130.81 45.72) (xy 133.35 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be7a3823-ffbd-403a-b560-683607a4f36e")
+	)
+	(wire
+		(pts
+			(xy 125.095 68.58) (xy 125.095 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf63b670-7e78-46bc-9d1a-ea22750d0a1e")
 	)
 	(wire
 		(pts
@@ -2073,6 +2087,16 @@
 			(type default)
 		)
 		(uuid "c27022d6-a643-4ec0-a7b0-6498079f4625")
+	)
+	(wire
+		(pts
+			(xy 171.45 53.34) (xy 171.45 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c639edc4-35cb-42ef-92d2-7423f1b9f471")
 	)
 	(wire
 		(pts
@@ -2106,23 +2130,13 @@
 	)
 	(wire
 		(pts
-			(xy 169.545 71.12) (xy 169.545 68.58)
+			(xy 180.975 71.12) (xy 180.975 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e276e544-978e-4e4a-8a7b-c38bff196570")
-	)
-	(wire
-		(pts
-			(xy 160.02 45.72) (xy 160.02 48.895)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2dc9078-7e71-40aa-bcab-73bf30adadd2")
 	)
 	(wire
 		(pts
@@ -2176,7 +2190,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 45.72) (xy 160.02 45.72)
+			(xy 165.1 45.72) (xy 171.45 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2215,17 +2229,6 @@
 		)
 		(uuid "1791161f-3895-48d3-aadf-4f1d44cee85e")
 	)
-	(text "150mA current Limit\nset by 3090 Ohm resistor"
-		(exclude_from_sim no)
-		(at 170.815 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "184f274f-197c-4e2c-8020-7378174a540d")
-	)
 	(text "2.82A Hold\n8A Trip"
 		(exclude_from_sim no)
 		(at 218.44 116.84 0)
@@ -2247,6 +2250,17 @@
 			(justify left bottom)
 		)
 		(uuid "45a3d4a2-be89-48e1-8abf-f544a5e8e190")
+	)
+	(text "150mA current Limit\nset by 3090 Ohm resistor"
+		(exclude_from_sim no)
+		(at 180.34 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "476b21e2-cc09-459e-83b8-ed230bbd7586")
 	)
 	(text "Hot point= 50C = 0.41*Rnom"
 		(exclude_from_sim no)
@@ -2316,7 +2330,7 @@
 	)
 	(text "Bypass CAP for FPF VOUT"
 		(exclude_from_sim no)
-		(at 153.67 74.295 0)
+		(at 165.1 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2429,6 +2443,18 @@
 			(justify right)
 		)
 		(uuid "60f15949-9401-4099-88c4-fa915b34ddc7")
+	)
+	(hierarchical_label "FAULT"
+		(shape output)
+		(at 171.45 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a56a7c4-eaeb-4932-aecf-83cdb6882fd2")
 	)
 	(hierarchical_label "NTC"
 		(shape output)
@@ -2844,7 +2870,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 169.545 64.77 0)
+		(at 180.975 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2852,7 +2878,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f4827e2")
 		(property "Reference" "C55"
-			(at 172.72 63.5 0)
+			(at 184.15 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,7 +2887,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 172.72 66.04 0)
+			(at 184.15 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2870,7 +2896,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 170.5102 68.58 0)
+			(at 181.9402 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2879,7 +2905,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 169.545 64.77 0)
+			(at 180.975 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +2914,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 169.545 64.77 0)
+			(at 180.975 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2897,7 +2923,7 @@
 			)
 		)
 		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 169.545 64.77 0)
+			(at 180.975 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2906,7 +2932,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 169.545 64.77 0)
+			(at 180.975 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +2941,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 174.625 67.945 0)
+			(at 186.055 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2951,7 +2977,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f48bf1e")
 		(property "Reference" "C54"
-			(at 128.016 63.6016 0)
+			(at 118.11 63.7286 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +2986,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 128.016 65.913 0)
+			(at 118.11 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3014,7 +3040,7 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 130.175 67.945 0)
+			(at 120.269 68.072 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,104 +3344,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EPS-rescue:FPF2123-1K_Custom_Symbol")
-		(at 144.78 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fb89477")
-		(property "Reference" "U14"
-			(at 144.78 36.195 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FPF2123"
-			(at 144.78 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
-			(at 146.05 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FPF2125-D.pdf"
-			(at 144.78 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "FPF2123"
-			(at 144.78 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/on-semiconductor/FPF2123/FPF2123CT-ND/1033703"
-			(at 137.16 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "050c11d2-6cef-44a8-ab75-1b4501f1a68f")
-		)
-		(pin "2"
-			(uuid "3260fb5b-7db2-41bb-ba66-a3fd7751afee")
-		)
-		(pin "3"
-			(uuid "2e1608e1-cfa7-412a-a0d6-008e703a1bdf")
-		)
-		(pin "4"
-			(uuid "b13e4860-d8ab-4b0d-95b1-ad92d1b05b93")
-		)
-		(pin "5"
-			(uuid "4ea1dbd7-e8bc-48a6-92a2-b57a67f03b85")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f301c6d"
-					(reference "U14")
-					(unit 1)
-				)
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
-					(reference "U16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 116.84 50.165 0)
 		(unit 1)
@@ -3501,99 +3429,6 @@
 				)
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
 					(reference "R91")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 52.705 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fbaf948")
-		(property "Reference" "R?"
-			(at 163.195 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.09K"
-			(at 164.465 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 161.798 52.705 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT3K09"
-			(at 160.02 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT3K09/1761340"
-			(at 160.02 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb752a79-7e7b-41c7-800f-0b9cb2e87d3b")
-		)
-		(pin "2"
-			(uuid "91ce8f7b-c6c9-44aa-b4c8-c45378b3e88b")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f301c6d"
-					(reference "R87")
-					(unit 1)
-				)
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
-					(reference "R93")
 					(unit 1)
 				)
 			)
@@ -3851,6 +3686,181 @@
 				)
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 133.35 60.325 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e67a9678-4c55-40d6-8e67-8afd18e44780")
+		(property "Reference" "R46"
+			(at 136.525 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.09K"
+			(at 137.795 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 135.128 60.325 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. #" "RMCF0603FT3K09"
+			(at 133.35 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT3K09/1761340"
+			(at 133.35 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31e24fec-a99f-4200-999b-85264bda4900")
+		)
+		(pin "2"
+			(uuid "8e72247a-d145-401b-8a3f-7c58fa71983f")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f301c6d"
+					(reference "R46")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Project:MIC2009YM6-TR")
+		(at 133.35 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ead488b7-4e01-4c33-ab5b-7176da3e0200")
+		(property "Reference" "U2"
+			(at 152.4 34.925 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MIC2009YM6-TR"
+			(at 152.4 37.465 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Project:SOT-23-6_Handsoldering"
+			(at 145.288 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "MIC2009YM6-TR"
+			(at 146.05 37.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "62b9b7d8-a19d-4c9b-9930-a2eda7e4189e")
+		)
+		(pin "1"
+			(uuid "7ab60e1a-6180-4c9b-b25f-8da564de743e")
+		)
+		(pin "4"
+			(uuid "ee348c23-0e61-4af2-a68e-7d43a0fae9c9")
+		)
+		(pin "2"
+			(uuid "9ce97181-84b9-4e40-9a34-96725b81f91f")
+		)
+		(pin "5"
+			(uuid "b3e1d10f-710d-4c3f-abce-f3363b564010")
+		)
+		(pin "6"
+			(uuid "cfcaf617-57d4-4595-9e09-d62aca980ed9")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f301c6d"
+					(reference "U2")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f4cfcf6"
+					(reference "U3")
 					(unit 1)
 				)
 			)

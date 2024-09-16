@@ -9,183 +9,6 @@
 		(date "2020-05-25")
 	)
 	(lib_symbols
-		(symbol "AVIONICS_BOARD-rescue:ECS-TXO-2016-1K_Custom_Symbol"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "X"
-				(at -5.08 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "1K_Custom_Symbol_ECS-TXO-2016"
-				(at 1.27 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "avionics_board:Oscillator_SMD_ECS_TXO-2016-xx-xxx-4Pin_2.0x1.6mm"
-				(at -5.08 -22.86 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at -4.445 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Mfr. #" "ECS-TXO-2016-33-100-TR"
-				(at 0 -20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Order" "https://www.digikey.com/product-detail/en/ecs-inc/ECS-TXO-2016-33-100-TR/XC3159CT-ND/10244142"
-				(at -19.05 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Oscillator*SMD*ECS*2520MV*2.5x2.0mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ECS-TXO-2016-1K_Custom_Symbol_0_1"
-				(rectangle
-					(start -7.62 5.08)
-					(end 7.62 -5.08)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.985 2.54) (xy -6.35 2.54) (xy -6.35 3.81) (xy -5.715 3.81) (xy -5.715 2.54) (xy -5.08 2.54)
-						(xy -5.08 3.81) (xy -4.445 3.81) (xy -4.445 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ECS-TXO-2016-1K_Custom_Symbol_1_1"
-				(pin input line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "Tri-State"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -322,40 +145,42 @@
 				)
 			)
 		)
-		(symbol "Device:R"
-			(pin_numbers hide)
+		(symbol "Project:ECS-TXO-2016-33-100-TR"
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "Y"
+				(at -15.2838 8.1513 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "ECS-TXO-2016-33-100-TR"
+				(at -15.2592 -12.716 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
+			(property "Footprint" "ECS-TXO-2016-33-100-TR:OSC_ECS-1618-300-BN-TR"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -364,7 +189,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -373,378 +198,188 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "MANUFACTURER" "ECS INC"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "ECS-TXO-2016-33-100-TR_0_0"
 				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+					(start -15.24 -10.16)
+					(end 15.24 7.62)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "TRI-STATE"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
+				(pin power_in line
+					(at 20.32 -7.62 180)
+					(length 5.08)
+					(name "GND"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
-			)
-		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
+				(pin output line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "OUTPUT"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
 				)
 			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+			(symbol "ECS-TXO-2016-33-100-TR_1_0"
+				(pin power_in line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
 					)
 				)
 			)
 		)
 	)
 	(junction
-		(at 119.38 87.63)
+		(at 182.88 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8b5fc250-816b-4f22-8440-d9256216f833")
-	)
-	(junction
-		(at 114.3 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ee7bd57-8f43-4230-90b9-9262453db7ce")
-	)
-	(junction
-		(at 119.38 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8e4b301-15d1-4605-aad9-5f6ca2a61916")
+		(uuid "9d07ad61-64b7-4b16-a928-65cd366c30e9")
 	)
 	(wire
 		(pts
-			(xy 138.43 87.63) (xy 138.43 88.9)
+			(xy 184.785 107.95) (xy 182.88 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "154022d7-a82b-4bc3-92ac-af124e657611")
+		(uuid "1b972551-8098-4e76-8488-70bc47bb2f81")
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 138.43 87.63)
+			(xy 182.88 116.205) (xy 184.785 116.205)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "193ff422-569d-4503-afd8-08634ba9d02b")
+		(uuid "295f9f12-4c1e-413c-a17d-a47b881ee1e0")
 	)
 	(wire
 		(pts
-			(xy 153.67 80.01) (xy 153.67 96.52)
+			(xy 182.88 115.57) (xy 182.88 116.205)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "21732361-d1a0-401e-8e8d-d5f918f47d8b")
+		(uuid "6bbe8f72-687e-450b-84c5-12cc4918f82e")
 	)
 	(wire
 		(pts
-			(xy 105.41 87.63) (xy 114.3 87.63)
+			(xy 182.88 107.95) (xy 174.625 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27c62fa0-05f8-478c-a74b-215f14a22ab1")
-	)
-	(wire
-		(pts
-			(xy 153.67 96.52) (xy 148.59 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3555b592-ac48-46fd-a1fe-c073ce1cd015")
-	)
-	(wire
-		(pts
-			(xy 114.3 87.63) (xy 119.38 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "388f39be-6a31-4402-9b74-6c0a65daa90d")
-	)
-	(wire
-		(pts
-			(xy 119.38 107.95) (xy 138.43 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5817b65f-1801-4fcd-ba38-86fc1f6b349e")
-	)
-	(wire
-		(pts
-			(xy 119.38 105.41) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c0a8b05-ecde-40a9-95f9-460022bf13d0")
-	)
-	(wire
-		(pts
-			(xy 138.43 104.14) (xy 138.43 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "622cd158-faf4-4263-ac72-5d519feeb708")
-	)
-	(wire
-		(pts
-			(xy 77.47 96.52) (xy 97.79 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c1b4c89-6ead-468f-947d-8587ce593ae9")
-	)
-	(wire
-		(pts
-			(xy 77.47 80.01) (xy 123.19 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ba00b85-8db2-4ec9-bd65-867b1007c9cf")
-	)
-	(wire
-		(pts
-			(xy 105.41 96.52) (xy 128.27 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9df14c29-25ac-4761-8dea-4bccbf0aa86f")
-	)
-	(wire
-		(pts
-			(xy 119.38 97.79) (xy 119.38 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4c90e78-b220-4d75-85f1-aadabdc883ed")
-	)
-	(wire
-		(pts
-			(xy 77.47 107.95) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6343dcc-f49e-4d4b-ab41-3861ffc015d6")
-	)
-	(wire
-		(pts
-			(xy 130.81 80.01) (xy 153.67 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6af4698-f4ba-427e-83cc-47c4c25a5243")
-	)
-	(wire
-		(pts
-			(xy 77.47 87.63) (xy 97.79 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff140dcf-4256-438b-947d-caff52af387c")
-	)
-	(hierarchical_label "OE"
-		(shape input)
-		(at 77.47 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2883863e-288a-4969-8e02-9abaa7cf2a00")
+		(uuid "927550f9-1801-4f63-98e1-1623eb57de25")
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 77.47 107.95 180)
+		(at 184.785 116.205 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "3b4ef817-1f7b-448e-8b36-5bba72067235")
+		(uuid "3afa325b-eef5-4066-8f96-757a3a819910")
 	)
-	(hierarchical_label "OUT"
+	(hierarchical_label "OE"
 		(shape input)
-		(at 77.47 96.52 180)
+		(at 174.625 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc46c9cd-b38d-4e50-91c4-7b525bbcbd0d")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 133.985 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -752,11 +387,23 @@
 			)
 			(justify right)
 		)
-		(uuid "56deb666-1dfc-471e-918a-194ca0c8728e")
+		(uuid "da656f68-cf2c-43d0-80cc-943d027fbf57")
 	)
 	(hierarchical_label "PWR"
 		(shape input)
-		(at 77.47 87.63 180)
+		(at 184.785 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9dce1ff-619c-4849-ab48-5569bd2ee9ae")
+	)
+	(hierarchical_label "OUT"
+		(shape input)
+		(at 133.985 107.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -764,11 +411,11 @@
 			)
 			(justify right)
 		)
-		(uuid "68040b78-7d4d-40c9-96c7-af79afed190f")
+		(uuid "ff47b58a-9e08-4a3a-a7f6-b0ea4a73fc77")
 	)
 	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:ECS-TXO-2016-1K_Custom_Symbol")
-		(at 138.43 96.52 0)
+		(lib_id "Project:ECS-TXO-2016-33-100-TR")
+		(at 154.305 110.49 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -777,7 +424,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060074db6")
 		(property "Reference" "X1"
-			(at 143.51 88.9 0)
+			(at 153.67 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -786,7 +433,7 @@
 			)
 		)
 		(property "Value" "ECS-TXO-2016"
-			(at 143.51 103.505 0)
+			(at 148.59 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -794,8 +441,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Project:OSC_SXO21C3A071-10.000M"
-			(at 143.51 119.38 0)
+		(property "Footprint" "Project:OSC_ECS-1618-300-BN-TR"
+			(at 159.385 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -804,7 +451,7 @@
 			)
 		)
 		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-TXO-2016.pdf"
-			(at 142.875 93.345 0)
+			(at 158.75 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -813,7 +460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 96.52 0)
+			(at 154.305 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -822,7 +469,7 @@
 			)
 		)
 		(property "Mfr. #" "ECS-TXO-2016-33-100-TR"
-			(at 138.43 116.84 0)
+			(at 154.305 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +478,16 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/ecs-inc/ECS-TXO-2016-33-100-TR/XC3159CT-ND/10244142"
-			(at 157.48 114.3 0)
+			(at 173.355 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Load Capacitance" ""
+			(at 154.305 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -853,6 +509,12 @@
 		)
 		(instances
 			(project ""
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
+					(reference "X1")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
 					(reference "X1")
 					(unit 1)
@@ -862,15 +524,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 119.38 101.6 0)
+		(at 182.88 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000600759a7")
-		(property "Reference" "C?"
-			(at 122.301 100.4316 0)
+		(property "Reference" "C51"
+			(at 185.801 110.5916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -879,7 +541,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 122.301 102.743 0)
+			(at 185.801 112.903 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -888,7 +550,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 120.3452 105.41 0)
+			(at 183.8452 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -897,7 +559,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 101.6 0)
+			(at 182.88 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -906,7 +568,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 101.6 0)
+			(at 182.88 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -915,7 +577,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 119.38 101.6 0)
+			(at 182.88 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,7 +586,7 @@
 			)
 		)
 		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 119.38 101.6 0)
+			(at 182.88 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +595,16 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 119.38 101.6 0)
+			(at 182.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Load Capacitance" ""
+			(at 182.88 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -949,6 +620,12 @@
 		)
 		(instances
 			(project ""
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
 					(reference "C?")
 					(unit 1)
@@ -963,338 +640,6 @@
 				)
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
 					(reference "C39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 101.6 87.63 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000600798e4")
-		(property "Reference" "R?"
-			(at 101.6 82.3722 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 101.6 84.6836 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 101.6 85.852 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RK73Z1JTTD"
-			(at 101.6 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522"
-			(at 101.6 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af5cc11f-d6af-4a57-9454-cefe1a472c53")
-		)
-		(pin "2"
-			(uuid "a1917c1b-14a3-4375-98c2-ce58a0ef02aa")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 127 80.01 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000600798ea")
-		(property "Reference" "R?"
-			(at 127 74.7522 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 127 77.0636 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 127 78.232 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 127 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RK73Z1JTTD"
-			(at 127 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522"
-			(at 127 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d9b81aad-9d11-4155-89e0-ea93d59fa9c3")
-		)
-		(pin "2"
-			(uuid "0f012483-1c52-4585-ac8e-bcb879c28ebe")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "R42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 101.6 96.52 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000600798f8")
-		(property "Reference" "R?"
-			(at 101.6 91.2622 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 101.6 93.5736 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 101.6 94.742 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RK73Z1JTTD"
-			(at 101.6 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522"
-			(at 101.6 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "818a940e-0f52-403a-a183-ae1d8a1cc41d")
-		)
-		(pin "2"
-			(uuid "e19b9a2d-1569-4c61-9274-d58b32cccad1")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "R?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "R44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 114.3 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "076ccbb7-8026-425d-a3a8-a56df613668f")
-		(property "Reference" "#FLG016"
-			(at 114.3 85.725 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 113.665 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 114.3 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a1c91520-3b3e-449a-8211-10454d149b10")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "#FLG016")
 					(unit 1)
 				)
 			)

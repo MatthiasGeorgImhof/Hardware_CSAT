@@ -4,22 +4,409 @@
 	(generator_version "8.0")
 	(uuid "f7019c14-28f1-4991-9090-a9a9722e61b3")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Memory_Flash:W25X20CLZP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U12"
+				(at 2.794 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "W25X20CLZP"
+				(at 6.604 9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.winbond.com/resource-files/w25x20cl_revf%2020150806.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2Mbit Serial Flash memory, dual I/O SPI, WSON-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Memory Flash SPI"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "WSON*8*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "W25X20CLZP_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "W25X20CLZP_1_1"
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "DO(IO1)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "~{WP}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "DI(IO0)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "~{HOLD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 56.515 43.18) (xy 66.675 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4872e22d-c338-4a1a-8fb4-ac3d4978aaf7")
+	)
+	(wire
+		(pts
+			(xy 66.675 50.8) (xy 88.265 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8624dbca-b1bb-46fe-9767-7925c6fde32b")
+	)
+	(wire
+		(pts
+			(xy 56.515 53.34) (xy 88.265 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2028d61-c3ea-4727-83db-d34c16f1cbe7")
+	)
+	(wire
+		(pts
+			(xy 56.515 53.34) (xy 56.515 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5293924-878b-4676-9a43-0af98b722cc5")
+	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
-		(at 30.48 38.1 0)
+		(at 88.265 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "1c2869be-54b0-45af-8839-21da95532881")
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 31.115 24.13 0)
+		(at 98.425 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -31,31 +418,31 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape input)
-		(at 29.21 45.085 0)
+		(at 88.265 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "3a52aeb9-135a-4107-b59f-88affbd6b85b")
 	)
 	(hierarchical_label "SPI_CS"
 		(shape input)
-		(at 29.21 58.42 0)
+		(at 88.265 40.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "58a1be94-47d6-4c42-8e9d-8234c836ad17")
 	)
 	(hierarchical_label "VSS"
 		(shape input)
-		(at 30.48 31.115 0)
+		(at 98.425 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -67,14 +454,288 @@
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
-		(at 28.575 52.07 0)
+		(at 88.265 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b0454dfd-0c36-4012-a2c5-53a18fc67a20")
+	)
+	(hierarchical_label "VDD"
+		(shape input)
+		(at 56.515 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d72e2650-b27a-45d8-80c3-2f7f5707175b")
+	)
+	(symbol
+		(lib_id "Memory_Flash:W25X20CLZP")
+		(at 98.425 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65496993-db1b-4b86-b24f-e4742a7fbe15")
+		(property "Reference" "U19"
+			(at 107.95 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "W25X20CLZP"
+			(at 107.95 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
+			(at 98.425 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.winbond.com/resource-files/w25x20cl_revf%2020150806.pdf"
+			(at 98.425 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2Mbit Serial Flash memory, dual I/O SPI, WSON-8"
+			(at 98.425 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9a3a9484-e086-45a9-8f27-74b938195300")
+		)
+		(pin "2"
+			(uuid "0620873b-9b2e-448e-b0e5-972c6d17c8c1")
+		)
+		(pin "4"
+			(uuid "c8590c85-d5ae-4442-a93e-96bad46a19d5")
+		)
+		(pin "6"
+			(uuid "4e0deaea-7f4b-485c-a451-3c3b16aca201")
+		)
+		(pin "8"
+			(uuid "49ae3694-84f0-4df1-b23b-db730ea8931f")
+		)
+		(pin "5"
+			(uuid "2de45c46-59d7-43ee-b28d-356674f331ea")
+		)
+		(pin "1"
+			(uuid "cdd341ac-4912-44dd-8eb8-506623a90aed")
+		)
+		(pin "7"
+			(uuid "ff25d920-7580-40fa-9fa5-432dc89c0f0e")
+		)
+		(instances
+			(project ""
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
+					(reference "U19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 56.515 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d84df0f0-d6c7-4a80-b152-31cb295ebb8d")
+		(property "Reference" "R23"
+			(at 59.055 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 58.293 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 54.737 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 56.515 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 56.515 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. #" "RMCF0603FT100K"
+			(at 56.515 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
+			(at 56.515 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4325b6b-8055-485b-8633-197cd8e9cc33")
+		)
+		(pin "2"
+			(uuid "b3b00835-e181-44e0-a52c-1f4696077b1d")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 66.675 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d89a75e2-4b0e-4f7d-9fcc-24a1ed0e1909")
+		(property "Reference" "R24"
+			(at 69.215 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 68.453 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 64.897 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.675 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.675 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. #" "RMCF0603FT100K"
+			(at 66.675 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
+			(at 66.675 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49ab2194-a759-46cc-a6e5-4655aa1f397d")
+		)
+		(pin "2"
+			(uuid "f2f19577-b790-4b9a-ad82-323c0d27123c")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
 	)
 )

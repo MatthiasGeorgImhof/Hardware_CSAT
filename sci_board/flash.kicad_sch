@@ -5,6 +5,142 @@
 	(uuid "f7019c14-28f1-4991-9090-a9a9722e61b3")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -354,6 +490,26 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 50.8) (xy 124.46 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17913a01-0a01-4c26-9b0f-ee0fa15b950e")
+	)
+	(wire
+		(pts
+			(xy 124.46 60.96) (xy 98.425 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c6385d-2484-497b-a58e-d28bde7f1ce1")
+	)
+	(wire
+		(pts
 			(xy 56.515 43.18) (xy 66.675 43.18)
 		)
 		(stroke
@@ -361,6 +517,16 @@
 			(type default)
 		)
 		(uuid "4872e22d-c338-4a1a-8fb4-ac3d4978aaf7")
+	)
+	(wire
+		(pts
+			(xy 98.425 35.56) (xy 124.46 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ed6e3c-68fb-46b3-bbdf-60953379c6e9")
 	)
 	(wire
 		(pts
@@ -392,6 +558,16 @@
 		)
 		(uuid "c5293924-878b-4676-9a43-0af98b722cc5")
 	)
+	(wire
+		(pts
+			(xy 124.46 35.56) (xy 124.46 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e650b897-53c3-4c97-9eb1-ea64c03070c0")
+	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
 		(at 88.265 43.18 180)
@@ -406,13 +582,13 @@
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 98.425 35.56 0)
+		(at 98.425 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "2003dd2f-896a-4d88-868a-e758a2d86277")
 	)
@@ -442,13 +618,13 @@
 	)
 	(hierarchical_label "VSS"
 		(shape input)
-		(at 98.425 60.96 0)
+		(at 98.425 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "6e2d7e99-20df-4a0a-b701-505734a1a6cf")
 	)
@@ -475,6 +651,102 @@
 			(justify right)
 		)
 		(uuid "d72e2650-b27a-45d8-80c3-2f7f5707175b")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "217a63df-0d80-49f2-bee2-723802afaecf")
+		(property "Reference" "C41"
+			(at 127.381 45.8216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 127.381 48.133 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 125.4252 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. #" "CL10B104KA8NNNC"
+			(at 124.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
+			(at 124.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 124.46 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8cf1771-4d26-4a52-8be5-115de4f960cc")
+		)
+		(pin "2"
+			(uuid "c5d6ddd8-a3f1-48ba-affb-ad15dcb7dcfc")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Memory_Flash:W25X20CLZP")

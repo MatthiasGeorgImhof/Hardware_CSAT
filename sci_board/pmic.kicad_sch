@@ -3181,10 +3181,6 @@
 		(uuid "6da00638-ca84-44fb-a63c-fa293d27fdd4")
 	)
 	(no_connect
-		(at 158.75 107.95)
-		(uuid "912024b2-f595-4ae2-8ba3-5b493ad651dd")
-	)
-	(no_connect
 		(at 158.75 95.25)
 		(uuid "92f70d64-5251-4a9e-a6d0-cb25eaf7e6f8")
 	)
@@ -3205,20 +3201,12 @@
 		(uuid "b2b106f4-3a18-441f-9038-530289e7782c")
 	)
 	(no_connect
-		(at 113.03 140.97)
-		(uuid "b2faffab-a9cc-467b-879a-897791795a57")
-	)
-	(no_connect
 		(at 158.75 105.41)
 		(uuid "ba31e557-2120-47ab-80c5-29355b272034")
 	)
 	(no_connect
 		(at 113.03 135.89)
 		(uuid "c466053a-15cc-4130-a0d8-8d2ee253028e")
-	)
-	(no_connect
-		(at 158.75 110.49)
-		(uuid "d132119f-691a-42aa-9b42-de0c334d9a3a")
 	)
 	(no_connect
 		(at 113.03 158.75)
@@ -4684,18 +4672,6 @@
 		)
 		(uuid "32dbb0bc-554c-4de6-8f2b-a1f3da7c4bff")
 	)
-	(hierarchical_label "CAM_PWRDN"
-		(shape output)
-		(at 113.03 148.59 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "35f466d7-2979-4101-93e9-412f2b56dabe")
-	)
 	(hierarchical_label "CAN2_RX"
 		(shape input)
 		(at 158.75 113.03 0)
@@ -4780,17 +4756,17 @@
 		)
 		(uuid "51db17f9-5e0a-4b10-bbbc-02b33502f540")
 	)
-	(hierarchical_label "CAM_RST"
+	(hierarchical_label "CAM_PWRDN"
 		(shape output)
-		(at 113.03 143.51 180)
+		(at 158.75 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "52c50160-2b3d-455b-8c5b-72a61a8d1fb4")
+		(uuid "585bdd1b-9500-415b-b885-21a89a842c75")
 	)
 	(hierarchical_label "DCMI_09"
 		(shape input)
@@ -4875,6 +4851,18 @@
 			(justify right)
 		)
 		(uuid "7469e166-c279-4d49-98d3-28ebabb7766a")
+	)
+	(hierarchical_label "CAM_STROBE"
+		(shape output)
+		(at 113.03 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "74aa915e-3d12-415f-b81b-5978fc167bef")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -4995,18 +4983,6 @@
 			(justify left)
 		)
 		(uuid "9f350b15-116d-46ea-9933-c6a96db7563f")
-	)
-	(hierarchical_label "CAM_STROBE"
-		(shape output)
-		(at 113.03 146.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a12df938-f115-475b-a9d0-92acf42ced4d")
 	)
 	(hierarchical_label "S1"
 		(shape input)
@@ -5163,6 +5139,18 @@
 			(justify left)
 		)
 		(uuid "d7ab30e3-7545-494f-a291-8da7ea48945a")
+	)
+	(hierarchical_label "CAM_RST"
+		(shape output)
+		(at 158.75 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d9b13eb1-0995-47b1-9f4b-d7ed3500ede8")
 	)
 	(hierarchical_label "USART3_RX"
 		(shape input)

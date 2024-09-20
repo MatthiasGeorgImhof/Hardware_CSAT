@@ -262,27 +262,49 @@
 				)
 			)
 		)
-		(symbol "Memory_Flash:W25X20CLZP"
+		(symbol "Project:MT29F4G01ABAFDWB-IT_F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U12"
-				(at 2.794 11.684 0)
+			(property "Reference" "IC"
+				(at 34.29 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Value" "W25X20CLZP"
-				(at 6.604 9.906 0)
+			(property "Value" "MT29F4G01ABAFDWB-IT_F"
+				(at 34.29 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
+			(property "Footprint" "SON127P800X600X65-8N"
+				(at 34.29 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 34.29 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "NAND Flash SLC 4G 4GX1 UPDFN IT M70A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -291,46 +313,60 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.winbond.com/resource-files/w25x20cl_revf%2020150806.pdf"
-				(at 0 0 0)
+			(property "Height" "0.65"
+				(at 34.29 -394.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "2Mbit Serial Flash memory, dual I/O SPI, WSON-8"
-				(at 0 0 0)
+			(property "Mouser Part Number" "340-359563"
+				(at 34.29 -494.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Memory Flash SPI"
-				(at 0 0 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micron/MT29F4G01ABAFDWB-ITF?qs=wUXugUrL1qwrjb7To7JPbA%3D%3D"
+				(at 34.29 -594.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "WSON*8*"
-				(at 0 0 0)
+			(property "Manufacturer_Name" "Micron"
+				(at 34.29 -694.92 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 					(hide yes)
 				)
 			)
-			(symbol "W25X20CLZP_0_1"
+			(property "Manufacturer_Part_Number" "MT29F4G01ABAFDWB-IT:F"
+				(at 34.29 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "MT29F4G01ABAFDWB-IT_F_1_1"
 				(rectangle
-					(start -7.62 10.16)
-					(end 7.62 -10.16)
+					(start 5.08 2.54)
+					(end 33.02 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -339,12 +375,10 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "W25X20CLZP_1_1"
 				(pin input line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "~{CS}"
+					(at 0 0 0)
+					(length 5.08)
+					(name "CS#"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -359,10 +393,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name "DO(IO1)"
+				(pin output line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "SO/IO1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -377,10 +411,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "~{WP}"
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "WP#/IO2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -396,9 +430,9 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -12.7 90)
-					(length 2.54)
-					(name "GND"
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -413,10 +447,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "DI(IO0)"
+				(pin input line
+					(at 38.1 -7.62 180)
+					(length 5.08)
+					(name "SI/IO0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -432,8 +466,8 @@
 					)
 				)
 				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
+					(at 38.1 -5.08 180)
+					(length 5.08)
 					(name "SCK"
 						(effects
 							(font
@@ -449,10 +483,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "~{HOLD}"
+				(pin passive line
+					(at 38.1 -2.54 180)
+					(length 5.08)
+					(name "HOLD#/IO3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -468,8 +502,8 @@
 					)
 				)
 				(pin power_in line
-					(at 0 12.7 270)
-					(length 2.54)
+					(at 38.1 0 180)
+					(length 5.08)
 					(name "VCC"
 						(effects
 							(font
@@ -490,7 +524,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 50.8) (xy 124.46 60.96)
+			(xy 140.97 75.565) (xy 140.97 77.47)
 		)
 		(stroke
 			(width 0)
@@ -500,7 +534,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 60.96) (xy 98.425 60.96)
+			(xy 140.97 77.47) (xy 139.065 77.47)
 		)
 		(stroke
 			(width 0)
@@ -510,17 +544,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 43.18) (xy 66.675 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4872e22d-c338-4a1a-8fb4-ac3d4978aaf7")
-	)
-	(wire
-		(pts
-			(xy 98.425 35.56) (xy 124.46 35.56)
+			(xy 139.065 67.31) (xy 140.97 67.31)
 		)
 		(stroke
 			(width 0)
@@ -530,7 +554,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.675 50.8) (xy 88.265 50.8)
+			(xy 123.825 75.565) (xy 110.49 75.565)
 		)
 		(stroke
 			(width 0)
@@ -540,7 +564,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 53.34) (xy 88.265 53.34)
+			(xy 53.975 78.105) (xy 72.39 78.105)
 		)
 		(stroke
 			(width 0)
@@ -550,7 +574,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 53.34) (xy 56.515 50.8)
+			(xy 53.975 78.105) (xy 53.975 75.565)
 		)
 		(stroke
 			(width 0)
@@ -560,7 +584,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 35.56) (xy 124.46 43.18)
+			(xy 140.97 67.31) (xy 140.97 67.945)
 		)
 		(stroke
 			(width 0)
@@ -570,19 +594,19 @@
 	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
-		(at 88.265 43.18 180)
+		(at 110.49 78.105 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "1c2869be-54b0-45af-8839-21da95532881")
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 98.425 35.56 180)
+		(at 139.065 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -594,7 +618,7 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape input)
-		(at 88.265 48.26 180)
+		(at 72.39 75.565 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -606,7 +630,7 @@
 	)
 	(hierarchical_label "SPI_CS"
 		(shape input)
-		(at 88.265 40.64 180)
+		(at 72.39 73.025 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -618,7 +642,7 @@
 	)
 	(hierarchical_label "VSS"
 		(shape input)
-		(at 98.425 60.96 180)
+		(at 139.065 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -628,21 +652,45 @@
 		)
 		(uuid "6e2d7e99-20df-4a0a-b701-505734a1a6cf")
 	)
-	(hierarchical_label "SPI_MOSI"
+	(hierarchical_label "VDD"
 		(shape input)
-		(at 88.265 45.72 180)
+		(at 123.825 67.945 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
+		)
+		(uuid "9056a788-d6cc-4378-b4e3-0489ee680328")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 110.49 80.645 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
 		)
 		(uuid "b0454dfd-0c36-4012-a2c5-53a18fc67a20")
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 56.515 43.18 180)
+		(at 110.49 73.025 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc561c18-0217-4772-89fc-2f8ecc3268e6")
+	)
+	(hierarchical_label "VDD"
+		(shape input)
+		(at 53.975 67.945 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -652,9 +700,21 @@
 		)
 		(uuid "d72e2650-b27a-45d8-80c3-2f7f5707175b")
 	)
+	(hierarchical_label "VSS"
+		(shape input)
+		(at 72.39 80.645 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea76b957-0412-4e81-8fd7-1102f5a91095")
+	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 46.99 0)
+		(at 140.97 71.755 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -662,7 +722,7 @@
 		(dnp no)
 		(uuid "217a63df-0d80-49f2-bee2-723802afaecf")
 		(property "Reference" "C57"
-			(at 127.381 45.8216 0)
+			(at 143.891 70.5866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -671,7 +731,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 127.381 48.133 0)
+			(at 143.891 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -680,7 +740,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 125.4252 50.8 0)
+			(at 141.9352 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -689,7 +749,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 46.99 0)
+			(at 140.97 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -698,7 +758,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 46.99 0)
+			(at 140.97 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -707,7 +767,7 @@
 			)
 		)
 		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 124.46 46.99 0)
+			(at 140.97 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -716,7 +776,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 124.46 46.99 0)
+			(at 140.97 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -725,7 +785,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 124.46 46.99 0)
+			(at 140.97 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,35 +809,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Memory_Flash:W25X20CLZP")
-		(at 98.425 48.26 0)
+		(lib_id "Project:MT29F4G01ABAFDWB-IT_F")
+		(at 72.39 73.025 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "65496993-db1b-4b86-b24f-e4742a7fbe15")
-		(property "Reference" "U22"
-			(at 107.95 46.9899 0)
+		(uuid "24390024-185f-4fbe-a57a-a11af97dbbcb")
+		(property "Reference" "IC1"
+			(at 91.44 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "W25X20CLZP"
-			(at 107.95 49.5299 0)
+		(property "Value" "MT29F4G01ABAFDWB-IT_F"
+			(at 91.44 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm"
-			(at 98.425 48.26 0)
+		(property "Footprint" "Project:SON127P800X600X65-8N"
+			(at 106.68 167.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 267.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "NAND Flash SLC 4G 4GX1 UPDFN IT M70A"
+			(at 72.39 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -785,52 +863,84 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.winbond.com/resource-files/w25x20cl_revf%2020150806.pdf"
-			(at 98.425 48.26 0)
+		(property "Height" "0.65"
+			(at 106.68 467.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "2Mbit Serial Flash memory, dual I/O SPI, WSON-8"
-			(at 98.425 48.26 0)
+		(property "Mouser Part Number" "340-359563"
+			(at 106.68 567.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "9a3a9484-e086-45a9-8f27-74b938195300")
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micron/MT29F4G01ABAFDWB-ITF?qs=wUXugUrL1qwrjb7To7JPbA%3D%3D"
+			(at 106.68 667.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "0620873b-9b2e-448e-b0e5-972c6d17c8c1")
+		(property "Manufacturer_Name" "Micron"
+			(at 106.68 767.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "c8590c85-d5ae-4442-a93e-96bad46a19d5")
-		)
-		(pin "6"
-			(uuid "4e0deaea-7f4b-485c-a451-3c3b16aca201")
-		)
-		(pin "8"
-			(uuid "49ae3694-84f0-4df1-b23b-db730ea8931f")
-		)
-		(pin "5"
-			(uuid "2de45c46-59d7-43ee-b28d-356674f331ea")
-		)
-		(pin "1"
-			(uuid "cdd341ac-4912-44dd-8eb8-506623a90aed")
+		(property "Manufacturer_Part_Number" "MT29F4G01ABAFDWB-IT:F"
+			(at 106.68 867.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
 		(pin "7"
-			(uuid "ff25d920-7580-40fa-9fa5-432dc89c0f0e")
+			(uuid "84d75867-b3f2-4ced-9b72-d45c27867301")
+		)
+		(pin "6"
+			(uuid "eb7084b5-0e97-429c-9a08-c254bfa36a73")
+		)
+		(pin "5"
+			(uuid "c242b08a-dc66-4a33-b8fa-2b52a98308ab")
+		)
+		(pin "4"
+			(uuid "57aac0b0-f484-4fb6-93b3-8ecc601072a2")
+		)
+		(pin "2"
+			(uuid "d9f47d87-ca31-4afb-a291-724a68f4e42e")
+		)
+		(pin "8"
+			(uuid "22cf9bab-b402-450a-9b51-d8eba59d9116")
+		)
+		(pin "3"
+			(uuid "849a0bbb-9c4e-47aa-b7f1-f8df46008054")
+		)
+		(pin "1"
+			(uuid "a7661264-94e7-4429-93bc-4890b46c0b54")
 		)
 		(instances
 			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "U22")
+					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -838,7 +948,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 56.515 46.99 0)
+		(at 53.975 71.755 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -846,7 +956,7 @@
 		(dnp no)
 		(uuid "d84df0f0-d6c7-4a80-b152-31cb295ebb8d")
 		(property "Reference" "R34"
-			(at 59.055 45.72 0)
+			(at 56.515 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +965,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 58.293 48.133 0)
+			(at 55.753 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -864,7 +974,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 54.737 46.99 90)
+			(at 52.197 71.755 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -873,7 +983,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 56.515 46.99 0)
+			(at 53.975 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -882,7 +992,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 56.515 46.99 0)
+			(at 53.975 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -891,7 +1001,7 @@
 			)
 		)
 		(property "Mfr. #" "RMCF0603FT100K"
-			(at 56.515 46.99 0)
+			(at 53.975 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -900,7 +1010,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
-			(at 56.515 46.99 0)
+			(at 53.975 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -925,7 +1035,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 66.675 46.99 0)
+		(at 123.825 71.755 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -933,7 +1044,7 @@
 		(dnp no)
 		(uuid "d89a75e2-4b0e-4f7d-9fcc-24a1ed0e1909")
 		(property "Reference" "R35"
-			(at 69.215 45.72 0)
+			(at 121.285 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -942,7 +1053,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 68.453 48.133 0)
+			(at 122.047 72.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -951,7 +1062,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 64.897 46.99 90)
+			(at 125.603 71.755 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -960,7 +1071,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.675 46.99 0)
+			(at 123.825 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -969,7 +1080,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.675 46.99 0)
+			(at 123.825 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -978,7 +1089,7 @@
 			)
 		)
 		(property "Mfr. #" "RMCF0603FT100K"
-			(at 66.675 46.99 0)
+			(at 123.825 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -987,7 +1098,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
-			(at 66.675 46.99 0)
+			(at 123.825 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)

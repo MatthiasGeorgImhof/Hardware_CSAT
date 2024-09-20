@@ -141,24 +141,23 @@
 				)
 			)
 		)
-		(symbol "Device:FerriteBead"
+		(symbol "Device:NetTie_2"
 			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
-			(in_bom yes)
+			(in_bom no)
 			(on_board yes)
-			(property "Reference" "FB"
-				(at -3.81 0.635 90)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "FerriteBead"
-				(at 3.81 0 90)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -166,7 +165,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -183,7 +182,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Ferrite bead"
+			(property "Description" "Net tie, 2 pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -192,7 +191,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
+			(property "ki_keywords" "net tie short"
 				(at 0 0 0)
 				(effects
 					(font
@@ -201,7 +200,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+			(property "ki_fp_filters" "Net*Tie*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -210,37 +209,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "FerriteBead_0_1"
+			(symbol "NetTie_2_0_1"
 				(polyline
 					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
+						(xy -1.27 0) (xy 1.27 0)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -248,11 +223,11 @@
 					)
 				)
 			)
-			(symbol "FerriteBead_1_1"
+			(symbol "NetTie_2_1_1"
 				(pin passive line
-					(at 0 3.81 270)
+					(at -2.54 0 0)
 					(length 2.54)
-					(name "~"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -268,9 +243,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
+					(at 2.54 0 180)
 					(length 2.54)
-					(name "~"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -399,6 +374,251 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:SolderJumper_3_Open"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_3_Open"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 3-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Solder Jumper SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_3_Open_0_1"
+				(arc
+					(start -1.016 1.016)
+					(mid -2.0276 0)
+					(end -1.016 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.016 1.016)
+					(mid -2.0276 0)
+					(end -1.016 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 1.016)
+					(end 0.508 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.016) (xy -1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 -1.016)
+					(mid 2.0276 0)
+					(end 1.016 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.016 -1.016)
+					(mid 2.0276 0)
+					(end 1.016 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "SolderJumper_3_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1008,6 +1228,56 @@
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 89.535 33.655) (xy 89.535 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1359cf06-5f5b-46a9-8c6e-66ebbf30c325")
+	)
+	(wire
+		(pts
+			(xy 89.535 43.18) (xy 123.825 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25d9ac3b-9bf7-42ae-a625-35fe0a6991b9")
+	)
+	(wire
+		(pts
+			(xy 113.03 34.29) (xy 113.03 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc6a2fb-dede-4106-ae4d-fae9cd63a595")
+	)
+	(wire
+		(pts
+			(xy 22.86 52.705) (xy 22.86 55.245)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dcfac90-a859-4865-9e4c-d69b0882ea2d")
+	)
+	(wire
+		(pts
+			(xy 113.03 40.64) (xy 123.825 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea147b12-2c40-41e4-b3e7-c55912fcef0f")
+	)
 	(label "A_GND"
 		(at 22.86 55.245 0)
 		(fields_autoplaced yes)
@@ -1066,18 +1336,6 @@
 		)
 		(uuid "0f401ffa-298d-4c63-b000-56fda1081a2e")
 	)
-	(hierarchical_label "DCMI_01"
-		(shape input)
-		(at 123.825 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "155e4196-d968-48ea-b6d0-2ffa4bb87509")
-	)
 	(hierarchical_label "DCMI_05"
 		(shape input)
 		(at 123.825 50.8 180)
@@ -1113,6 +1371,18 @@
 			(justify left)
 		)
 		(uuid "1b47d7d1-6a87-4548-a82f-8b40c3bba2ec")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 84.455 29.845 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b6c1c29-5d65-41a9-b3a0-ad5a7744c60b")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1162,18 +1432,6 @@
 		)
 		(uuid "2197ef91-e263-4ea3-a20d-467c0088e411")
 	)
-	(hierarchical_label "DCMI_00"
-		(shape input)
-		(at 123.825 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "372fca86-30f9-430d-9cd6-80dac97d0e6b")
-	)
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 123.825 73.66 180)
@@ -1222,7 +1480,7 @@
 		)
 		(uuid "5615c8d4-2872-4d11-a04c-446141988e65")
 	)
-	(hierarchical_label "1V8"
+	(hierarchical_label "1V5"
 		(shape input)
 		(at 71.755 47.625 180)
 		(fields_autoplaced yes)
@@ -1318,6 +1576,18 @@
 		)
 		(uuid "814e782d-2c5a-41f3-a3f1-9ef08b814713")
 	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 107.95 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86877354-47aa-4c5c-9db4-c4a0ee264365")
+	)
 	(hierarchical_label "DCMI_VSYNC"
 		(shape input)
 		(at 123.825 83.82 180)
@@ -1330,7 +1600,19 @@
 		)
 		(uuid "87204cb9-dd1c-4c01-80f4-af9c1d61b8ce")
 	)
-	(hierarchical_label "1V8"
+	(hierarchical_label "GND"
+		(shape input)
+		(at 94.615 29.845 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ac970a3-c56a-4eaf-a32b-b5610f003075")
+	)
+	(hierarchical_label "1V5"
 		(shape input)
 		(at 123.825 76.2 180)
 		(fields_autoplaced yes)
@@ -1377,6 +1659,18 @@
 			(justify left)
 		)
 		(uuid "a19f45b9-c2e2-4192-b709-e42eebafabff")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 118.11 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aff5a354-d6f1-484a-bc90-a3e251f1cbd3")
 	)
 	(hierarchical_label "PWRDN"
 		(shape input)
@@ -1942,35 +2236,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 22.86 51.435 0)
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 89.535 29.845 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab21feda-eae2-491d-bee1-c6af9e04d473")
-		(property "Reference" "FB2"
-			(at 27.305 50.1141 0)
+		(uuid "ade6e9fc-6236-4671-9e4b-1c70788b7a37")
+		(property "Reference" "JP4"
+			(at 89.535 23.495 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "FerriteBead"
-			(at 27.305 52.6541 0)
+		(property "Value" "SolderJumper_3_Open"
+			(at 89.535 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
-			(at 21.082 51.435 90)
+		(property "Footprint" "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm"
+			(at 89.535 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1979,7 +2271,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 51.435 0)
+			(at 89.535 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1987,8 +2279,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead"
-			(at 22.86 51.435 0)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 89.535 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,23 +2289,104 @@
 			)
 		)
 		(pin "1"
-			(uuid "e2e09c27-cb12-435c-a71e-81246b869876")
+			(uuid "3663e9a8-9a32-4e43-b960-0d51c39e65b8")
+		)
+		(pin "3"
+			(uuid "6fb28cce-9060-45b4-bf4a-7f8b80c2d9b8")
 		)
 		(pin "2"
-			(uuid "fa4a995c-68db-416c-a127-a165140cfa9b")
+			(uuid "5a4f305d-acaa-4345-b977-38d8cc581786")
 		)
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/21d0e59e-a5df-4633-9634-c7d789255f22"
-					(reference "FB2")
+					(reference "JP4")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3e22df28-91f0-4c0f-b958-7bfd7fe99c70"
-					(reference "FB3")
+					(reference "JP5")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/87e2c931-24b0-464d-a54c-5e253d37e662"
-					(reference "FB4")
+					(reference "JP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 22.86 50.165 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfa8c34c-c753-4cd3-935b-e6dc3808e565")
+		(property "Reference" "NT2"
+			(at 24.13 48.8949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 24.13 51.4349 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Project:NetTie-2_SMD_Pad0.3mm"
+			(at 22.86 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 22.86 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "204a8bc1-f58e-4bde-a88d-8aeae173700a")
+		)
+		(pin "2"
+			(uuid "d18a39e1-48fd-4daf-8625-32ed5fb8b15d")
+		)
+		(instances
+			(project ""
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/21d0e59e-a5df-4633-9634-c7d789255f22"
+					(reference "NT2")
+					(unit 1)
+				)
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3e22df28-91f0-4c0f-b958-7bfd7fe99c70"
+					(reference "NT3")
+					(unit 1)
+				)
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/87e2c931-24b0-464d-a54c-5e253d37e662"
+					(reference "NT4")
 					(unit 1)
 				)
 			)
@@ -2170,6 +2543,85 @@
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/87e2c931-24b0-464d-a54c-5e253d37e662"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 113.03 30.48 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9bde3ad-31f7-4347-b391-957ccc651bfe")
+		(property "Reference" "JP2"
+			(at 113.03 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_3_Open"
+			(at 113.03 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm"
+			(at 113.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 3-pole, open"
+			(at 113.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8fdbb94-de01-4028-a87b-eb5c113a2f68")
+		)
+		(pin "3"
+			(uuid "38b1d698-1f31-424c-ba03-de6e9ae7719e")
+		)
+		(pin "2"
+			(uuid "6a299a1b-ce62-4e3c-bc5c-6638bdf97531")
+		)
+		(instances
+			(project ""
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/21d0e59e-a5df-4633-9634-c7d789255f22"
+					(reference "JP1")
+					(unit 1)
+				)
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3e22df28-91f0-4c0f-b958-7bfd7fe99c70"
+					(reference "JP2")
+					(unit 1)
+				)
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/87e2c931-24b0-464d-a54c-5e253d37e662"
+					(reference "JP3")
 					(unit 1)
 				)
 			)

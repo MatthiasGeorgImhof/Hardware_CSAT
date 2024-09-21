@@ -145,43 +145,45 @@
 				)
 			)
 		)
-		(symbol "Project:TG-3541CE-1K"
+		(symbol "Project:TG2520SMN_EPS"
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "X2"
-				(at 0 10.541 0)
+			(property "Reference" "X"
+				(at 12.192 8.382 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "TG-3541CE"
-				(at 0 8.2296 0)
+			(property "Value" "TG2520SMN EPS"
+				(at 12.192 5.842 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "footprint_custom:Oscillator_SMD_SeikoEpson_TG3541CE-10Pin_3.2x2.5mm_HandSoldering"
-				(at -1.27 -11.43 0)
+			(property "Footprint" "TG2520_EPS"
+				(at 7.112 14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_TG-3541CE&lang=en"
-				(at 2.54 0 0)
+			(property "Datasheet" "TG2520SMN EPS"
+				(at 8.382 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
@@ -195,8 +197,8 @@
 					(hide yes)
 				)
 			)
-			(property "Mfr. #" "TG-3541CE 32.7680KXA3"
-				(at -1.27 -17.78 0)
+			(property "ki_keywords" "TG2520SMN 32.0000M-ECGNNM3"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -204,8 +206,8 @@
 					(hide yes)
 				)
 			)
-			(property "Order" "https://www.digikey.com/product-detail/en/epson/TG-3541CE-32-7680KXA3/SER4421CT-ND/10239844"
-				(at -1.27 -13.97 0)
+			(property "ki_fp_filters" "TG2520_EPS"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -213,47 +215,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "TG-3541CE-1K_0_0"
-				(text "TXCO"
-					(at -3.81 -8.89 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "TG-3541CE-1K_0_1"
+			(symbol "TG2520SMN_EPS_1_1"
 				(rectangle
-					(start -7.62 6.35)
-					(end 7.62 -10.16)
+					(start 7.62 3.81)
+					(end 16.51 -5.08)
 					(stroke
 						(width 0)
-						(type solid)
+						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -6.35 -7.62) (xy -5.08 -7.62) (xy -5.08 -5.08) (xy -3.81 -5.08) (xy -3.81 -7.62) (xy -2.54 -7.62)
-						(xy -2.54 -5.08) (xy -1.27 -5.08) (xy -1.27 -7.62) (xy 0 -7.62) (xy 0 -5.08) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TG-3541CE-1K_1_1"
-				(pin input line
-					(at -10.16 3.81 0)
-					(length 2.54)
-					(name "OE"
+				(pin no_connect line
+					(at 24.13 -2.54 180)
+					(length 7.62)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -268,28 +245,10 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 10.16 -8.89 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 1.27 0)
-					(length 2.54)
-					(name "Vcc"
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -304,10 +263,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -1.27 0)
-					(length 2.54)
-					(name "Vcc"
+				(pin output line
+					(at 24.13 1.27 180)
+					(length 7.62)
+					(name "OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -322,10 +281,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -3.81 0)
-					(length 2.54)
-					(name "OUT"
+				(pin power_in line
+					(at 0 1.27 0)
+					(length 7.62)
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -340,279 +299,84 @@
 						)
 					)
 				)
-				(pin input line
-					(at 10.16 3.81 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 10.16 -6.35 180)
-					(length 2.54) hide
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 1.27 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -1.27 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -3.81 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 		)
 	)
 	(junction
-		(at 129.54 91.44)
+		(at 129.54 127.635)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "29d976ea-e073-4fcb-b78d-2ef214fe7e0c")
+		(uuid "cf6bd463-8796-4145-81c3-e9f12df801af")
 	)
 	(junction
-		(at 161.29 93.98)
+		(at 129.54 120.015)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2a6c19bb-a9d9-4d55-b8e1-b09cac251615")
-	)
-	(junction
-		(at 161.29 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42077321-c686-4b89-bdb1-d61551f755a2")
-	)
-	(junction
-		(at 140.97 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6656fa8e-3cf0-4a4d-987b-202d8e35c70a")
-	)
-	(junction
-		(at 161.29 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8035847-b3e6-4109-aab8-4de9efaeb16d")
-	)
-	(junction
-		(at 129.54 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb3cfd9c-106f-48e2-8e10-1e6e9ee88858")
+		(uuid "d75a8fd7-d4bf-4001-936e-ed2c857afec8")
 	)
 	(wire
 		(pts
-			(xy 140.97 93.98) (xy 140.97 91.44)
+			(xy 129.54 127.635) (xy 127.635 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "576fb0c1-bcb7-4813-adb4-49e5961f8649")
+		(uuid "33c73993-37ed-4013-9c76-480bbf871ff8")
 	)
 	(wire
 		(pts
-			(xy 129.54 110.49) (xy 161.29 110.49)
+			(xy 137.16 125.73) (xy 137.16 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75185832-bd2f-4dff-841a-563601735758")
+		(uuid "3ddcb0e9-aa9e-47c1-84ca-14766e7ece7c")
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 129.54 91.44)
+			(xy 137.16 127.635) (xy 129.54 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84ccd305-a358-4d1c-b540-e52669fbc041")
+		(uuid "67230b87-bfca-4840-8ef8-927bfc3076a1")
 	)
 	(wire
 		(pts
-			(xy 123.825 110.49) (xy 129.54 110.49)
+			(xy 137.16 120.015) (xy 137.16 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c738b24-cffe-464d-b311-47f694ee0ff2")
+		(uuid "80eb1ef2-a823-4c03-a7de-81dba1fb1181")
 	)
 	(wire
 		(pts
-			(xy 140.97 91.44) (xy 129.54 91.44)
+			(xy 127.635 120.015) (xy 129.54 120.015)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96e212fd-b0d1-4b54-9bc0-18867d797912")
+		(uuid "8a72c0e0-356a-4cca-ba2e-ad83366ccd3f")
 	)
 	(wire
 		(pts
-			(xy 161.29 91.44) (xy 161.29 93.98)
+			(xy 129.54 120.015) (xy 137.16 120.015)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "996725f4-1c13-4c1f-a258-c32d45fa4283")
-	)
-	(wire
-		(pts
-			(xy 161.29 93.98) (xy 161.29 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0dab29d-6295-447f-bda4-4a8beeff0de2")
-	)
-	(wire
-		(pts
-			(xy 129.54 106.68) (xy 129.54 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8788d5e-2a3f-49b8-b374-49aff334efe8")
-	)
-	(wire
-		(pts
-			(xy 123.825 91.44) (xy 129.54 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac3d7e26-b785-4c42-8c44-2579f60cf4e5")
-	)
-	(wire
-		(pts
-			(xy 161.29 88.9) (xy 161.29 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0c1e679-2645-4a8c-b4cb-1aa516017765")
-	)
-	(wire
-		(pts
-			(xy 123.825 96.52) (xy 140.97 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec17bb1f-b417-4d35-b9ed-9aa424a0d525")
-	)
-	(wire
-		(pts
-			(xy 140.97 88.9) (xy 140.97 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0debc34-781a-484d-b0e0-cee39e15b0e2")
-	)
-	(wire
-		(pts
-			(xy 161.29 96.52) (xy 161.29 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc0a27f4-ce4a-4ba9-a917-1ae3095ed2ef")
-	)
-	(text "By default, OE is tied high so the chip is enabled immediatly"
-		(exclude_from_sim no)
-		(at 95.25 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40fa5310-6acc-4790-b8a3-83072f959e83")
+		(uuid "ecc226cc-1355-4ef8-9f81-d4b0c4985fea")
 	)
 	(hierarchical_label "PWR"
 		(shape input)
-		(at 123.825 91.44 180)
+		(at 127.635 120.015 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -620,11 +384,11 @@
 			)
 			(justify right)
 		)
-		(uuid "3c5d7622-e0f0-49e8-a45d-645d4c52cdd5")
+		(uuid "c1504ed5-78fa-40b9-9797-4568994d15a5")
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 123.825 110.49 180)
+		(at 127.635 127.635 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -632,23 +396,23 @@
 			)
 			(justify right)
 		)
-		(uuid "e89fbe16-398f-4269-9aeb-829a96d4b0b9")
+		(uuid "ff9aa1c9-6540-4813-bece-6cf351a2328d")
 	)
 	(hierarchical_label "OUT"
 		(shape input)
-		(at 123.825 96.52 180)
+		(at 161.29 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "f8ed525c-29e8-4482-9fd6-655d8732cdc4")
+		(uuid "ffcecf80-0348-4acd-91cb-5e56254524f7")
 	)
 	(symbol
-		(lib_id "Project:TG-3541CE-1K")
-		(at 151.13 92.71 0)
+		(lib_id "Project:TG2520SMN_EPS")
+		(at 137.16 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -656,32 +420,33 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fedc1f7")
 		(property "Reference" "X1"
-			(at 151.13 82.169 0)
+			(at 157.48 113.665 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TG2520SMN 32.0000M-MCGNNM0"
-			(at 151.13 84.4804 0)
+		(property "Value" "TG2520SMN 32.0000M-ECGNNM0"
+			(at 157.48 116.205 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Project:TG-3541CE_EPS"
-			(at 149.86 104.14 0)
+		(property "Footprint" "Project:TG2520_EPS"
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://support.epson.biz/td/api/doc_check.php?dl=brief_TG-3541CE&lang=en"
-			(at 153.67 92.71 0)
+		(property "Datasheet" "TG2520SMN EPS"
+			(at 139.7 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -690,7 +455,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.13 92.71 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -699,7 +464,7 @@
 			)
 		)
 		(property "Mfr. #" "TG-3541CE 32.7680KXA3"
-			(at 149.86 110.49 0)
+			(at 135.89 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -708,7 +473,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/epson/TG-3541CE-32-7680KXA3/SER4421CT-ND/10239844"
-			(at 149.86 106.68 0)
+			(at 135.89 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -716,35 +481,17 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "2"
 			(uuid "f6273751-4aa2-4ae7-b981-cf8635121fec")
 		)
-		(pin "10"
+		(pin "3"
 			(uuid "85b45799-099e-49cb-a60f-747c377cd820")
 		)
-		(pin "2"
+		(pin "4"
 			(uuid "9fc9e921-6ffb-4e3d-a0f2-fbf9e8a23612")
 		)
-		(pin "3"
+		(pin "1"
 			(uuid "2d9d2a69-5fd6-45d6-8019-70b792fdcf6f")
-		)
-		(pin "4"
-			(uuid "166e7f3c-4dba-498f-903e-a83afbf3a024")
-		)
-		(pin "5"
-			(uuid "e863932d-f6df-4ff3-bd53-817275e36ad5")
-		)
-		(pin "6"
-			(uuid "a11cf69c-1e6d-4d71-a643-0ad781d239ae")
-		)
-		(pin "7"
-			(uuid "89445792-ef38-4b02-99a9-16bf27504a8e")
-		)
-		(pin "8"
-			(uuid "94b9289a-e71f-4547-9332-8da4196a5c5a")
-		)
-		(pin "9"
-			(uuid "b9f67da9-556e-4347-abcb-65c7eab57927")
 		)
 		(instances
 			(project ""
@@ -769,7 +516,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 129.54 102.87 0)
+		(at 129.54 123.825 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -777,7 +524,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005fede147")
 		(property "Reference" "C26"
-			(at 132.461 101.7016 0)
+			(at 132.461 122.6566 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -786,7 +533,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 132.461 104.013 0)
+			(at 132.461 124.968 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -795,7 +542,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 130.5052 106.68 0)
+			(at 130.5052 127.635 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -804,7 +551,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 102.87 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -813,7 +560,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 102.87 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -822,7 +569,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 129.54 102.87 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +578,7 @@
 			)
 		)
 		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 129.54 102.87 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,7 +587,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 129.54 102.87 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -863,7 +610,7 @@
 			)
 			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9565b29f-739e-499d-a066-98bd4c80d38b"
-					(reference "C53")
+					(reference "C59")
 					(unit 1)
 				)
 			)

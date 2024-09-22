@@ -389,99 +389,6 @@
 				)
 			)
 		)
-		(symbol "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1K_Custom_Symbol_TP_smt_1x1"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TP_smt_1x1-1K_Custom_Symbol_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TP_smt_1x1-1K_Custom_Symbol_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -861,12 +768,6 @@
 		(uuid "53c123f1-2572-4873-bc5a-c794143037a4")
 	)
 	(junction
-		(at 148.59 56.515)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "98a112d6-1272-4df8-ae03-6fd718f0e04e")
-	)
-	(junction
 		(at 139.7 56.515)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -924,16 +825,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 36.83) (xy 40.64 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e2cde6c-1586-4ce7-b1fc-ea02e9ead764")
-	)
-	(wire
-		(pts
 			(xy 93.98 92.71) (xy 108.585 92.71)
 		)
 		(stroke
@@ -961,16 +852,6 @@
 			(type default)
 		)
 		(uuid "390fc369-1641-4a10-ace3-baab54cd9282")
-	)
-	(wire
-		(pts
-			(xy 40.64 39.37) (xy 52.07 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39711794-dd9c-4bdd-b7b9-4398ac4e1194")
 	)
 	(wire
 		(pts
@@ -1014,16 +895,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 69.85) (xy 132.08 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6afc8a72-63d9-4b77-8517-cab66eeceaac")
-	)
-	(wire
-		(pts
 			(xy 153.035 91.44) (xy 152.4 91.44)
 		)
 		(stroke
@@ -1064,7 +935,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 56.515) (xy 115.57 56.515)
+			(xy 113.03 56.515) (xy 139.7 56.515)
 		)
 		(stroke
 			(width 0)
@@ -1104,16 +975,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 56.515) (xy 139.7 56.515)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0687490-2a35-4abc-b995-af55c383faca")
-	)
-	(wire
-		(pts
 			(xy 93.98 87.63) (xy 118.11 87.63)
 		)
 		(stroke
@@ -1131,16 +992,6 @@
 			(type default)
 		)
 		(uuid "a988ab8f-184e-4dbf-9cd7-4b892e5479c1")
-	)
-	(wire
-		(pts
-			(xy 68.58 41.91) (xy 40.64 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aafdcd90-4d45-4351-9429-eba32676c328")
 	)
 	(wire
 		(pts
@@ -1164,7 +1015,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 69.85) (xy 115.57 69.85)
+			(xy 113.03 69.85) (xy 132.08 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1184,7 +1035,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 56.515) (xy 139.7 56.515)
+			(xy 139.7 56.515) (xy 153.67 56.515)
 		)
 		(stroke
 			(width 0)
@@ -1204,26 +1055,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 34.29) (xy 52.07 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e733701b-596b-4b0c-b5f5-f6dfa26caaea")
-	)
-	(wire
-		(pts
-			(xy 148.59 56.515) (xy 153.67 56.515)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f13285e6-a5a9-4b23-b719-3ef8b117f91d")
-	)
-	(wire
-		(pts
 			(xy 116.205 92.71) (xy 118.11 92.71)
 		)
 		(stroke
@@ -1231,16 +1062,6 @@
 			(type default)
 		)
 		(uuid "fe0f0d19-6d86-4263-bd40-709773f62870")
-	)
-	(wire
-		(pts
-			(xy 40.64 44.45) (xy 52.07 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe481f85-40ca-430e-bf8a-4905522bc21d")
 	)
 	(text "Low ESR cap, close proximity to the chip"
 		(exclude_from_sim no)
@@ -1288,30 +1109,6 @@
 		)
 		(uuid "41f7d09e-b15f-4471-92be-5bb1ba6a0afc")
 	)
-	(hierarchical_label "CS"
-		(shape input)
-		(at 40.64 36.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4fcf6ee6-617b-48fe-8f13-9ff4af1e3f97")
-	)
-	(hierarchical_label "INT"
-		(shape output)
-		(at 40.64 41.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "65fbb6da-e05c-4704-9b17-b0bfd1345f35")
-	)
 	(hierarchical_label "INT"
 		(shape output)
 		(at 93.98 97.79 180)
@@ -1347,30 +1144,6 @@
 			(justify right)
 		)
 		(uuid "826bdd82-2ed3-4b72-9df4-951ddb4028c7")
-	)
-	(hierarchical_label "MISO"
-		(shape output)
-		(at 40.64 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "961487a9-7ea6-4d20-8270-20e2eb7069c0")
-	)
-	(hierarchical_label "CLK"
-		(shape input)
-		(at 40.64 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9a28adef-3ef8-4b01-8fc7-c3b2732cfceb")
 	)
 	(hierarchical_label "MISO"
 		(shape output)
@@ -1431,18 +1204,6 @@
 			(justify right)
 		)
 		(uuid "c71e2f44-1171-45b8-9d76-447ec6adf5a2")
-	)
-	(hierarchical_label "MOSI_SDA"
-		(shape input)
-		(at 40.64 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d9dde723-11b9-4500-85fc-f4b58d2a86b8")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1639,506 +1400,6 @@
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
 					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 119.38 69.85 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005eb3a638")
-		(property "Reference" "R21"
-			(at 119.38 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 119.38 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 119.38 68.072 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RK73Z1JTTD"
-			(at 119.38 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522"
-			(at 119.38 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "06c584d2-0634-4eff-9c8a-05342184db29")
-		)
-		(pin "2"
-			(uuid "771ea534-29f2-444e-891e-e731c84220a7")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol")
-		(at 52.07 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecc3ae8")
-		(property "Reference" "TP9"
-			(at 56.8452 33.1216 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_smt_1x1"
-			(at 56.8452 35.433 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 52.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f99deda4-99d4-429b-89fc-cd9c649f9363")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "TP9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol")
-		(at 68.58 36.83 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecc4e59")
-		(property "Reference" "TP10"
-			(at 73.3552 35.6616 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_smt_1x1"
-			(at 73.3552 37.973 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c9640ea-2f1a-4474-a501-e7c4ea914973")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol")
-		(at 52.07 39.37 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecc51a4")
-		(property "Reference" "TP11"
-			(at 56.8452 38.2016 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_smt_1x1"
-			(at 56.8452 40.513 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 52.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91cc79a6-e01a-4a9b-91e2-33cc2ee45394")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol")
-		(at 68.58 41.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecc5438")
-		(property "Reference" "TP12"
-			(at 73.3552 40.7416 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_smt_1x1"
-			(at 73.3552 43.053 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 68.58 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7284d56-396e-469d-988d-6a902688827b")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "TP12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:TP_smt_1x1-1K_Custom_Symbol")
-		(at 52.07 44.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecc56a7")
-		(property "Reference" "TP13"
-			(at 56.8452 43.2816 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_smt_1x1"
-			(at 56.8452 45.593 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 52.07 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 52.07 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 52.07 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "096e96d7-02f0-4ded-bb57-a060cef9f557")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "TP13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 119.38 56.515 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ecda071")
-		(property "Reference" "R20"
-			(at 119.38 51.2572 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 119.38 53.5686 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 119.38 54.737 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RK73Z1JTTD"
-			(at 119.38 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522"
-			(at 119.38 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "86865c66-5bf8-4673-b35a-1ce6bfec0a10")
-		)
-		(pin "2"
-			(uuid "a94760c1-dd08-4afd-8d24-14934ab66cc0")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -2458,71 +1719,6 @@
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 148.59 56.515 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a961c11-244a-4341-ad1e-f0a58344d64b")
-		(property "Reference" "#FLG07"
-			(at 148.59 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 148.59 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 148.59 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 148.59 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e58d44c-19e4-46cc-b3ec-c0bdaa1ea8a4")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "#FLG07")
 					(unit 1)
 				)
 			)

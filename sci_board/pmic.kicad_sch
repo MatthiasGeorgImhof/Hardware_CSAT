@@ -3304,12 +3304,8 @@
 		(uuid "235f5d59-2416-4d6a-ac29-39bdc4595314")
 	)
 	(no_connect
-		(at 158.75 138.43)
-		(uuid "2f0f01f0-4421-4ebf-b813-45d7ac1b5742")
-	)
-	(no_connect
-		(at 158.75 135.89)
-		(uuid "3e23501f-478d-4352-ad37-a846205650c5")
+		(at 158.75 176.53)
+		(uuid "29e9043f-a6cb-4f3e-b88b-65f4027c57bc")
 	)
 	(no_connect
 		(at 158.75 95.25)
@@ -4398,17 +4394,6 @@
 		)
 		(uuid "452578af-f5b5-4373-bcca-4cb68173e34d")
 	)
-	(label "LED"
-		(at 158.75 176.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4d72c657-ada4-4d05-8b6f-b81cb5a25270")
-	)
 	(label "EXTI_10"
 		(at 96.52 105.41 0)
 		(fields_autoplaced yes)
@@ -4803,7 +4788,7 @@
 		(uuid "12676f7b-4bd5-42e7-badc-4fb514bfe5be")
 	)
 	(hierarchical_label "SPI1_MRAM"
-		(shape input)
+		(shape output)
 		(at 113.03 110.49 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4886,6 +4871,18 @@
 		)
 		(uuid "1dc2249c-49f2-4d54-af11-97fddd463d05")
 	)
+	(hierarchical_label "EN_1V5"
+		(shape input)
+		(at 158.75 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "208d278b-510e-4186-b46c-e28f85a47960")
+	)
 	(hierarchical_label "CAN_RS"
 		(shape output)
 		(at 158.75 130.81 0)
@@ -4911,7 +4908,7 @@
 		(uuid "27b2dd47-fc4e-4622-9810-e1f5822e9451")
 	)
 	(hierarchical_label "SPI1_MOSI"
-		(shape input)
+		(shape output)
 		(at 158.75 74.93 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5007,7 +5004,7 @@
 		(uuid "40807d0a-554f-4f0f-9554-be02c0b1aa84")
 	)
 	(hierarchical_label "SPI1_SCK"
-		(shape input)
+		(shape output)
 		(at 158.75 69.85 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5103,7 +5100,7 @@
 		(uuid "5879c61f-73ba-4088-9325-cf53d5144f12")
 	)
 	(hierarchical_label "SPI1_FLASH1"
-		(shape input)
+		(shape output)
 		(at 113.03 118.11 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5115,7 +5112,7 @@
 		(uuid "5eac7662-a12c-48ee-ba15-94d73a684604")
 	)
 	(hierarchical_label "SPI2_MOSI"
-		(shape input)
+		(shape output)
 		(at 158.75 148.59 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5295,7 +5292,7 @@
 		(uuid "953703cf-a057-48f1-9b49-0be8b07ddebc")
 	)
 	(hierarchical_label "SPI2_SCK"
-		(shape input)
+		(shape output)
 		(at 158.75 125.73 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5341,6 +5338,18 @@
 			(justify right)
 		)
 		(uuid "a50342d3-13a2-4635-a713-c1e14ea4b214")
+	)
+	(hierarchical_label "EN_V2V8"
+		(shape input)
+		(at 158.75 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5af15bb-cc36-47d6-bc73-fe8eb22ef403")
 	)
 	(hierarchical_label "EXTI9"
 		(shape input)
@@ -5403,7 +5412,7 @@
 		(uuid "bcb5ebc1-48b3-4e78-875d-6e309a8f0917")
 	)
 	(hierarchical_label "SPI1_FLASH2"
-		(shape input)
+		(shape output)
 		(at 113.03 113.03 180)
 		(fields_autoplaced yes)
 		(effects

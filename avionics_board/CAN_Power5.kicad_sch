@@ -5,143 +5,7 @@
 	(uuid "d416eb10-b4f2-4753-8f70-ba72605e8985")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Project:AP3602AKTR-G1"
+		(symbol "Common:AP3602AKTR-G1"
 			(pin_names
 				(offset 0.254)
 			)
@@ -334,6 +198,142 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -539,7 +539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ae78281-2fb0-4ff0-874d-d74c7dda5c6d")
-		(property "Reference" "C28"
+		(property "Reference" "C53"
 			(at 165.1 104.14 90)
 			(effects
 				(font
@@ -590,6 +590,12 @@
 		)
 		(instances
 			(project ""
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/9886b2ec-bcf1-45d3-b809-b13147854a63"
+					(reference "C53")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/6cda4f26-4bfa-410a-8807-c465392c7a5e"
 					(reference "C28")
 					(unit 1)
@@ -612,7 +618,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e0ccaf1-9bca-4184-8880-3bd778cb3edf")
-		(property "Reference" "C26"
+		(property "Reference" "C51"
 			(at 121.92 97.79 0)
 			(effects
 				(font
@@ -665,6 +671,12 @@
 		)
 		(instances
 			(project "sci_board"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/9886b2ec-bcf1-45d3-b809-b13147854a63"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/6cda4f26-4bfa-410a-8807-c465392c7a5e"
 					(reference "C26")
 					(unit 1)
@@ -679,7 +691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Project:AP3602AKTR-G1")
+		(lib_id "Common:AP3602AKTR-G1")
 		(at 139.065 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -688,7 +700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c374bfbe-1267-4eae-9a1e-0f7b665aaffd")
-		(property "Reference" "U4"
+		(property "Reference" "U10"
 			(at 154.94 87.63 0)
 			(effects
 				(font
@@ -704,7 +716,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6_Handsoldering"
+		(property "Footprint" "SOT-23-6_DIO"
 			(at 139.065 95.25 0)
 			(effects
 				(font
@@ -753,6 +765,12 @@
 		)
 		(instances
 			(project ""
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/9886b2ec-bcf1-45d3-b809-b13147854a63"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/6cda4f26-4bfa-410a-8807-c465392c7a5e"
 					(reference "U4")
 					(unit 1)
@@ -776,7 +794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d81c99be-dbb6-417a-aa43-2c1909e50243")
-		(property "Reference" "C27"
+		(property "Reference" "C52"
 			(at 177.8 97.7899 0)
 			(effects
 				(font
@@ -828,6 +846,12 @@
 			(uuid "0e297f34-58ac-4c42-98de-9444390806c1")
 		)
 		(instances
+			(project "sci_board"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/9886b2ec-bcf1-45d3-b809-b13147854a63"
+					(reference "C52")
+					(unit 1)
+				)
+			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/6cda4f26-4bfa-410a-8807-c465392c7a5e"
 					(reference "C27")

@@ -9,6 +9,167 @@
 		(date "2020-05-25")
 	)
 	(lib_symbols
+		(symbol "Common:ECS-TXO-2016-33-100-TR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at -15.2838 8.1513 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "ECS-TXO-2016-33-100-TR"
+				(at -15.2592 -12.716 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "ECS-TXO-2016-33-100-TR:OSC_ECS-1618-300-BN-TR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "ECS INC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "ECS-TXO-2016-33-100-TR_0_0"
+				(rectangle
+					(start -15.24 7.62)
+					(end 15.24 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "TRI-STATE"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -7.62 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "OUTPUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ECS-TXO-2016-33-100-TR_1_0"
+				(pin power_in line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -145,165 +306,6 @@
 				)
 			)
 		)
-		(symbol "Project:ECS-TXO-2016-33-100-TR"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Y"
-				(at -15.2838 8.1513 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "ECS-TXO-2016-33-100-TR"
-				(at -15.2592 -12.716 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "ECS-TXO-2016-33-100-TR:OSC_ECS-1618-300-BN-TR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "ECS INC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "ECS-TXO-2016-33-100-TR_0_0"
-				(rectangle
-					(start -15.24 -10.16)
-					(end 15.24 7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -20.32 -2.54 0)
-					(length 5.08)
-					(name "TRI-STATE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 20.32 -7.62 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 2.54 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 2.54 0)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
 		(at 182.88 107.95)
@@ -412,7 +414,7 @@
 		(uuid "ff47b58a-9e08-4a3a-a7f6-b0ea4a73fc77")
 	)
 	(symbol
-		(lib_id "Project:ECS-TXO-2016-33-100-TR")
+		(lib_id "Common:ECS-TXO-2016-33-100-TR")
 		(at 154.305 110.49 0)
 		(mirror y)
 		(unit 1)
@@ -421,7 +423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060074db6")
-		(property "Reference" "X1"
+		(property "Reference" "X2"
 			(at 153.67 99.06 0)
 			(effects
 				(font
@@ -439,17 +441,18 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Project:OSC_ECS-1618-300-BN-TR"
-			(at 159.385 133.35 0)
+		(property "Footprint" "ECS-TXO-2016-33-100-TR:OSC_ECS-1618-300-BN-TR"
+			(at 154.305 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-TXO-2016.pdf"
-			(at 158.75 107.315 0)
+			(at 154.305 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -502,34 +505,42 @@
 				(hide yes)
 			)
 		)
+		(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
+			(at 154.305 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "ECS INC"
+			(at 154.305 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
 		(pin "1"
-			(uuid "cf0555a7-e413-4372-bfd8-400b162f966d")
+			(uuid "cca601e2-63eb-4778-b0a4-77dcf4db8a01")
 		)
 		(pin "2"
-			(uuid "58dd278b-0574-4fb2-848b-385a9335975a")
+			(uuid "bee518f0-d316-4426-88de-3b72c0ac228c")
 		)
 		(pin "3"
-			(uuid "75fefe89-e1b2-4427-b970-d410054333f7")
+			(uuid "6fcc358f-4f58-4d7d-8751-4b324a17d4bf")
 		)
 		(pin "4"
-			(uuid "22a6ccf4-199e-42f9-80c1-61021b306a3d")
+			(uuid "a5e44012-db81-42fd-a2c9-bc65671c5fd9")
 		)
 		(instances
-			(project ""
-				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
-					(reference "X1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f03967bc-d0fd-41f7-bf23-ddb6554c2ae1"
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/0626f4ed-250b-407a-9d18-c746696be78b"
 					(reference "X2")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "X1")
 					(unit 1)
 				)
 			)
@@ -544,7 +555,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000600759a7")
-		(property "Reference" "C31"
+		(property "Reference" "C40"
 			(at 185.801 110.5916 0)
 			(effects
 				(font
@@ -635,39 +646,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "abe7a518-9564-482d-9660-bc047ee96790")
+			(uuid "ec51545a-dd14-45dd-b8ff-94707c0d01f7")
 		)
 		(pin "2"
-			(uuid "073c3392-9569-458a-9525-4eaf3e511b40")
+			(uuid "59b39b0b-76f0-4df7-a308-64d12f914268")
 		)
 		(instances
-			(project ""
-				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f03967bc-d0fd-41f7-bf23-ddb6554c2ae1"
-					(reference "C58")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "C?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab13ae"
-					(reference "C?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab163e"
-					(reference "C?")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "C36")
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/0626f4ed-250b-407a-9d18-c746696be78b"
+					(reference "C40")
 					(unit 1)
 				)
 			)

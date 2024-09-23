@@ -5,128 +5,7 @@
 	(uuid "bc855f5d-98f7-4ca5-ac76-77372628f79a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Project:10155435-00011LF"
+		(symbol "Common:10155435-00011LF"
 			(pin_names
 				(offset 1.016)
 			)
@@ -521,6 +400,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 171.45 96.52)
@@ -826,7 +826,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e382276-9166-466c-a07b-cc82d32ea7d0")
-		(property "Reference" "R29"
+		(property "Reference" "R34"
 			(at 160.02 101.6 90)
 			(effects
 				(font
@@ -922,6 +922,16 @@
 		)
 		(instances
 			(project "sci_board"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/60d58b33-0740-4c36-b3ae-980d12846d14"
+					(reference "R34")
+					(unit 1)
+				)
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/628ad651-1312-4f46-81d9-5410d3446e8f"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bbe2d6c4-88bb-480e-8557-ab6dc65fa807"
 					(reference "R29")
 					(unit 1)
@@ -944,7 +954,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dafb9e3f-aea9-40b0-bb24-a1d91d9ab7dc")
-		(property "Reference" "R28"
+		(property "Reference" "R33"
 			(at 114.3 86.36 90)
 			(effects
 				(font
@@ -1040,6 +1050,16 @@
 		)
 		(instances
 			(project "sci_board"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/60d58b33-0740-4c36-b3ae-980d12846d14"
+					(reference "R33")
+					(unit 1)
+				)
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/628ad651-1312-4f46-81d9-5410d3446e8f"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bbe2d6c4-88bb-480e-8557-ab6dc65fa807"
 					(reference "R28")
 					(unit 1)
@@ -1054,7 +1074,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Project:10155435-00011LF")
+		(lib_id "Common:10155435-00011LF")
 		(at 137.16 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1063,7 +1083,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ffa7d378-5aa8-4bf1-95d3-73a4991de989")
-		(property "Reference" "J6"
+		(property "Reference" "J13"
 			(at 137.16 76.2 0)
 			(effects
 				(font
@@ -1079,7 +1099,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:AMPHENOL_10155435-00011LF"
+		(property "Footprint" "10155435-00011LF:AMPHENOL_10155435-00011LF"
 			(at 137.16 93.98 0)
 			(effects
 				(font
@@ -1214,6 +1234,16 @@
 			(uuid "806e3896-1057-49bc-9443-bb92c1b85350")
 		)
 		(instances
+			(project "sci_board"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/60d58b33-0740-4c36-b3ae-980d12846d14"
+					(reference "J13")
+					(unit 1)
+				)
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/628ad651-1312-4f46-81d9-5410d3446e8f"
+					(reference "J14")
+					(unit 1)
+				)
+			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bbe2d6c4-88bb-480e-8557-ab6dc65fa807"
 					(reference "J6")

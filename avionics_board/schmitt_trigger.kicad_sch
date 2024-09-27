@@ -542,7 +542,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 85.725) (xy 161.29 79.375)
+			(xy 144.78 85.725) (xy 144.78 79.375)
 		)
 		(stroke
 			(width 0)
@@ -552,7 +552,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 93.345) (xy 161.29 99.695)
+			(xy 144.78 93.345) (xy 144.78 99.695)
 		)
 		(stroke
 			(width 0)
@@ -562,7 +562,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 79.375) (xy 169.545 79.375)
+			(xy 144.78 79.375) (xy 153.035 79.375)
 		)
 		(stroke
 			(width 0)
@@ -612,7 +612,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 99.695) (xy 169.545 99.695)
+			(xy 144.78 99.695) (xy 153.035 99.695)
 		)
 		(stroke
 			(width 0)
@@ -681,7 +681,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 169.545 99.695 0)
+		(at 153.035 99.695 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -693,7 +693,7 @@
 	)
 	(hierarchical_label "VIO"
 		(shape input)
-		(at 169.545 79.375 0)
+		(at 153.035 79.375 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -705,7 +705,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 161.29 89.535 0)
+		(at 144.78 89.535 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -713,8 +713,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "127d6c34-40a5-408b-b05a-6d4b8f1a29b2")
-		(property "Reference" "C65"
-			(at 159.385 90.805 90)
+		(property "Reference" "C117"
+			(at 142.875 90.805 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +723,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 159.385 82.55 90)
+			(at 142.875 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -732,7 +732,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 162.2552 85.725 0)
+			(at 145.7452 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -741,7 +741,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 161.29 89.535 0)
+			(at 144.78 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +750,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 89.535 0)
+			(at 144.78 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -759,7 +759,7 @@
 			)
 		)
 		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 161.29 89.535 0)
+			(at 144.78 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -768,7 +768,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 161.29 89.535 0)
+			(at 144.78 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -777,7 +777,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 162.56 86.36 90)
+			(at 146.05 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -792,6 +792,12 @@
 			(uuid "4317526d-c5a8-46e6-98c6-89d2ffbcd76a")
 		)
 		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
+					(reference "C117")
+					(unit 1)
+				)
+			)
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
 					(reference "C65")
@@ -802,16 +808,16 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC2G07")
-		(at 209.55 107.315 0)
+		(at 209.55 74.295 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "19b97874-da5e-4e9d-b1e5-3272d6e29666")
-		(property "Reference" "U12"
-			(at 208.28 95.885 0)
+		(uuid "7b1ffb3d-8e54-4935-8168-81c25a2d9472")
+		(property "Reference" "U57"
+			(at 208.28 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -819,15 +825,15 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 208.28 98.425 0)
+			(at 208.28 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 209.55 107.315 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+			(at 209.55 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -836,7 +842,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 209.55 107.315 0)
+			(at 209.55 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -845,7 +851,7 @@
 			)
 		)
 		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 209.55 107.315 0)
+			(at 209.55 74.295 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -853,111 +859,29 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "7ccea2dd-ccb7-45cf-99c0-0da21df494fa")
-		)
-		(pin "6"
-			(uuid "642458fe-7042-4bcd-b10a-9ab15db2bd9e")
-		)
 		(pin "2"
-			(uuid "919771d9-7d89-44d9-b6da-7739c2dbebd4")
-		)
-		(pin "5"
-			(uuid "23013c9f-adf0-42d7-b466-0161a2f29501")
+			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad7")
 		)
 		(pin "1"
-			(uuid "bf534736-6cf7-4ce5-9fbc-406812a3d29a")
+			(uuid "94f83699-3043-43dd-9560-35cca79fe486")
 		)
 		(pin "3"
-			(uuid "25c0e080-877c-4eab-ad62-0de880b36534")
+			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd03")
+		)
+		(pin "4"
+			(uuid "936bf375-8aca-467a-a3b1-20328cac8dff")
+		)
+		(pin "6"
+			(uuid "a632672e-1158-4ca9-8508-188746ed8ad1")
+		)
+		(pin "5"
+			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d729")
 		)
 		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
-					(reference "U12")
+			(project ""
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
+					(reference "U57")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:74LVC2G07")
-		(at 169.545 89.535 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ca61220-ea2b-4211-9e79-e4dfb9d4c95d")
-		(property "Reference" "U12"
-			(at 176.53 88.2649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LVC2G07"
-			(at 176.53 90.8049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 169.545 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 169.545 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 169.545 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "7ccea2dd-ccb7-45cf-99c0-0da21df494fb")
-		)
-		(pin "6"
-			(uuid "8db2d594-f588-43dc-aaa6-21c4d85298aa")
-		)
-		(pin "2"
-			(uuid "420db250-9b50-4976-88df-f8cbd5b46109")
-		)
-		(pin "5"
-			(uuid "88eb6d15-bd24-40cb-9c3d-2aebbe84380c")
-		)
-		(pin "1"
-			(uuid "49041e4b-417f-4b93-9fbc-08c760c2ade1")
-		)
-		(pin "3"
-			(uuid "25c0e080-877c-4eab-ad62-0de880b36535")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
-					(reference "U12")
-					(unit 3)
 				)
 			)
 		)
@@ -972,7 +896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dd91d2f-d849-4e1d-b0ac-45bee5102f7f")
-		(property "Reference" "R36"
+		(property "Reference" "R151"
 			(at 234.95 84.4549 0)
 			(effects
 				(font
@@ -1024,6 +948,12 @@
 			(uuid "4d0184ea-8dd9-4ade-a02e-7301d35b2923")
 		)
 		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
+					(reference "R151")
+					(unit 1)
+				)
+			)
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
 					(reference "R36")
@@ -1034,16 +964,16 @@
 	)
 	(symbol
 		(lib_id "74xGxx:74LVC2G07")
-		(at 209.55 74.295 0)
+		(at 209.55 107.315 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e858509c-6d4f-4260-bbfd-28b9995b01a3")
-		(property "Reference" "U12"
-			(at 208.28 62.865 0)
+		(uuid "b390fce5-73e5-4f6b-8f6d-8f48743a3977")
+		(property "Reference" "U57"
+			(at 208.28 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1051,15 +981,15 @@
 			)
 		)
 		(property "Value" "74LVC2G07"
-			(at 208.28 65.405 0)
+			(at 208.28 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 209.55 74.295 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+			(at 209.55 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1068,7 +998,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 209.55 74.295 0)
+			(at 209.55 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +1007,7 @@
 			)
 		)
 		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 209.55 74.295 0)
+			(at 209.55 107.315 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1085,29 +1015,111 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "edfb0abf-b0bf-457a-baca-54495a7b6b8d")
-		)
-		(pin "6"
-			(uuid "8db2d594-f588-43dc-aaa6-21c4d85298ab")
-		)
 		(pin "2"
-			(uuid "919771d9-7d89-44d9-b6da-7739c2dbebd6")
-		)
-		(pin "5"
-			(uuid "23013c9f-adf0-42d7-b466-0161a2f29503")
+			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad8")
 		)
 		(pin "1"
-			(uuid "49041e4b-417f-4b93-9fbc-08c760c2ade2")
+			(uuid "94f83699-3043-43dd-9560-35cca79fe487")
 		)
 		(pin "3"
-			(uuid "ca4b7fe4-2f53-4d79-ae8d-04e6ea21c652")
+			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd04")
+		)
+		(pin "4"
+			(uuid "936bf375-8aca-467a-a3b1-20328cac8e00")
+		)
+		(pin "6"
+			(uuid "a632672e-1158-4ca9-8508-188746ed8ad2")
+		)
+		(pin "5"
+			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d72a")
 		)
 		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
-					(reference "U12")
+			(project ""
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
+					(reference "U57")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC2G07")
+		(at 153.035 89.535 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c58d24a3-a8f5-49ba-bbcd-a5f99dee0f2d")
+		(property "Reference" "U57"
+			(at 160.02 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74LVC2G07"
+			(at 160.02 90.8049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+			(at 153.035 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(at 153.035 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
+			(at 153.035 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad9")
+		)
+		(pin "1"
+			(uuid "94f83699-3043-43dd-9560-35cca79fe488")
+		)
+		(pin "3"
+			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd05")
+		)
+		(pin "4"
+			(uuid "936bf375-8aca-467a-a3b1-20328cac8e01")
+		)
+		(pin "6"
+			(uuid "a632672e-1158-4ca9-8508-188746ed8ad3")
+		)
+		(pin "5"
+			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d72b")
+		)
+		(instances
+			(project ""
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
+					(reference "U57")
+					(unit 3)
 				)
 			)
 		)

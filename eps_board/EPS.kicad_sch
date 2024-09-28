@@ -2166,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 187.325) (xy 261.62 187.325)
+			(xy 261.62 187.325) (xy 323.85 187.325)
 		)
 		(stroke
 			(width 0)
@@ -4644,17 +4644,6 @@
 		)
 		(uuid "116bee97-4899-4d2c-b681-faf6dbf585b1")
 	)
-	(label "3.3V_14_EPS_STM"
-		(at 267.97 187.325 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "140d5fd8-4c7d-4807-9ad2-40e1abb6a870")
-	)
 	(label "POWER_3V1_RST"
 		(at 87.63 234.315 180)
 		(fields_autoplaced yes)
@@ -4797,6 +4786,17 @@
 			(justify right bottom)
 		)
 		(uuid "274c6316-88f9-47c1-b863-9681acb99127")
+	)
+	(label "3.3V_14"
+		(at 267.97 187.325 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2835fd2c-8a69-4753-949c-cd7ab4ccfaa5")
 	)
 	(label "3V3_GOOD"
 		(at 391.795 64.135 0)
@@ -12265,6 +12265,16 @@
 				(justify left)
 			)
 			(uuid "f1e71a63-08fa-4d9d-9c34-1254e1788ad9")
+		)
+		(pin "3V3_14" output
+			(at 323.85 187.325 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "20b57ae7-fb17-4b04-8010-abbf348994f1")
 		)
 		(instances
 			(project "EPS"

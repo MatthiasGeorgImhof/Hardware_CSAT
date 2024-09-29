@@ -5,20 +5,20 @@
 	(uuid "a0daa284-7914-4ff5-917b-1830fbf196d6")
 	(paper "A4")
 	(lib_symbols
-		(symbol "74xGxx:74LVC2G07"
+		(symbol "Common:74LVC2G07"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 7.62 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "74LVC2G07"
-				(at 2.54 -7.62 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -34,7 +34,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -43,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,65 +52,24 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Dual Gate Buffer Open Drain LVC CMOS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "74LVC2G07_0_1"
+				(rectangle
+					(start -7.62 6.35)
+					(end 7.62 -6.35)
+					(stroke
+						(width 0)
+						(type default)
 					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SG-* SOT*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type none)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "74LVC2G07_1_1"
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -2.54 0) (xy -1.27 -1.27) (xy 0 0) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin input line
-					(at -15.24 0 0)
-					(length 7.62)
-					(name "~"
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "IN1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -125,116 +84,9 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 12.7 0 180)
-					(length 7.62)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74LVC2G07_2_1"
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 6.35) (xy -7.62 -6.35) (xy 5.08 0) (xy -7.62 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -2.54 0) (xy -1.27 -1.27) (xy 0 0) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 7.62)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 12.7 0 180)
-					(length 7.62)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74LVC2G07_3_0"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "74LVC2G07_3_1"
 				(pin power_in line
-					(at 0 -10.16 90)
-					(length 5.08)
+					(at 10.16 -3.81 180)
+					(length 2.54)
 					(name "GND"
 						(effects
 							(font
@@ -250,9 +102,45 @@
 						)
 					)
 				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "OUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
-					(at 0 10.16 270)
-					(length 5.08)
+					(at -10.16 -3.81 0)
+					(length 2.54)
 					(name "VCC"
 						(effects
 							(font
@@ -261,6 +149,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 3.81 180)
+					(length 2.54)
+					(name "OUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -529,96 +435,96 @@
 		)
 	)
 	(junction
-		(at 222.25 89.535)
+		(at 227.965 75.565)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "205f3ef0-62d5-4b7e-84f9-02fad85b392b")
+		(uuid "35ba3b1b-420b-41d5-9e7c-231659f08260")
 	)
 	(junction
-		(at 233.045 89.535)
+		(at 224.79 75.565)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9558ac61-6d2c-4ae5-8628-6a9b99d389fc")
+		(uuid "8ce65d01-2f9a-4923-82e1-b3c50e980dd8")
 	)
 	(wire
 		(pts
-			(xy 144.78 85.725) (xy 144.78 79.375)
+			(xy 224.79 75.565) (xy 224.79 79.375)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14466736-c79f-4043-a3d0-b8b2c0ad5bb5")
+		(uuid "0a564997-6af2-4e1c-8acf-4f65c9cc6b76")
 	)
 	(wire
 		(pts
-			(xy 144.78 93.345) (xy 144.78 99.695)
+			(xy 224.79 89.535) (xy 224.79 83.185)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52fcd1c8-7eef-4728-a82c-66bb0c8735be")
+		(uuid "12fa9de4-3505-4fa8-ad24-169862f8ca23")
 	)
 	(wire
 		(pts
-			(xy 144.78 79.375) (xy 153.035 79.375)
+			(xy 231.775 75.565) (xy 227.965 75.565)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80097e6a-c937-4d6a-820b-f4325b3feeb4")
+		(uuid "145c9c89-6660-4afe-a8ff-126b56f60bd0")
 	)
 	(wire
 		(pts
-			(xy 222.25 74.295) (xy 222.25 89.535)
+			(xy 204.47 83.185) (xy 204.47 89.535)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99d36661-c904-485e-9818-8416ab1ffb62")
+		(uuid "35d9baf6-41be-4298-b0c5-75fbb77883b1")
 	)
 	(wire
 		(pts
-			(xy 222.25 89.535) (xy 222.25 107.315)
+			(xy 231.775 67.945) (xy 227.965 67.945)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa155065-e038-43a1-9d6c-a57edc061414")
+		(uuid "39a3f6db-f9cd-464a-8f55-8c23a25da469")
 	)
 	(wire
 		(pts
-			(xy 233.045 89.535) (xy 222.25 89.535)
+			(xy 227.965 75.565) (xy 224.79 75.565)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b9e65fe0-0222-4c68-a3fb-a2243ce3afdd")
+		(uuid "3f53f059-ef73-4d48-8044-db9922b51744")
 	)
 	(wire
 		(pts
-			(xy 241.935 89.535) (xy 233.045 89.535)
+			(xy 204.47 89.535) (xy 211.455 89.535)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e41391ec-4d51-442a-becd-14572da904a6")
+		(uuid "60ddfed1-fc57-43a9-aabf-4607a98b5e66")
 	)
 	(wire
 		(pts
-			(xy 144.78 99.695) (xy 153.035 99.695)
+			(xy 219.075 89.535) (xy 224.79 89.535)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f9ebff32-aa78-466b-9ddf-043705365cfe")
+		(uuid "cc5297cd-0ffa-4779-86a8-2c581d3e6625")
 	)
 	(text "STM Reset Triggers"
 		(exclude_from_sim no)
@@ -631,33 +537,9 @@
 		)
 		(uuid "589a1f7b-b017-4a1f-8874-a527c69e01f9")
 	)
-	(hierarchical_label "IN1"
-		(shape input)
-		(at 194.31 74.295 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "748075f6-d402-4d9b-9884-0cdd513e6ac4")
-	)
-	(hierarchical_label "IN2"
-		(shape input)
-		(at 194.31 107.315 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8af8fe01-2019-4924-970d-8f10f59f5f7f")
-	)
 	(hierarchical_label "OUT"
 		(shape output)
-		(at 241.935 89.535 0)
+		(at 231.775 75.565 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -665,23 +547,11 @@
 			)
 			(justify left)
 		)
-		(uuid "b5d327ca-d201-417e-9303-0d0685ec018a")
-	)
-	(hierarchical_label "VIO"
-		(shape input)
-		(at 233.045 81.915 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ce602b22-90aa-48ca-9f36-6d2dd0354954")
+		(uuid "424e0cc0-ea27-4203-93b7-d520b1458108")
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 153.035 99.695 0)
+		(at 224.79 83.185 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -689,11 +559,11 @@
 			)
 			(justify left)
 		)
-		(uuid "d01138f7-73c7-4285-8ae5-e736df87f780")
+		(uuid "78c1e083-6e70-435b-8c87-6448a595f69d")
 	)
 	(hierarchical_label "VIO"
 		(shape input)
-		(at 153.035 79.375 0)
+		(at 231.775 67.945 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -701,38 +571,72 @@
 			)
 			(justify left)
 		)
-		(uuid "ea4f3c52-6ec7-4af5-9389-104134a53524")
+		(uuid "8c519aff-e411-4f5c-9f18-025d3aa96d82")
+	)
+	(hierarchical_label "IN1"
+		(shape input)
+		(at 204.47 75.565 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b4726b9d-7f90-4f28-814f-63502935d084")
+	)
+	(hierarchical_label "VIO"
+		(shape input)
+		(at 204.47 83.185 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b76af3a3-d1fa-4082-9b8f-95a3df3dee11")
+	)
+	(hierarchical_label "IN2"
+		(shape input)
+		(at 204.47 79.375 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7555220-bb44-4361-abca-43ce6af62b99")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 144.78 89.535 0)
-		(mirror x)
+		(lib_id "Common:74LVC2G07")
+		(at 214.63 79.375 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "127d6c34-40a5-408b-b05a-6d4b8f1a29b2")
-		(property "Reference" "C117"
-			(at 142.875 90.805 90)
+		(fields_autoplaced yes)
+		(uuid "a4413cc4-a48f-4f25-988e-4bd8b3191be8")
+		(property "Reference" "U26"
+			(at 214.63 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 142.875 82.55 90)
+		(property "Value" "74LVC2G07"
+			(at 214.63 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 145.7452 85.725 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
+			(at 214.63 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,8 +644,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 144.78 89.535 0)
+		(property "Datasheet" ""
+			(at 214.63 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,34 +654,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 144.78 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
-			(at 144.78 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 146.05 86.36 90)
+			(at 214.63 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -786,118 +663,50 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d4d1589-c5df-44bb-8c39-feba5b45c0b3")
-		)
-		(pin "2"
-			(uuid "4317526d-c5a8-46e6-98c6-89d2ffbcd76a")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
-					(reference "C117")
-					(unit 1)
-				)
-			)
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
-					(reference "C65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:74LVC2G07")
-		(at 209.55 74.295 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b1ffb3d-8e54-4935-8168-81c25a2d9472")
-		(property "Reference" "U59"
-			(at 208.28 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC2G07"
-			(at 208.28 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 209.55 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 209.55 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 209.55 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad7")
-		)
-		(pin "1"
-			(uuid "94f83699-3043-43dd-9560-35cca79fe486")
-		)
-		(pin "3"
-			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd03")
+			(uuid "1973c0ac-ae2a-4a1a-8aff-830d3dccebe0")
 		)
 		(pin "4"
-			(uuid "936bf375-8aca-467a-a3b1-20328cac8dff")
-		)
-		(pin "6"
-			(uuid "a632672e-1158-4ca9-8508-188746ed8ad1")
+			(uuid "f122b9d5-26e7-4a39-bcd4-f3c0026769f3")
 		)
 		(pin "5"
-			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d729")
+			(uuid "ed1b0d5f-4850-4f97-9861-dce1aecf7e20")
+		)
+		(pin "2"
+			(uuid "a3799ede-abcc-4606-8e9f-638d129035b1")
+		)
+		(pin "6"
+			(uuid "7ad81685-35ba-496e-a2c1-2c168a445785")
+		)
+		(pin "3"
+			(uuid "696c9ad7-a464-46b7-b555-f245e3063fbe")
 		)
 		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/be725391-4517-4a91-8537-5b0e0ace46a2"
+					(reference "U26")
+					(unit 1)
+				)
+			)
 			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
-					(reference "U59")
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/e4c7d165-22c3-4361-b1e3-58b5c990e540"
+					(reference "U11")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 233.045 85.725 0)
+		(lib_id "Device:C")
+		(at 215.265 89.535 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dd91d2f-d849-4e1d-b0ac-45bee5102f7f")
-		(property "Reference" "R143"
-			(at 234.95 84.4549 0)
+		(uuid "cd63a46a-5cce-4ce3-a54b-3d0931b5081c")
+		(property "Reference" "C61"
+			(at 216.535 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,8 +714,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100K"
-			(at 234.95 86.9949 0)
+		(property "Value" "100n"
+			(at 208.28 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -914,8 +723,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 231.267 85.725 90)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 211.455 88.5698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,7 +733,110 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.045 85.725 0)
+			(at 215.265 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 215.265 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfr. #" "CL10B104KA8NNNC"
+			(at 215.265 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Order" "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10B104KA8NNNC/1276-1006-1-ND/3889092"
+			(at 215.265 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 212.09 88.265 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95ca365f-c985-4fde-8728-66a5053d152c")
+		)
+		(pin "2"
+			(uuid "287fcbc0-7b60-4362-bda8-f64e05d3edce")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/be725391-4517-4a91-8537-5b0e0ace46a2"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+			(project "AVIONICS_BOARD"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/e4c7d165-22c3-4361-b1e3-58b5c990e540"
+					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 227.965 71.755 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed9e383a-4e4d-4aad-a264-97279e291ccc")
+		(property "Reference" "R34"
+			(at 229.87 70.4849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 229.87 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 226.187 71.755 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.965 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +845,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 233.045 85.725 0)
+			(at 227.965 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -942,184 +854,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "4e9e4571-3dba-4aca-8a77-f7daee3c0a82")
+			(uuid "3c04b358-738b-4de5-a6f3-bc94fe7d3544")
 		)
 		(pin "1"
-			(uuid "4d0184ea-8dd9-4ade-a02e-7301d35b2923")
+			(uuid "2b88f50d-d90a-4e9f-966a-0a3fbeb804b6")
 		)
 		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
-					(reference "R143")
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/be725391-4517-4a91-8537-5b0e0ace46a2"
+					(reference "R34")
 					(unit 1)
 				)
 			)
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/3711f4d8-fcd4-4aaf-a727-d534b54827fd"
-					(reference "R36")
+			(project "AVIONICS_BOARD"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/e4c7d165-22c3-4361-b1e3-58b5c990e540"
+					(reference "R37")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:74LVC2G07")
-		(at 209.55 107.315 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b390fce5-73e5-4f6b-8f6d-8f48743a3977")
-		(property "Reference" "U59"
-			(at 208.28 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LVC2G07"
-			(at 208.28 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 209.55 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 209.55 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 209.55 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad8")
-		)
-		(pin "1"
-			(uuid "94f83699-3043-43dd-9560-35cca79fe487")
-		)
-		(pin "3"
-			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd04")
-		)
-		(pin "4"
-			(uuid "936bf375-8aca-467a-a3b1-20328cac8e00")
-		)
-		(pin "6"
-			(uuid "a632672e-1158-4ca9-8508-188746ed8ad2")
-		)
-		(pin "5"
-			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d72a")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
-					(reference "U59")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xGxx:74LVC2G07")
-		(at 153.035 89.535 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c58d24a3-a8f5-49ba-bbcd-a5f99dee0f2d")
-		(property "Reference" "U59"
-			(at 160.02 88.2649 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74LVC2G07"
-			(at 160.02 90.8049 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering"
-			(at 153.035 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
-			(at 153.035 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Buffer, Open Drain, Low-Voltage CMOS"
-			(at 153.035 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b8dbf94-c501-49a1-a3d0-15ff5621fad9")
-		)
-		(pin "1"
-			(uuid "94f83699-3043-43dd-9560-35cca79fe488")
-		)
-		(pin "3"
-			(uuid "9d361ac8-1db6-47e7-9b22-5c20ddb1dd05")
-		)
-		(pin "4"
-			(uuid "936bf375-8aca-467a-a3b1-20328cac8e01")
-		)
-		(pin "6"
-			(uuid "a632672e-1158-4ca9-8508-188746ed8ad3")
-		)
-		(pin "5"
-			(uuid "a799c3da-9b28-47fa-8311-be9edfe9d72b")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/3cb52b52-bdd8-455c-8cb1-f3a303a9432e"
-					(reference "U59")
-					(unit 3)
 				)
 			)
 		)

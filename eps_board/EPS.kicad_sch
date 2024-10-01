@@ -1281,6 +1281,12 @@
 		(uuid "d0b1a68b-ac7f-4aa0-b935-c12eaed6161a")
 	)
 	(junction
+		(at 83.185 130.175)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6998819-3d59-4ea3-85f7-72866a0cda43")
+	)
+	(junction
 		(at 350.52 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1603,16 +1609,6 @@
 			(type default)
 		)
 		(uuid "119a64a8-214c-41ae-99a7-a694175f23ae")
-	)
-	(wire
-		(pts
-			(xy 73.66 132.715) (xy 92.71 132.715)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1260efe0-0d16-4935-a444-2271ae83e082")
 	)
 	(wire
 		(pts
@@ -1986,7 +1982,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 189.865) (xy 261.62 189.865)
+			(xy 261.62 189.865) (xy 323.85 189.865)
 		)
 		(stroke
 			(width 0)
@@ -2543,6 +2539,16 @@
 			(type default)
 		)
 		(uuid "6223b7cc-4eaa-48d4-8421-6830cc7d432e")
+	)
+	(wire
+		(pts
+			(xy 83.185 130.175) (xy 83.185 132.715)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640f7a50-df4c-4838-9c6d-a1190d93eae5")
 	)
 	(wire
 		(pts
@@ -3946,6 +3952,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.185 132.715) (xy 92.71 132.715)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5401429-db17-4a0d-8668-6d353b69ceca")
+	)
+	(wire
+		(pts
 			(xy 358.14 156.845) (xy 356.235 156.845)
 		)
 		(stroke
@@ -4774,6 +4790,17 @@
 		)
 		(uuid "02aebdf1-4ad6-4c66-aaad-38deabe99b3f")
 	)
+	(label "3V3_17_RF1_BRIDGE"
+		(at 264.16 206.375 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "031fab15-9155-48df-bde0-18e52e5877b7")
+	)
 	(label "I2C1_SDA"
 		(at 229.235 159.385 180)
 		(fields_autoplaced yes)
@@ -4784,17 +4811,6 @@
 			(justify right bottom)
 		)
 		(uuid "054b88ea-908f-4158-bade-f37efc810832")
-	)
-	(label "3V3_18_RF_BRIDGE"
-		(at 264.16 208.915 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "060a0d4e-f415-42b9-97ca-f938255d3cb0")
 	)
 	(label "RST"
 		(at 46.355 253.365 0)
@@ -4872,17 +4888,6 @@
 			(justify right bottom)
 		)
 		(uuid "110f6603-9be7-49eb-9c47-e63a1a6550b0")
-	)
-	(label "3V3_4_AVI_CAN"
-		(at 267.335 152.4 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "116bee97-4899-4d2c-b681-faf6dbf585b1")
 	)
 	(label "BATT_1_COMM1_VRF"
 		(at 267.335 236.855 0)
@@ -5104,7 +5109,7 @@
 		)
 		(uuid "3390cbec-fb0f-413c-9ab1-9ef3e901d473")
 	)
-	(label "3V3_20_RF_COMM"
+	(label "3V3_20_RF2_COMM"
 		(at 264.16 213.995 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5181,17 +5186,6 @@
 		)
 		(uuid "41d2526f-8d99-4221-a11a-244cc29463aa")
 	)
-	(label "3V3_11_SCI_THERMAL"
-		(at 267.97 179.705 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "465b866a-709c-4721-a76d-ce37a48b3077")
-	)
 	(label "3V3_16_EPS_MRAM"
 		(at 267.97 192.405 0)
 		(fields_autoplaced yes)
@@ -5224,17 +5218,6 @@
 			(justify left bottom)
 		)
 		(uuid "4a51faee-d9a8-4275-8373-2b3ac051b089")
-	)
-	(label "3V3_13_SCI_CAN"
-		(at 267.97 184.785 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4eabbdbb-1b34-4139-afad-b2700e1801c8")
 	)
 	(label "3V3_1_AVI_STM_CORE"
 		(at 267.335 144.78 0)
@@ -5324,6 +5307,17 @@
 		)
 		(uuid "5d14b853-5976-4756-b244-9d8c8158e72b")
 	)
+	(label "3V3_19_RF2_BRIDGE"
+		(at 264.16 211.455 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d569ef0-a365-4c13-b067-f8a66831efff")
+	)
 	(label "SCI_EXTRN_RST"
 		(at 359.41 212.725 0)
 		(fields_autoplaced yes)
@@ -5379,6 +5373,17 @@
 		)
 		(uuid "6995f86f-b189-44d2-b37d-9daf73150c05")
 	)
+	(label "3V3_13_SCI_CAMERAS"
+		(at 267.97 184.785 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "69b838e0-d00d-4f3a-8f9c-9f8e1edf9a83")
+	)
 	(label "I2C3_SCL"
 		(at 229.235 220.98 180)
 		(fields_autoplaced yes)
@@ -5400,28 +5405,6 @@
 			(justify left bottom)
 		)
 		(uuid "6b9a25e6-3075-44ac-95bf-bbd7b2bbf592")
-	)
-	(label "3V3_12_SCI_CAMERAS"
-		(at 267.97 182.245 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6be708f3-83de-4d4c-8057-21f4661b1d0f")
-	)
-	(label "3V3_10_SCI_STM_CORE"
-		(at 267.97 177.165 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6d717481-8dea-43fd-b9ca-3a6334455ed6")
 	)
 	(label "VSOLAR_5V"
 		(at 164.465 71.755 0)
@@ -5489,6 +5472,17 @@
 		)
 		(uuid "76a9baa2-206b-4802-aa7a-abe8c720f677")
 	)
+	(label "3V3_11_SCI_FLASH"
+		(at 267.97 179.705 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77e2a72e-1e24-4a8f-9b45-f7d9cfd0f5af")
+	)
 	(label "PWR3AUX_EN"
 		(at 337.185 67.31 180)
 		(fields_autoplaced yes)
@@ -5533,8 +5527,8 @@
 		)
 		(uuid "7aa088a7-d629-414e-9bbe-4969dd0fa456")
 	)
-	(label "3V3_19_RF_CAN"
-		(at 264.16 211.455 0)
+	(label "3V3_9_SCI_STM_CORE"
+		(at 267.97 174.625 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5542,7 +5536,18 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7e8844d6-9289-4306-8771-91b902cbd8d5")
+		(uuid "7b38c23f-b8f7-4eca-922b-8a77fb2c10a2")
+	)
+	(label "3V3_12_SCI_THERMAL"
+		(at 267.97 182.245 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "88c8dcc8-fe03-41c2-8516-f15c14889163")
 	)
 	(label "VSOLAR_5V_GOOD"
 		(at 144.78 42.545 180)
@@ -5554,17 +5559,6 @@
 			(justify right bottom)
 		)
 		(uuid "8920e50c-6208-4f5e-b65d-e5c5cc91b6e1")
-	)
-	(label "3V3_17_SCI_FLASH"
-		(at 264.16 206.375 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8980d877-d237-45f7-b7e3-dc25e4d7bfb3")
 	)
 	(label "~{BC_1_VEXT}"
 		(at 164.465 43.815 0)
@@ -5665,17 +5659,6 @@
 		)
 		(uuid "926f8cc6-4465-48a1-82cf-3ccd8cc7b495")
 	)
-	(label "3V3_14_SCI_MRAM"
-		(at 267.97 187.325 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "92b45efb-cb3d-4671-a34a-a3d394ce3a29")
-	)
 	(label "PWR3AUX_EN"
 		(at 133.35 168.91 0)
 		(fields_autoplaced yes)
@@ -5687,6 +5670,17 @@
 		)
 		(uuid "94236e63-2d8f-431c-a428-e3cc608d3ff2")
 	)
+	(label "3V3_18_RF1_COMM"
+		(at 264.16 208.915 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "948bb8a4-5456-4461-bc59-280dc71bacea")
+	)
 	(label "*IDEAL_STATUS"
 		(at 303.53 28.575 0)
 		(fields_autoplaced yes)
@@ -5697,6 +5691,28 @@
 			(justify left bottom)
 		)
 		(uuid "98ed5da5-c4fb-4aee-8d77-8446066ae0c8")
+	)
+	(label "3V3_14_EXTRA1"
+		(at 267.97 187.325 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99112731-280b-45fc-9c9d-e75c90123462")
+	)
+	(label "3V3_15_EXTRA2"
+		(at 267.97 189.865 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ae40108-8991-4c7d-9355-c8fed3aa9489")
 	)
 	(label "HEATER1_FAULT"
 		(at 128.27 207.01 0)
@@ -5752,17 +5768,6 @@
 			(justify left bottom)
 		)
 		(uuid "a0edb75c-6789-4a48-91c9-0767c1b83209")
-	)
-	(label "3V3_15_EPS_CAN"
-		(at 267.97 189.865 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a131a962-e4ae-4f04-ab2b-ecc59885de9b")
 	)
 	(label "PWR3CORE_EN"
 		(at 337.185 64.77 180)
@@ -5863,17 +5868,6 @@
 		)
 		(uuid "ae86426d-a1e6-433a-a332-58146816a794")
 	)
-	(label "3V3_15_EPS_CAN"
-		(at 73.66 132.715 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ae8b98d0-d6a3-4396-822b-58f184462b4d")
-	)
 	(label "AVI_EXTRN_RST"
 		(at 359.41 207.645 0)
 		(fields_autoplaced yes)
@@ -5973,6 +5967,17 @@
 		)
 		(uuid "be5679bf-9467-4637-bd94-34e0a46b6a14")
 	)
+	(label "3V3_4_AVI_SUN"
+		(at 267.335 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4e7af54-ef3d-494c-9490-20067b00d085")
+	)
 	(label "BC_2_SHDN"
 		(at 78.74 203.835 0)
 		(fields_autoplaced yes)
@@ -6016,6 +6021,17 @@
 			(justify right bottom)
 		)
 		(uuid "c9ed6c78-f475-4f6e-a37f-9075dbfc1bfd")
+	)
+	(label "3V3_10_SCI_MRAM"
+		(at 267.97 177.165 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc1ae483-4eda-45ca-a742-39c8f1318d48")
 	)
 	(label "HEATER2_FAULT"
 		(at 238.76 83.82 0)
@@ -6204,17 +6220,6 @@
 		)
 		(uuid "e8d3a1ab-3894-4208-94dd-b9699598e8c1")
 	)
-	(label "3V3_9_AVI_SUN"
-		(at 267.97 174.625 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e91dc080-6ae5-45a1-b252-a5de4139188b")
-	)
 	(label "~{BC_2_CHRG}"
 		(at 78.74 198.755 0)
 		(fields_autoplaced yes)
@@ -6336,7 +6341,7 @@
 		)
 		(uuid "f63e72cd-a3a2-48f9-bf19-87a80d6b7bee")
 	)
-	(label "BATT_2_COMM1_VRF"
+	(label "BATT_2_COMM2_VRF"
 		(at 267.335 239.395 0)
 		(fields_autoplaced yes)
 		(effects
@@ -12525,6 +12530,16 @@
 				(justify left)
 			)
 			(uuid "20b57ae7-fb17-4b04-8010-abbf348994f1")
+		)
+		(pin "3V3_15" output
+			(at 323.85 189.865 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "caf0d7f0-30f8-45bb-96ee-9005ac262043")
 		)
 		(instances
 			(project "EPS"

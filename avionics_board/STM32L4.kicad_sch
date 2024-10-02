@@ -3575,12 +3575,6 @@
 		(uuid "93bf871e-2c1f-4f7e-8cb1-33d52529a6e6")
 	)
 	(junction
-		(at 264.16 252.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95337e69-fce8-434c-ba0e-4c66eff916a9")
-	)
-	(junction
 		(at 190.5 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3795,10 +3789,6 @@
 		(uuid "346a42dc-287a-4716-9508-f3c8fcc42453")
 	)
 	(no_connect
-		(at 241.3 123.19)
-		(uuid "37e4f766-0bb5-4329-bb16-56fe279fa739")
-	)
-	(no_connect
 		(at 241.3 87.63)
 		(uuid "382ea7b8-13b5-4a6a-9983-346fef16bb01")
 	)
@@ -3935,6 +3925,10 @@
 		(uuid "c06aaba1-f7b7-4d39-8d59-da609da40e86")
 	)
 	(no_connect
+		(at 241.3 133.35)
+		(uuid "c37abb47-055f-463a-9a6c-a1e3cb4d4dee")
+	)
+	(no_connect
 		(at 180.34 179.07)
 		(uuid "c4bc20f9-e070-42b0-a39e-dc5d02ef69f7")
 	)
@@ -3953,10 +3947,6 @@
 	(no_connect
 		(at 241.3 229.87)
 		(uuid "d852c522-fbcf-43b9-a764-22076edb4592")
-	)
-	(no_connect
-		(at 241.3 125.73)
-		(uuid "d88decdd-c405-482b-93e1-6ea9f98f2315")
 	)
 	(no_connect
 		(at 241.3 158.75)
@@ -4814,16 +4804,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 252.73) (xy 295.91 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4906ce72-d089-42da-8f38-9ba667471b5f")
-	)
-	(wire
-		(pts
 			(xy 228.6 59.69) (xy 228.6 64.77)
 		)
 		(stroke
@@ -5214,16 +5194,6 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 255.905) (xy 298.45 255.905)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e8b0375-0fd3-473b-99a1-e78a5eef52a4")
-	)
-	(wire
-		(pts
 			(xy 370.84 226.06) (xy 378.46 226.06)
 		)
 		(stroke
@@ -5271,16 +5241,6 @@
 			(type default)
 		)
 		(uuid "729ac0fb-9c49-4c21-9468-9466b961a779")
-	)
-	(wire
-		(pts
-			(xy 264.16 252.73) (xy 265.43 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72caacc0-d95d-469a-9fe2-b94be8c4234c")
 	)
 	(wire
 		(pts
@@ -5434,16 +5394,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.985 252.73) (xy 264.16 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "860c5849-8538-4d09-99f1-a3ee8a7ddc6e")
-	)
-	(wire
-		(pts
 			(xy 190.5 44.45) (xy 190.5 50.8)
 		)
 		(stroke
@@ -5501,16 +5451,6 @@
 			(type default)
 		)
 		(uuid "879aeb1f-78d5-4588-ab0b-299b6449267e")
-	)
-	(wire
-		(pts
-			(xy 265.43 255.905) (xy 264.16 255.905)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88c3313d-3e39-4464-be9d-aa344696444d")
 	)
 	(wire
 		(pts
@@ -5651,16 +5591,6 @@
 			(type default)
 		)
 		(uuid "91bcd394-83bb-46de-afbd-1c643b340fe5")
-	)
-	(wire
-		(pts
-			(xy 264.16 255.905) (xy 264.16 252.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91cab9cb-aa1b-43d8-b8d9-8ce56bb2efee")
 	)
 	(wire
 		(pts
@@ -7344,7 +7274,7 @@
 		)
 		(uuid "03eef96f-a851-4f3d-9da4-c5a2667cc41e")
 	)
-	(label "CAN_RS"
+	(label "CAN_STB"
 		(at 289.56 218.44 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7685,6 +7615,17 @@
 		)
 		(uuid "217f6eef-2ca7-46c8-b48a-642ac960dccc")
 	)
+	(label "CAN_STB"
+		(at 241.3 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22766bb0-bc5b-410c-91e4-e6727d90687a")
+	)
 	(label "RST_SUN"
 		(at 63.5 144.145 0)
 		(fields_autoplaced yes)
@@ -7816,17 +7757,6 @@
 			(justify left bottom)
 		)
 		(uuid "30ad802d-2b5c-4153-b7ac-b4a1802b5497")
-	)
-	(label "5V_CAN"
-		(at 298.45 252.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "33bcbc5a-ec50-4518-aad0-30f2f7a8e652")
 	)
 	(label "ADC1_IN4"
 		(at 62.865 21.59 0)
@@ -8422,17 +8352,6 @@
 		)
 		(uuid "6e51a800-ef50-480d-931d-567b776555c2")
 	)
-	(label "CAN_RS"
-		(at 241.3 133.35 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6ec15074-e341-4cc4-9e33-cdcc31e3e63e")
-	)
 	(label "3.3V_ACS_LOGIC"
 		(at 64.135 199.39 0)
 		(fields_autoplaced yes)
@@ -8543,7 +8462,7 @@
 		)
 		(uuid "7da6c46f-621a-4eb1-828c-ba93af553c5a")
 	)
-	(label "CAN_RS"
+	(label "CAN_STB"
 		(at 288.29 189.23 180)
 		(fields_autoplaced yes)
 		(effects
@@ -8696,17 +8615,6 @@
 			(justify left bottom)
 		)
 		(uuid "95541a57-b560-4cc9-9d1f-1564e6cc3098")
-	)
-	(label "5V_CAN"
-		(at 288.29 196.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "97cfe0e1-7edc-4b2f-8a82-c96491a96573")
 	)
 	(label "USART1_TX"
 		(at 241.3 95.25 0)
@@ -9082,6 +8990,17 @@
 		)
 		(uuid "c26392e5-30c2-4924-9a3f-da95be749198")
 	)
+	(label "CAN_SHDN"
+		(at 241.3 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c39a914d-05bd-4da0-a2de-ed522151c418")
+	)
 	(label "ADC1_IN8"
 		(at 62.865 31.75 0)
 		(fields_autoplaced yes)
@@ -9180,6 +9099,17 @@
 			(justify right bottom)
 		)
 		(uuid "d3a8f6df-d104-4dfe-8fcb-6d354fd02b73")
+	)
+	(label "CAN_SHDN"
+		(at 288.29 196.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d4020033-d5c0-4577-b7cc-d8bf1dfcadbe")
 	)
 	(label "CAN1_H"
 		(at 340.36 194.31 0)
@@ -9291,17 +9221,6 @@
 		)
 		(uuid "e03a48f3-92f9-4767-94f6-c3b5a065aa6c")
 	)
-	(label "3.3V_STM_CORE"
-		(at 260.985 252.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e0d7051b-f79a-4bf6-921b-076dfb5fd3ee")
-	)
 	(label "ADC1_IN4"
 		(at 241.3 166.37 0)
 		(fields_autoplaced yes)
@@ -9379,7 +9298,7 @@
 		)
 		(uuid "f445694c-b9fd-4dc2-a282-0add80650e55")
 	)
-	(label "5V_CAN"
+	(label "CAN_SHDN"
 		(at 289.56 226.06 180)
 		(fields_autoplaced yes)
 		(effects
@@ -14934,71 +14853,6 @@
 		)
 	)
 	(symbol
-		(lib_id "AVIONICS_BOARD-rescue:GND-power")
-		(at 298.45 255.905 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "87f5da45-b5a9-411c-9ebf-d9c3c6bf6dac")
-		(property "Reference" "#PWR025"
-			(at 298.45 262.255 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 298.577 260.2992 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 298.45 255.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 298.45 255.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 298.45 255.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e38f4e25-d531-497e-9b05-5a639792aade")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:FerriteBead")
 		(at 220.98 38.1 0)
 		(unit 1)
@@ -16921,17 +16775,7 @@
 			)
 			(uuid "79ca151d-02ff-435b-bb13-abbc0990d24b")
 		)
-		(pin "RS" output
-			(at 294.64 189.23 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "271f2e74-fa4b-461a-9f7a-da49b5d906f8")
-		)
-		(pin "VCC" input
+		(pin "SHDN" input
 			(at 294.64 196.85 180)
 			(effects
 				(font
@@ -16939,7 +16783,17 @@
 				)
 				(justify left)
 			)
-			(uuid "b52319cc-c39d-4b2d-9c9d-cdbd8b709c69")
+			(uuid "ffaea93f-0588-4bf4-b4c7-eda54b35ee59")
+		)
+		(pin "STB" output
+			(at 294.64 189.23 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b39f1e73-9c64-4c66-b5be-8e80af86baa3")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
@@ -17623,17 +17477,7 @@
 			)
 			(uuid "ba4ef2a8-9c99-4151-b6e7-5b7e5a36b1dc")
 		)
-		(pin "RS" output
-			(at 295.91 218.44 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e895df72-9b2d-4f12-a632-fd869b26fdc5")
-		)
-		(pin "VCC" input
+		(pin "SHDN" input
 			(at 295.91 226.06 180)
 			(effects
 				(font
@@ -17641,90 +17485,22 @@
 				)
 				(justify left)
 			)
-			(uuid "078ae423-8474-4e7b-843c-f7df26b61d79")
+			(uuid "f834eb82-cae9-4fcb-a26b-9080a6ccdcf7")
+		)
+		(pin "STB" output
+			(at 295.91 218.44 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "302b5449-8145-40cd-97fd-dd8c1783ec36")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93"
 					(page "25")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 265.43 248.92)
-		(size 30.48 10.16)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c43e73ca-9c1e-4d37-880f-a2757d61b5eb")
-		(property "Sheetname" "CAN_POWER5"
-			(at 265.43 248.2084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "CAN_Power5.kicad_sch"
-			(at 265.43 259.6646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VOUT" output
-			(at 295.91 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "9100f33a-f069-42da-af2a-658c52c1d569")
-		)
-		(pin "VIN" input
-			(at 265.43 252.73 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "ee4fb145-e9f4-4044-be03-7a44002edc91")
-		)
-		(pin "SHDN" input
-			(at 265.43 255.905 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "52c8218c-2504-4484-a78d-95cf6cdae78f")
-		)
-		(pin "GND" input
-			(at 295.91 255.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "7c531306-25ab-4fe3-9b1e-92e977ab7f4f")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93"
-					(page "26")
 				)
 			)
 		)

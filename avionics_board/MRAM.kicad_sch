@@ -875,7 +875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 198.12 119.38 0)
 			(effects
 				(font
@@ -893,7 +893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 198.12 119.38 0)
 			(effects
 				(font
@@ -920,7 +920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 198.12 119.38 0)
 			(effects
 				(font
@@ -1371,7 +1371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "926e31f2-857c-4c00-98da-c0062ac59c20")
-		(property "Reference" "R1"
+		(property "Reference" "R49"
 			(at 175.26 125.73 90)
 			(effects
 				(font
@@ -1379,7 +1379,7 @@
 				)
 			)
 		)
-		(property "Value" "22"
+		(property "Value" "22R"
 			(at 175.26 128.27 90)
 			(effects
 				(font
@@ -1396,7 +1396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 175.26 119.38 0)
 			(effects
 				(font
@@ -1414,6 +1414,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0722RL"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c59eb43-bfeb-47b1-8f48-aca861e09854")
 		)
@@ -1421,6 +1448,12 @@
 			(uuid "e7c0ca58-9f8d-4376-8cd6-98aaf91b35db")
 		)
 		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f3d5c282-94c3-4259-817b-bad3ee4bc8e5"
+					(reference "R49")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c53d"
 					(reference "R1")

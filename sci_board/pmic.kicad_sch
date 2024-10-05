@@ -407,6 +407,128 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Project:STM32L496VGTx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3296,6 +3418,10 @@
 		(uuid "1f1bc694-c919-44ff-9606-a042502e8a9b")
 	)
 	(no_connect
+		(at 158.75 125.73)
+		(uuid "3fc7661d-83d6-4a69-b5e8-5a217b8c2e8c")
+	)
+	(no_connect
 		(at 113.03 135.89)
 		(uuid "4257b710-0aad-4d05-ad7d-ebfbe770329b")
 	)
@@ -3306,6 +3432,10 @@
 	(no_connect
 		(at 158.75 95.25)
 		(uuid "92f70d64-5251-4a9e-a6d0-cb25eaf7e6f8")
+	)
+	(no_connect
+		(at 158.75 148.59)
+		(uuid "984c57c3-4bab-4d88-8295-295f49c95882")
 	)
 	(no_connect
 		(at 113.03 133.35)
@@ -3701,6 +3831,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 74.93) (xy 158.75 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50656de7-4d08-44db-b4d8-b4d09a86d9ee")
+	)
+	(wire
+		(pts
 			(xy 63.5 66.04) (xy 65.405 66.04)
 		)
 		(stroke
@@ -3708,6 +3848,16 @@
 			(type default)
 		)
 		(uuid "50add95d-8969-40cd-bde8-f35768fb3a81")
+	)
+	(wire
+		(pts
+			(xy 180.34 69.85) (xy 158.75 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c8accb-2a97-422d-839e-ba058f1d6aa1")
 	)
 	(wire
 		(pts
@@ -4290,6 +4440,17 @@
 		)
 		(uuid "122ad439-5c7f-4401-a9d5-556da09af968")
 	)
+	(text "SPI2_MOSI"
+		(exclude_from_sim no)
+		(at 160.02 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20c97cab-634a-40c8-81c5-b87d99bfc55c")
+	)
 	(text "VDD"
 		(exclude_from_sim no)
 		(at 168.91 17.145 0)
@@ -4333,6 +4494,17 @@
 			(justify left bottom)
 		)
 		(uuid "c4e91330-f03b-4f94-9cf6-2101c9f60058")
+	)
+	(text "SPI2_SCK"
+		(exclude_from_sim no)
+		(at 160.02 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc562ced-d7c6-463e-ac25-c9f2820a89ce")
 	)
 	(label "RESET"
 		(at 113.03 57.15 180)
@@ -4881,7 +5053,7 @@
 	)
 	(hierarchical_label "SPI1_MOSI"
 		(shape output)
-		(at 158.75 74.93 0)
+		(at 185.42 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5001,7 +5173,7 @@
 	)
 	(hierarchical_label "SPI1_SCK"
 		(shape output)
-		(at 158.75 69.85 0)
+		(at 185.42 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5106,18 +5278,6 @@
 			(justify right)
 		)
 		(uuid "5eac7662-a12c-48ee-ba15-94d73a684604")
-	)
-	(hierarchical_label "SPI2_MOSI"
-		(shape output)
-		(at 158.75 148.59 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6c6f0b68-19ec-49af-b648-1e2549d0a52d")
 	)
 	(hierarchical_label "SPI2_MISO"
 		(shape input)
@@ -5286,18 +5446,6 @@
 			(justify right)
 		)
 		(uuid "953703cf-a057-48f1-9b49-0be8b07ddebc")
-	)
-	(hierarchical_label "SPI2_SCK"
-		(shape output)
-		(at 158.75 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9e200479-ac59-45c0-9a32-64d9e5c1a8d4")
 	)
 	(hierarchical_label "CAN1_TX"
 		(shape input)
@@ -6208,7 +6356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 17.145 0)
 			(effects
 				(font
@@ -6226,7 +6374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 15.875 90)
 			(effects
 				(font
@@ -6244,7 +6392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 17.145 0)
 			(effects
 				(font
@@ -6432,7 +6580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 34.925 0)
 			(effects
 				(font
@@ -6450,7 +6598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 33.655 90)
 			(effects
 				(font
@@ -6468,7 +6616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 34.925 0)
 			(effects
 				(font
@@ -6754,7 +6902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 96.52 66.04 0)
 			(effects
 				(font
@@ -6772,7 +6920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 66.04 0)
 			(effects
 				(font
@@ -6790,7 +6938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 96.52 66.04 0)
 			(effects
 				(font
@@ -6978,7 +7126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 40.64 0)
 			(effects
 				(font
@@ -6996,7 +7144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 39.37 90)
 			(effects
 				(font
@@ -7014,7 +7162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 40.64 0)
 			(effects
 				(font
@@ -7195,7 +7343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 46.355 0)
 			(effects
 				(font
@@ -7213,7 +7361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 45.085 90)
 			(effects
 				(font
@@ -7231,7 +7379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 46.355 0)
 			(effects
 				(font
@@ -7480,7 +7628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 154.94 37.465 0)
 			(effects
 				(font
@@ -7498,7 +7646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 153.67 33.655 90)
 			(effects
 				(font
@@ -7516,7 +7664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 154.94 37.465 0)
 			(effects
 				(font
@@ -7671,6 +7819,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 182.88 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "94d67106-1812-45c6-a7df-f296d7483551")
+		(property "Reference" "R52"
+			(at 179.07 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22R"
+			(at 182.88 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0722RL"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "318dbf6f-2011-4a5c-9fef-69c09696a1fb")
+		)
+		(pin "1"
+			(uuid "38e19774-896a-4710-8eaa-856d7091f3ee")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 104.14 29.21 270)
 		(unit 1)
@@ -7704,7 +7946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 29.21 0)
 			(effects
 				(font
@@ -7722,7 +7964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 27.94 90)
 			(effects
 				(font
@@ -7740,7 +7982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 29.21 0)
 			(effects
 				(font
@@ -7783,6 +8025,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 182.88 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9cde1fc6-61af-4c7d-9f60-35d23098115e")
+		(property "Reference" "R53"
+			(at 179.07 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22R"
+			(at 182.88 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0722RL"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 182.88 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a70c029c-9553-41df-8020-d3723265c965")
+		)
+		(pin "1"
+			(uuid "51edf8e2-81e0-4c8a-b0ae-c5cbac2db6cd")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 137.795 46.355 270)
 		(unit 1)
@@ -7816,7 +8152,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 137.795 46.355 0)
 			(effects
 				(font
@@ -7834,7 +8170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 133.35 45.085 90)
 			(effects
 				(font
@@ -7852,7 +8188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 137.795 46.355 0)
 			(effects
 				(font
@@ -8145,7 +8481,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61C104KA88-01.pdf"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E102KA01-01.pdf"
 			(at 104.14 23.495 0)
 			(effects
 				(font
@@ -8163,7 +8499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "16"
+		(property "Voltage" "25"
 			(at 100.33 22.225 90)
 			(effects
 				(font
@@ -8181,7 +8517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61C104KA88D"
+		(property "Part Number" "GRM155R61E102KA01D "
 			(at 104.14 23.495 0)
 			(effects
 				(font

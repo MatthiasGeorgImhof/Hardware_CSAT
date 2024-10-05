@@ -5,285 +5,7 @@
 	(uuid "389c78ff-65e1-48c2-b410-e2597771da60")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Diode:ESD9B5.0ST5G"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ESD9B5.0ST5G"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-923"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ESD protection diode, 5.0Vrwm, SOD-923"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode TVS ESD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*SOD?923*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ESD9B5.0ST5G_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ESD9B5.0ST5G_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Project:10155435-00011LF"
+		(symbol "Common:10155435-00011LF"
 			(pin_names
 				(offset 1.016)
 			)
@@ -678,12 +400,127 @@
 				)
 			)
 		)
-	)
-	(junction
-		(at 177.165 78.105)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2386ff15-e2a4-4f86-a165-5589a1f77782")
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 161.29 111.125)
@@ -736,16 +573,6 @@
 			(type default)
 		)
 		(uuid "006f909c-de82-4e89-adc0-adb3b1284a27")
-	)
-	(wire
-		(pts
-			(xy 161.29 78.105) (xy 177.165 78.105)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05e58a49-77e2-4920-8067-73de350cfc77")
 	)
 	(wire
 		(pts
@@ -819,7 +646,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.165 78.105) (xy 187.96 78.105)
+			(xy 161.29 78.105) (xy 187.96 78.105)
 		)
 		(stroke
 			(width 0)
@@ -886,16 +713,6 @@
 			(type default)
 		)
 		(uuid "91fbed77-7b0f-47d8-a168-20807d376409")
-	)
-	(wire
-		(pts
-			(xy 177.165 86.36) (xy 177.165 85.725)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b08cf84-ba8f-4d73-a3c6-65d653d6c5ee")
 	)
 	(wire
 		(pts
@@ -1019,18 +836,6 @@
 		)
 		(uuid "9ac0f428-153f-40d8-8c65-6b4cb9e956fe")
 	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 177.165 86.36 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aad77852-2f37-4847-8cb6-2efe58399485")
-	)
 	(hierarchical_label "DN"
 		(shape input)
 		(at 181.61 88.265 0)
@@ -1080,7 +885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 187.96 84.455 0)
 			(effects
 				(font
@@ -1090,6 +895,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 187.96 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 187.96 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 187.96 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 187.96 84.455 0)
 			(effects
 				(font
@@ -1114,7 +946,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Project:10155435-00011LF")
+		(lib_id "Common:10155435-00011LF")
 		(at 143.51 88.265 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1139,7 +971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:AMPHENOL_10155435-00011LF"
+		(property "Footprint" "Common:AMPHENOL_10155435-00011LF"
 			(at 143.51 88.265 0)
 			(effects
 				(font
@@ -1149,7 +981,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_type_c_connector_cable.pdf"
 			(at 143.51 88.265 0)
 			(effects
 				(font
@@ -1167,15 +999,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Amphenol"
-			(at 143.51 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "10155435-00011LF"
 			(at 143.51 88.265 0)
 			(effects
@@ -1185,43 +1008,12 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "C"
+		(property "Manufacturer" "Amphenol"
 			(at 143.51 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 143.51 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "3.37 mm"
-			(at 143.51 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Amphenol"
-			(at 143.51 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -1316,7 +1108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 166.37 93.345 0)
 			(effects
 				(font
@@ -1326,15 +1118,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 166.37 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
 			(at 166.37 93.345 0)
 			(effects
 				(font
@@ -1370,7 +1153,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "1"
+			(at 166.37 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 166.37 93.345 0)
 			(effects
 				(font
@@ -1428,7 +1220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 120.65 83.185 0)
 			(effects
 				(font
@@ -1438,15 +1230,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
 			(at 120.65 83.185 0)
 			(effects
 				(font
@@ -1482,7 +1265,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "1"
+			(at 120.65 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 120.65 83.185 0)
 			(effects
 				(font
@@ -1501,91 +1293,6 @@
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/dffa178b-07a8-4735-b10c-32a6042c7f6e"
 					(reference "R84")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD9B5.0ST5G")
-		(at 177.165 81.915 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "511de3cd-e84b-4b80-8c5f-efa9fa8118a1")
-		(property "Reference" "D10"
-			(at 172.72 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESD9B5.0ST5G"
-			(at 167.64 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
-			(at 177.165 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-			(at 177.165 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 177.165 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "ESD9B5.0ST5G"
-			(at 177.165 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/product-detail/en/on-semiconductor/ESD9B5-0ST5G/ESD9B5-0ST5GOSCT-ND/1646497"
-			(at 177.165 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93c21132-1525-4713-8109-d07f2c6f9afe")
-		)
-		(pin "2"
-			(uuid "bf9fcce8-fa6b-485a-93af-72b0e66252e7")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/dffa178b-07a8-4735-b10c-32a6042c7f6e"
-					(reference "D10")
 					(unit 1)
 				)
 			)

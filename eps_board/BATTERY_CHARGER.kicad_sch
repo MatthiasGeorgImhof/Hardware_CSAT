@@ -9,409 +9,7 @@
 		(date "2020-08-09")
 	)
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "EPS-rescue:LTC4066-1K_Custom_Symbol"
+		(symbol "Common:LTC4066-1K_Custom_Symbol"
 			(pin_names
 				(offset 1.016)
 			)
@@ -936,6 +534,408 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -11215,7 +11215,7 @@
 		(uuid "f9509438-5ce0-42da-bc51-9747abf2d20e")
 	)
 	(symbol
-		(lib_id "EPS-rescue:LTC4066-1K_Custom_Symbol")
+		(lib_id "Common:LTC4066-1K_Custom_Symbol")
 		(at 135.255 92.075 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11259,15 +11259,6 @@
 		)
 		(property "Description" ""
 			(at 135.255 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "LTC4066EUF#PBF"
-			(at 135.255 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11399,7 +11390,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Project:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 81.153 121.285 90)
 			(effects
 				(font
@@ -11408,7 +11399,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 79.375 121.285 0)
 			(effects
 				(font
@@ -11426,7 +11417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603FT10K0"
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
 			(at 79.375 121.285 0)
 			(effects
 				(font
@@ -11435,7 +11426,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
+		(property "Manufacturer" "YAGEO"
+			(at 79.375 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 79.375 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 79.375 121.285 0)
 			(effects
 				(font
@@ -11499,7 +11508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61E475KE13-01.pdf"
 			(at 90.17 121.285 0)
 			(effects
 				(font
@@ -11517,15 +11526,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "C1608X7S1A475K080AC"
-			(at 90.17 121.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X7S1A475K080AC/445-14258-1-ND/3955924"
 			(at 90.17 121.285 0)
 			(effects
@@ -11535,12 +11535,39 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25"
 			(at 95.25 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 90.17 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRT188R61E475KE13D"
+			(at 90.17 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 90.17 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -11598,7 +11625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 64.135 121.285 0)
 			(effects
 				(font
@@ -11616,7 +11643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603JT1M00"
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603JT1M00/1758066"
 			(at 64.135 121.285 0)
 			(effects
 				(font
@@ -11625,7 +11652,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603JT1M00/1758066"
+		(property "Manufacturer" "YAGEO"
+			(at 64.135 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-071ML"
+			(at 64.135 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 64.135 121.285 0)
 			(effects
 				(font
@@ -11680,7 +11725,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Project:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 55.753 106.045 90)
 			(effects
 				(font
@@ -11689,7 +11734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 53.975 106.045 0)
 			(effects
 				(font
@@ -11707,7 +11752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603FT10K0"
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
 			(at 53.975 106.045 0)
 			(effects
 				(font
@@ -11716,7 +11761,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
+		(property "Manufacturer" "YAGEO"
+			(at 53.975 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 53.975 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 53.975 106.045 0)
 			(effects
 				(font
@@ -11780,7 +11843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 53.975 93.345 0)
 			(effects
 				(font
@@ -11798,7 +11861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RK73H1JTTD2672F"
+		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD2672F/9845116"
 			(at 53.975 93.345 0)
 			(effects
 				(font
@@ -11807,7 +11870,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD2672F/9845116"
+		(property "Manufacturer" "YAGEO"
+			(at 53.975 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0726K7L"
+			(at 53.975 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 53.975 93.345 0)
 			(effects
 				(font
@@ -11871,7 +11952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 83.185 88.265 0)
 			(effects
 				(font
@@ -11889,7 +11970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603FT100K"
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
 			(at 83.185 88.265 0)
 			(effects
 				(font
@@ -11898,7 +11979,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
+		(property "Manufacturer" "YAGEO"
+			(at 83.185 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-07100KL"
+			(at 83.185 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 83.185 88.265 0)
 			(effects
 				(font
@@ -11953,7 +12052,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Project:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 234.188 106.68 90)
 			(effects
 				(font
@@ -11962,7 +12061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -11980,7 +12079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603FT10K0"
+		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -11989,7 +12088,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
+		(property "Manufacturer" "YAGEO"
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -12069,7 +12186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "NRVB120VLSFT1G"
+		(property "Order" "https://www.digikey.com/product-detail/en/on-semiconductor/NRVB120VLSFT1G/NRVB120VLSFT1GOSCT-ND/8538727"
 			(at 135.255 43.18 0)
 			(effects
 				(font
@@ -12078,7 +12195,34 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/product-detail/en/on-semiconductor/NRVB120VLSFT1G/NRVB120VLSFT1GOSCT-ND/8538727"
+		(property "Amps" "1"
+			(at 135.255 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Onsemi"
+			(at 135.255 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "NRVB120VLSFT1G"
+			(at 135.255 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "20"
 			(at 135.255 43.18 0)
 			(effects
 				(font
@@ -12150,7 +12294,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61E475KE13-01.pdf"
 			(at 190.5 74.295 0)
 			(effects
 				(font
@@ -12168,15 +12312,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "C1608X7S1A475K080AC"
-			(at 190.5 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X7S1A475K080AC/445-14258-1-ND/3955924"
 			(at 190.5 74.295 0)
 			(effects
@@ -12186,12 +12321,39 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25"
 			(at 195.58 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 190.5 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRT188R61E475KE13D"
+			(at 190.5 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 190.5 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12249,7 +12411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61E475KE13-01.pdf"
 			(at 207.01 84.455 0)
 			(effects
 				(font
@@ -12267,15 +12429,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "C1608X7S1A475K080AC"
-			(at 207.01 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X7S1A475K080AC/445-14258-1-ND/3955924"
 			(at 207.01 84.455 0)
 			(effects
@@ -12285,12 +12438,39 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25"
 			(at 212.09 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 207.01 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRT188R61E475KE13D"
+			(at 207.01 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 207.01 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12330,7 +12510,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 194.945 86.995 90)
 			(effects
 				(font
@@ -12348,7 +12528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 198.755 88.9 0)
 			(effects
 				(font
@@ -12366,7 +12546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RK73H1JTTD1R00F"
+		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD1R00F/9844862"
 			(at 198.755 88.9 0)
 			(effects
 				(font
@@ -12375,7 +12555,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD1R00F/9844862"
+		(property "Manufacturer" "YAGEO"
+			(at 198.755 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0781RL"
+			(at 198.755 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 198.755 88.9 0)
 			(effects
 				(font
@@ -12439,7 +12637,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61E475KE13-01.pdf"
 			(at 72.39 75.565 0)
 			(effects
 				(font
@@ -12457,15 +12655,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "C1608X7S1A475K080AC"
-			(at 72.39 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/tdk-corporation/C1608X7S1A475K080AC/445-14258-1-ND/3955924"
 			(at 72.39 75.565 0)
 			(effects
@@ -12475,12 +12664,39 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25"
 			(at 77.47 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 72.39 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRT188R61E475KE13D"
+			(at 72.39 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 72.39 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12520,7 +12736,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1"
+		(property "Value" "1R0"
 			(at 75.565 95.25 0)
 			(effects
 				(font
@@ -12538,7 +12754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 72.39 93.345 0)
 			(effects
 				(font
@@ -12556,7 +12772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RK73H1JTTD1R00F"
+		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD1R00F/9844862"
 			(at 72.39 93.345 0)
 			(effects
 				(font
@@ -12565,7 +12781,25 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73H1JTTD1R00F/9844862"
+		(property "Manufacturer" "YAGEO"
+			(at 72.39 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0781RL"
+			(at 72.39 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
 			(at 72.39 93.345 0)
 			(effects
 				(font

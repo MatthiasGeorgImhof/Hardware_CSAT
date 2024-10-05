@@ -617,6 +617,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 119.38) (xy 181.61 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68a53ba7-a064-42ba-a66a-7ca3d6091e7f")
+	)
+	(wire
+		(pts
 			(xy 144.78 121.92) (xy 148.59 121.92)
 		)
 		(stroke
@@ -707,7 +717,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 119.38) (xy 172.72 119.38)
+			(xy 168.91 119.38) (xy 171.45 119.38)
 		)
 		(stroke
 			(width 0)
@@ -759,7 +769,7 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
-		(at 172.72 119.38 0)
+		(at 181.61 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1347,6 +1357,73 @@
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c53d"
 					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 175.26 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "926e31f2-857c-4c00-98da-c0062ac59c20")
+		(property "Reference" "R1"
+			(at 175.26 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 175.26 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 175.26 121.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c59eb43-bfeb-47b1-8f48-aca861e09854")
+		)
+		(pin "2"
+			(uuid "e7c0ca58-9f8d-4376-8cd6-98aaf91b35db")
+		)
+		(instances
+			(project ""
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c53d"
+					(reference "R1")
 					(unit 1)
 				)
 			)

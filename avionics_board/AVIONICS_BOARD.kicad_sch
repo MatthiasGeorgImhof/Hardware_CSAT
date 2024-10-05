@@ -313,6 +313,10 @@
 		(uuid "d255ff3b-de30-41fe-abe5-ac9d02c754cc")
 	)
 	(no_connect
+		(at 146.685 173.99)
+		(uuid "024993e4-486e-48ac-85b2-ded0e103be84")
+	)
+	(no_connect
 		(at 260.985 35.56)
 		(uuid "0f6314da-6577-4e20-9187-affdcf49becd")
 	)
@@ -325,8 +329,16 @@
 		(uuid "23faca6c-6600-473f-a3a4-61d0e7224349")
 	)
 	(no_connect
+		(at 146.685 171.45)
+		(uuid "24de76df-1776-4052-bcff-01784af1f545")
+	)
+	(no_connect
 		(at 260.985 27.94)
 		(uuid "27af763c-e993-4ef9-bbac-dce9906b7dcd")
+	)
+	(no_connect
+		(at 146.685 153.67)
+		(uuid "3c41f44d-b3b6-482e-b297-75c780f4a2f9")
 	)
 	(no_connect
 		(at 260.985 59.69)
@@ -335,6 +347,10 @@
 	(no_connect
 		(at 260.985 30.48)
 		(uuid "4daf4cfa-6e35-4e12-bff4-80b248e4d4cf")
+	)
+	(no_connect
+		(at 146.685 151.13)
+		(uuid "6010dc4e-95e3-4a83-b17b-2d8bc0a05b2e")
 	)
 	(no_connect
 		(at 260.985 20.32)
@@ -347,6 +363,10 @@
 	(no_connect
 		(at 260.985 76.2)
 		(uuid "74163e94-af31-4d23-8a58-394efbdd54bb")
+	)
+	(no_connect
+		(at 146.685 165.735)
+		(uuid "8a7d6645-9788-4e78-afe4-7008518fa265")
 	)
 	(no_connect
 		(at 260.985 45.72)
@@ -363,6 +383,18 @@
 	(no_connect
 		(at 260.985 57.15)
 		(uuid "974c241f-13b9-443d-8186-f7412dfcaef5")
+	)
+	(no_connect
+		(at 146.685 179.07)
+		(uuid "a700f7b5-9075-447b-8c71-fa431d80da0e")
+	)
+	(no_connect
+		(at 146.685 176.53)
+		(uuid "aa3296af-740a-4b9f-bb82-3d71fb944e07")
+	)
+	(no_connect
+		(at 146.685 168.91)
+		(uuid "b5531e16-4920-4030-a368-f547712d8e17")
 	)
 	(no_connect
 		(at 260.985 22.86)
@@ -1646,7 +1678,7 @@
 		)
 		(uuid "5c5d9698-d512-4ce8-aa09-1dc9b7073cbb")
 	)
-	(label "EXTI_2"
+	(label "SUN_INT"
 		(at 69.85 123.19 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2031,7 +2063,7 @@
 		)
 		(uuid "ce01dcbc-0df2-4892-bfbb-cd4ccb6c2575")
 	)
-	(label "EXTI_1"
+	(label "ACS_INT"
 		(at 69.85 173.99 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3860,36 +3892,6 @@
 			)
 			(uuid "41203361-40a8-4b9d-96be-70d72411cb10")
 		)
-		(pin "*ATTENTION" input
-			(at 146.685 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "17bfe090-386d-4630-8a69-e74695d7a2fc")
-		)
-		(pin "EXTI_2" input
-			(at 98.425 123.19 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1d0effc3-d797-44d0-a192-e7d206ec30a8")
-		)
-		(pin "EXTI_1" input
-			(at 98.425 173.99 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "78d4dc1c-2037-458a-bc6e-37cb2ec2f6ca")
-		)
 		(pin "*EPS_RST" input
 			(at 146.685 85.09 0)
 			(effects
@@ -4140,26 +4142,6 @@
 			)
 			(uuid "f60a3e61-d488-48f2-b8e2-3751d7ca0ae0")
 		)
-		(pin "GYRO_INT_1" input
-			(at 98.425 64.77 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "01ec658d-02f9-4fc4-8485-3de7325ffc59")
-		)
-		(pin "GYRO_INT_2" input
-			(at 98.425 67.31 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "09359a6c-f306-444b-9c5d-bf3272795aff")
-		)
 		(pin "USART2_RX" input
 			(at 146.685 105.41 0)
 			(effects
@@ -4230,16 +4212,6 @@
 			)
 			(uuid "c568281b-56a7-4b91-a0af-a2e2632fe772")
 		)
-		(pin "MAG_INT" input
-			(at 98.425 34.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9733bff1-0c8d-4d57-a16d-21a0b20add9f")
-		)
 		(pin "3.3V_STM_CORE" input
 			(at 98.425 190.5 180)
 			(effects
@@ -4280,26 +4252,6 @@
 			)
 			(uuid "fc22f75d-e94c-43a4-8584-38a1168bf1b7")
 		)
-		(pin "GPS_FIX" input
-			(at 146.685 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ebaf3e5c-6f13-46be-b9d9-b1b021d901eb")
-		)
-		(pin "GPS_PPS" input
-			(at 146.685 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e669db82-014e-4078-93ce-f4202e4896e3")
-		)
 		(pin "GPS_5VEN" input
 			(at 146.685 115.57 0)
 			(effects
@@ -4309,6 +4261,166 @@
 				(justify right)
 			)
 			(uuid "312377fc-0e31-4670-961c-9e40874c0d8e")
+		)
+		(pin "GYRO_INT1_EXTI2" input
+			(at 98.425 64.77 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3e54e033-bbae-49e7-8f04-76beb093258f")
+		)
+		(pin "GYRO_INT2_EXTI3" input
+			(at 98.425 67.31 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1bc99a1e-599c-4c7e-a6e0-0c0cafc936fc")
+		)
+		(pin "MAG_INT_EXTI0" input
+			(at 98.425 34.29 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "abba2219-1a99-4277-b347-133188635fe6")
+		)
+		(pin "GPS_FIX_EXTI8" input
+			(at 146.685 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1cfa35ca-6be6-4599-8883-484c084f58e3")
+		)
+		(pin "GPS_PPS_EXTI9" input
+			(at 146.685 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "24baf4ff-f62b-404b-84c3-8a8bce19cf9e")
+		)
+		(pin "*ATTENTION_EXTI12" input
+			(at 146.685 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "08926515-9095-44e8-ac1b-fc0832599bf7")
+		)
+		(pin "WATCHDOG_WAKE_EXTI1" input
+			(at 146.685 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e45a5478-80bb-4875-938e-7fd02ff4dba9")
+		)
+		(pin "ACS_INT_EXTI10" input
+			(at 98.425 173.99 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "72c5a717-ce29-4001-9c0f-e26b41bca588")
+		)
+		(pin "SOLAR_INT_EXTI11" input
+			(at 98.425 123.19 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bb565803-a2d6-48f6-9d54-29e1672dc2de")
+		)
+		(pin "ADC1_IN11" input
+			(at 146.685 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "305dace2-92c0-458d-a7e3-936fc00df55b")
+		)
+		(pin "ADC1_IN12" input
+			(at 146.685 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5d18f900-61c5-4eaf-8e0a-a1a9bf4543d1")
+		)
+		(pin "EXTI7" input
+			(at 146.685 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d30c0cce-fb2d-43ea-b8de-8210362ca7d2")
+		)
+		(pin "EXTI4" input
+			(at 146.685 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "24c05e96-f13c-48ae-b4eb-72b7d01200f6")
+		)
+		(pin "EXTI5" input
+			(at 146.685 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "63a3aac1-2c7b-48b0-aca9-1ff3c4af743a")
+		)
+		(pin "EXTI14" input
+			(at 146.685 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e4607af1-1f89-4bca-81d0-a8fb59fddcae")
+		)
+		(pin "EXTI15" input
+			(at 146.685 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a89c6f4f-9460-44b4-92c1-63fb17a22175")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
@@ -5338,7 +5450,7 @@
 			)
 			(uuid "70fcb53b-a97f-4516-a7e3-1d7f627681cc")
 		)
-		(pin "MOSI_SDA" input
+		(pin "MOSI" input
 			(at 63.5 29.21 0)
 			(effects
 				(font

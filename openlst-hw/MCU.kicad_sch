@@ -5,108 +5,6 @@
 	(uuid "0a313dec-cb41-41be-a95f-fe550e32b963")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -2822,16 +2720,6 @@
 		)
 		(uuid "1f1881b3-9fa8-4564-9f0b-34b828c16058")
 	)
-	(wire
-		(pts
-			(xy 172.72 85.09) (xy 173.99 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "220563bc-0842-478d-93e9-dd79c960185c")
-	)
 	(polyline
 		(pts
 			(xy 21.59 142.24) (xy 21.59 195.58)
@@ -2851,16 +2739,6 @@
 			(type dash)
 		)
 		(uuid "28bad7df-9991-42d6-8d5d-476a54aa5e6a")
-	)
-	(wire
-		(pts
-			(xy 176.53 74.93) (xy 177.8 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2944f6aa-a241-4f38-bd1f-704552935d82")
 	)
 	(wire
 		(pts
@@ -3001,16 +2879,6 @@
 			(type default)
 		)
 		(uuid "3c478222-06b5-4d18-91a9-ce49eedc5c63")
-	)
-	(wire
-		(pts
-			(xy 163.83 63.5) (xy 165.1 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c52d626-0bed-486d-94b8-e3f594e82a07")
 	)
 	(wire
 		(pts
@@ -3254,7 +3122,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 85.09) (xy 165.1 85.09)
+			(xy 152.4 85.09) (xy 173.99 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3274,7 +3142,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 63.5) (xy 156.21 63.5)
+			(xy 152.4 63.5) (xy 165.1 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3444,7 +3312,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 74.93) (xy 168.91 74.93)
+			(xy 152.4 74.93) (xy 168.275 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3511,6 +3379,16 @@
 			(type default)
 		)
 		(uuid "b23abf6c-33b9-4ab4-81d7-e195949fbca0")
+	)
+	(wire
+		(pts
+			(xy 175.895 74.93) (xy 175.26 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f57146-460f-45e0-a5f3-045ea5ed511a")
 	)
 	(polyline
 		(pts
@@ -4518,6 +4396,18 @@
 		)
 		(uuid "47db9630-406a-4c81-9781-d74fc5cdfd96")
 	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 86.36 161.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "5733653b-3dfe-43d3-86e7-28c7258430f8")
+	)
 	(hierarchical_label "VRF"
 		(shape input)
 		(at 104.14 161.29 180)
@@ -4895,7 +4785,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 66.675 65.405 0)
 			(effects
 				(font
@@ -4912,7 +4802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 63.5 63.5 0)
 			(effects
 				(font
@@ -4923,15 +4813,6 @@
 		)
 		(property "Description" ""
 			(at 63.5 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 63.5 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,15 +4838,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 63.5 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 63.5 63.5 0)
 			(effects
@@ -4975,7 +4847,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 63.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 63.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 63.5 63.5 0)
 			(effects
 				(font
@@ -5016,7 +4906,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 163.83 108.585 0)
 			(effects
 				(font
@@ -5033,7 +4923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA12-01.pdf"
 			(at 161.29 106.68 0)
 			(effects
 				(font
@@ -5044,15 +4934,6 @@
 		)
 		(property "Description" ""
 			(at 161.29 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B105KP8NFNC"
-			(at 161.29 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5078,7 +4959,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "GRM188R61C105KA12D"
 			(at 161.29 106.68 0)
 			(effects
 				(font
@@ -5087,7 +4968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CC0603KRX5R8BB105"
+		(property "Tolerance" "10"
 			(at 161.29 106.68 0)
 			(effects
 				(font
@@ -5096,7 +4977,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Color" ""
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 161.29 106.68 0)
 			(effects
 				(font
@@ -5115,127 +5005,6 @@
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
 					(reference "C15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 180.34 74.93 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "13eb90d4-d42d-4786-a570-e8a4a232c2d0")
-		(property "Reference" "C11"
-			(at 177.8 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10n"
-			(at 177.8 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B103KB8NNNC"
-			(at 180.34 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Order" "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL10B103KB8NNNC/3886667"
-			(at 180.34 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "25"
-			(at 180.34 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "GRT1885C1E103JA02J"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "5%"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "Murata"
-			(at 180.34 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dcf9692c-d833-41c8-bba6-979db03abf0a")
-		)
-		(pin "1"
-			(uuid "b58055af-7b71-4943-80e1-888af1a2d056")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -5295,7 +5064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "MIC803-30D3VM3-TR"
+		(property "Order" "https://www.digikey.com/en/products/detail/microchip-technology/MIC803-30D3VM3-TR/2566987"
 			(at 233.68 100.33 0)
 			(effects
 				(font
@@ -5304,7 +5073,34 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/microchip-technology/MIC803-30D3VM3-TR/2566987"
+		(property "Color" ""
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Microchip"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "MIC803-30D3VM3-TR"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "3V"
 			(at 233.68 100.33 0)
 			(effects
 				(font
@@ -5357,7 +5153,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 215.4174 97.5614 0)
 			(effects
 				(font
@@ -5367,7 +5163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 217.17 95.25 0)
 			(effects
 				(font
@@ -5385,24 +5181,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 215.265 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT1K00"
-			(at 217.17 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1942996"
 			(at 217.17 95.25 90)
 			(effects
@@ -5412,7 +5190,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-071KL"
 			(at 217.17 95.25 0)
 			(effects
 				(font
@@ -5421,7 +5199,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071KL"
+		(property "Tolerance" "1"
 			(at 217.17 95.25 0)
 			(effects
 				(font
@@ -5430,7 +5208,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 217.17 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 217.17 95.25 0)
 			(effects
 				(font
@@ -5472,7 +5259,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "1K"
 			(at 264.16 144.78 90)
 			(effects
 				(font
@@ -5480,7 +5267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 261.8486 145.5674 0)
 			(effects
 				(font
@@ -5490,7 +5277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 264.16 147.32 0)
 			(effects
 				(font
@@ -5508,24 +5295,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 264.16 145.415 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT1K00"
-			(at 264.16 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1942996"
 			(at 264.16 147.32 90)
 			(effects
@@ -5535,7 +5304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-071KL"
 			(at 264.16 147.32 0)
 			(effects
 				(font
@@ -5544,7 +5313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-07680RL"
+		(property "Tolerance" "1"
 			(at 264.16 147.32 0)
 			(effects
 				(font
@@ -5553,7 +5322,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 264.16 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 264.16 147.32 0)
 			(effects
 				(font
@@ -5594,7 +5372,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 125.73 33.655 0)
 			(effects
 				(font
@@ -5611,7 +5389,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA12-01.pdf"
 			(at 123.19 31.75 0)
 			(effects
 				(font
@@ -5622,15 +5400,6 @@
 		)
 		(property "Description" ""
 			(at 123.19 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B105KP8NFNC"
-			(at 123.19 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5656,7 +5425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "GRM188R61C105KA12D"
 			(at 123.19 31.75 0)
 			(effects
 				(font
@@ -5665,7 +5434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CC0603KRX5R8BB105"
+		(property "Tolerance" "10"
 			(at 123.19 31.75 0)
 			(effects
 				(font
@@ -5674,7 +5443,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Color" ""
+			(at 123.19 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 123.19 31.75 0)
 			(effects
 				(font
@@ -5699,6 +5477,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 179.07 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25b7e62a-aeaa-41cc-bcb5-e4fdd1ede7c5")
+		(property "Reference" "R1"
+			(at 179.07 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 179.07 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 179.07 76.708 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 179.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0805FR-070RL"
+			(at 179.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cad93f5-f42d-400d-9b72-5c3bab32d99c")
+		)
+		(pin "2"
+			(uuid "92db72be-46f1-4eeb-817a-7cc8faffe043")
+		)
+		(instances
+			(project ""
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 146.05 154.94 0)
 		(mirror x)
@@ -5716,7 +5571,7 @@
 				)
 			)
 		)
-		(property "Value" "CC Prog/Debug"
+		(property "Value" "Conn_02x03_Pin"
 			(at 147.955 149.225 0)
 			(effects
 				(font
@@ -5760,7 +5615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "HPH2-A-10-UA-SMT"
+		(property "Color" ""
 			(at 146.05 154.94 0)
 			(effects
 				(font
@@ -5804,7 +5659,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "39583036-a28d-4a3e-805f-d59c67a7e1f6")
 		(property "Reference" "R16"
 			(at 89.535 177.8 0)
@@ -5814,7 +5669,7 @@
 				)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "47K"
 			(at 89.535 179.705 0)
 			(effects
 				(font
@@ -5822,7 +5677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 84.6074 181.3814 0)
 			(effects
 				(font
@@ -5832,7 +5687,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 86.36 179.07 0)
 			(effects
 				(font
@@ -5850,16 +5705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 90.17 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Tolerance" "1"
 			(at 86.36 179.07 0)
 			(effects
 				(font
@@ -5868,7 +5714,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Part Number" "RC0402FR-0747KL"
 			(at 86.36 179.07 0)
 			(effects
 				(font
@@ -5877,7 +5723,16 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD0726K7L"
+		(property "Color" ""
+			(at 86.36 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 86.36 179.07 0)
 			(effects
 				(font
@@ -5918,7 +5773,7 @@
 				)
 			)
 		)
-		(property "Value" "Control Outputs"
+		(property "Value" "Conn_01x03_Pin"
 			(at 133.35 180.975 0)
 			(effects
 				(font
@@ -5946,6 +5801,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 133.35 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 133.35 186.69 0)
 			(effects
 				(font
@@ -5989,7 +5853,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 245.11 91.44 0)
 			(effects
 				(font
@@ -6006,7 +5870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 242.57 90.17 0)
 			(effects
 				(font
@@ -6017,15 +5881,6 @@
 		)
 		(property "Description" ""
 			(at 242.57 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 242.57 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,15 +5906,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 242.57 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 242.57 90.17 0)
 			(effects
@@ -6069,7 +5915,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 242.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 242.57 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 242.57 90.17 0)
 			(effects
 				(font
@@ -6095,205 +5959,13 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 63.5 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "416635e6-7f93-42a4-a155-44b327c077d4")
-		(property "Reference" "R1"
-			(at 160.02 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 160.02 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 157.7086 61.7474 0)
-			(effects
-				(font
-					(size 0.6096 0.6096)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 160.02 61.595 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 160.02 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0603FR-070RL"
-			(at 160.02 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "add853d1-d741-4eba-95b1-05b67414400d")
-		)
-		(pin "2"
-			(uuid "beaeab18-dbe5-49f1-9dd0-acd325b5f438")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 172.72 74.93 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "427d7345-e159-4a79-8433-0c6bb7018397")
-		(property "Reference" "R2"
-			(at 172.085 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 172.085 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 170.4086 73.1774 0)
-			(effects
-				(font
-					(size 0.6096 0.6096)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 172.72 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 172.72 73.025 90)
-			(effects
-				(font
-					(size 0.9906 0.9906)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 172.72 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0603FR-070RL"
-			(at 172.72 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cab9c52d-edff-45c7-a6b3-03b28c1702cb")
-		)
-		(pin "2"
-			(uuid "51ab4d3a-83af-44f5-8dc4-27e81162fb4f")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 86.36 167.64 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "4bdca475-33fe-4a4c-b1ae-e98b9528befa")
 		(property "Reference" "R12"
 			(at 89.535 166.37 0)
@@ -6303,7 +5975,7 @@
 				)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "20K"
 			(at 89.535 168.275 0)
 			(effects
 				(font
@@ -6311,7 +5983,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 84.6074 169.9514 0)
 			(effects
 				(font
@@ -6321,7 +5993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 86.36 167.64 0)
 			(effects
 				(font
@@ -6339,16 +6011,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 90.17 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-0720KL"
 			(at 86.36 167.64 0)
 			(effects
 				(font
@@ -6357,7 +6020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD0713K7L"
+		(property "Tolerance" "1"
 			(at 86.36 167.64 0)
 			(effects
 				(font
@@ -6366,7 +6029,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Color" ""
+			(at 86.36 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 86.36 167.64 0)
 			(effects
 				(font
@@ -6407,7 +6079,7 @@
 				)
 			)
 		)
-		(property "Value" "Z=1k @ 100M"
+		(property "Value" "1K"
 			(at 121.92 25.4 90)
 			(effects
 				(font
@@ -6424,7 +6096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/en/models/7798421"
 			(at 130.81 29.21 0)
 			(effects
 				(font
@@ -6438,15 +6110,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "BLM18AG102SN1D"
-			(at 130.81 29.21 90)
-			(effects
-				(font
-					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
@@ -6469,7 +6132,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
+		(property "Part Number" "BLM18KG102SN1D "
 			(at 130.81 29.21 0)
 			(effects
 				(font
@@ -6478,7 +6141,16 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "BLM18KG102SN1D "
+		(property "Color" ""
+			(at 130.81 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 130.81 29.21 0)
 			(effects
 				(font
@@ -6528,7 +6200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm"
+		(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
 			(at 180.34 83.82 0)
 			(effects
 				(font
@@ -6537,7 +6209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://abracon.com/AIGOscillators/ASDAIG.pdf"
+		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-2520MVLC.pdf"
 			(at 194.31 74.93 0)
 			(effects
 				(font
@@ -6555,8 +6227,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "ASDAIG-27.000MHZ-C-S-T"
-			(at 191.77 66.6496 0)
+		(property "Order" "https://www.digikey.com/en/products/detail/epson/TG2520SMN-27-0000M-MCGNNM3/13151956"
+			(at 210.82 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,8 +6236,26 @@
 				(hide yes)
 			)
 		)
-		(property "Order" "https://www.digikey.com/en/products/detail/epson/TG2520SMN-27-0000M-MCGNNM3/13151956"
-			(at 210.82 93.98 0)
+		(property "Color" ""
+			(at 191.77 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ECS"
+			(at 191.77 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "ECS-2520MVLC-270-CN-TR"
+			(at 191.77 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6628,7 +6318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -6646,25 +6336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "150060RS75000"
-			(at 257.81 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/w%C3%BCrth-elektronik/150060RS75000/732-4978-1-ND/4489899"
-			(at 257.81 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "Lite-On"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -6683,6 +6355,24 @@
 			)
 		)
 		(property "Voltage" "2.1"
+			(at 257.81 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 257.81 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On"
 			(at 257.81 147.32 0)
 			(effects
 				(font
@@ -6731,7 +6421,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 144.78 169.672 90)
 			(effects
 				(font
@@ -6740,7 +6430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 144.78 171.45 0)
 			(effects
 				(font
@@ -6758,62 +6448,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "Stackpole Electronics Inc"
-			(at 152.4 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FG100R"
-			(at 152.4 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 152.4 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "RMCF0603FG100RCT-ND"
-			(at 152.4 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FG100R/1713541"
 			(at 144.78 171.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 140.335 172.085 90)
-			(effects
-				(font
-					(size 0.7112 0.7112)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 144.78 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6830,7 +6466,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "1"
+			(at 144.78 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 144.78 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 144.78 171.45 0)
 			(effects
 				(font
@@ -6888,7 +6542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NUP2105L-D.PDF"
 			(at 257.81 149.86 0)
 			(effects
 				(font
@@ -6906,25 +6560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "150060RS75000"
-			(at 257.81 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/w%C3%BCrth-elektronik/150060RS75000/732-4978-1-ND/4489899"
-			(at 257.81 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "Lite-On"
 			(at 257.81 149.86 0)
 			(effects
 				(font
@@ -6943,6 +6579,24 @@
 			)
 		)
 		(property "Voltage" "2.1"
+			(at 257.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 257.81 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Lite-On"
 			(at 257.81 149.86 0)
 			(effects
 				(font
@@ -6984,7 +6638,7 @@
 				)
 			)
 		)
-		(property "Value" "680"
+		(property "Value" "1K"
 			(at 264.16 154.94 90)
 			(effects
 				(font
@@ -6992,7 +6646,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 261.8486 148.1074 0)
 			(effects
 				(font
@@ -7002,7 +6656,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 264.16 149.86 0)
 			(effects
 				(font
@@ -7020,24 +6674,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 264.16 147.955 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT1K00"
-			(at 264.16 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1942996"
 			(at 264.16 149.86 90)
 			(effects
@@ -7047,7 +6683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-071KL"
 			(at 264.16 149.86 0)
 			(effects
 				(font
@@ -7056,7 +6692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-07680RL"
+		(property "Tolerance" "1"
 			(at 264.16 149.86 0)
 			(effects
 				(font
@@ -7065,7 +6701,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 264.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 264.16 149.86 0)
 			(effects
 				(font
@@ -7141,8 +6786,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "Texas Instruments"
-			(at 119.38 38.1 0)
+		(property "Color" ""
+			(at 134.62 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7150,8 +6795,8 @@
 				(hide yes)
 			)
 		)
-		(property "ManufPN" "CC1110F32RHHR"
-			(at 119.38 38.1 0)
+		(property "Manufacturer" "TI"
+			(at 134.62 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7159,17 +6804,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier" "Digikey"
-			(at 119.38 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "296-38560-1-ND"
-			(at 119.38 38.1 0)
+		(property "Part Number" "CC1110F32RHHR"
+			(at 134.62 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7322,7 +6958,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 157.988 109.22 90)
 			(effects
 				(font
@@ -7331,7 +6967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 156.21 109.22 0)
 			(effects
 				(font
@@ -7349,62 +6985,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "YAGEO"
-			(at 154.178 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ManufPN" "RC0603JR-0756KL"
-			(at 154.178 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 154.178 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "311-56KGRCT-ND"
-			(at 154.178 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/yageo/RC0603JR-0756KL/726808"
 			(at 156.21 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 154.305 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 156.21 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7421,7 +7003,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "1"
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 156.21 109.22 0)
 			(effects
 				(font
@@ -7471,7 +7071,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 50.3174 177.5714 0)
 			(effects
 				(font
@@ -7481,7 +7081,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -7499,16 +7099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 55.88 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-07100KL"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -7517,7 +7108,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD0720KL"
+		(property "Tolerance" "1"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -7526,7 +7117,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Color" ""
+			(at 52.07 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 52.07 175.26 0)
 			(effects
 				(font
@@ -7567,7 +7167,7 @@
 				)
 			)
 		)
-		(property "Value" "UART0"
+		(property "Value" "Conn_01x06_Pin"
 			(at 27.94 158.75 0)
 			(effects
 				(font
@@ -7594,6 +7194,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 26.67 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 26.67 168.91 0)
 			(effects
 				(font
@@ -7646,7 +7255,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "100nF"
 			(at 220.98 107.315 0)
 			(effects
 				(font
@@ -7654,7 +7263,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -7663,7 +7272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -7674,15 +7283,6 @@
 		)
 		(property "Description" ""
 			(at 217.17 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B103KB8NNNC"
-			(at 217.17 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7708,7 +7308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRT1885C1E103JA02J"
+		(property "Part Number" "GRM155R61E104KA87D"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -7717,7 +7317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "5%"
+		(property "Tolerance" "10"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -7726,7 +7326,16 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
+		(property "Color" ""
+			(at 217.17 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 217.17 105.41 0)
 			(effects
 				(font
@@ -7775,7 +7384,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 144.78 184.912 90)
 			(effects
 				(font
@@ -7784,7 +7393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 144.78 186.69 0)
 			(effects
 				(font
@@ -7802,62 +7411,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "Stackpole Electronics Inc"
-			(at 152.4 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FG100R"
-			(at 152.4 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 152.4 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "RMCF0603FG100RCT-ND"
-			(at 152.4 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FG100R/1713541"
 			(at 144.78 186.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 140.335 187.325 90)
-			(effects
-				(font
-					(size 0.7112 0.7112)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 144.78 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7874,7 +7429,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Tolerance" "1"
+			(at 144.78 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 144.78 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 144.78 186.69 0)
 			(effects
 				(font
@@ -7899,102 +7472,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 168.91 85.09 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "8283ab66-0e52-4149-9886-b44ee333d191")
-		(property "Reference" "R4"
-			(at 168.91 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 168.91 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 166.5986 83.3374 0)
-			(effects
-				(font
-					(size 0.6096 0.6096)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0603"
-			(at 168.91 83.185 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
-			(at 168.91 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0603FR-070RL"
-			(at 168.91 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a9cb150-e448-4fcf-af4b-babfdd6d9a47")
-		)
-		(pin "2"
-			(uuid "0db98f2f-0af4-4fee-b90a-9e5e63935e78")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 55.88 63.5 0)
 		(unit 1)
@@ -8011,7 +7488,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 59.055 65.405 0)
 			(effects
 				(font
@@ -8028,7 +7505,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 55.88 63.5 0)
 			(effects
 				(font
@@ -8039,15 +7516,6 @@
 		)
 		(property "Description" ""
 			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 55.88 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,15 +7541,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 55.88 63.5 0)
 			(effects
@@ -8091,7 +7550,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 55.88 63.5 0)
 			(effects
 				(font
@@ -8132,7 +7609,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 106.045 65.405 0)
 			(effects
 				(font
@@ -8149,7 +7626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 102.87 63.5 0)
 			(effects
 				(font
@@ -8160,15 +7637,6 @@
 		)
 		(property "Description" ""
 			(at 102.87 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 102.87 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8194,15 +7662,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 102.87 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 102.87 63.5 0)
 			(effects
@@ -8212,7 +7671,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 102.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 102.87 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 102.87 63.5 0)
 			(effects
 				(font
@@ -8262,7 +7739,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 56.6674 169.9514 0)
 			(effects
 				(font
@@ -8272,7 +7749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 58.42 167.64 0)
 			(effects
 				(font
@@ -8290,16 +7767,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 62.23 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-07100KL"
 			(at 58.42 167.64 0)
 			(effects
 				(font
@@ -8308,7 +7776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD0720KL"
+		(property "Tolerance" "1"
 			(at 58.42 167.64 0)
 			(effects
 				(font
@@ -8317,7 +7785,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Color" ""
+			(at 58.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 58.42 167.64 0)
 			(effects
 				(font
@@ -8336,6 +7813,83 @@
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.085 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3c449f3-3d76-4c80-b8e9-d9662ce4dd59")
+		(property "Reference" "R2"
+			(at 172.085 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 172.085 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 172.085 76.708 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.085 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 172.085 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0805FR-070RL"
+			(at 172.085 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fe95128-6a4d-40c8-8b3a-a43c4b4fb689")
+		)
+		(pin "2"
+			(uuid "22733466-4ec3-4a77-ab46-650cafa7ceae")
+		)
+		(instances
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8424,7 +7978,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 203.835 76.835 0)
 			(effects
 				(font
@@ -8441,7 +7995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 200.66 74.93 0)
 			(effects
 				(font
@@ -8452,15 +8006,6 @@
 		)
 		(property "Description" ""
 			(at 200.66 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 200.66 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8486,15 +8031,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 200.66 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 200.66 74.93 0)
 			(effects
@@ -8504,7 +8040,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 200.66 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 200.66 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 200.66 74.93 0)
 			(effects
 				(font
@@ -8545,7 +8099,7 @@
 				)
 			)
 		)
-		(property "Value" "Control Outputs"
+		(property "Value" "Conn_01x03_Pin"
 			(at 132.08 163.83 0)
 			(effects
 				(font
@@ -8572,6 +8126,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 133.35 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 133.35 171.45 0)
 			(effects
 				(font
@@ -8616,7 +8179,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 95.25 113.665 0)
 			(effects
 				(font
@@ -8624,7 +8187,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 90.9574 114.0714 0)
 			(effects
 				(font
@@ -8634,7 +8197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 92.71 111.76 0)
 			(effects
 				(font
@@ -8652,24 +8215,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 90.805 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT1K00"
-			(at 92.71 111.76 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1942996"
 			(at 92.71 111.76 90)
 			(effects
@@ -8679,7 +8224,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-0710KL"
 			(at 92.71 111.76 0)
 			(effects
 				(font
@@ -8688,7 +8233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071KL"
+		(property "Tolerance" "1"
 			(at 92.71 111.76 0)
 			(effects
 				(font
@@ -8697,7 +8242,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 92.71 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 92.71 111.76 0)
 			(effects
 				(font
@@ -8716,73 +8270,6 @@
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 86.36 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb168486-f5ef-4f09-990b-0cd9a6cf835b")
-		(property "Reference" "TP1"
-			(at 88.9 156.7179 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 88.9 159.2579 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 91.44 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 86.36 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "05b101b9-fe99-49de-87a2-61e39e0c857e")
-		)
-		(instances
-			(project ""
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/f5534efb-fc6e-465a-a57b-daca63f2ce0c"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -8815,7 +8302,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 105.918 179.07 90)
 			(effects
 				(font
@@ -8824,7 +8311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 104.14 179.07 0)
 			(effects
 				(font
@@ -8842,15 +8329,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "CR0603-FX-4702ELF"
-			(at 104.14 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4702ELF/CR0603-FX-4702ELFCT-ND/3925317"
 			(at 104.14 179.07 0)
 			(effects
@@ -8860,16 +8338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 107.95 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-0747KL"
 			(at 104.14 179.07 0)
 			(effects
 				(font
@@ -8878,7 +8347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD0720KL"
+		(property "Tolerance" "1"
 			(at 104.14 179.07 0)
 			(effects
 				(font
@@ -8887,7 +8356,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Color" ""
+			(at 104.14 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 104.14 179.07 0)
 			(effects
 				(font
@@ -8929,7 +8407,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 95.885 65.405 0)
 			(effects
 				(font
@@ -8947,7 +8425,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 95.25 63.5 0)
 			(effects
 				(font
@@ -8965,65 +8443,11 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "Kemet"
-			(at 95.504 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ManufPN" "C0402C221J2GACAUTO"
-			(at 95.504 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 95.504 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "399-11552-1-ND"
-			(at 95.504 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Voltage" "25"
 			(at 99.06 62.865 0)
 			(effects
 				(font
 					(size 0.7874 0.7874)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 99.06 64.135 0)
-			(effects
-				(font
-					(size 0.7874 0.7874)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "Murata"
-			(at 95.25 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -9037,7 +8461,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 95.25 63.5 0)
 			(effects
 				(font
@@ -9078,7 +8520,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 83.185 65.405 0)
 			(effects
 				(font
@@ -9095,7 +8537,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 80.01 63.5 0)
 			(effects
 				(font
@@ -9106,15 +8548,6 @@
 		)
 		(property "Description" ""
 			(at 80.01 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 80.01 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9140,15 +8573,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 80.01 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 80.01 63.5 0)
 			(effects
@@ -9158,7 +8582,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 80.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 80.01 63.5 0)
 			(effects
 				(font
@@ -9199,7 +8641,7 @@
 				)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 119.38 33.655 0)
 			(effects
 				(font
@@ -9216,7 +8658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
 			(at 116.84 31.75 0)
 			(effects
 				(font
@@ -9227,15 +8669,6 @@
 		)
 		(property "Description" ""
 			(at 116.84 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B105KP8NFNC"
-			(at 116.84 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9261,7 +8694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
+		(property "Part Number" "GRM188R61E106KA73D"
 			(at 116.84 31.75 0)
 			(effects
 				(font
@@ -9270,7 +8703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM21BR61E106KA73L"
+		(property "Tolerance" "10"
 			(at 116.84 31.75 0)
 			(effects
 				(font
@@ -9279,7 +8712,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Color" ""
+			(at 116.84 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 116.84 31.75 0)
 			(effects
 				(font
@@ -9320,7 +8762,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 137.16 33.655 0)
 			(effects
 				(font
@@ -9337,7 +8779,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61C105KA12-01.pdf"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -9348,15 +8790,6 @@
 		)
 		(property "Description" ""
 			(at 134.62 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B105KP8NFNC"
-			(at 134.62 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9382,7 +8815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "GRM188R61C105KA12D"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -9391,7 +8824,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "CC0603KRX5R8BB105"
+		(property "Tolerance" "10"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -9400,7 +8833,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Color" ""
+			(at 134.62 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 134.62 31.75 0)
 			(effects
 				(font
@@ -9449,7 +8891,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 105.918 167.64 90)
 			(effects
 				(font
@@ -9458,7 +8900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 104.14 167.64 0)
 			(effects
 				(font
@@ -9476,15 +8918,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "RMCF0603FT20K0"
-			(at 104.14 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT20K0/1760829"
 			(at 104.14 167.64 0)
 			(effects
@@ -9494,16 +8927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 107.95 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Tolerance" "1"
 			(at 104.14 167.64 0)
 			(effects
 				(font
@@ -9512,7 +8936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "0.1%"
+		(property "Part Number" "RC0402FR-0720KL"
 			(at 104.14 167.64 0)
 			(effects
 				(font
@@ -9521,7 +8945,16 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RT0603BRD07137KL"
+		(property "Color" ""
+			(at 104.14 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 104.14 167.64 0)
 			(effects
 				(font
@@ -9563,7 +8996,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 71.755 65.405 0)
 			(effects
 				(font
@@ -9581,7 +9014,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 71.12 63.5 0)
 			(effects
 				(font
@@ -9599,65 +9032,11 @@
 				(hide yes)
 			)
 		)
-		(property "Manuf" "Kemet"
-			(at 71.374 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ManufPN" "C0402C221J2GACAUTO"
-			(at 71.374 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "Digikey"
-			(at 71.374 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SupplierPN" "399-11552-1-ND"
-			(at 71.374 59.182 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Voltage" "25"
 			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 0.7874 0.7874)
-				)
-				(hide yes)
-			)
-		)
-		(property "Size" "0402"
-			(at 74.93 64.135 0)
-			(effects
-				(font
-					(size 0.7874 0.7874)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "Murata"
-			(at 71.12 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -9671,7 +9050,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 71.12 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 71.12 63.5 0)
 			(effects
 				(font
@@ -9722,7 +9119,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 218.948 83.82 90)
 			(effects
 				(font
@@ -9731,7 +9128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/CHPREZTR.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 217.17 83.82 0)
 			(effects
 				(font
@@ -9749,15 +9146,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mfr. #" "CR0603-FX-4702ELF"
-			(at 217.17 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-FX-4702ELF/CR0603-FX-4702ELFCT-ND/3925317"
 			(at 217.17 83.82 0)
 			(effects
@@ -9767,16 +9155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 220.98 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-0747KL"
 			(at 217.17 83.82 0)
 			(effects
 				(font
@@ -9785,7 +9164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-0747KL"
+		(property "Tolerance" "1"
 			(at 217.17 83.82 0)
 			(effects
 				(font
@@ -9794,7 +9173,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 217.17 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 217.17 83.82 0)
 			(effects
 				(font
@@ -9836,7 +9224,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "10K"
 			(at 95.25 100.965 0)
 			(effects
 				(font
@@ -9844,7 +9232,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 90.9574 103.9114 0)
 			(effects
 				(font
@@ -9854,7 +9242,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 92.71 101.6 0)
 			(effects
 				(font
@@ -9872,24 +9260,6 @@
 				(hide yes)
 			)
 		)
-		(property "Size" "0603"
-			(at 90.805 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "RMCF0603FT1K00"
-			(at 92.71 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Order" "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1942996"
 			(at 92.71 101.6 90)
 			(effects
@@ -9899,7 +9269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "YAGEO"
+		(property "Part Number" "RC0402FR-0710KL"
 			(at 92.71 101.6 0)
 			(effects
 				(font
@@ -9908,7 +9278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071KL"
+		(property "Tolerance" "1"
 			(at 92.71 101.6 0)
 			(effects
 				(font
@@ -9917,7 +9287,16 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "1%"
+		(property "Color" ""
+			(at 92.71 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
 			(at 92.71 101.6 0)
 			(effects
 				(font
@@ -10024,7 +9403,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 90.805 65.405 0)
 			(effects
 				(font
@@ -10041,7 +9420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
 			(at 87.63 63.5 0)
 			(effects
 				(font
@@ -10052,15 +9431,6 @@
 		)
 		(property "Description" ""
 			(at 87.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfr. #" "CL10B104KA8NNNC"
-			(at 87.63 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10086,15 +9456,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" "Murata"
-			(at 87.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Part Number" "GRM155R61E104KA87D"
 			(at 87.63 63.5 0)
 			(effects
@@ -10104,7 +9465,25 @@
 				(hide yes)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "10"
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
 			(at 87.63 63.5 0)
 			(effects
 				(font

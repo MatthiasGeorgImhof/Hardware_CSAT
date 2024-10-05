@@ -289,30 +289,6 @@
 			)
 		)
 	)
-	(junction
-		(at 116.205 104.775)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "964c8905-7450-472b-b4a8-b406e7d965be")
-	)
-	(junction
-		(at 92.71 69.215)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b582b31-b778-44b3-a79a-2f264bbe777f")
-	)
-	(junction
-		(at 99.06 104.775)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ccd3e953-516d-4f76-94ea-fb2780e06693")
-	)
-	(junction
-		(at 84.455 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d6d9a4be-9836-47a6-9d7c-8c9191727103")
-	)
 	(wire
 		(pts
 			(xy 84.455 59.69) (xy 116.205 59.69)
@@ -322,16 +298,6 @@
 			(type default)
 		)
 		(uuid "02d23578-70e2-46bf-81ff-767621c14899")
-	)
-	(wire
-		(pts
-			(xy 84.455 104.775) (xy 99.06 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02e4a34a-ba13-4a6f-a3c6-5036bc331859")
 	)
 	(wire
 		(pts
@@ -345,16 +311,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.205 104.775) (xy 116.84 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13eccbcc-1996-4d13-b65a-04bee9312ff4")
-	)
-	(wire
-		(pts
 			(xy 176.53 62.865) (xy 195.58 62.865)
 		)
 		(stroke
@@ -362,16 +318,6 @@
 			(type default)
 		)
 		(uuid "19bb0c34-2afe-4698-8775-d2ff8291b3cd")
-	)
-	(wire
-		(pts
-			(xy 99.06 66.04) (xy 99.06 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c279cb0-c320-4869-92c0-053046536e0a")
 	)
 	(wire
 		(pts
@@ -395,26 +341,6 @@
 	)
 	(wire
 		(pts
-			(xy 84.455 69.215) (xy 92.71 69.215)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fccd379-7d56-402a-9bd1-fa241887316a")
-	)
-	(wire
-		(pts
-			(xy 92.71 69.215) (xy 92.71 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f106fd9-41cf-44a7-9e81-2a77b36f46b3")
-	)
-	(wire
-		(pts
 			(xy 189.865 60.325) (xy 195.58 60.325)
 		)
 		(stroke
@@ -422,16 +348,6 @@
 			(type default)
 		)
 		(uuid "614c90b7-bfdc-4451-b2ee-d917de9ebe09")
-	)
-	(wire
-		(pts
-			(xy 99.06 104.775) (xy 116.205 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6403bae6-205c-4978-b859-c7aca6470be2")
 	)
 	(wire
 		(pts
@@ -445,7 +361,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 69.215) (xy 116.205 69.215)
+			(xy 84.455 69.215) (xy 116.205 69.215)
 		)
 		(stroke
 			(width 0)
@@ -525,17 +441,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 66.04) (xy 84.455 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4f0b7eb-a442-4044-93df-4453534ca7df")
-	)
-	(wire
-		(pts
-			(xy 84.455 66.04) (xy 99.06 66.04)
+			(xy 84.455 66.04) (xy 116.205 66.04)
 		)
 		(stroke
 			(width 0)
@@ -565,13 +471,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 101.6) (xy 84.455 101.6)
+			(xy 84.455 101.6) (xy 116.205 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ce72c1e4-2f55-4b0e-8a66-f3cc07f698a4")
+	)
+	(wire
+		(pts
+			(xy 84.455 104.775) (xy 116.205 104.775)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5210d2e-9440-41e4-8f15-0cad04e4459f")
 	)
 	(wire
 		(pts
@@ -582,17 +498,6 @@
 			(type default)
 		)
 		(uuid "eabadc5a-ea2d-4d27-93cc-81c878407a78")
-	)
-	(label "CAN_RS"
-		(at 106.045 69.215 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "f462c20f-d384-4e41-8b21-992712522a3e")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -798,18 +703,6 @@
 		)
 		(uuid "df1c237a-317c-498c-adb2-7843650bc799")
 	)
-	(hierarchical_label "COMM2_RST"
-		(shape bidirectional)
-		(at 176.53 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "e2a67503-dc08-4126-b99c-321892ec009a")
-	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 84.455 108.585 0)
@@ -879,6 +772,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 200.66 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
 			(at 200.66 62.865 0)
 			(effects
 				(font
@@ -1197,16 +1099,6 @@
 			)
 			(uuid "21ccbb7b-36ef-411d-98d1-1ee118191586")
 		)
-		(pin "CAN_STB" output
-			(at 116.205 69.215 180)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-			(uuid "77e00429-d318-4705-92f3-0ae1c60e067c")
-		)
 		(pin "CAN1_RX" input
 			(at 116.205 59.69 180)
 			(effects
@@ -1266,16 +1158,6 @@
 				(justify right)
 			)
 			(uuid "d323929f-1179-4bc5-bc47-6a23e2230bfc")
-		)
-		(pin "COMM2_RST" input
-			(at 176.53 107.95 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-			(uuid "ea7e53ed-7483-4fdc-adfe-9e6753349106")
 		)
 		(pin "3V3" input
 			(at 116.205 44.45 180)
@@ -1387,7 +1269,17 @@
 			)
 			(uuid "dc888553-d29a-44c9-957f-2736c71ee5c1")
 		)
-		(pin "CAN_SHDN" output
+		(pin "CAN2_STB" output
+			(at 116.205 101.6 180)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+			(uuid "4dd432b0-2848-412c-b22e-167798dec6a4")
+		)
+		(pin "CAN2_SHDN" output
 			(at 116.205 104.775 180)
 			(effects
 				(font
@@ -1395,7 +1287,27 @@
 				)
 				(justify left)
 			)
-			(uuid "4666c93f-fbc2-42d9-abdb-7e242b4023ac")
+			(uuid "9e7ce539-df7f-49c9-8138-e45e34947798")
+		)
+		(pin "CAN1_STB" output
+			(at 116.205 69.215 180)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+			(uuid "dcabd258-3f39-49e6-b92e-9cd96f30a57a")
+		)
+		(pin "CAN1_SHDN" output
+			(at 116.205 66.04 180)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+			(uuid "13dc56b7-9496-4d53-9f64-d0d784001042")
 		)
 		(instances
 			(project "openlst-hw"

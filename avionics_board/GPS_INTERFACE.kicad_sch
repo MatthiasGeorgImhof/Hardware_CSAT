@@ -9,22 +9,22 @@
 		(date "2020-05-12")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_02x04_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 7.62 0)
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_02x04_Odd_Even"
+				(at 1.27 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -49,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,7 +67,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,18 +76,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_02x04_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -133,8 +122,19 @@
 					)
 				)
 				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
+					(start -1.27 3.81)
+					(end 3.81 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -144,18 +144,40 @@
 					)
 				)
 				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -173,7 +195,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -209,7 +231,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -227,7 +249,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -245,7 +267,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -262,126 +284,17 @@
 						)
 					)
 				)
-			)
-		)
-		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Open"
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Open_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_1"
-				(arc
-					(start 1.524 1.27)
-					(mid 0 1.778)
-					(end -1.524 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_7"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -390,16 +303,16 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
+					(at 7.62 -5.08 180)
+					(length 3.81)
+					(name "Pin_8"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -409,114 +322,6 @@
 				)
 			)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-		)
-	)
-	(junction
-		(at 103.505 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59e22a40-149c-4fed-bf58-c984fc2c8c95")
-	)
-	(junction
-		(at 94.615 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "edda5f25-2cac-4f7d-b4f8-f554be8eda87")
 	)
 	(wire
 		(pts
@@ -530,16 +335,6 @@
 	)
 	(wire
 		(pts
-			(xy 103.505 105.41) (xy 107.95 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0558adc8-0a7e-4d5b-8f6f-e8b60ac9f688")
-	)
-	(wire
-		(pts
 			(xy 165.1 100.33) (xy 158.75 100.33)
 		)
 		(stroke
@@ -550,7 +345,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 105.41) (xy 94.615 105.41)
+			(xy 103.505 105.41) (xy 107.95 105.41)
 		)
 		(stroke
 			(width 0)
@@ -580,17 +375,27 @@
 	)
 	(wire
 		(pts
-			(xy 94.615 105.41) (xy 103.505 105.41)
+			(xy 184.15 102.87) (xy 177.8 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6660be3d-4568-4e83-a643-4d4d737dea43")
+		(uuid "8e1edd8a-49e5-4453-844f-2f07660c6405")
 	)
 	(wire
 		(pts
-			(xy 165.1 97.79) (xy 158.75 97.79)
+			(xy 184.15 100.33) (xy 177.8 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94bc58c5-75d3-4058-9cc9-ecf1a9b7aec5")
+	)
+	(wire
+		(pts
+			(xy 177.8 107.95) (xy 184.15 107.95)
 		)
 		(stroke
 			(width 0)
@@ -600,23 +405,13 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 95.25) (xy 165.1 95.25)
+			(xy 184.15 105.41) (xy 177.8 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c45646c1-48e8-462a-a4d4-a4e1b8a9540e")
-	)
-	(wire
-		(pts
-			(xy 103.505 108.585) (xy 103.505 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc94d821-9fbe-4a70-bdd6-db7f2fe6b038")
 	)
 	(wire
 		(pts
@@ -627,28 +422,6 @@
 			(type default)
 		)
 		(uuid "fe1fd270-5ef1-4bb2-bcac-15cd6d83f7b9")
-	)
-	(text "Sparkfun GPS Breakout \nZOE-M8Q\nhttps://www.sparkfun.com/products/15193\n\n"
-		(exclude_from_sim no)
-		(at 168.91 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1473a9a6-7680-4f4d-9b61-23e1d9aedd1a")
-	)
-	(text "Standard 2.54mm pitch through hole header"
-		(exclude_from_sim no)
-		(at 160.02 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8893f67f-70d4-4de1-8835-d7e8a20f0de6")
 	)
 	(hierarchical_label "RESET"
 		(shape input)
@@ -674,9 +447,21 @@
 		)
 		(uuid "0b60414e-5833-44b0-a719-a1bf8f927a78")
 	)
+	(hierarchical_label "FIX"
+		(shape output)
+		(at 184.15 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1a1c0530-e94b-4950-8467-25718c3b790e")
+	)
 	(hierarchical_label "PWR"
 		(shape input)
-		(at 76.2 105.41 180)
+		(at 103.505 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -685,6 +470,30 @@
 			(justify right)
 		)
 		(uuid "1da4d4ce-3d42-4792-84e8-3536032b2b3a")
+	)
+	(hierarchical_label "SHDN_5V"
+		(shape input)
+		(at 103.505 108.585 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89954f82-4d28-4796-8d26-b62d75c707d5")
+	)
+	(hierarchical_label "PPS"
+		(shape output)
+		(at 184.15 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8fe089ef-1900-44d2-822f-af9a4f57c935")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -712,174 +521,40 @@
 	)
 	(hierarchical_label "UART_TX"
 		(shape input)
-		(at 158.75 97.79 180)
+		(at 184.15 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "fa54aa2e-d64b-4a8c-8b4a-6894f69699fb")
 	)
 	(hierarchical_label "UART_RX"
 		(shape output)
-		(at 158.75 95.25 180)
+		(at 184.15 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "fb260189-3d5b-4946-a402-11af5feabe56")
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 81.28 105.41 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "533c552f-81f8-4634-bc27-9c84e71ca481")
-		(property "Reference" "JP1"
-			(at 81.28 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 81.28 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 81.28 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 81.28 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3fe7e318-b259-49fd-9ba0-ac5457ad4970")
-		)
-		(pin "1"
-			(uuid "bb2c5d85-5806-4ba0-ac52-c8f6a6e7b76e")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab1057"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 94.615 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "814e02cd-2d7d-459c-8dd2-3abe55a2ac05")
-		(property "Reference" "#FLG04"
-			(at 94.615 103.505 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 94.615 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 94.615 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 94.615 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 94.615 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e87d2464-b289-452c-b091-4ed809f2b871")
-		)
-		(instances
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab1057"
-					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 170.18 102.87 0)
+		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
+		(at 170.18 105.41 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "89c6d62e-7704-4522-bca0-45e13ae89821")
+		(uuid "b6c3bece-f81e-49dc-8318-6f0dc81fd8f6")
 		(property "Reference" "J6"
-			(at 172.212 103.9368 0)
+			(at 171.45 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -887,8 +562,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x05"
-			(at 172.212 101.6254 0)
+		(property "Value" "Conn_02x04"
+			(at 168.91 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -896,8 +571,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 170.18 102.87 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
+			(at 170.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -906,7 +581,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 170.18 102.87 0)
+			(at 170.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -914,8 +589,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 170.18 102.87 0)
+		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 170.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -924,7 +599,7 @@
 			)
 		)
 		(property "Order" "https://www.digikey.com/product-detail/en/adam-tech/PH1-05-UA/2057-PH1-05-UA-ND/9830343"
-			(at 170.18 102.87 0)
+			(at 170.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,7 +608,7 @@
 			)
 		)
 		(property "Alt" ""
-			(at 170.18 102.87 0)
+			(at 170.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -942,26 +617,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a344ba6-5c57-4910-99c0-d66a14094a6f")
+			(uuid "f5ffc1ac-d561-4f34-95e0-0676a82ad984")
 		)
 		(pin "2"
-			(uuid "776bdab9-62a6-49fa-89a3-5cfb6d93bd12")
+			(uuid "357599ee-a48a-4bc5-93a5-4cb48b66b5a9")
 		)
 		(pin "3"
-			(uuid "f4ba73c2-41d9-434a-897c-383bf4ed2e80")
+			(uuid "a95564e2-7541-4094-8c9f-9ba812f46a16")
 		)
 		(pin "4"
-			(uuid "d8c5b0ef-8c73-436f-a978-58e8cfc7d23c")
+			(uuid "a1116d18-da7f-40bd-96f7-7b97ef3898ba")
 		)
 		(pin "5"
-			(uuid "6a60c32f-4366-4c11-b844-8730e9e70710")
+			(uuid "06d004b2-966c-4d9a-bdab-ecb8ac1c8558")
 		)
 		(pin "6"
-			(uuid "c7f3e698-af8c-4d6e-9a94-37f3ddc35efb")
+			(uuid "01984816-1faf-4a49-a54f-30e3ef81901d")
+		)
+		(pin "7"
+			(uuid "09dddfc5-515b-4f4f-ada3-060dbba45ba9")
+		)
+		(pin "8"
+			(uuid "d981232c-3fe9-4274-9993-b104dc3d289c")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab1057"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/5de22591-2293-4710-b038-9e93720cba0f"
 					(reference "J6")
 					(unit 1)
 				)
@@ -1006,7 +687,7 @@
 				)
 				(justify right)
 			)
-			(uuid "04b2cb32-03c5-4711-a292-0e04ae245945")
+			(uuid "81216681-cbe2-49cd-956e-51a47fd22363")
 		)
 		(pin "VIN" input
 			(at 107.95 105.41 180)
@@ -1016,7 +697,7 @@
 				)
 				(justify left)
 			)
-			(uuid "c335df9c-a87f-4b8a-a40d-2cf802c80322")
+			(uuid "da055796-1a4a-47a9-9d77-121bda7a80d4")
 		)
 		(pin "SHDN" input
 			(at 107.95 108.585 180)
@@ -1026,7 +707,7 @@
 				)
 				(justify left)
 			)
-			(uuid "1d9f604c-b977-446b-9d21-1fd4d919a6f6")
+			(uuid "18c8dc90-ff6b-4c6d-9a88-34f1394662f0")
 		)
 		(pin "GND" input
 			(at 138.43 108.585 0)
@@ -1036,11 +717,11 @@
 				)
 				(justify right)
 			)
-			(uuid "76ff9785-96a7-4520-95ce-18617cff584c")
+			(uuid "5fb1511c-32fc-440b-9e55-cbfca7c4318b")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab1057"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/5de22591-2293-4710-b038-9e93720cba0f"
 					(page "36")
 				)
 			)

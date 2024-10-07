@@ -141,6 +141,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Interface_Expansion:TCA9548APWR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1465,6 +1586,18 @@
 		)
 		(uuid "3e0653e6-6090-4700-b94d-31a981da0d8f")
 	)
+	(hierarchical_label "*INT"
+		(shape input)
+		(at 119.38 116.205 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40511715-8fdf-42fb-b697-c239ccd4d331")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 74.93 98.425 180)
@@ -1632,6 +1765,18 @@
 			(justify right)
 		)
 		(uuid "9f2c9501-e089-477c-b543-d9011faaf2fd")
+	)
+	(hierarchical_label "VIN"
+		(shape input)
+		(at 119.38 108.585 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9f911153-2abd-4823-8bab-503d395ebe9f")
 	)
 	(hierarchical_label "*INT"
 		(shape input)
@@ -1814,6 +1959,103 @@
 		(uuid "ff73c549-f27d-4128-b552-001d470af2a9")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 119.38 112.395 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24a181fb-21f0-4eaf-8b1a-3c08382041fd")
+		(property "Reference" "R41"
+			(at 121.92 111.1249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 121.92 113.6649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 117.602 112.395 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 119.38 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 119.38 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 119.38 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-07100KL"
+			(at 119.38 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 119.38 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7333b7a6-8b7a-40b7-b272-97a102629d93")
+		)
+		(pin "2"
+			(uuid "84db1b00-fa5a-4bb6-9dbc-e410223409d4")
+		)
+		(instances
+			(project ""
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/472a2b3c-f2e4-44b5-9587-658c9c0c9365"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 91.44 121.92 0)
 		(unit 1)
@@ -1823,7 +2065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6cd084f-8f05-43dc-9b24-8c9f0b5eb907")
-		(property "Reference" "C59"
+		(property "Reference" "C54"
 			(at 94.615 120.6499 0)
 			(effects
 				(font
@@ -1922,7 +2164,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/472a2b3c-f2e4-44b5-9587-658c9c0c9365"
-					(reference "C59")
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -1938,7 +2180,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4608421-ee67-4e19-877b-1880a1eae117")
-		(property "Reference" "C58"
+		(property "Reference" "C53"
 			(at 95.25 57.7849 0)
 			(effects
 				(font
@@ -2037,7 +2279,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/472a2b3c-f2e4-44b5-9587-658c9c0c9365"
-					(reference "C58")
+					(reference "C53")
 					(unit 1)
 				)
 			)
@@ -2053,7 +2295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcf56ab6-338a-4627-99f0-4c97a63af4ff")
-		(property "Reference" "U16"
+		(property "Reference" "U15"
 			(at 87.2841 63.5 0)
 			(effects
 				(font
@@ -2200,7 +2442,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/472a2b3c-f2e4-44b5-9587-658c9c0c9365"
-					(reference "U16")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -2216,7 +2458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbc844f3-9819-4594-9ba9-8d6860c5836a")
-		(property "Reference" "U17"
+		(property "Reference" "U16"
 			(at 86.6491 126.365 0)
 			(effects
 				(font
@@ -2363,7 +2605,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/472a2b3c-f2e4-44b5-9587-658c9c0c9365"
-					(reference "U17")
+					(reference "U16")
 					(unit 1)
 				)
 			)

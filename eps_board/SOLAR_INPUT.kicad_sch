@@ -9,22 +9,22 @@
 		(date "2020-08-09")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "Connector_Generic:Conn_02x03_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x04"
-				(at 0 -7.62 0)
+			(property "Value" "Conn_02x03_Odd_Even"
+				(at 1.27 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -49,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -67,7 +67,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,18 +76,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_02x03_Odd_Even_1_1"
 				(rectangle
 					(start -1.27 -2.413)
 					(end 0 -2.667)
@@ -123,13 +112,46 @@
 				)
 				(rectangle
 					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(end 3.81 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin passive line
@@ -151,7 +173,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -169,7 +191,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -187,7 +209,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -204,74 +226,44 @@
 						)
 					)
 				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
-	)
-	(junction
-		(at 144.145 95.885)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e495016f-cc64-450c-971a-f53e3e83bed1")
-	)
-	(wire
-		(pts
-			(xy 144.145 95.885) (xy 144.145 98.425)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08d664e8-1d7b-4b83-aeff-6ecdca253850")
-	)
-	(wire
-		(pts
-			(xy 144.145 95.885) (xy 146.05 95.885)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45cbbbae-6070-40a4-b200-25e24a60257a")
-	)
-	(wire
-		(pts
-			(xy 142.24 100.965) (xy 146.05 100.965)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c39b4ca-8578-4cf7-bafe-b64ba67a6151")
-	)
-	(wire
-		(pts
-			(xy 142.24 98.425) (xy 144.145 98.425)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88655867-5166-4236-8870-3db2993410b4")
-	)
-	(wire
-		(pts
-			(xy 142.24 95.885) (xy 144.145 95.885)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99a65246-116d-469c-8ecf-778f221a158f")
-	)
-	(wire
-		(pts
-			(xy 142.24 93.345) (xy 146.05 93.345)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbf860ac-77f6-4151-be4d-ddf408c8d5ec")
 	)
 	(text "I used to use Molex Pico Lock:\n5040500491\nhttps://www.digikey.com/en/products/detail/molex/5040500491/4357649\n"
 		(exclude_from_sim no)
@@ -286,7 +278,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape output)
-		(at 146.05 93.345 0)
+		(at 142.24 95.885 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -298,7 +290,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape output)
-		(at 146.05 100.965 0)
+		(at 142.24 100.965 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -308,9 +300,45 @@
 		)
 		(uuid "378136b0-8a06-4567-bfcd-94e30c1464c3")
 	)
+	(hierarchical_label "GND"
+		(shape output)
+		(at 129.54 95.885 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b9772c8-c0fa-4c14-81c8-d42a1a52a3ba")
+	)
+	(hierarchical_label "GND"
+		(shape output)
+		(at 129.54 100.965 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9bb8a475-fe3b-4144-a06c-0565acb7b9f4")
+	)
 	(hierarchical_label "PWR"
 		(shape output)
-		(at 146.05 95.885 0)
+		(at 129.54 98.425 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a208c5f1-4c4d-428f-82dd-5353cdf76c4b")
+	)
+	(hierarchical_label "PWR"
+		(shape output)
+		(at 142.24 98.425 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -321,13 +349,13 @@
 		(uuid "ee8d7fc6-846e-4dc7-855e-b107ea9913df")
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 137.16 98.425 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c8aaa53a-541d-4cdd-9190-6a92540d9c82")
 		(property "Reference" "J1"
 			(at 139.2428 106.4768 0)
@@ -337,15 +365,15 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04"
-			(at 139.2428 104.1654 0)
+		(property "Value" "Conn_02x03_Odd_Even"
+			(at 135.89 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Common:HARWIN_M50-3200345"
 			(at 137.16 98.425 0)
 			(effects
 				(font
@@ -354,7 +382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M50-320.pdf"
 			(at 137.16 98.425 0)
 			(effects
 				(font
@@ -363,7 +391,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 137.16 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harwin"
+			(at 137.16 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "M50-3200345"
+			(at 137.16 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
 			(at 137.16 98.425 0)
 			(effects
 				(font
@@ -384,6 +439,12 @@
 		(pin "4"
 			(uuid "52245574-2f84-4243-88cc-9c9655a49a5c")
 		)
+		(pin "6"
+			(uuid "6afc1392-7cde-4c55-ad67-ac38abb6fb37")
+		)
+		(pin "5"
+			(uuid "9853e42c-ae45-4c42-b29a-b5fca74b070f")
+		)
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005f301b61"
@@ -400,14 +461,6 @@
 				)
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00006166c2bb"
 					(reference "J4")
-					(unit 1)
-				)
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-000061679a36"
-					(reference "J5")
-					(unit 1)
-				)
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-0000616870b5"
-					(reference "J6")
 					(unit 1)
 				)
 			)

@@ -330,12 +330,6 @@
 		)
 	)
 	(junction
-		(at 111.76 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "77964dc2-ad51-469f-b0ad-270f569e2cc2")
-	)
-	(junction
 		(at 182.245 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -481,6 +475,17 @@
 		)
 		(uuid "e0667f8e-62bc-4d35-86d9-3bfb7f9987cf")
 	)
+	(text "OUT  RSET  LIM_MIN LIM_MAX\n0.1A 1928Ω 0.063A  0.136A\n0.2A 993Ω  0.137A  0.265A\n0.3A 673Ω  0.216A  0.391A\n0.4A 511Ω  0.296A  0.515A\n0.5A 413Ω  0.379A  0.637A\n0.6A 346Ω  0.463A  0.759A\n0.7A 299Ω  0.548A  0.880A\n0.8A 263Ω  0.634A  1.001A\n0.9A 235Ω  0.722A  1.121A"
+		(exclude_from_sim no)
+		(at 63.5 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6a284a0-f092-4dfc-b900-84d4aabbc8e5")
+	)
 	(hierarchical_label "GND"
 		(shape output)
 		(at 61.595 87.63 0)
@@ -625,18 +630,6 @@
 		)
 		(uuid "daafcae7-b338-4625-a2c6-fd829b883b97")
 	)
-	(hierarchical_label "VIN3"
-		(shape input)
-		(at 111.76 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "de823338-9c51-4904-9b5c-53c7407516df")
-	)
 	(hierarchical_label "GND"
 		(shape output)
 		(at 236.855 78.74 0)
@@ -703,7 +696,7 @@
 				)
 			)
 		)
-		(property "Value" "MIC2009YM6-TR"
+		(property "Value" "MIC2009A-1YM6-TR"
 			(at 78.105 64.135 0)
 			(effects
 				(font
@@ -758,7 +751,43 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "MIC2009YM6-TR"
+		(property "Part Number" "SOT-23-6 MIC2009A-1YM6-TR"
+			(at 59.055 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 59.055 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 59.055 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 59.055 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 59.055 69.85 0)
 			(effects
 				(font
@@ -812,8 +841,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62422152-07a5-4767-8aec-53d7609162b1")
-		(property "Reference" "R27"
-			(at 201.295 81.2799 0)
+		(property "Reference" "R35"
+			(at 200.66 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,8 +850,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K5"
-			(at 201.295 83.8199 0)
+		(property "Value" "988R"
+			(at 200.66 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 198.755 82.55 0)
 			(effects
 				(font
@@ -875,7 +904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071K5L"
+		(property "Part Number" "RT0603DRE07988RL"
 			(at 198.755 82.55 0)
 			(effects
 				(font
@@ -893,6 +922,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 198.755 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 198.755 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 198.755 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 198.755 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "84c1efc6-b29f-4843-aa4a-a07d8581d4f4")
 		)
@@ -902,15 +967,15 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/09c52fbd-a66a-456f-a3b3-a583ddfe7084"
-					(reference "R27")
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3113fc14-4b9f-4852-8ddb-4c564d791d7f"
-					(reference "R19")
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/df99859d-8e37-4f21-a1c5-637d9e74b907"
-					(reference "R23")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -934,7 +999,7 @@
 				)
 			)
 		)
-		(property "Value" "MIC2009YM6-TR"
+		(property "Value" "MIC2009A-1YM6-TR"
 			(at 149.86 63.5 0)
 			(effects
 				(font
@@ -989,7 +1054,43 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "MIC2009YM6-TR"
+		(property "Part Number" "SOT-23-6 MIC2009A-1YM6-TR"
+			(at 130.81 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 130.81 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 130.81 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 130.81 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 130.81 69.215 0)
 			(effects
 				(font
@@ -1034,120 +1135,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 111.76 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cca74c65-70c9-4868-85c0-0ae4578dd73b")
-		(property "Reference" "R26"
-			(at 114.3 67.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 114.3 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 109.982 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "INT pullup"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0710KL"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58839ea3-53db-4cbd-bb9c-d7b4f77fa477")
-		)
-		(pin "2"
-			(uuid "df7f244d-9036-4760-926f-146c8606f97e")
-		)
-		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/09c52fbd-a66a-456f-a3b3-a583ddfe7084"
-					(reference "R26")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3113fc14-4b9f-4852-8ddb-4c564d791d7f"
-					(reference "R18")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/df99859d-8e37-4f21-a1c5-637d9e74b907"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Project:MIC2009YM6-TR")
 		(at 198.755 68.58 0)
 		(unit 1)
@@ -1165,7 +1152,7 @@
 				)
 			)
 		)
-		(property "Value" "MIC2009YM6-TR"
+		(property "Value" "MIC2009A-1YM6-TR"
 			(at 217.805 62.865 0)
 			(effects
 				(font
@@ -1220,7 +1207,43 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "MIC2009YM6-TR"
+		(property "Part Number" "SOT-23-6 MIC2009A-1YM6-TR"
+			(at 198.755 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 198.755 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 198.755 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 198.755 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 198.755 68.58 0)
 			(effects
 				(font
@@ -1274,7 +1297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e155dc09-a8ac-42d0-8a24-e41446ff4126")
-		(property "Reference" "R28"
+		(property "Reference" "R36"
 			(at 133.35 81.9149 0)
 			(effects
 				(font
@@ -1283,7 +1306,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K5"
+		(property "Value" "988R"
 			(at 133.35 84.4549 0)
 			(effects
 				(font
@@ -1301,7 +1324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 130.81 83.185 0)
 			(effects
 				(font
@@ -1337,7 +1360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071K5L"
+		(property "Part Number" "RT0603DRE07988RL"
 			(at 130.81 83.185 0)
 			(effects
 				(font
@@ -1347,6 +1370,42 @@
 			)
 		)
 		(property "Tolerance" "1"
+			(at 130.81 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 130.81 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 130.81 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 130.81 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 130.81 83.185 0)
 			(effects
 				(font
@@ -1364,15 +1423,15 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/09c52fbd-a66a-456f-a3b3-a583ddfe7084"
-					(reference "R28")
+					(reference "R36")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3113fc14-4b9f-4852-8ddb-4c564d791d7f"
-					(reference "R20")
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/df99859d-8e37-4f21-a1c5-637d9e74b907"
-					(reference "R24")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -1388,8 +1447,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4228bc5-9a7c-40c6-8ef7-edb89ebe1c94")
-		(property "Reference" "R29"
-			(at 61.595 82.5499 0)
+		(property "Reference" "R37"
+			(at 60.96 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1397,8 +1456,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K5"
-			(at 61.595 85.0899 0)
+		(property "Value" "988R"
+			(at 60.96 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1415,7 +1474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
 			(at 59.055 83.82 0)
 			(effects
 				(font
@@ -1451,7 +1510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0603FR-071K5L"
+		(property "Part Number" "RT0603DRE07988RL"
 			(at 59.055 83.82 0)
 			(effects
 				(font
@@ -1469,6 +1528,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 59.055 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 59.055 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 59.055 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 59.055 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "02502d9e-11ff-4156-908e-67a373bbac3c")
 		)
@@ -1478,15 +1573,15 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/09c52fbd-a66a-456f-a3b3-a583ddfe7084"
-					(reference "R29")
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/3113fc14-4b9f-4852-8ddb-4c564d791d7f"
-					(reference "R21")
+					(reference "R31")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/df99859d-8e37-4f21-a1c5-637d9e74b907"
-					(reference "R25")
+					(reference "R34")
 					(unit 1)
 				)
 			)

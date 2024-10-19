@@ -1429,6 +1429,28 @@
 		)
 		(uuid "f634e3b7-e97c-422f-8efd-473cf68d97d7")
 	)
+	(text "S1 S0 SWITCH STATUS\nL  L  D1/D2 connected to S1B/S2B\nL  H  D1/D2 connected to S1C/S2C\nH  L  D1/D2 connected to S1A/S2A\nH  H  All switches in High-Z"
+		(exclude_from_sim no)
+		(at 243.84 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38f10146-a188-4ab7-b7f3-3282cd71d938")
+	)
+	(text "S1 S0   OUTPUTS       NOUTPUT\nB  A    Y0 Y1 Y2 Y3   X0 X1 X2 X3\nL  L    L  H  H  H    H  L  L  L\nL  H    H  L  H  H    L  H  L  L\nH  L    H  H  L  H    L  L  H  L\nH  H    H  H  H  L    L  L  L  H"
+		(exclude_from_sim no)
+		(at 243.84 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e089c76-9a31-4f1b-a21c-87b08450fcd1")
+	)
 	(hierarchical_label "PWRDN"
 		(shape input)
 		(at 109.22 85.725 180)
@@ -1657,7 +1679,7 @@
 		)
 		(uuid "2a5eb96b-a037-4f1b-936c-150f67ce2fe8")
 	)
-	(hierarchical_label "EN_A"
+	(hierarchical_label "EN_B"
 		(shape output)
 		(at 266.065 59.055 0)
 		(fields_autoplaced yes)
@@ -1909,7 +1931,7 @@
 		)
 		(uuid "524f125e-0521-49d1-b451-9c1edb546d12")
 	)
-	(hierarchical_label "EN_B"
+	(hierarchical_label "EN_C"
 		(shape output)
 		(at 265.43 73.66 0)
 		(fields_autoplaced yes)
@@ -2113,7 +2135,7 @@
 		)
 		(uuid "7685e8af-5dc2-4c50-9ba4-63c0b00fdde5")
 	)
-	(hierarchical_label "EN_C"
+	(hierarchical_label "EN_A"
 		(shape output)
 		(at 266.065 88.265 0)
 		(fields_autoplaced yes)
@@ -3052,6 +3074,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 20.955 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 20.955 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 20.955 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 20.955 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "03feb79b-4862-4420-ae60-4f42a7c08443")
 		)
@@ -3094,7 +3152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 223.52 124.46 0)
 			(effects
 				(font
@@ -3142,6 +3200,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 223.52 124.46 0)
 			(effects
 				(font
@@ -3222,7 +3316,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 67.945 42.545 0)
 			(effects
 				(font
@@ -3270,6 +3364,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 67.945 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 67.945 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 67.945 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 67.945 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 67.945 42.545 0)
 			(effects
 				(font
@@ -3394,6 +3524,42 @@
 			)
 		)
 		(property "Part Number" "SN74LVC3G04DCUR"
+			(at 252.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 252.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 252.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 252.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 252.73 73.66 0)
 			(effects
 				(font
@@ -3535,6 +3701,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 153.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 153.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 153.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 153.67 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "663729b6-0c9a-479f-a7fe-0b6e3da0dd1e")
 		)
@@ -3642,6 +3844,42 @@
 			)
 		)
 		(property "Note" ""
+			(at 130.175 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 130.175 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 130.175 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 130.175 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 130.175 25.4 0)
 			(effects
 				(font
@@ -3765,6 +4003,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 63.5 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 63.5 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 63.5 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 63.5 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f2742a32-33d6-485b-a1c0-41c9a0660ee2")
 		)
@@ -3872,6 +4146,42 @@
 			)
 		)
 		(property "Note" ""
+			(at 51.435 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 51.435 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 51.435 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 51.435 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 51.435 24.765 0)
 			(effects
 				(font
@@ -3995,6 +4305,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 189.865 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 189.865 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 189.865 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 189.865 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1648628e-e972-4ff0-84ae-3ed2553013d7")
 		)
@@ -4084,6 +4430,42 @@
 			)
 		)
 		(property "Part Number" "SN74LVC3G04DCUR"
+			(at 262.255 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 262.255 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 262.255 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 262.255 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 262.255 33.655 0)
 			(effects
 				(font
@@ -4225,6 +4607,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 74.93 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 74.93 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 74.93 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 74.93 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a2bbf6a-af30-4e83-8119-f1d2b617ba1d")
 		)
@@ -4267,7 +4685,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 149.86 83.185 0)
 			(effects
 				(font
@@ -4315,6 +4733,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 149.86 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 149.86 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 149.86 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 149.86 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 149.86 83.185 0)
 			(effects
 				(font
@@ -4447,6 +4901,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 252.73 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 252.73 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 252.73 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 252.73 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3b34157f-eaf0-424c-91d2-17b412c6332f")
 		)
@@ -4507,7 +4997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 67.945 83.185 0)
 			(effects
 				(font
@@ -4555,6 +5045,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 67.945 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 67.945 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 67.945 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 67.945 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 67.945 83.185 0)
 			(effects
 				(font
@@ -4708,6 +5234,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 40.005 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 40.005 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 40.005 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 40.005 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "725e5321-2b45-4e18-baae-9f699b209d5d")
 		)
@@ -4814,6 +5376,42 @@
 			)
 		)
 		(property "Note" ""
+			(at 30.48 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 30.48 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 30.48 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 30.48 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 30.48 24.765 0)
 			(effects
 				(font
@@ -4937,6 +5535,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 198.755 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 198.755 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 198.755 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 198.755 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f9e0d039-1d51-4c15-9e14-a8eb0df1dcb8")
 		)
@@ -4979,7 +5613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 149.86 43.18 0)
 			(effects
 				(font
@@ -5027,6 +5661,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 149.86 43.18 0)
 			(effects
 				(font
@@ -5154,6 +5824,42 @@
 			)
 		)
 		(property "Part Number" "SN74LVC1G139DCUR"
+			(at 222.885 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 222.885 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 222.885 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 222.885 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 222.885 74.93 0)
 			(effects
 				(font
@@ -5295,6 +6001,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 142.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 142.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 142.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 142.24 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c385131-7ab8-47ec-8454-92fe598066dd")
 		)
@@ -5402,6 +6144,42 @@
 			)
 		)
 		(property "Note" ""
+			(at 276.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 276.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 276.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 276.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 276.86 34.29 0)
 			(effects
 				(font
@@ -5525,6 +6303,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 208.28 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 208.28 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 208.28 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 208.28 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "305cecdc-352f-4241-a8ea-651b5794e259")
 		)
@@ -5567,7 +6381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 150.495 165.735 0)
 			(effects
 				(font
@@ -5615,6 +6429,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 150.495 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 150.495 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 150.495 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 150.495 165.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 150.495 165.735 0)
 			(effects
 				(font
@@ -5768,6 +6618,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 118.745 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 118.745 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 118.745 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 118.745 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be9fde15-955f-4cf3-8cf8-af4c6cf3d8d9")
 		)
@@ -5862,6 +6748,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 252.73 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 252.73 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 252.73 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 252.73 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3b34157f-eaf0-424c-91d2-17b412c63330")
 		)
@@ -5922,7 +6844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 149.225 125.73 0)
 			(effects
 				(font
@@ -5970,6 +6892,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 149.225 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 149.225 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 149.225 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 149.225 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 149.225 125.73 0)
 			(effects
 				(font
@@ -6050,7 +7008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 67.945 164.465 0)
 			(effects
 				(font
@@ -6098,6 +7056,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 67.945 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 67.945 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 67.945 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 67.945 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 67.945 164.465 0)
 			(effects
 				(font
@@ -6178,7 +7172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Project:VQFN12_RMG_TEX"
+		(property "Footprint" "Common:VQFN12_RMG_TEX"
 			(at 67.945 125.73 0)
 			(effects
 				(font
@@ -6226,6 +7220,42 @@
 			)
 		)
 		(property "Part Number" "TMUX131RMGR"
+			(at 67.945 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 67.945 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 67.945 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 67.945 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 67.945 125.73 0)
 			(effects
 				(font
@@ -6371,6 +7401,42 @@
 			)
 		)
 		(property "Note" ""
+			(at 242.57 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 242.57 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 242.57 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 242.57 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
 			(at 242.57 33.655 0)
 			(effects
 				(font

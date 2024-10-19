@@ -98,7 +98,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
@@ -1990,7 +1990,7 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -2002,12 +2002,6 @@
           "group_by": false,
           "label": "Alt",
           "name": "Alt",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Order",
-          "name": "Order",
           "show": false
         },
         {
@@ -2026,7 +2020,7 @@
           "group_by": false,
           "label": "Amps",
           "name": "Amps",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -2066,14 +2060,20 @@
         },
         {
           "group_by": false,
-          "label": "Manufactorer",
-          "name": "Manufactorer",
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
           "show": false
         },
         {
           "group_by": false,
           "label": "STANDARD",
           "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufactorer",
+          "name": "Manufactorer",
           "show": false
         },
         {
@@ -2086,12 +2086,6 @@
           "group_by": false,
           "label": "PARTREV",
           "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
           "show": false
         }
       ],
@@ -2239,12 +2233,12 @@
       "CAN_TRANSCEIVER1"
     ],
     [
-      "be97d8a5-3a93-4a5f-bf78-e2fbafbd8fb2",
-      "CAN_TRANSCEIVER2"
-    ],
-    [
       "8a47ccc3-f8e0-403c-b9fa-fe30da676570",
       "USB"
+    ],
+    [
+      "be97d8a5-3a93-4a5f-bf78-e2fbafbd8fb2",
+      "CAN_TRANSCEIVER2"
     ],
     [
       "e4c7d165-22c3-4361-b1e3-58b5c990e540",
@@ -2263,28 +2257,28 @@
       "Solar Sensors"
     ],
     [
-      "389c76fd-0301-4a8f-bb5a-729eb9996812",
-      "Solar Sensor TLS5"
+      "770eb8f6-2f0e-43de-9437-234927b822c0",
+      "Solar Sensors XN"
     ],
     [
-      "1dc654a6-2bfc-4e1b-b2ff-b17d2335e995",
-      "Solar Sensor TLS3"
+      "5bb1073b-0b81-4e01-8264-15bb1f3b89e9",
+      "Solar Sensors YP"
     ],
     [
-      "2057726d-65eb-41d3-9159-cc1e549d69e1",
-      "Solar Sensor TLS4"
+      "0e8de9df-dbc4-4309-ac1f-dc7b5bfcc270",
+      "Solar Sensors YN"
     ],
     [
       "755abe18-4725-473c-91f0-f1e2fe990323",
-      "Solar Sensor TLS0"
+      "Solar Sensors XP"
     ],
     [
-      "9808e6f9-0824-41ee-9680-a92ee65425c8",
-      "Solar Sensor TLS1"
+      "233946b5-a752-40c0-8733-dc37ef5d962f",
+      "Solar Sensors ZP"
     ],
     [
-      "d7c17cae-bb82-45a7-b4dc-94bc9a53e1cb",
-      "Solar Sensor TLS2"
+      "52ed583e-c7bd-4189-96f4-29c701306aab",
+      "Solar Sensors ZN"
     ],
     [
       "c7f59f71-76ca-408f-9d9f-2fe019860d6e",

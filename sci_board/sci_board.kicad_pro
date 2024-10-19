@@ -97,7 +97,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "ignore",
+        "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "ignore",
@@ -131,7 +131,7 @@
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -479,13 +479,13 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -495,8 +495,8 @@
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
-        "via_diameter": 0.8,
+        "track_width": 0.5,
+        "via_diameter": 0.7,
         "via_drill": 0.4,
         "wire_width": 6
       }
@@ -1910,26 +1910,6 @@
       {
         "netclass": "Default",
         "pattern": "Net-(SW1-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "VBUS"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/VOUT2"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/VRAW_SOLAR"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/sheet5F71F776/VOUT2"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(D10-Pad2)"
       }
     ]
   },
@@ -1995,10 +1975,10 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -2010,7 +1990,7 @@
           "group_by": false,
           "label": "Amps",
           "name": "Amps",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -2028,13 +2008,13 @@
           "group_by": false,
           "label": "Tolerance",
           "name": "Tolerance",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Voltage",
           "name": "Voltage",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -2076,12 +2056,6 @@
           "group_by": false,
           "label": "STANDARD",
           "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufactorer",
-          "name": "Manufactorer",
           "show": false
         },
         {
@@ -2160,6 +2134,10 @@
       "CAN Transceiver1"
     ],
     [
+      "6b5440ce-79ea-4c41-89e9-7a3077535944",
+      "USB Connector"
+    ],
+    [
       "21d0e59e-a5df-4633-9634-c7d789255f22",
       "Camera_A"
     ],
@@ -2196,10 +2174,6 @@
       "Thermal Imager"
     ],
     [
-      "bbe2d6c4-88bb-480e-8557-ab6dc65fa807",
-      "USB Connector"
-    ],
-    [
       "5e5b27f8-7a4c-45d0-95f8-aff71797fcd3",
       "Cameras"
     ],
@@ -2212,12 +2186,8 @@
       "OSC32_TCXO"
     ],
     [
-      "f8fd9467-fdd1-43a9-86cb-aa1ab87d59cb",
-      "WATCHDOG"
-    ],
-    [
       "be725391-4517-4a91-8537-5b0e0ace46a2",
-      "RESET"
+      "RESET_ST"
     ],
     [
       "9ad2e03f-9236-48b3-ba37-0d7f891d93a5",
@@ -2234,6 +2204,10 @@
     [
       "7fde3d19-3e51-4869-ba44-af6d0a67b762",
       "Power Regulator MP3416"
+    ],
+    [
+      "bc095972-e013-4615-9f72-847fc40745b3",
+      "RESET"
     ],
     [
       "2f5a2990-2dc0-472a-952a-1bfd830a3aba",

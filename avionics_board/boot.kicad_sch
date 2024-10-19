@@ -5,128 +5,7 @@
 	(uuid "b56518b6-f57c-48ce-9691-9ee61f7f4ad6")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Project:EVP-AA602W"
+		(symbol "Common:EVP-AA602W"
 			(pin_names
 				(offset 0.254)
 			)
@@ -518,6 +397,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 163.83 88.265)
@@ -580,7 +580,7 @@
 		(uuid "eab12026-0504-4b77-a9dd-6de16137c420")
 	)
 	(symbol
-		(lib_id "Project:EVP-AA602W")
+		(lib_id "Common:EVP-AA602W")
 		(at 163.83 85.725 0)
 		(mirror y)
 		(unit 1)
@@ -608,7 +608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Project:EVP602AA"
+		(property "Footprint" "Common:EVP602AA"
 			(at 163.83 85.725 0)
 			(effects
 				(font
@@ -628,7 +628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SWITCH TACTILE SPST-NO 0.02A 15V"
 			(at 163.83 85.725 0)
 			(effects
 				(font
@@ -673,6 +673,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 163.83 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 163.83 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 163.83 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 163.83 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "5641d50f-c240-4850-8438-9a97353c2a23")
 		)
@@ -686,15 +722,21 @@
 			(uuid "1b8d739a-db96-465d-91bd-81d7b347a3fb")
 		)
 		(instances
+			(project "aux_board"
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/a5e0a0bc-1155-4861-b0e5-50e548be6dc2"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
 			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/286e6e66-19a5-4c55-b42f-49aa146a8656"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/05ed6a13-e638-443f-ac45-2ed06780ef6f"
 					(reference "SW1")
 					(unit 1)
 				)
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9ad2e03f-9236-48b3-ba37-0d7f891d93a5"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -716,7 +758,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cfd679b-b57e-4aaa-b298-337246fa8c26")
-		(property "Reference" "R38"
+		(property "Reference" "R24"
 			(at 165.735 90.8049 0)
 			(effects
 				(font
@@ -752,7 +794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 163.83 92.075 0)
 			(effects
 				(font
@@ -815,6 +857,42 @@
 				(hide yes)
 			)
 		)
+		(property "MANUFACTURER" ""
+			(at 163.83 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 163.83 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 163.83 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 163.83 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e653474-2095-419b-a488-9b09d1ade7e4")
 		)
@@ -822,21 +900,27 @@
 			(uuid "719bda14-fe5e-45f5-83c7-ff29239ba490")
 		)
 		(instances
+			(project "aux_board"
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/a5e0a0bc-1155-4861-b0e5-50e548be6dc2"
+					(reference "R24")
+					(unit 1)
+				)
+			)
 			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/286e6e66-19a5-4c55-b42f-49aa146a8656"
-					(reference "R38")
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/05ed6a13-e638-443f-ac45-2ed06780ef6f"
+					(reference "R28")
 					(unit 1)
 				)
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9ad2e03f-9236-48b3-ba37-0d7f891d93a5"
-					(reference "R37")
+					(reference "R41")
 					(unit 1)
 				)
 			)
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/ce6e3ce3-97e2-453f-9a1f-2a164dd1fcec"
-					(reference "R39")
+					(reference "R45")
 					(unit 1)
 				)
 			)

@@ -401,108 +401,6 @@
 				)
 			)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1229,16 +1127,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 102.235) (xy 99.06 102.235)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ab146de-b065-441b-a9d2-544009870dd8")
-	)
-	(wire
-		(pts
 			(xy 140.97 72.39) (xy 140.97 78.74)
 		)
 		(stroke
@@ -1286,16 +1174,6 @@
 			(type default)
 		)
 		(uuid "88f6babf-9c2f-4794-bd72-d753af36cad5")
-	)
-	(wire
-		(pts
-			(xy 95.25 104.775) (xy 99.06 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "958cf43a-7a56-40d9-8983-59fc98bd8bf1")
 	)
 	(wire
 		(pts
@@ -1476,30 +1354,6 @@
 		)
 		(uuid "de37a0a7-83a0-4c03-8870-8abf1b1d32a7")
 	)
-	(hierarchical_label "WAKE"
-		(shape output)
-		(at 95.25 104.775 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2e411c9a-295f-416c-a964-658b0898c438")
-	)
-	(hierarchical_label "DONE"
-		(shape input)
-		(at 95.25 102.235 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2eb390bf-319c-4d92-ab05-8c42d792f1f3")
-	)
 	(hierarchical_label "DONE"
 		(shape input)
 		(at 119.38 88.9 180)
@@ -1585,200 +1439,6 @@
 		(uuid "e0e501c5-7af6-44c4-8c89-82a0b534b803")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 99.06 102.235 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005ecb360e")
-		(property "Reference" "TP1"
-			(at 103.8352 101.0666 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_1x1"
-			(at 103.8352 103.378 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 99.06 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 107.315 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 99.06 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 99.06 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 99.06 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94193a7c-3ecd-4b15-9883-fec59d1aea25")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/099fb907-8e0d-460a-bca0-f0390fc6b64a"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f8fd9467-fdd1-43a9-86cb-aa1ab87d59cb"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 99.06 104.775 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "00000000-0000-0000-0000-00005ecb400a")
-		(property "Reference" "TP2"
-			(at 103.8352 103.6066 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_1x1"
-			(at 103.8352 105.918 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 99.06 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 99.06 104.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 99.06 104.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 99.06 104.775 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09dd057b-d35e-4a34-99cb-9c71f315bd2f")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/099fb907-8e0d-460a-bca0-f0390fc6b64a"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f8fd9467-fdd1-43a9-86cb-aa1ab87d59cb"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Timer:TPL5010")
 		(at 140.97 88.9 0)
 		(mirror y)
@@ -1860,6 +1520,15 @@
 			)
 		)
 		(property "Part Number" "TPL5010DDCR"
+			(at 140.97 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
 			(at 140.97 88.9 0)
 			(effects
 				(font
@@ -2015,6 +1684,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 48.26 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "be3bfdfc-cc48-4016-b601-30cb0b861806")
 		)
@@ -2076,7 +1754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf"
+		(property "Datasheet" ""
 			(at 96.52 86.36 0)
 			(effects
 				(font
@@ -2104,6 +1782,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 96.52 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
 			(at 96.52 86.36 0)
 			(effects
 				(font
@@ -2238,6 +1925,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 81.28 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "400f2b3f-f067-492a-a7d2-5635282c5361")
 		)
@@ -2259,7 +1955,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "R26")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -2364,6 +2060,15 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 175.26 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0b6c5ee7-5eed-4b97-98b0-e02d6cac1b65")
 		)
@@ -2385,7 +2090,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "R27")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -2473,6 +2178,15 @@
 			)
 		)
 		(property "Part Number" "EVP-AA602W"
+			(at 175.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
 			(at 175.26 74.93 0)
 			(effects
 				(font

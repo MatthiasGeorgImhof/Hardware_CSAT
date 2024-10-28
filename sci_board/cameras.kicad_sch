@@ -599,16 +599,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.945 154.305) (xy 196.85 154.305)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "030c4631-7ca4-4249-96e0-f6b6f85d0d79")
-	)
-	(wire
-		(pts
 			(xy 62.23 64.135) (xy 68.58 64.135)
 		)
 		(stroke
@@ -769,6 +759,16 @@
 	)
 	(wire
 		(pts
+			(xy 174.625 124.46) (xy 177.165 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "227c6326-36d3-4c0b-8444-c8587eecc5de")
+	)
+	(wire
+		(pts
 			(xy 174.625 114.3) (xy 177.165 114.3)
 		)
 		(stroke
@@ -849,16 +849,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.945 115.57) (xy 196.85 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bb84267-cb72-4fb5-8478-2367e64e2fde")
-	)
-	(wire
-		(pts
 			(xy 102.87 52.705) (xy 109.855 52.705)
 		)
 		(stroke
@@ -886,6 +876,16 @@
 			(type default)
 		)
 		(uuid "416e3bef-7573-488c-aada-8f9b31f9356c")
+	)
+	(wire
+		(pts
+			(xy 174.625 105.41) (xy 177.165 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4662de6f-7b5e-470c-a7be-e72e022b4340")
 	)
 	(wire
 		(pts
@@ -1519,16 +1519,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.945 134.62) (xy 196.85 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba08f9ef-7ca2-4421-91f3-c51b1e5e40c3")
-	)
-	(wire
-		(pts
 			(xy 174.625 153.035) (xy 177.165 153.035)
 		)
 		(stroke
@@ -1606,6 +1596,16 @@
 			(type default)
 		)
 		(uuid "c8e2d573-4f06-46c1-a70b-ded6983524a1")
+	)
+	(wire
+		(pts
+			(xy 174.625 144.145) (xy 177.165 144.145)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cec74122-6f26-4ec4-a44f-37e32d2577d5")
 	)
 	(wire
 		(pts
@@ -2291,6 +2291,18 @@
 		)
 		(uuid "21596207-416b-49e4-8bc9-ece6fd9fa33d")
 	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 174.625 124.46 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "357ce092-c36f-4ae1-a033-2899a6b46cb9")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 106.045 172.085 0)
@@ -2543,18 +2555,6 @@
 		)
 		(uuid "ae7468d3-845b-405f-b998-d2b3c08b7a00")
 	)
-	(hierarchical_label "INT2"
-		(shape output)
-		(at 196.85 134.62 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b955bda0-8833-45b4-b708-d04bb54ebc17")
-	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 159.385 38.1 180)
@@ -2651,6 +2651,18 @@
 		)
 		(uuid "e0a3f07d-8f9d-4001-b8c8-769efe632e18")
 	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 174.625 144.145 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4fcb92d-f2c8-419f-b572-950457a666e5")
+	)
 	(hierarchical_label "RESET"
 		(shape input)
 		(at 62.23 60.325 180)
@@ -2675,29 +2687,17 @@
 		)
 		(uuid "ea2f04bd-e498-4e23-9421-e5b75d935032")
 	)
-	(hierarchical_label "INT1"
-		(shape output)
-		(at 196.85 154.305 0)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 174.625 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "ed8f7389-7314-44c9-825a-d8b0817428e3")
-	)
-	(hierarchical_label "INT3"
-		(shape output)
-		(at 196.85 115.57 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fbcb1311-c7d9-42a6-ad80-3a52069dccb6")
+		(uuid "fa1cd4b7-e119-45bb-99e0-9e81749a3cb1")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2708,7 +2708,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49fa2062-725d-4dc0-ba80-2adc5d4c64c5")
-		(property "Reference" "C54"
+		(property "Reference" "C57"
 			(at 164.211 33.1216 0)
 			(effects
 				(font
@@ -2834,6 +2834,15 @@
 				(hide yes)
 			)
 		)
+		(property "Color" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
+			(at 161.29 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "73ad3a6c-7fed-4aab-aadc-aaf1d22fc280")
 		)
@@ -2843,7 +2852,7 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3"
-					(reference "C54")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -3134,7 +3143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5224b91-e9b0-45a3-aa16-118489f715d3")
-		(property "Reference" "R41"
+		(property "Reference" "R30"
 			(at 201.93 81.28 90)
 			(effects
 				(font
@@ -3258,7 +3267,7 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3"
-					(reference "R41")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -3273,7 +3282,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ac469e32-2a73-4924-b4bf-ed5d8063bb1d")
-		(property "Reference" "R42"
+		(property "Reference" "R31"
 			(at 246.38 81.28 90)
 			(effects
 				(font
@@ -3397,7 +3406,7 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3"
-					(reference "R42")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -3543,8 +3552,8 @@
 		)
 	)
 	(sheet
-		(at 177.165 106.045)
-		(size 17.78 13.97)
+		(at 177.165 104.14)
+		(size 17.78 15.875)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -3554,7 +3563,7 @@
 		)
 		(uuid "09c52fbd-a66a-456f-a3b3-a583ddfe7084")
 		(property "Sheetname" "Triple Switch C"
-			(at 177.165 104.775 0)
+			(at 177.165 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,7 +3572,7 @@
 			)
 		)
 		(property "Sheetfile" "dual_switch.kicad_sch"
-			(at 177.165 120.5996 0)
+			(at 177.165 118.6946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,16 +3589,6 @@
 				(justify left)
 			)
 			(uuid "036b0fa9-233e-49b7-8269-f5232723eafb")
-		)
-		(pin "ENABLE" input
-			(at 177.165 117.475 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f1bd7293-701b-4d25-bc7e-0a6a83697e6d")
 		)
 		(pin "GND" output
 			(at 194.945 118.11 0)
@@ -3621,16 +3620,6 @@
 			)
 			(uuid "7bffe9e2-3d0b-495a-be27-85eeccff1dd2")
 		)
-		(pin "INT" output
-			(at 194.945 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c47c6885-8263-49c9-8213-ef6e2a5445d4")
-		)
 		(pin "VOUT2" output
 			(at 194.945 110.49 0)
 			(effects
@@ -3660,6 +3649,26 @@
 				(justify right)
 			)
 			(uuid "12a0889b-eedf-4294-956b-3bb1e74ecbc9")
+		)
+		(pin "VBIAS" input
+			(at 177.165 105.41 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7f81dd9f-a59b-4c4d-bee8-6d754741ac1a")
+		)
+		(pin "ENABLE" input
+			(at 177.165 117.475 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "165503d6-0246-4b00-a8a6-4fcbeab64fec")
 		)
 		(instances
 			(project "sci_board"
@@ -4036,8 +4045,8 @@
 		)
 	)
 	(sheet
-		(at 177.165 125.095)
-		(size 17.78 13.97)
+		(at 177.165 123.19)
+		(size 17.78 15.875)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4048,7 +4057,7 @@
 		)
 		(uuid "3113fc14-4b9f-4852-8ddb-4c564d791d7f")
 		(property "Sheetname" "Triple Switch B"
-			(at 177.165 124.3834 0)
+			(at 177.165 122.4784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,16 +4124,6 @@
 			)
 			(uuid "3979ecd3-c731-4037-81d0-a30a95edf22c")
 		)
-		(pin "INT" output
-			(at 194.945 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ab6ebc45-50e3-4661-b0be-671709823d73")
-		)
 		(pin "VOUT2" output
 			(at 194.945 129.54 0)
 			(effects
@@ -4154,6 +4153,16 @@
 				(justify right)
 			)
 			(uuid "3feab4d7-f4b7-48bd-9a61-bc371eb8b1f6")
+		)
+		(pin "VBIAS" input
+			(at 177.165 124.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0941355d-e786-4bdf-9e88-18843cc6e16b")
 		)
 		(instances
 			(project "sci_board"
@@ -5565,8 +5574,8 @@
 		)
 	)
 	(sheet
-		(at 177.165 144.78)
-		(size 17.78 13.97)
+		(at 177.165 142.875)
+		(size 17.78 15.875)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -5577,7 +5586,7 @@
 		)
 		(uuid "df99859d-8e37-4f21-a1c5-637d9e74b907")
 		(property "Sheetname" "Triple Switch A"
-			(at 177.165 144.0684 0)
+			(at 177.165 142.1634 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5644,16 +5653,6 @@
 			)
 			(uuid "be119e94-17af-48c3-8fb4-e0dbe2cd74ad")
 		)
-		(pin "INT" output
-			(at 194.945 154.305 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0dfa090e-dec3-44c9-a15e-dedd663a2026")
-		)
 		(pin "VOUT2" output
 			(at 194.945 149.225 0)
 			(effects
@@ -5683,6 +5682,16 @@
 				(justify right)
 			)
 			(uuid "d874b1a8-360f-4fb7-9d6c-2900d392b206")
+		)
+		(pin "VBIAS" input
+			(at 177.165 144.145 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f21d1936-a1ba-4c9d-bfb8-4f5e485a8c18")
 		)
 		(instances
 			(project "sci_board"

@@ -2067,6 +2067,151 @@
 				)
 			)
 		)
+		(symbol "Jumper:Jumper_2_Small_Open"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Small_Open"
+				(at 0 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, small symbol, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_0"
+				(circle
+					(center -1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_1"
+				(arc
+					(start 0.762 1.0196)
+					(mid 0 1.2729)
+					(end -0.762 1.0196)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers hide)
 			(pin_names
@@ -2639,7 +2784,7 @@
 		(uuid "333a4554-1638-4f29-816b-8e88c672dc6d")
 	)
 	(junction
-		(at 130.81 77.47)
+		(at 130.81 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33500c71-b7ba-4a8d-bc0f-7c783cf0ed8f")
@@ -2651,7 +2796,7 @@
 		(uuid "34cc840d-f58d-4288-8af1-96e1d33c92ac")
 	)
 	(junction
-		(at 158.75 77.47)
+		(at 158.75 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "359e4a43-8d16-4734-846e-3d7eb678d8a8")
@@ -2723,7 +2868,7 @@
 		(uuid "9d69c706-bb9c-42a1-8e6a-6673d1b8cab2")
 	)
 	(junction
-		(at 130.81 85.09)
+		(at 130.81 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be6542dc-0f87-47c3-9052-2b2b6318988a")
@@ -2747,7 +2892,7 @@
 		(uuid "c514c84b-1ccb-472d-8d03-24e29775b799")
 	)
 	(junction
-		(at 146.05 77.47)
+		(at 146.05 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc922bcc-9f55-4ac7-966c-a8595931d07c")
@@ -2783,13 +2928,13 @@
 		(uuid "f49fa45c-b04b-4313-a106-af48bd48ad82")
 	)
 	(junction
-		(at 152.4 77.47)
+		(at 152.4 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5296c34-f0de-4e16-99a3-f1a383d90e7f")
 	)
 	(junction
-		(at 168.275 77.47)
+		(at 168.275 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa372465-c6ac-465c-9470-b6c2ca6b24b1")
@@ -2918,7 +3063,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 77.47) (xy 138.43 77.47)
+			(xy 146.05 88.9) (xy 138.43 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2995,6 +3140,16 @@
 			(type default)
 		)
 		(uuid "3530afe7-2f08-4ef9-a048-9a6269e7bec2")
+	)
+	(wire
+		(pts
+			(xy 152.4 78.105) (xy 152.4 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36be6aa7-0eb4-4891-ba2a-ce8f0617e743")
 	)
 	(wire
 		(pts
@@ -3238,13 +3393,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 82.55) (xy 127 82.55)
+			(xy 123.19 93.98) (xy 127 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7cb4404c-43fe-4703-abcc-2d90fadfbda1")
+	)
+	(wire
+		(pts
+			(xy 158.75 78.105) (xy 158.75 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80024822-f880-46c8-91d7-2b85344cf688")
 	)
 	(wire
 		(pts
@@ -3288,7 +3453,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 77.47) (xy 130.81 77.47)
+			(xy 127 88.9) (xy 130.81 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3348,7 +3513,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 85.09) (xy 130.81 85.09)
+			(xy 127 96.52) (xy 130.81 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3368,7 +3533,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 80.01) (xy 127 80.01)
+			(xy 123.19 91.44) (xy 127 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3438,7 +3603,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 85.09) (xy 130.81 85.09)
+			(xy 137.795 96.52) (xy 130.81 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3495,6 +3660,16 @@
 			(type default)
 		)
 		(uuid "ad36c136-1505-48d7-abe1-55d1b63c81cb")
+	)
+	(wire
+		(pts
+			(xy 146.05 78.105) (xy 146.05 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee32a77-a03b-418e-9884-6fd75b0c6f0c")
 	)
 	(wire
 		(pts
@@ -3558,7 +3733,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 82.55) (xy 127 85.09)
+			(xy 127 93.98) (xy 127 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3588,7 +3763,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 67.31) (xy 146.05 69.85)
+			(xy 146.05 67.31) (xy 146.05 73.025)
 		)
 		(stroke
 			(width 0)
@@ -3608,7 +3783,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 67.31) (xy 152.4 69.85)
+			(xy 152.4 67.31) (xy 152.4 73.025)
 		)
 		(stroke
 			(width 0)
@@ -3618,7 +3793,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 67.31) (xy 158.75 69.85)
+			(xy 158.75 67.31) (xy 158.75 73.025)
 		)
 		(stroke
 			(width 0)
@@ -3628,7 +3803,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 77.47) (xy 158.75 77.47)
+			(xy 152.4 88.9) (xy 158.75 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3678,7 +3853,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 77.47) (xy 152.4 77.47)
+			(xy 146.05 88.9) (xy 152.4 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3738,7 +3913,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 80.01) (xy 127 77.47)
+			(xy 127 91.44) (xy 127 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3748,7 +3923,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 77.47) (xy 168.275 77.47)
+			(xy 158.75 88.9) (xy 168.275 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3858,7 +4033,7 @@
 		(uuid "07c46262-6428-44d4-8a0f-42550d129182")
 	)
 	(label "CAN2_L"
-		(at 222.25 131.445 180)
+		(at 222.25 129.54 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3968,7 +4143,7 @@
 		(uuid "5b789268-a84b-4c48-bba6-a584a7aa837e")
 	)
 	(label "CAN2_H"
-		(at 222.25 129.54 180)
+		(at 222.25 131.445 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4250,6 +4425,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 50.165 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f3a70279-d67d-49ec-bc73-2ac07b75dbc2")
 		)
@@ -4345,6 +4529,15 @@
 			)
 		)
 		(property "Part Number" "DFE252012P-1R0M=P2"
+			(at 36.195 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
 			(at 36.195 73.025 0)
 			(effects
 				(font
@@ -4460,6 +4653,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 127 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d764c84b-b1fe-45e4-8ba0-00489e36d4e1")
 		)
@@ -4474,7 +4676,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 146.05 73.66 90)
+		(at 146.05 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4482,7 +4684,7 @@
 		(dnp no)
 		(uuid "286c5ebd-ebcc-4506-a51b-7b5463168c8b")
 		(property "Reference" "D1"
-			(at 144.145 80.01 90)
+			(at 144.145 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4491,7 +4693,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 135.89 82.55 90)
+			(at 135.89 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4500,7 +4702,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4509,7 +4711,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4518,7 +4720,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4527,7 +4729,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4536,7 +4738,7 @@
 			)
 		)
 		(property "Amps" "2"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,7 +4747,7 @@
 			)
 		)
 		(property "Manufacturer" "Comchip Technology"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4554,7 +4756,7 @@
 			)
 		)
 		(property "Part Number" "CDBA240LL-HF"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4563,7 +4765,16 @@
 			)
 		)
 		(property "Voltage" "40"
-			(at 146.05 73.66 0)
+			(at 146.05 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +4799,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 168.275 77.47 0)
+		(at 168.275 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4596,8 +4807,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28e175dd-b4a8-46fd-b8f0-6d9109ac9e8f")
-		(property "Reference" "#PWR011"
-			(at 168.275 81.28 0)
+		(property "Reference" "#PWR012"
+			(at 168.275 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,7 +4817,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 168.275 72.39 0)
+			(at 168.275 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4614,7 +4825,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +4834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4632,7 +4843,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,7 +4857,7 @@
 		(instances
 			(project ""
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4662,8 +4873,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ae59076-9f6b-4a6e-aafd-d3436611e83a")
-		(property "Reference" "J3"
-			(at 222.25 102.87 0)
+		(property "Reference" "J6"
+			(at 217.17 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4671,7 +4882,7 @@
 			)
 		)
 		(property "Value" "Conn_02x05_Odd_Even"
-			(at 226.06 105.41 0)
+			(at 229.87 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4943,16 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "generic"
+		(property "Part Number" "2.54mm pins 02x05"
+			(at 223.52 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
 			(at 223.52 113.665 0)
 			(effects
 				(font
@@ -4774,7 +4994,7 @@
 		(instances
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "J3")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -4855,7 +5075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3eee5ffa-c160-471b-b2cf-7cbef44f39c4")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 63.5 88.9 0)
 			(effects
 				(font
@@ -4905,7 +5125,7 @@
 		(instances
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4972,6 +5192,102 @@
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 158.75 75.565 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44523b7e-ea7a-472e-bbb3-36e74cea222c")
+		(property "Reference" "J4"
+			(at 160.02 74.2949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 165.1 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "generic"
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "2.54mm pins 01x02"
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 158.75 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9ca288f4-81b3-4237-bce5-7601409f8e5a")
+		)
+		(pin "1"
+			(uuid "d6abb043-7538-4030-b196-2b78e7d63a20")
+		)
+		(instances
+			(project "aux_board"
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5131,6 +5447,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 36.195 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "884622bc-3a83-4b37-b6f9-991976ee25fc")
 		)
@@ -5213,7 +5538,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.795 85.09 0)
+		(at 137.795 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5221,8 +5546,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62bf53ef-d15b-494e-b6ef-ed2dd8382eb7")
-		(property "Reference" "#PWR014"
-			(at 137.795 91.44 0)
+		(property "Reference" "#PWR015"
+			(at 137.795 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +5556,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.795 90.17 0)
+			(at 137.795 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5239,7 +5564,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.795 85.09 0)
+			(at 137.795 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5248,7 +5573,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.795 85.09 0)
+			(at 137.795 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5257,7 +5582,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.795 85.09 0)
+			(at 137.795 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5596,7 @@
 		(instances
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "#PWR014")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5413,7 +5738,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 118.11 82.55 0)
+		(at 118.11 93.98 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5421,8 +5746,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69ad8afd-8e7e-442e-a4a7-7e7f7d304c6c")
-		(property "Reference" "J2"
-			(at 114.3 87.63 0)
+		(property "Reference" "J5"
+			(at 114.3 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5755,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 114.3 85.09 0)
+			(at 114.3 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5438,7 +5763,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5447,7 +5772,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5456,7 +5781,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5465,7 +5790,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5474,7 +5799,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5483,7 +5808,7 @@
 			)
 		)
 		(property "Manufacturer" "generic"
-			(at 118.11 82.55 0)
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5491,8 +5816,17 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "generic"
-			(at 118.11 82.55 0)
+		(property "Part Number" "2.54mm pins 01x02"
+			(at 118.11 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 118.11 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,7 +5843,7 @@
 		(instances
 			(project ""
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "J2")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -5603,6 +5937,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 36.195 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b6dfa833-4534-4ab0-bedc-9272c758642c")
 		)
@@ -5620,7 +5963,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 158.75 73.66 90)
+		(at 158.75 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5628,7 +5971,7 @@
 		(dnp no)
 		(uuid "7448c310-5d98-4677-9f7b-0e4f44f6ab6b")
 		(property "Reference" "D3"
-			(at 156.845 80.01 90)
+			(at 156.845 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5637,7 +5980,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 152.4 82.55 90)
+			(at 152.4 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5646,7 +5989,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5655,7 +5998,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5664,7 +6007,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5673,7 +6016,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5682,7 +6025,7 @@
 			)
 		)
 		(property "Amps" "2"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5691,7 +6034,7 @@
 			)
 		)
 		(property "Manufacturer" "Comchip Technology"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5700,7 +6043,7 @@
 			)
 		)
 		(property "Part Number" "CDBA240LL-HF"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5709,7 +6052,16 @@
 			)
 		)
 		(property "Voltage" "40"
-			(at 158.75 73.66 0)
+			(at 158.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 158.75 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,6 +6079,102 @@
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 146.05 75.565 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "881213b6-7b2d-4fed-babb-b36c175b6a0d")
+		(property "Reference" "J2"
+			(at 147.32 74.2949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 165.1 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "generic"
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "2.54mm pins 01x02"
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 146.05 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "355dda6d-2e88-4699-abff-4fbb662b08a2")
+		)
+		(pin "1"
+			(uuid "e63b0c2e-549d-4cf1-8aa8-01baf06da4bc")
+		)
+		(instances
+			(project ""
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5800,7 +6248,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 134.62 77.47 180)
+		(at 134.62 88.9 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5808,7 +6256,7 @@
 		(dnp no)
 		(uuid "943f21bc-1fa5-4980-9c74-d5ede5132b41")
 		(property "Reference" "D4"
-			(at 135.255 72.39 0)
+			(at 135.255 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5816,7 +6264,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 136.525 74.93 0)
+			(at 136.525 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5824,7 +6272,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5833,7 +6281,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5842,7 +6290,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5851,7 +6299,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5860,7 +6308,7 @@
 			)
 		)
 		(property "Amps" "2"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5869,7 +6317,7 @@
 			)
 		)
 		(property "Voltage" "40"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5878,7 +6326,7 @@
 			)
 		)
 		(property "Manufacturer" "Comchip Technology"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5887,7 +6335,16 @@
 			)
 		)
 		(property "Part Number" "CDBA240LL-HF"
-			(at 134.62 77.47 0)
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5990,6 +6447,15 @@
 			)
 		)
 		(property "Part Number" "DFE252012P-1R0M=P2"
+			(at 36.195 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
 			(at 36.195 96.52 0)
 			(effects
 				(font
@@ -6148,7 +6614,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 168.275 84.455 270)
+		(at 168.275 95.885 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6157,7 +6623,7 @@
 		(fields_autoplaced yes)
 		(uuid "a37eb0d3-32a0-4503-8cf0-78c03c9a8bb1")
 		(property "Reference" "#FLG02"
-			(at 170.18 84.455 0)
+			(at 170.18 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6166,7 +6632,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 171.45 84.4549 90)
+			(at 171.45 95.8849 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6175,7 +6641,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6184,7 +6650,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6193,7 +6659,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,6 +6674,102 @@
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 152.4 75.565 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a837280e-0039-4b4f-98f8-6918e48890f8")
+		(property "Reference" "J3"
+			(at 153.67 74.2949 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 165.1 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "generic"
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "2.54mm pins 01x02"
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 152.4 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "80a0c0c4-584c-4d69-b9cf-ffab99c913b2")
+		)
+		(pin "1"
+			(uuid "89d7eabd-f0fe-47a4-b057-1581d82b03d7")
+		)
+		(instances
+			(project "aux_board"
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -6304,6 +6866,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 201.295 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1e97df9-973f-4938-b8d9-44b10333c108")
 		)
@@ -6321,7 +6892,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 168.275 77.47 270)
+		(at 168.275 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6330,7 +6901,7 @@
 		(fields_autoplaced yes)
 		(uuid "aee54871-9163-4274-b873-a8e94469e0fd")
 		(property "Reference" "#FLG01"
-			(at 170.18 77.47 0)
+			(at 170.18 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,7 +6910,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 171.45 77.4699 90)
+			(at 171.45 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6348,7 +6919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6357,7 +6928,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6366,7 +6937,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 168.275 77.47 0)
+			(at 168.275 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6558,6 +7129,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 50.165 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7fdb025d-c410-4316-84b1-bfa426e0758a")
 		)
@@ -6641,7 +7221,7 @@
 	)
 	(symbol
 		(lib_id "Diode:SMAJ12CA")
-		(at 130.81 81.28 90)
+		(at 130.81 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6649,7 +7229,7 @@
 		(dnp no)
 		(uuid "b7dbfb4d-8451-42dc-9da8-75ee89528cdc")
 		(property "Reference" "D5"
-			(at 128.905 87.63 90)
+			(at 128.905 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6658,7 +7238,7 @@
 			)
 		)
 		(property "Value" "SMAJ5.0A"
-			(at 126.365 90.17 90)
+			(at 126.365 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6667,7 +7247,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 135.89 81.28 0)
+			(at 135.89 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6676,7 +7256,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.smc-diodes.com/propdf/SMAJ%20SERIES%20N0223%20REV.B.pdf"
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6685,7 +7265,7 @@
 			)
 		)
 		(property "Description" "400W bidirectional Transient Voltage Suppressor, 6.0Vr, SMA(DO-214AC)"
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +7274,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,7 +7283,7 @@
 			)
 		)
 		(property "Amps" "43.5"
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,7 +7292,7 @@
 			)
 		)
 		(property "Voltage" "6"
-			(at 130.81 81.28 90)
+			(at 130.81 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6721,7 +7301,7 @@
 			)
 		)
 		(property "Manufacturer" "SMC Diodes"
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6730,7 +7310,16 @@
 			)
 		)
 		(property "Part Number" " SMAJ5.0A"
-			(at 130.81 81.28 0)
+			(at 130.81 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 130.81 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6859,6 +7448,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 50.165 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "95fc78ac-e01b-4fa4-9c44-eaf22bc3ad5e")
 		)
@@ -6876,7 +7474,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.275 84.455 0)
+		(at 168.275 95.885 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6884,8 +7482,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c340bf6a-8d1c-4b60-b90f-5aa04cc2ab42")
-		(property "Reference" "#PWR012"
-			(at 168.275 90.805 0)
+		(property "Reference" "#PWR014"
+			(at 168.275 102.235 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6894,7 +7492,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.275 89.535 0)
+			(at 168.275 100.965 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6902,7 +7500,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6911,7 +7509,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6920,7 +7518,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.275 84.455 0)
+			(at 168.275 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6934,7 +7532,7 @@
 		(instances
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "#PWR012")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6950,7 +7548,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc0252dc-ce3e-407f-9867-53e761429354")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR013"
 			(at 63.5 97.79 0)
 			(effects
 				(font
@@ -7000,7 +7598,7 @@
 		(instances
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2"
-					(reference "#PWR015")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7098,6 +7696,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 145.415 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b50c0f8f-c06b-45f5-801d-529729caa702")
 		)
@@ -7178,7 +7785,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 152.4 73.66 90)
+		(at 152.4 85.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7186,7 +7793,7 @@
 		(dnp no)
 		(uuid "d9e9f5e3-777a-454f-abc0-2734fb3e814b")
 		(property "Reference" "D2"
-			(at 150.495 80.01 90)
+			(at 150.495 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7195,7 +7802,7 @@
 			)
 		)
 		(property "Value" "CDBA240LL-HF"
-			(at 145.415 85.09 90)
+			(at 145.415 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7204,7 +7811,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA_Handsoldering"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7213,7 +7820,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7222,7 +7829,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7231,7 +7838,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7240,7 +7847,7 @@
 			)
 		)
 		(property "Amps" "2"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7249,7 +7856,7 @@
 			)
 		)
 		(property "Manufacturer" "Comchip Technology"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7258,7 +7865,7 @@
 			)
 		)
 		(property "Part Number" "CDBA240LL-HF"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7267,7 +7874,16 @@
 			)
 		)
 		(property "Voltage" "40"
-			(at 152.4 73.66 0)
+			(at 152.4 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
+			(at 152.4 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7382,6 +7998,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 137.16 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "41b8ae04-aacd-4b22-a403-fa44dd0a3e05")
 		)
@@ -7472,7 +8097,7 @@
 		(dnp no)
 		(uuid "f4322047-7beb-46db-a2f6-2d7ccb20e2fc")
 		(property "Reference" "J1"
-			(at 241.3 73.025 0)
+			(at 212.09 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,7 +8105,7 @@
 			)
 		)
 		(property "Value" "Conn_02x15_Odd_Even"
-			(at 242.57 75.565 0)
+			(at 224.79 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7505,7 +8130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x19, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 223.52 71.755 0)
 			(effects
 				(font
@@ -7541,7 +8166,16 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "generic"
+		(property "Part Number" "2.54mm pins 02x15"
+			(at 223.52 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
 			(at 223.52 71.755 0)
 			(effects
 				(font
@@ -7755,6 +8389,15 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" ""
+			(at 50.165 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1b1adb4f-e92c-49fb-b304-926a6120a0bd")
 		)
@@ -7854,6 +8497,15 @@
 			)
 		)
 		(property "Part Number" "generic"
+			(at 155.575 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" ""
 			(at 155.575 189.23 0)
 			(effects
 				(font
@@ -8377,7 +9029,7 @@
 			(uuid "90b7e2b8-fa96-42e4-a4d5-b293e2cd759b")
 		)
 		(pin "CAN2H" bidirectional
-			(at 228.6 129.54 180)
+			(at 228.6 131.445 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +9039,7 @@
 			(uuid "21a2b982-3612-4938-85b6-a61f31311247")
 		)
 		(pin "CAN2L" bidirectional
-			(at 228.6 131.445 180)
+			(at 228.6 129.54 180)
 			(effects
 				(font
 					(size 1.27 1.27)

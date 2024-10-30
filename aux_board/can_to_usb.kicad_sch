@@ -2388,10 +2388,6 @@
 		(uuid "6be2e511-37de-463d-bef0-bf84f0bde10c")
 	)
 	(no_connect
-		(at 226.06 66.04)
-		(uuid "840261ef-004f-4cfc-a43b-527c385ccb73")
-	)
-	(no_connect
 		(at 226.06 104.14)
 		(uuid "8b219044-5922-436a-95fb-0a5368baa0e5")
 	)
@@ -2400,8 +2396,8 @@
 		(uuid "ad949fec-b2b5-4426-9e0a-f9c8422bda7a")
 	)
 	(no_connect
-		(at 226.06 63.5)
-		(uuid "aea0d0cb-e060-4efb-a862-8bf59d1a34c8")
+		(at 189.865 111.76)
+		(uuid "b0202808-6580-4455-8932-f2d7c49c4027")
 	)
 	(no_connect
 		(at 226.06 106.68)
@@ -3117,6 +3113,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.245 109.22) (xy 193.04 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d697bd-fa13-4d35-9179-256cb8851c6d")
+	)
+	(wire
+		(pts
 			(xy 48.26 73.66) (xy 50.8 73.66)
 		)
 		(stroke
@@ -3154,16 +3160,6 @@
 			(type default)
 		)
 		(uuid "b9713a41-512e-4027-8636-23a9c9aaf199")
-	)
-	(wire
-		(pts
-			(xy 189.865 109.22) (xy 193.04 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb952fd0-c01f-4b42-872d-39222131351d")
 	)
 	(wire
 		(pts
@@ -3536,6 +3532,17 @@
 			(justify left bottom)
 		)
 		(uuid "1be69b8a-bda9-4eb3-b060-369641e34828")
+	)
+	(label "OSC_32_IN"
+		(at 182.88 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e2efc5c-f8c9-4380-bb50-58d4c9ea571d")
 	)
 	(label "CAN2_TX"
 		(at 48.26 91.44 0)
@@ -4215,18 +4222,6 @@
 		)
 		(uuid "2409fc3d-c6e4-42bb-b893-5d2b5e66c4d0")
 	)
-	(hierarchical_label "EXTI_4"
-		(shape input)
-		(at 189.865 109.22 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "28bf92b2-92a7-4b4e-af49-5dac0bb7047a")
-	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 50.8 99.06 0)
@@ -4238,6 +4233,18 @@
 			(justify left)
 		)
 		(uuid "2e28419e-4d3c-4051-8854-eceb83741c02")
+	)
+	(hierarchical_label "EXTI_4"
+		(shape input)
+		(at 226.06 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3086f88d-3a15-466d-ba05-a0ab17626f04")
 	)
 	(hierarchical_label "CAN1_L"
 		(shape bidirectional)
@@ -4298,6 +4305,18 @@
 			(justify right)
 		)
 		(uuid "45838d20-12a9-45f6-88c9-657bbf9b18b3")
+	)
+	(hierarchical_label "EXTI_5"
+		(shape input)
+		(at 226.06 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "48ec23fc-2dd4-40e8-8aab-bfa8d52c79dd")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -4406,6 +4425,30 @@
 			(justify right)
 		)
 		(uuid "9a45ab4a-dc9b-49f7-88e2-407d4318ffca")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 169.545 112.395 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f070038-b29f-4b80-a628-6fbd154c8e0b")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 169.545 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f1c6fbc-3f23-424d-bb47-da0baac23421")
 	)
 	(hierarchical_label "5V"
 		(shape input)
@@ -4539,18 +4582,6 @@
 		)
 		(uuid "dcd30dde-4da1-4ef2-bb07-16de61db8b25")
 	)
-	(hierarchical_label "EXTI_5"
-		(shape input)
-		(at 189.865 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e6beaf8f-b114-4a42-a6f3-842fb954adc8")
-	)
 	(hierarchical_label "VBUS2"
 		(shape output)
 		(at 26.67 133.985 180)
@@ -4638,15 +4669,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 180.34 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 180.34 40.64 0)
 			(effects
@@ -4683,7 +4705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 180.34 40.64 0)
 			(effects
 				(font
@@ -4692,7 +4714,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 180.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 180.34 40.64 0)
 			(effects
 				(font
@@ -4779,15 +4810,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 172.72 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 172.72 40.64 0)
 			(effects
@@ -4824,7 +4846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 172.72 40.64 0)
 			(effects
 				(font
@@ -4833,7 +4855,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 172.72 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 172.72 40.64 0)
 			(effects
 				(font
@@ -4920,15 +4951,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM188R61C106MAALD"
-			(at 142.875 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 142.875 40.64 0)
 			(effects
@@ -4965,7 +4987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 142.875 40.64 0)
 			(effects
 				(font
@@ -4974,7 +4996,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 142.875 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM188R61C106MAALD"
 			(at 142.875 40.64 0)
 			(effects
 				(font
@@ -5061,15 +5092,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 187.96 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 187.96 40.64 0)
 			(effects
@@ -5106,7 +5128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 187.96 40.64 0)
 			(effects
 				(font
@@ -5115,7 +5137,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 187.96 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 187.96 40.64 0)
 			(effects
 				(font
@@ -5202,15 +5233,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 165.1 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 165.1 40.64 0)
 			(effects
@@ -5247,7 +5269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 165.1 40.64 0)
 			(effects
 				(font
@@ -5256,7 +5278,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 165.1 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 165.1 40.64 0)
 			(effects
 				(font
@@ -5343,15 +5374,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM188R61C106MAALD"
-			(at 149.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 149.86 40.64 0)
 			(effects
@@ -5388,7 +5410,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 149.86 40.64 0)
 			(effects
 				(font
@@ -5397,7 +5419,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 149.86 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM188R61C106MAALD"
 			(at 149.86 40.64 0)
 			(effects
 				(font
@@ -5474,25 +5505,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "generic"
-			(at 37.465 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "2.54mm pins 01x05"
-			(at 37.465 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" ""
+			(at 37.465 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "generic"
+			(at 37.465 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "2.54mm pins 01x05"
 			(at 37.465 181.61 0)
 			(effects
 				(font
@@ -5588,15 +5619,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM188R61C106MAALD"
-			(at 135.255 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 135.255 40.64 0)
 			(effects
@@ -5633,7 +5655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 135.255 40.64 0)
 			(effects
 				(font
@@ -5642,7 +5664,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 135.255 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM188R61C106MAALD"
 			(at 135.255 40.64 0)
 			(effects
 				(font
@@ -5729,15 +5760,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 195.58 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 195.58 40.64 0)
 			(effects
@@ -5774,7 +5796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -5783,7 +5805,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 195.58 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -5860,25 +5891,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "generic"
-			(at 59.69 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "2.54mm pins 01x05"
-			(at 59.69 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" ""
+			(at 59.69 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "generic"
+			(at 59.69 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "2.54mm pins 01x05"
 			(at 59.69 181.61 0)
 			(effects
 				(font
@@ -5985,25 +6016,25 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "STM"
-			(at 208.28 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "STM32L496RGT6"
-			(at 208.28 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" ""
+			(at 208.28 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "STM"
+			(at 208.28 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "STM32L496RGT6"
 			(at 208.28 96.52 0)
 			(effects
 				(font
@@ -6285,15 +6316,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "GRM155R61E104KA87D"
-			(at 157.48 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" ""
 			(at 157.48 40.64 0)
 			(effects
@@ -6330,7 +6352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Temperture Coefficient" "X5R"
 			(at 157.48 40.64 0)
 			(effects
 				(font
@@ -6339,7 +6361,16 @@
 				(hide yes)
 			)
 		)
-		(property "Temperture Coefficient" "X5R"
+		(property "MANUFACTURER" "Murata"
+			(at 157.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "GRM155R61E104KA87D"
 			(at 157.48 40.64 0)
 			(effects
 				(font
@@ -7008,6 +7039,74 @@
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0"
 					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 169.545 107.95)
+		(size 12.7 6.35)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af693d39-031b-43ec-ba62-61057858f334")
+		(property "Sheetname" "OSC32"
+			(at 169.545 107.2384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../avionics_board/OSC32_TCXO.kicad_sch"
+			(at 169.545 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "OUT" input
+			(at 182.245 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "3bf6675f-581c-4557-8710-11ba4d538451")
+		)
+		(pin "PWR" input
+			(at 169.545 109.22 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "51727f4d-4236-47b6-9725-e1d2af75f439")
+		)
+		(pin "GND" input
+			(at 169.545 112.395 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d65115b3-d4a9-4ca7-8bc6-30d77e76a2cd")
+		)
+		(instances
+			(project "aux_board"
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0"
+					(page "19")
 				)
 			)
 		)

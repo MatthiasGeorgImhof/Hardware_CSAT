@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "b56518b6-f57c-48ce-9691-9ee61f7f4ad6")
 	(paper "A4")
 	(lib_symbols
@@ -86,19 +86,7 @@
 			(symbol "EVP-AA602W_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -5.08) (xy 15.24 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -2.54)
+						(xy 7.62 2.54) (xy 7.62 -5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -122,7 +110,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 7.62 -5.08)
+						(xy 7.62 -2.54) (xy 8.89 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -134,19 +122,7 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -3.81) (xy 13.97 -3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 -2.54) (xy 8.89 -3.81)
+						(xy 7.62 -5.08) (xy 15.24 -5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -170,8 +146,54 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -3.81) (xy 11.43 -2.8575)
+						(xy 8.89 -2.54) (xy 8.89 -3.81)
 					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -3.81) (xy 13.97 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 11.43 1.27)
+					(radius 0.127)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.43 0.3175) (xy 11.43 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 11.43 0)
+					(radius 0.3048)
 					(stroke
 						(width 0.127)
 						(type default)
@@ -192,9 +214,20 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 11.43 -2.54)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 11.43 0.3175) (xy 11.43 1.27)
+						(xy 11.43 -3.81) (xy 11.43 -2.8575)
 					)
 					(stroke
 						(width 0.127)
@@ -206,19 +239,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -3.81) (xy 13.97 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 13.97 -2.54) (xy 15.24 -2.54)
+						(xy 13.97 1.27) (xy 8.89 1.27)
 					)
 					(stroke
 						(width 0.127)
@@ -254,7 +275,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 1.27) (xy 8.89 1.27)
+						(xy 13.97 -2.54) (xy 15.24 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -266,7 +287,7 @@
 				)
 				(polyline
 					(pts
-						(xy 15.24 -5.08) (xy 15.24 2.54)
+						(xy 13.97 -3.81) (xy 13.97 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -288,33 +309,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 11.43 -2.54)
-					(radius 0.3048)
+				(polyline
+					(pts
+						(xy 15.24 -5.08) (xy 15.24 2.54)
+					)
 					(stroke
 						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 11.43 0)
-					(radius 0.3048)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 11.43 1.27)
-					(radius 0.127)
-					(stroke
-						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -360,24 +360,6 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 7.62)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 22.86 0 180)
 					(length 7.62)
 					(name "4"
@@ -395,10 +377,31 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 7.62)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -517,6 +520,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -546,7 +550,6 @@
 	(hierarchical_label "VIO"
 		(shape input)
 		(at 163.83 85.725 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -558,7 +561,6 @@
 	(hierarchical_label "BOOT"
 		(shape output)
 		(at 170.815 88.265 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -570,7 +572,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 163.83 95.885 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -749,7 +750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6cfd679b-b57e-4aaa-b298-337246fa8c26")
-		(property "Reference" "R24"
+		(property "Reference" "R39"
 			(at 165.735 90.8049 0)
 			(effects
 				(font
@@ -896,7 +897,7 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9ad2e03f-9236-48b3-ba37-0d7f891d93a5"
-					(reference "R36")
+					(reference "R39")
 					(unit 1)
 				)
 			)

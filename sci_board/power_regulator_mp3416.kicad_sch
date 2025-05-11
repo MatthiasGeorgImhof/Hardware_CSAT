@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "8a531c48-64b3-41a2-a9de-288e171f5ab8")
 	(paper "A4")
 	(lib_symbols
@@ -86,18 +86,6 @@
 			(symbol "TPS631000DRLR_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -12.7) (xy 33.02 -12.7)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -12.7)
 					)
 					(stroke
@@ -110,7 +98,7 @@
 				)
 				(polyline
 					(pts
-						(xy 33.02 -12.7) (xy 33.02 5.08)
+						(xy 7.62 -12.7) (xy 33.02 -12.7)
 					)
 					(stroke
 						(width 0.127)
@@ -123,6 +111,18 @@
 				(polyline
 					(pts
 						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -12.7) (xy 33.02 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -225,16 +225,16 @@
 					)
 				)
 				(pin passive line
-					(at 40.64 -7.62 180)
+					(at 40.64 0 180)
 					(length 7.62)
-					(name "EN"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -261,16 +261,16 @@
 					)
 				)
 				(pin passive line
-					(at 40.64 0 180)
+					(at 40.64 -7.62 180)
 					(length 7.62)
-					(name "FB"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -279,9 +279,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -354,7 +357,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -366,7 +369,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -415,30 +418,33 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -537,6 +543,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -648,7 +655,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 128.905 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -660,7 +666,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 49.53 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -672,7 +677,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 113.03 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -684,7 +688,6 @@
 	(hierarchical_label "R-"
 		(shape input)
 		(at 128.905 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -696,7 +699,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 72.39 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -708,7 +710,6 @@
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 72.39 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -720,7 +721,6 @@
 	(hierarchical_label "VOUT"
 		(shape output)
 		(at 49.53 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -732,7 +732,6 @@
 	(hierarchical_label "R+"
 		(shape input)
 		(at 128.905 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -744,7 +743,6 @@
 	(hierarchical_label "LX1"
 		(shape input)
 		(at 72.39 137.16 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -756,7 +754,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 113.03 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -768,7 +765,6 @@
 	(hierarchical_label "EN"
 		(shape input)
 		(at 113.03 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -780,7 +776,6 @@
 	(hierarchical_label "LX2"
 		(shape input)
 		(at 72.39 134.62 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -792,7 +787,6 @@
 	(hierarchical_label "VOUT"
 		(shape output)
 		(at 128.905 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -811,7 +805,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1414f5aa-1798-4103-bb2e-87415457eb42")
-		(property "Reference" "U54"
+		(property "Reference" "U23"
 			(at 92.71 121.92 0)
 			(effects
 				(font
@@ -982,11 +976,11 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/2f5a2990-2dc0-472a-952a-1bfd830a3aba"
-					(reference "U22")
+					(reference "U24")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/7fde3d19-3e51-4869-ba44-af6d0a67b762"
-					(reference "U21")
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -1001,7 +995,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "311f1b27-14c8-4a2d-9fcc-cfe401d7eae2")
-		(property "Reference" "R141"
+		(property "Reference" "R52"
 			(at 130.81 134.62 0)
 			(effects
 				(font
@@ -1028,7 +1022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+		(property "Datasheet" "~"
 			(at 128.905 135.89 0)
 			(effects
 				(font
@@ -1037,7 +1031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor, small symbol"
 			(at 128.905 135.89 0)
 			(effects
 				(font
@@ -1163,11 +1157,11 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/2f5a2990-2dc0-472a-952a-1bfd830a3aba"
-					(reference "R51")
+					(reference "R54")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/7fde3d19-3e51-4869-ba44-af6d0a67b762"
-					(reference "R49")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -1182,7 +1176,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "844ace1b-3ffa-46e5-8f09-3dfb56291616")
-		(property "Reference" "C114"
+		(property "Reference" "C84"
 			(at 74.93 142.24 0)
 			(effects
 				(font
@@ -1362,11 +1356,11 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/2f5a2990-2dc0-472a-952a-1bfd830a3aba"
-					(reference "C73")
+					(reference "C88")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/7fde3d19-3e51-4869-ba44-af6d0a67b762"
-					(reference "C69")
+					(reference "C84")
 					(unit 1)
 				)
 			)
@@ -1382,7 +1376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "84c80822-fb7b-4f25-8ba2-55675761e3c3")
-		(property "Reference" "C112"
+		(property "Reference" "C82"
 			(at 53.34 138.4299 0)
 			(effects
 				(font
@@ -1553,11 +1547,11 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/2f5a2990-2dc0-472a-952a-1bfd830a3aba"
-					(reference "C71")
+					(reference "C86")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/7fde3d19-3e51-4869-ba44-af6d0a67b762"
-					(reference "C67")
+					(reference "C82")
 					(unit 1)
 				)
 			)
@@ -1573,7 +1567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9ffe0d97-a183-415c-bb91-a8534ec66503")
-		(property "Reference" "C113"
+		(property "Reference" "C83"
 			(at 46.355 138.43 0)
 			(effects
 				(font
@@ -1744,11 +1738,11 @@
 			)
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/2f5a2990-2dc0-472a-952a-1bfd830a3aba"
-					(reference "C72")
+					(reference "C87")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/7fde3d19-3e51-4869-ba44-af6d0a67b762"
-					(reference "C68")
+					(reference "C83")
 					(unit 1)
 				)
 			)

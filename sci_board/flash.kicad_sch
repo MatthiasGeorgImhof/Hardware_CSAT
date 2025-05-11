@@ -1,11 +1,11 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "f7019c14-28f1-4991-9090-a9a9722e61b3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Common:MT29F4G01ABAFDWB-IT{colon}F"
+		(symbol "Common:MT29F4G01ABAFDWB-IT-F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -18,7 +18,7 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "MT29F4G01ABAFDWB-IT{colon}F"
+			(property "Value" "MT29F4G01ABAFDWB-IT-F"
 				(at 34.29 5.08 0)
 				(effects
 					(font
@@ -106,7 +106,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "MT29F4G01ABAFDWB-IT{colon}F_1_1"
+			(symbol "MT29F4G01ABAFDWB-IT-F_1_1"
 				(rectangle
 					(start 5.08 2.54)
 					(end 33.02 -10.16)
@@ -190,35 +190,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at 38.1 -7.62 180)
+				(pin power_in line
+					(at 38.1 0 180)
 					(length 5.08)
-					(name "SI/IO0"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 38.1 -5.08 180)
-					(length 5.08)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -244,17 +226,35 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 38.1 0 180)
+				(pin input line
+					(at 38.1 -5.08 180)
 					(length 5.08)
-					(name "VCC"
+					(name "SCK"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 38.1 -7.62 180)
+					(length 5.08)
+					(name "SI/IO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -263,9 +263,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -338,7 +341,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -350,7 +353,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -399,9 +402,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -520,6 +526,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(wire
@@ -645,7 +652,6 @@
 	(hierarchical_label "SPI_CLK"
 		(shape input)
 		(at 110.49 78.105 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -657,7 +663,6 @@
 	(hierarchical_label "VDD"
 		(shape input)
 		(at 139.065 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -669,7 +674,6 @@
 	(hierarchical_label "SPI_MISO"
 		(shape output)
 		(at 60.96 75.565 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -681,7 +685,6 @@
 	(hierarchical_label "VDD"
 		(shape input)
 		(at 61.595 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -693,7 +696,6 @@
 	(hierarchical_label "SPI_CS"
 		(shape input)
 		(at 61.595 73.025 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -705,7 +707,6 @@
 	(hierarchical_label "VSS"
 		(shape input)
 		(at 139.065 77.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -717,7 +718,6 @@
 	(hierarchical_label "VDD"
 		(shape input)
 		(at 123.825 67.945 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -729,7 +729,6 @@
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
 		(at 110.49 80.645 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -741,7 +740,6 @@
 	(hierarchical_label "VDD"
 		(shape input)
 		(at 110.49 73.025 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -753,7 +751,6 @@
 	(hierarchical_label "VDD"
 		(shape input)
 		(at 43.815 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -765,7 +762,6 @@
 	(hierarchical_label "VSS"
 		(shape input)
 		(at 60.96 80.645 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -783,7 +779,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "217a63df-0d80-49f2-bee2-723802afaecf")
-		(property "Reference" "C66"
+		(property "Reference" "C80"
 			(at 143.891 70.5866 0)
 			(effects
 				(font
@@ -900,6 +896,14 @@
 				(hide yes)
 			)
 		)
+		(property "Temperture Coefficient" "X5R"
+			(at 140.97 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "15ae18e9-161c-4e87-9fa7-349e49283c95")
 		)
@@ -909,18 +913,18 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "C66")
+					(reference "C81")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "C65")
+					(reference "C80")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Common:MT29F4G01ABAFDWB-IT{colon}F")
+		(lib_id "Common:MT29F4G01ABAFDWB-IT-F")
 		(at 72.39 73.025 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -929,7 +933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24390024-185f-4fbe-a57a-a11af97dbbcb")
-		(property "Reference" "U20"
+		(property "Reference" "U21"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -1046,11 +1050,11 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "U20")
+					(reference "U22")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "U19")
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -1065,7 +1069,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f804b8f-d839-4397-8a71-9791fb86446a")
-		(property "Reference" "R46"
+		(property "Reference" "R45"
 			(at 64.135 63.5 0)
 			(effects
 				(font
@@ -1173,11 +1177,11 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R46")
+					(reference "R49")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R42")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -1192,7 +1196,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d84df0f0-d6c7-4a80-b152-31cb295ebb8d")
-		(property "Reference" "R45"
+		(property "Reference" "R44"
 			(at 46.355 63.5 0)
 			(effects
 				(font
@@ -1300,11 +1304,11 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R45")
+					(reference "R48")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R41")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -1320,7 +1324,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d89a75e2-4b0e-4f7d-9fcc-24a1ed0e1909")
-		(property "Reference" "R47"
+		(property "Reference" "R46"
 			(at 121.285 70.485 0)
 			(effects
 				(font
@@ -1428,11 +1432,11 @@
 		(instances
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R47")
+					(reference "R50")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R43")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -1448,7 +1452,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe86fff8-beb3-4878-9cb5-6bf695fad4e7")
-		(property "Reference" "R48"
+		(property "Reference" "R47"
 			(at 67.945 69.85 90)
 			(effects
 				(font
@@ -1554,11 +1558,11 @@
 		(instances
 			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R48")
+					(reference "R51")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R44")
+					(reference "R47")
 					(unit 1)
 				)
 			)

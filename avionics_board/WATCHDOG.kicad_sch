@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "efa7499d-2476-49f8-b499-419395a3f8f6")
 	(paper "A")
 	(title_block
@@ -90,19 +90,7 @@
 			(symbol "EVP-AA602W_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -5.08) (xy 15.24 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -2.54)
+						(xy 7.62 2.54) (xy 7.62 -5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -126,7 +114,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 7.62 -5.08)
+						(xy 7.62 -2.54) (xy 8.89 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -138,19 +126,7 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -3.81) (xy 13.97 -3.81)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 -2.54) (xy 8.89 -3.81)
+						(xy 7.62 -5.08) (xy 15.24 -5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -174,8 +150,54 @@
 				)
 				(polyline
 					(pts
-						(xy 11.43 -3.81) (xy 11.43 -2.8575)
+						(xy 8.89 -2.54) (xy 8.89 -3.81)
 					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -3.81) (xy 13.97 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 11.43 1.27)
+					(radius 0.127)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.43 0.3175) (xy 11.43 1.27)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 11.43 0)
+					(radius 0.3048)
 					(stroke
 						(width 0.127)
 						(type default)
@@ -196,9 +218,20 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 11.43 -2.54)
+					(radius 0.3048)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 11.43 0.3175) (xy 11.43 1.27)
+						(xy 11.43 -3.81) (xy 11.43 -2.8575)
 					)
 					(stroke
 						(width 0.127)
@@ -210,19 +243,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 -3.81) (xy 13.97 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 13.97 -2.54) (xy 15.24 -2.54)
+						(xy 13.97 1.27) (xy 8.89 1.27)
 					)
 					(stroke
 						(width 0.127)
@@ -258,7 +279,7 @@
 				)
 				(polyline
 					(pts
-						(xy 13.97 1.27) (xy 8.89 1.27)
+						(xy 13.97 -2.54) (xy 15.24 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -270,7 +291,7 @@
 				)
 				(polyline
 					(pts
-						(xy 15.24 -5.08) (xy 15.24 2.54)
+						(xy 13.97 -3.81) (xy 13.97 -2.54)
 					)
 					(stroke
 						(width 0.127)
@@ -292,33 +313,12 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 11.43 -2.54)
-					(radius 0.3048)
+				(polyline
+					(pts
+						(xy 15.24 -5.08) (xy 15.24 2.54)
+					)
 					(stroke
 						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 11.43 0)
-					(radius 0.3048)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 11.43 1.27)
-					(radius 0.127)
-					(stroke
-						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -364,24 +364,6 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 7.62)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 22.86 0 180)
 					(length 7.62)
 					(name "4"
@@ -399,10 +381,31 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 7.62)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -475,7 +478,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -487,7 +490,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -536,9 +539,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -657,10 +663,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_DIP_x01"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -812,6 +821,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Timer:TPL5010"
 			(exclude_from_sim no)
@@ -892,6 +902,24 @@
 				)
 			)
 			(symbol "TPL5010_1_1"
+				(pin input line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "DELAY/M_RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
@@ -928,17 +956,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 0 0)
+				(pin open_collector line
+					(at 12.7 2.54 180)
 					(length 2.54)
-					(name "DELAY/M_RST"
+					(name "~{RST}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -982,26 +1010,108 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "~{RST}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "DELAY/M_RST pin is sensitive to parasitic capacitance"
+		(exclude_from_sim no)
+		(at 233.68 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "264a063b-ee6f-4d47-b9c1-d9eb855d1e45")
+	)
+	(text "Layout Note: Decoupling\n"
+		(exclude_from_sim no)
+		(at 57.15 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "308777d0-884d-44c7-91e7-1b7a876ee923")
+	)
+	(text "The DONE, WAKE and RSTn signals are used to implement the watchdog function. The TPL5010-Q1 is\nprogrammed to issue a periodic WAKE pulse to a μC which is in sleep or standby mode. After receiving the\nWAKE pulse, the μC must issue a DONE signal to the TPL5010-Q1 at least 20 ms before the rising edge of the\nnext WAKE pulse. If the DONE signal is not asserted, the TPL5010-Q1 asserts the RSTn signal to reset the μC.\nA manual reset function is realized by momentarily pulling the DELAY/M_RST pin to VDD"
+		(exclude_from_sim no)
+		(at 152.4 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35af3581-978b-45e8-a7a2-ccccf11b99a5")
+	)
+	(text "Power Supply between 1.8V and 5.5V"
+		(exclude_from_sim no)
+		(at 161.29 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "784d8307-5a72-4dc1-9a73-2e87a2164228")
+	)
+	(text "Disable switch"
+		(exclude_from_sim no)
+		(at 102.87 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a975c1b-6488-4cd1-9f88-e7b225492b98")
+	)
+	(text "Manual Reset"
+		(exclude_from_sim no)
+		(at 214.63 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "abe1dafb-b9da-4123-9d50-21d08df5ded7")
+	)
+	(text "A multilayer ceramic bypass X7R capacitor of 0.1μF is recommended"
+		(exclude_from_sim no)
+		(at 85.09 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6d265e8-a356-4128-a149-660b35b1e229")
+	)
+	(text "5 seconds"
+		(exclude_from_sim no)
+		(at 172.72 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6630bf4-913c-4c56-a74e-a912ae0b8c93")
+	)
+	(text "Use 1% Resistors\n\n100 ms == 500 ohm\n200 ms == 1000 ohm\n300 ms == 1500 ohm\n400 ms == 2000 ohm\n500 ms == 2500 ohm\n1 s     ==  5.2 Kohm\n2 s     == 6.79 Kohm\n5 s     == 8.85 Kohm\n10 s    == 11.20 Kohm"
+		(exclude_from_sim no)
+		(at 195.58 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de37a0a7-83a0-4c03-8870-8abf1b1d32a7")
 	)
 	(junction
 		(at 175.26 88.9)
@@ -1255,109 +1365,9 @@
 		)
 		(uuid "cf18dc79-3cd1-44c7-bf24-39d0fdcb2a5f")
 	)
-	(text "DELAY/M_RST pin is sensitive to parasitic capacitance"
-		(exclude_from_sim no)
-		(at 233.68 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "264a063b-ee6f-4d47-b9c1-d9eb855d1e45")
-	)
-	(text "Layout Note: Decoupling\n"
-		(exclude_from_sim no)
-		(at 57.15 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "308777d0-884d-44c7-91e7-1b7a876ee923")
-	)
-	(text "The DONE, WAKE and RSTn signals are used to implement the watchdog function. The TPL5010-Q1 is\nprogrammed to issue a periodic WAKE pulse to a μC which is in sleep or standby mode. After receiving the\nWAKE pulse, the μC must issue a DONE signal to the TPL5010-Q1 at least 20 ms before the rising edge of the\nnext WAKE pulse. If the DONE signal is not asserted, the TPL5010-Q1 asserts the RSTn signal to reset the μC.\nA manual reset function is realized by momentarily pulling the DELAY/M_RST pin to VDD"
-		(exclude_from_sim no)
-		(at 152.4 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35af3581-978b-45e8-a7a2-ccccf11b99a5")
-	)
-	(text "Power Supply between 1.8V and 5.5V"
-		(exclude_from_sim no)
-		(at 161.29 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "784d8307-5a72-4dc1-9a73-2e87a2164228")
-	)
-	(text "Disable switch"
-		(exclude_from_sim no)
-		(at 102.87 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9a975c1b-6488-4cd1-9f88-e7b225492b98")
-	)
-	(text "Manual Reset"
-		(exclude_from_sim no)
-		(at 214.63 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "abe1dafb-b9da-4123-9d50-21d08df5ded7")
-	)
-	(text "A multilayer ceramic bypass X7R capacitor of 0.1μF is recommended"
-		(exclude_from_sim no)
-		(at 85.09 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c6d265e8-a356-4128-a149-660b35b1e229")
-	)
-	(text "5 seconds"
-		(exclude_from_sim no)
-		(at 172.72 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d6630bf4-913c-4c56-a74e-a912ae0b8c93")
-	)
-	(text "Use 1% Resistors\n\n100 ms == 500 ohm\n200 ms == 1000 ohm\n300 ms == 1500 ohm\n400 ms == 2000 ohm\n500 ms == 2500 ohm\n1 s     ==  5.2 Kohm\n2 s     == 6.79 Kohm\n5 s     == 8.85 Kohm\n10 s    == 11.20 Kohm"
-		(exclude_from_sim no)
-		(at 195.58 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "de37a0a7-83a0-4c03-8870-8abf1b1d32a7")
-	)
 	(hierarchical_label "DONE"
 		(shape input)
 		(at 119.38 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1369,7 +1379,6 @@
 	(hierarchical_label "VSS"
 		(shape output)
 		(at 138.43 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1381,7 +1390,6 @@
 	(hierarchical_label "VDD"
 		(shape output)
 		(at 138.43 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1393,7 +1401,6 @@
 	(hierarchical_label "VSS"
 		(shape output)
 		(at 40.64 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1405,7 +1412,6 @@
 	(hierarchical_label "VDD"
 		(shape output)
 		(at 40.64 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1417,7 +1423,6 @@
 	(hierarchical_label "RST"
 		(shape output)
 		(at 73.66 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1429,7 +1434,6 @@
 	(hierarchical_label "WAKE"
 		(shape output)
 		(at 119.38 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1449,7 +1453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00006310c545")
-		(property "Reference" "U1"
+		(property "Reference" "U6"
 			(at 158.75 82.5814 0)
 			(effects
 				(font
@@ -1621,7 +1625,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006310c546")
-		(property "Reference" "C1"
+		(property "Reference" "C34"
 			(at 51.181 138.5316 0)
 			(effects
 				(font
@@ -1916,7 +1920,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006310c548")
-		(property "Reference" "R22"
+		(property "Reference" "R27"
 			(at 83.058 76.3016 0)
 			(effects
 				(font
@@ -2072,7 +2076,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "R33")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -2087,7 +2091,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006310c549")
-		(property "Reference" "R23"
+		(property "Reference" "R28"
 			(at 177.038 97.8916 0)
 			(effects
 				(font
@@ -2243,7 +2247,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "R34")
+					(reference "R28")
 					(unit 1)
 				)
 			)

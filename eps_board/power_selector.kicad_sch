@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "2931efae-7264-4ca9-80d4-f2316cb4c1cd")
 	(paper "A4")
 	(lib_symbols
@@ -103,24 +103,6 @@
 					)
 				)
 				(pin input line
-					(at 6.35 -8.89 0)
-					(length 7.62)
-					(name "ON"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
 					(at 6.35 -1.27 0)
 					(length 7.62)
 					(name "VIN2"
@@ -131,6 +113,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 6.35 -8.89 0)
+					(length 7.62)
+					(name "ON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -169,24 +169,6 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 36.83 -8.89 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_out line
 					(at 36.83 1.27 180)
 					(length 7.62)
@@ -198,24 +180,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 36.83 -6.35 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -241,10 +205,49 @@
 						)
 					)
 				)
+				(pin input line
+					(at 36.83 -6.35 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 36.83 -8.89 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -317,7 +320,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -329,7 +332,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -378,11 +381,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -449,32 +457,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -486,8 +470,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -535,9 +543,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -656,34 +667,34 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
-			(pin_numbers hide)
+		(symbol "Device:R_Pack02"
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "R"
-				(at 0.762 0.508 0)
+			(property "Reference" "RN"
+				(at -5.08 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+			(property "Value" "R_Pack02"
+				(at 2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 4.445 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -700,7 +711,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
+			(property "Description" "2 resistor network, parallel topology"
 				(at 0 0 0)
 				(effects
 					(font
@@ -709,7 +720,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "R resistor"
+			(property "ki_keywords" "R network parallel topology isolated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -718,7 +729,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -727,12 +738,82 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Small_0_1"
+			(symbol "R_Pack02_0_1"
 				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
+					(start -3.81 -2.413)
+					(end 1.27 2.413)
 					(stroke
-						(width 0.2032)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.175 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.905) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.635 1.905)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -740,11 +821,29 @@
 					)
 				)
 			)
-			(symbol "R_Small_1_1"
+			(symbol "R_Pack02_1_1"
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "R1.1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -760,9 +859,27 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "R2.1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -778,7 +895,71 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Core"
+		(exclude_from_sim no)
+		(at 64.135 51.435 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0530aabc-8318-47c6-9e1b-ac830d457276")
+	)
+	(text "Switched"
+		(exclude_from_sim no)
+		(at 66.04 106.045 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "65dc8129-e440-4790-83d6-7121d03ef40d")
+	)
+	(text "1A5 Max"
+		(exclude_from_sim no)
+		(at 60.96 109.855 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "7391ad76-6385-4a37-965d-7941f5ae17b2")
+	)
+	(text "Switched"
+		(exclude_from_sim no)
+		(at 66.04 75.565 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a6f222e4-f3a6-49d3-8234-b14bf98391ee")
+	)
+	(text "1A5 Max"
+		(exclude_from_sim no)
+		(at 60.96 79.375 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3cb5eb5-85f2-4ee1-89b0-67d08f59ef01")
+	)
+	(text "1A5 Max"
+		(exclude_from_sim no)
+		(at 60.325 49.53 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "e05025f8-2d3c-43c2-aa53-8d23ce420481")
 	)
 	(junction
 		(at 157.48 46.99)
@@ -787,28 +968,10 @@
 		(uuid "03e29913-7b8e-4e79-ba26-b292efc6a5d3")
 	)
 	(junction
-		(at 139.7 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ef0cc95-bd90-4303-955e-f6068b9f40c6")
-	)
-	(junction
-		(at 139.7 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f11d85f-3027-466a-8565-d2ced5a68d52")
-	)
-	(junction
 		(at 158.115 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "45d26e80-d4ea-4e5b-b859-2ae7c529ade1")
-	)
-	(junction
-		(at 140.97 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "840717b6-b62f-40dd-ac12-3b6a460a23ea")
 	)
 	(junction
 		(at 138.43 46.99)
@@ -821,12 +984,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc7e88ff-e147-4cd5-8089-f1f2de866455")
-	)
-	(junction
-		(at 140.97 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dcf6e34f-f9e6-4381-bdc6-4604d176dc28")
 	)
 	(junction
 		(at 137.795 106.68)
@@ -856,26 +1013,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 52.07) (xy 139.7 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1126c3cd-fc87-4515-a186-346ef8dca44f")
-	)
-	(wire
-		(pts
-			(xy 138.43 46.99) (xy 139.7 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12a40b29-de3a-4503-a1ea-6778d08ae6b7")
-	)
-	(wire
-		(pts
 			(xy 50.8 106.68) (xy 52.07 106.68)
 		)
 		(stroke
@@ -896,7 +1033,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 106.68) (xy 140.97 106.68)
+			(xy 137.795 106.68) (xy 158.115 106.68)
 		)
 		(stroke
 			(width 0)
@@ -953,16 +1090,6 @@
 			(type default)
 		)
 		(uuid "48ebb613-644c-485e-a4b7-822742e051bc")
-	)
-	(wire
-		(pts
-			(xy 140.97 111.76) (xy 142.875 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5075d1cb-30eb-48e7-aa3a-ba02d60b96bb")
 	)
 	(wire
 		(pts
@@ -1026,16 +1153,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 106.68) (xy 158.115 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b0cf2b9-a3f1-4c20-ac29-193a7665ca03")
-	)
-	(wire
-		(pts
 			(xy 79.375 76.2) (xy 98.425 76.2)
 		)
 		(stroke
@@ -1083,16 +1200,6 @@
 			(type default)
 		)
 		(uuid "8bc01923-8553-4149-860f-73b2188a2b58")
-	)
-	(wire
-		(pts
-			(xy 140.97 111.76) (xy 137.795 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8db4fc23-4cb3-490b-96ce-31d13c43ccca")
 	)
 	(wire
 		(pts
@@ -1156,7 +1263,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 46.99) (xy 157.48 46.99)
+			(xy 138.43 46.99) (xy 157.48 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1256,16 +1363,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 52.07) (xy 138.43 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6a7cb1b-a237-4547-8fee-2f71487a6a80")
-	)
-	(wire
-		(pts
 			(xy 51.435 42.545) (xy 51.435 46.99)
 		)
 		(stroke
@@ -1314,73 +1411,9 @@
 		)
 		(uuid "f96d3e5c-b52d-4624-9e66-55ea0b83f1d6")
 	)
-	(text "Core"
-		(exclude_from_sim no)
-		(at 64.135 51.435 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0530aabc-8318-47c6-9e1b-ac830d457276")
-	)
-	(text "Switched"
-		(exclude_from_sim no)
-		(at 66.04 106.045 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "65dc8129-e440-4790-83d6-7121d03ef40d")
-	)
-	(text "1A5 Max"
-		(exclude_from_sim no)
-		(at 60.96 109.855 0)
-		(effects
-			(font
-				(size 2.0066 2.0066)
-			)
-			(justify left bottom)
-		)
-		(uuid "7391ad76-6385-4a37-965d-7941f5ae17b2")
-	)
-	(text "Switched"
-		(exclude_from_sim no)
-		(at 66.04 75.565 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a6f222e4-f3a6-49d3-8234-b14bf98391ee")
-	)
-	(text "1A5 Max"
-		(exclude_from_sim no)
-		(at 60.96 79.375 0)
-		(effects
-			(font
-				(size 2.0066 2.0066)
-			)
-			(justify left bottom)
-		)
-		(uuid "d3cb5eb5-85f2-4ee1-89b0-67d08f59ef01")
-	)
-	(text "1A5 Max"
-		(exclude_from_sim no)
-		(at 60.325 49.53 0)
-		(effects
-			(font
-				(size 2.0066 2.0066)
-			)
-			(justify left bottom)
-		)
-		(uuid "e05025f8-2d3c-43c2-aa53-8d23ce420481")
-	)
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 39.37 71.755 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1389,10 +1422,20 @@
 		)
 		(uuid "03f64100-ef04-4f9c-a4d7-710b1ddab428")
 	)
+	(hierarchical_label "VCORE"
+		(shape output)
+		(at 146.05 71.755 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c0dbee6-1d52-4a18-baa2-ac4a36ebc8d1")
+	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 107.315 124.46 180)
-		(fields_autoplaced yes)
+		(at 107.315 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1401,22 +1444,9 @@
 		)
 		(uuid "16776592-bae0-4800-b846-024df948816d")
 	)
-	(hierarchical_label "3V3_GOOD"
-		(shape output)
-		(at 167.64 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "212e4fdb-3213-45d6-8825-2361911f1996")
-	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 158.115 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1425,10 +1455,20 @@
 		)
 		(uuid "42963755-5dbd-49b4-ae55-e45f07d52f3a")
 	)
+	(hierarchical_label "STATUS_3V3"
+		(shape output)
+		(at 148.59 71.755 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4a57c788-0359-4137-97c8-526c3a1dfa0b")
+	)
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 40.005 42.545 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1440,7 +1480,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 157.48 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1452,7 +1491,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 137.795 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1463,8 +1501,7 @@
 	)
 	(hierarchical_label "STATUS_3V3"
 		(shape output)
-		(at 142.875 111.76 0)
-		(fields_autoplaced yes)
+		(at 137.795 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1473,22 +1510,9 @@
 		)
 		(uuid "650e293f-574d-4425-9659-980eb13a10e7")
 	)
-	(hierarchical_label "3V3_CORE_GOOD"
-		(shape output)
-		(at 168.275 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6a8cddb5-62a7-458e-9108-8efd29fd068b")
-	)
 	(hierarchical_label "PWR3CORE_EN"
 		(shape input)
 		(at 40.005 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1500,7 +1524,6 @@
 	(hierarchical_label "VIN"
 		(shape input)
 		(at 39.37 102.235 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1512,7 +1535,6 @@
 	(hierarchical_label "PWR3AUX_EN"
 		(shape input)
 		(at 39.37 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1523,8 +1545,7 @@
 	)
 	(hierarchical_label "STATUS_CORE"
 		(shape output)
-		(at 140.97 52.07 0)
-		(fields_autoplaced yes)
+		(at 138.43 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1536,7 +1557,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 48.895 84.455 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1548,7 +1568,6 @@
 	(hierarchical_label "VCORE"
 		(shape output)
 		(at 168.275 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1560,7 +1579,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 50.165 55.245 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1571,8 +1589,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 107.95 64.77 180)
-		(fields_autoplaced yes)
+		(at 107.95 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1581,10 +1598,20 @@
 		)
 		(uuid "b1e400d9-4ebb-4e5e-9a56-99583a90276b")
 	)
+	(hierarchical_label "V3V3"
+		(shape output)
+		(at 148.59 81.915 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b376da0f-669d-4bd4-aa6e-f16b27e4846f")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 138.43 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1596,7 +1623,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 48.895 114.935 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1608,7 +1634,6 @@
 	(hierarchical_label "PWR3V3_EN"
 		(shape input)
 		(at 39.37 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1617,10 +1642,20 @@
 		)
 		(uuid "d2ce7dbd-9b13-447e-b6ca-9a608808555c")
 	)
+	(hierarchical_label "STATUS_CORE"
+		(shape output)
+		(at 146.05 81.915 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ebeed7f0-4eeb-4178-bd0f-26a78cdf8827")
+	)
 	(hierarchical_label "V3V3"
 		(shape output)
 		(at 167.64 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1638,7 +1673,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fde11bd-0bad-4aa8-862f-e58b147d0261")
-		(property "Reference" "R103"
+		(property "Reference" "R42"
 			(at 69.85 93.345 90)
 			(effects
 				(font
@@ -1708,51 +1743,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 72.39 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 161.925 161.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 161.925 161.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 161.925 161.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 161.925 161.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "833ea4d2-acb6-46e4-a933-24e24c73f10d")
 		)
@@ -1762,7 +1752,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R103")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -1778,7 +1768,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26627fc9-2e49-462b-a57c-66d6392a81fc")
-		(property "Reference" "U26"
+		(property "Reference" "U23"
 			(at 123.19 40.64 0)
 			(effects
 				(font
@@ -1841,51 +1831,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 101.6 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "7"
 			(uuid "af51084e-71f5-4f05-87e2-6e94bb1397fe")
 		)
@@ -1913,7 +1858,7 @@
 		(instances
 			(project ""
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "U26")
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -1998,51 +1943,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 60.96 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at -59.055 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at -59.055 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at -59.055 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at -59.055 59.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "01b84692-4371-4df9-ac66-39460d982799")
 		)
@@ -2053,571 +1953,6 @@
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
 					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 168.275 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d92dee3-4c09-4dd2-bd7c-2e10c606882c")
-		(property "Reference" "R100"
-			(at 170.18 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 170.18 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 166.497 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0710KL"
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 168.275 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7cf5a7f9-ebd1-4e08-a474-4c7163ab933b")
-		)
-		(pin "2"
-			(uuid "dfbd1831-4eba-44ee-ba63-b41b98c8495e")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R100")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 107.315 120.65 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f390a9b-62b6-48d5-8355-e1df30aa2223")
-		(property "Reference" "R107"
-			(at 105.41 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 105.41 122.555 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 109.093 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-07100KL"
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 107.315 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 214.63 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 214.63 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 214.63 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 214.63 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d8d271bf-c8a5-49fd-8c84-a7481745af9d")
-		)
-		(pin "2"
-			(uuid "f3d58b5d-4b9d-463a-8843-1378440395a6")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 140.97 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "70fe467e-d79c-400b-a5b0-91f778f14920")
-		(property "Reference" "R104"
-			(at 143.51 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0710KL"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 140.97 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4d35fb79-1381-4169-8c5f-13d288b96f42")
-		)
-		(pin "1"
-			(uuid "befe3012-9d43-4375-be6e-7650e4c24d76")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 107.95 60.96 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "740dbcdb-d82a-48dc-957a-aa883b5b8f81")
-		(property "Reference" "R102"
-			(at 106.045 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 106.045 62.865 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 109.728 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-07100KL"
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 107.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 215.9 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 215.9 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 215.9 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 215.9 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5206806f-1ae7-4106-8c19-4adcdb1149d1")
-		)
-		(pin "2"
-			(uuid "f0c9d97f-cb59-49e0-9c95-0bf5fc9f2d22")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -2702,51 +2037,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 60.96 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at -28.575 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at -28.575 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at -28.575 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at -28.575 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "48fca084-95c9-40cd-8f79-23f135871201")
 		)
@@ -2763,6 +2053,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 148.59 76.835 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a08e382a-9203-432c-8d3f-af482820b7cf")
+		(property "Reference" "RN14"
+			(at 156.21 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 156.21 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 153.035 76.835 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
+			(at 148.59 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 148.59 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 148.59 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V103JX"
+			(at 148.59 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "00f0683d-da55-4bef-8c0e-3abe0733600c")
+		)
+		(pin "1"
+			(uuid "1259a966-42c9-4efd-a878-af628744278c")
+		)
+		(pin "4"
+			(uuid "4039a13e-3639-44c9-83c0-69b78fc7da02")
+		)
+		(pin "3"
+			(uuid "95a8fd4a-b811-4232-9f92-9023709c43dd")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
+					(reference "RN14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 73.025 60.325 90)
 		(unit 1)
@@ -2771,7 +2155,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a29bbe80-7dc2-49bb-b75e-ff631a9bd0bf")
-		(property "Reference" "R101"
+		(property "Reference" "R41"
 			(at 70.485 64.77 90)
 			(effects
 				(font
@@ -2841,51 +2225,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 73.025 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 133.35 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 133.35 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 133.35 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 133.35 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "70deb7d2-d3e1-471e-ae82-617f4f898107")
 		)
@@ -2895,7 +2234,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R101")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -2910,7 +2249,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3dfdb5b-28da-4d04-a377-34fc63b051c1")
-		(property "Reference" "C73"
+		(property "Reference" "C72"
 			(at 160.655 109.22 0)
 			(effects
 				(font
@@ -2991,51 +2330,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 158.115 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "322056d6-b4c7-428a-a8c7-8bd12d124cbb")
 		)
@@ -3045,149 +2339,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "C73")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c58fcd3d-21a0-4f60-b032-2401cb304dd9")
-		(property "Reference" "R105"
-			(at 169.545 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 169.545 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 165.862 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0710KL"
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 167.64 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b626989c-15c0-4d5c-9051-14a27e1eee6a")
-		)
-		(pin "2"
-			(uuid "4e1f6f2a-4b59-42f1-85fc-68bafe111491")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R105")
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -3203,7 +2355,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d85d94c3-8b1b-4c01-91e2-cff5dbb31d76")
-		(property "Reference" "U27"
+		(property "Reference" "U24"
 			(at 122.555 100.33 0)
 			(effects
 				(font
@@ -3266,51 +2418,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 100.965 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "7"
 			(uuid "d4b5066c-40d3-4279-94e7-0e9ff745b1f1")
 		)
@@ -3338,7 +2445,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "U27")
+					(reference "U24")
 					(unit 1)
 				)
 			)
@@ -3423,51 +2530,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 61.595 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 1.27 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 1.27 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 1.27 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 1.27 -1.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "57df3d98-8884-4a09-bc3e-0b05bb7ef170")
 		)
@@ -3492,7 +2554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2d8e34a-d36d-4e34-a2c4-5c8c108b1215")
-		(property "Reference" "C72"
+		(property "Reference" "C71"
 			(at 160.02 49.53 0)
 			(effects
 				(font
@@ -3573,51 +2635,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 157.48 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8df5f22b-fe58-47a1-9b2e-1e88b9a30f61")
 		)
@@ -3627,7 +2644,7 @@
 		(instances
 			(project ""
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "C72")
+					(reference "C71")
 					(unit 1)
 				)
 			)
@@ -3642,7 +2659,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcd252f9-2e55-4214-a8c2-684724e3bd5c")
-		(property "Reference" "R106"
+		(property "Reference" "R43"
 			(at 69.85 123.825 90)
 			(effects
 				(font
@@ -3712,51 +2729,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufactorer" ""
-			(at 72.39 120.015 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 192.405 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 192.405 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 192.405 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 192.405 192.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "11eacf62-6745-4a6e-93bb-65739f76274f")
 		)
@@ -3766,148 +2738,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R106")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 139.7 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fcff186c-62b1-4cc4-843c-75fc4ab375a3")
-		(property "Reference" "R99"
-			(at 142.24 48.2599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 142.24 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0710KL"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufactorer" ""
-			(at 139.7 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 0 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 0 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 0 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 0 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "da747035-262d-450d-b45d-ae951caaccc7")
-		)
-		(pin "1"
-			(uuid "ef34e6e9-db8a-41de-8e91-bfe6adb783a1")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0"
-					(reference "R99")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -3916,6 +2747,10 @@
 	(sheet
 		(at 52.705 45.085)
 		(size 27.305 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3945,83 +2780,83 @@
 		)
 		(pin "GND" input
 			(at 52.705 55.245 180)
+			(uuid "87891fc3-52f0-4bf4-b555-d6969ef2f732")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "87891fc3-52f0-4bf4-b555-d6969ef2f732")
 		)
 		(pin "VIN" input
 			(at 52.705 46.99 180)
+			(uuid "4de3b853-3358-4228-99bb-f52898d95fae")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4de3b853-3358-4228-99bb-f52898d95fae")
 		)
 		(pin "LX1" input
 			(at 57.785 57.15 270)
+			(uuid "6e4a2679-5243-4aec-a074-381949fc21af")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6e4a2679-5243-4aec-a074-381949fc21af")
 		)
 		(pin "LX2" input
 			(at 65.405 57.15 270)
+			(uuid "38a83220-5ec6-477a-b182-9e00ac670239")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "38a83220-5ec6-477a-b182-9e00ac670239")
 		)
 		(pin "R-" input
 			(at 76.835 57.15 270)
+			(uuid "cc3c0fee-9f83-46de-bdaf-8dfbb4816111")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cc3c0fee-9f83-46de-bdaf-8dfbb4816111")
 		)
 		(pin "R+" input
 			(at 69.215 57.15 270)
+			(uuid "fdb959c0-a101-4c0a-91bd-37aefda1f250")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fdb959c0-a101-4c0a-91bd-37aefda1f250")
 		)
 		(pin "VOUT" output
 			(at 80.01 46.99 0)
+			(uuid "38028b95-1889-46b2-8bb0-c16cf490ec32")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "38028b95-1889-46b2-8bb0-c16cf490ec32")
 		)
 		(pin "EN" input
 			(at 52.705 50.8 180)
+			(uuid "a1e99bf8-333c-4636-b589-f52991076d14")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a1e99bf8-333c-4636-b589-f52991076d14")
 		)
 		(instances
 			(project "EPS"
@@ -4034,6 +2869,10 @@
 	(sheet
 		(at 52.07 74.295)
 		(size 27.305 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4063,83 +2902,83 @@
 		)
 		(pin "GND" input
 			(at 52.07 84.455 180)
+			(uuid "b84de9e4-f7be-4e54-81e9-95616c206605")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b84de9e4-f7be-4e54-81e9-95616c206605")
 		)
 		(pin "VIN" input
 			(at 52.07 76.2 180)
+			(uuid "fac42ab1-f951-4750-8ec5-a37a193c0ba7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fac42ab1-f951-4750-8ec5-a37a193c0ba7")
 		)
 		(pin "LX1" input
 			(at 57.15 86.36 270)
+			(uuid "c9caf054-7d8c-4a47-a7bd-56bc6af86a0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c9caf054-7d8c-4a47-a7bd-56bc6af86a0a")
 		)
 		(pin "LX2" input
 			(at 64.77 86.36 270)
+			(uuid "8cdfc858-de48-4c15-bc66-10db5fec0763")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8cdfc858-de48-4c15-bc66-10db5fec0763")
 		)
 		(pin "R-" input
 			(at 76.2 86.36 270)
+			(uuid "c69f2bde-8773-4c6d-ba28-2051fb65d22c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c69f2bde-8773-4c6d-ba28-2051fb65d22c")
 		)
 		(pin "R+" input
 			(at 68.58 86.36 270)
+			(uuid "376af8a1-26f3-461d-a654-4d7392a0bb47")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "376af8a1-26f3-461d-a654-4d7392a0bb47")
 		)
 		(pin "VOUT" output
 			(at 79.375 76.2 0)
+			(uuid "3f984323-0e9d-4cf8-993d-bdb6b549a91b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3f984323-0e9d-4cf8-993d-bdb6b549a91b")
 		)
 		(pin "EN" input
 			(at 52.07 80.01 180)
+			(uuid "1907b631-87dd-4ef2-8033-0f34f78229a1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1907b631-87dd-4ef2-8033-0f34f78229a1")
 		)
 		(instances
 			(project "EPS"
@@ -4152,6 +2991,10 @@
 	(sheet
 		(at 52.07 104.775)
 		(size 27.305 12.065)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4181,83 +3024,83 @@
 		)
 		(pin "GND" input
 			(at 52.07 114.935 180)
+			(uuid "ec7d5e84-c927-4298-a0fe-cb4896db224b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ec7d5e84-c927-4298-a0fe-cb4896db224b")
 		)
 		(pin "VIN" input
 			(at 52.07 106.68 180)
+			(uuid "1a7a3a8e-07ef-41ab-b266-2950d34304f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1a7a3a8e-07ef-41ab-b266-2950d34304f4")
 		)
 		(pin "LX1" input
 			(at 57.15 116.84 270)
+			(uuid "7763ed3d-52b3-451b-b445-33ea2a5c4a38")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7763ed3d-52b3-451b-b445-33ea2a5c4a38")
 		)
 		(pin "LX2" input
 			(at 64.77 116.84 270)
+			(uuid "aa67e0e4-4133-4ddb-993e-27cd132af3d4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "aa67e0e4-4133-4ddb-993e-27cd132af3d4")
 		)
 		(pin "R-" input
 			(at 76.2 116.84 270)
+			(uuid "7d119ad7-9a53-41fb-bd53-bed89287073d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7d119ad7-9a53-41fb-bd53-bed89287073d")
 		)
 		(pin "R+" input
 			(at 68.58 116.84 270)
+			(uuid "6c38f7f1-e46e-46fe-844c-74d4e188b3b1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6c38f7f1-e46e-46fe-844c-74d4e188b3b1")
 		)
 		(pin "VOUT" output
 			(at 79.375 106.68 0)
+			(uuid "b5e0a62c-43eb-4660-a465-6a2e8b6075cf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b5e0a62c-43eb-4660-a465-6a2e8b6075cf")
 		)
 		(pin "EN" input
 			(at 52.07 110.49 180)
+			(uuid "1f0f2a72-f8db-4b2e-85a0-d738de882df7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1f0f2a72-f8db-4b2e-85a0-d738de882df7")
 		)
 		(instances
 			(project "EPS"

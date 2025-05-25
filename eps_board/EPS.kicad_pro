@@ -70,16 +70,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -90,9 +93,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -104,10 +109,13 @@
         "solder_mask_bridge": "ignore",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -124,6 +132,7 @@
         "min_clearance": 0.15,
         "min_connection": 0.1,
         "min_copper_edge_clearance": 0.075,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -145,10 +154,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -247,6 +257,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -441,10 +452,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "ignore",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -457,9 +473,14 @@
       "pin_not_driven": "ignore",
       "pin_to_pin": "error",
       "power_pin_not_driven": "ignore",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -471,7 +492,7 @@
   },
   "meta": {
     "filename": "EPS.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -486,6 +507,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -494,7 +516,7 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -1941,7 +1963,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "/tmp/t",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -1954,7 +1976,7 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": false,
+      "exclude_dnp": true,
       "fields_ordered": [
         {
           "group_by": true,
@@ -1969,39 +1991,15 @@
           "show": true
         },
         {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
-        },
-        {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Voltage",
-          "name": "Voltage",
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": false
         },
         {
@@ -2012,38 +2010,32 @@
         },
         {
           "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "Amps",
           "name": "Amps",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Note",
-          "name": "Note",
+          "label": "Color",
+          "name": "Color",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part Number",
-          "name": "Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Tolerance",
-          "name": "Tolerance",
-          "show": true
         },
         {
           "group_by": false,
           "label": "Load Capacitance",
           "name": "Load Capacitance",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Alt",
-          "name": "Alt",
           "show": false
         },
         {
@@ -2054,43 +2046,38 @@
         },
         {
           "group_by": false,
-          "label": "Color",
-          "name": "Color",
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Temperture Coefficient",
+          "name": "Temperture Coefficient",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Manufactorer",
-          "name": "Manufactorer",
+          "label": "Tolerance",
+          "name": "Tolerance",
           "show": false
         },
         {
           "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
+          "label": "Voltage",
+          "name": "Voltage",
           "show": false
         },
         {
           "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
+          "label": "DNP",
+          "name": "${DNP}",
           "show": false
         }
       ],
       "filter_string": "",
-      "group_symbols": true,
+      "group_symbols": false,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
@@ -2125,6 +2112,7 @@
     "net_format_name": "Pcbnew",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -2157,16 +2145,24 @@
       "SOLAR_INPUT_4"
     ],
     [
+      "0717395c-0a89-46b0-a298-ca7e0588c871",
+      "Dual Switch2"
+    ],
+    [
+      "7dfbb2aa-02fd-494c-8e2d-fae42b5270c7",
+      "Dual Switch5"
+    ],
+    [
       "00000000-0000-0000-0000-00005eab1235",
       "DEBUG_INTERFACE"
     ],
     [
-      "099fb907-8e0d-460a-bca0-f0390fc6b64a",
-      "WATCHDOG"
-    ],
-    [
       "00000000-0000-0000-0000-00005fbffcb6",
       "PMIC"
+    ],
+    [
+      "099fb907-8e0d-460a-bca0-f0390fc6b64a",
+      "WATCHDOG"
     ],
     [
       "00000000-0000-0000-0000-00005fedb823",
@@ -2226,107 +2222,47 @@
     ],
     [
       "53211e67-c677-4be8-893d-9825fa308902",
-      "I2C Power Switches 3V2"
+      "I2C Power Switches 3VCORE"
     ],
     [
       "365e30aa-57e3-49e2-b136-6964bfe03313",
-      "I2C Power Switches 3V0"
-    ],
-    [
-      "175c438b-b07a-4b27-aa54-dbc0ce24c248",
-      "sheet601A160D5"
-    ],
-    [
-      "7adcad2f-5293-47fc-927b-686b2a77f26f",
-      "sheet601A160D6"
-    ],
-    [
-      "278232a5-3cdb-407e-af22-3e37c6a90d6f",
-      "sheet601A160D7"
-    ],
-    [
-      "a5bbfcee-4566-4282-8551-6c858f5d3b63",
-      "sheet601A160D8"
+      "I2C Power Switches 3VAUX"
     ],
     [
       "e1d2fe3b-9ba5-4366-9cc3-67e5d340cfc0",
       "Power Selector"
     ],
     [
-      "fec83a85-4615-4b89-81b2-cf99c136f661",
-      "sheet601A160D9"
-    ],
-    [
-      "d2ca87cd-0c16-433e-ba31-c9dd992990c0",
-      "sheet601A160D10"
-    ],
-    [
-      "9a96c877-9543-4232-9e87-abbd0e3f72b0",
-      "sheet601A160D11"
-    ],
-    [
-      "6d3d4545-0098-4c83-a297-1c49d6ac5ba9",
-      "sheet601A160D12"
-    ],
-    [
-      "87d4360e-0b9f-4926-a66e-357599f9c0d1",
-      "I2C Power Switches 3V1"
-    ],
-    [
       "3cb52b52-bdd8-455c-8cb1-f3a303a9432e",
       "Schmitt Trigger"
-    ],
-    [
-      "278232a5-3cdb-407e-af22-3e37c6a90d6f",
-      "sheet601A160D7"
-    ],
-    [
-      "7adcad2f-5293-47fc-927b-686b2a77f26f",
-      "sheet601A160D6"
-    ],
-    [
-      "9a96c877-9543-4232-9e87-abbd0e3f72b0",
-      "sheet601A160D11"
-    ],
-    [
-      "a5bbfcee-4566-4282-8551-6c858f5d3b63",
-      "sheet601A160D8"
-    ],
-    [
-      "175c438b-b07a-4b27-aa54-dbc0ce24c248",
-      "sheet601A160D5"
-    ],
-    [
-      "6d3d4545-0098-4c83-a297-1c49d6ac5ba9",
-      "sheet601A160D12"
-    ],
-    [
-      "d2ca87cd-0c16-433e-ba31-c9dd992990c0",
-      "sheet601A160D10"
-    ],
-    [
-      "fec83a85-4615-4b89-81b2-cf99c136f661",
-      "sheet601A160D9"
     ],
     [
       "87930429-600a-4d20-9691-47e157ed6d1e",
       "Boost Buck Regulator 5V1"
     ],
     [
-      "7eb780d8-804d-41e4-869a-e4954b511f01",
-      "sheet601A160D3"
+      "1eca9f06-ee22-4107-bb6c-b4078e2c77bd",
+      "Dual Switch"
     ],
     [
-      "c14cb022-55e7-49d0-8a13-80019f14d5d0",
-      "sheet601A160D4"
+      "3951bdfb-8afe-4992-aba6-59a6b08e4052",
+      "Dual Switch3"
     ],
     [
-      "35f8ffd6-553e-46df-8d79-32640f5837a5",
-      "sheet601A160D1"
+      "89ef1c95-2553-4bd4-b336-8be2628b2008",
+      "Dual Switch1"
     ],
     [
-      "18793511-b299-419d-8cc1-060793e73a43",
-      "sheet601A160D2"
+      "b5add008-bc0f-44e8-9313-1653bbc364ed",
+      "Dual Switch4"
+    ],
+    [
+      "a96e8afd-8b3c-4e12-820c-86caa1a14769",
+      "Dual Switch"
+    ],
+    [
+      "0653e279-5ac5-4fd5-819c-e8ef4edad0cf",
+      "Dual Switch3"
     ]
   ],
   "text_variables": {}

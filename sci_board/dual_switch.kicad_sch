@@ -581,17 +581,6 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 124.46 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "38b8cb46-5d53-4049-bd49-e39683c04e09")
-	)
-	(hierarchical_label "GND"
-		(shape input)
 		(at 111.76 113.03 180)
 		(effects
 			(font
@@ -603,7 +592,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 124.46 123.19 180)
+		(at 92.71 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -667,7 +656,7 @@
 		)
 		(uuid "c6a6520f-0915-4be5-8b49-b4920beb06eb")
 	)
-	(hierarchical_label "VIN2"
+	(hierarchical_label "VIN"
 		(shape input)
 		(at 124.46 115.57 180)
 		(effects
@@ -678,7 +667,18 @@
 		)
 		(uuid "dcfc171b-14e2-444d-98f8-6bba83551895")
 	)
-	(hierarchical_label "VIN1"
+	(hierarchical_label "VIN"
+		(shape input)
+		(at 92.71 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3513b7b-14b8-4231-a728-8041d5d3b83c")
+	)
+	(hierarchical_label "VIN"
 		(shape input)
 		(at 124.46 95.25 180)
 		(effects
@@ -691,7 +691,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 124.46 91.44 0)
+		(at 92.71 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -699,8 +699,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b32ce66-44ad-4c1d-99f7-19137983b6a6")
-		(property "Reference" "C36"
-			(at 128.27 90.1699 0)
+		(property "Reference" "C3"
+			(at 96.52 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -708,8 +708,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 128.27 92.7099 0)
+		(property "Value" "22uF"
+			(at 96.52 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,7 +718,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 125.4252 95.25 0)
+			(at 93.6752 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -727,7 +727,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 124.46 91.44 0)
+			(at 92.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -736,25 +736,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 124.46 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Murata"
-			(at 124.46 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRM188R61E106KA73D"
-			(at 124.46 91.44 0)
+			(at 92.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -763,7 +745,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 124.46 91.44 0)
+			(at 92.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -772,7 +754,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 124.46 91.44 0)
+			(at 92.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -781,7 +763,25 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 124.46 91.44 0)
+			(at 92.71 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 92.71 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM188R61E106KA73D"
+			(at 92.71 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -790,49 +790,43 @@
 			)
 		)
 		(pin "2"
-			(uuid "f3278927-2c9d-4c4d-885d-4f13b9a3e719")
+			(uuid "510f081c-a02f-4795-a4af-0be61632f9e9")
 		)
 		(pin "1"
-			(uuid "4824f691-84bd-44d7-bdf5-128e75a4c642")
+			(uuid "8c9ec714-4fcb-4d03-a984-79787922fac8")
 		)
 		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "C100")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C36")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C43")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C50")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C93")
-					(unit 1)
-				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C55")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C65")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C72")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
 					(reference "C79")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C85")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C91")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "C97")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C109")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C3")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C9")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -848,7 +842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24ba5cc2-0bfb-4ae2-8593-5bcfea2f1da3")
-		(property "Reference" "U4"
+		(property "Reference" "U1"
 			(at 147.32 86.36 0)
 			(effects
 				(font
@@ -893,8 +887,8 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "TI"
-			(at 147.32 88.9 0)
+		(property "Manufacturer" "TI"
+			(at 132.08 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +896,7 @@
 				(hide yes)
 			)
 		)
-		(property "PARTREV" "TPS22968QDMGRQ1"
+		(property "Part Number" "TPS22968QDMGRQ1"
 			(at 132.08 119.38 0)
 			(effects
 				(font
@@ -912,76 +906,70 @@
 			)
 		)
 		(pin "4"
-			(uuid "0cdd9d62-f663-41a3-853d-d2749b447804")
+			(uuid "80c51241-b8e8-4b52-b554-c9a2089c75a1")
 		)
 		(pin "10"
-			(uuid "065709e2-78eb-4bb1-855b-791ff719bb83")
+			(uuid "743504a6-3151-4fca-bd03-0f1228824874")
 		)
 		(pin "2"
-			(uuid "ca96cc2c-f60a-4a05-97fd-66e92be905e1")
+			(uuid "95b89521-1eb5-4fbf-839d-aa1f68517abf")
 		)
 		(pin "6"
-			(uuid "e3b2aae9-a0de-408f-9f2c-11c37dae491a")
+			(uuid "1eb76efb-dbb4-47c3-bdc8-2463833dc43f")
 		)
 		(pin "8"
-			(uuid "a07ab1dd-e061-46a1-bd56-8e33d65b183e")
+			(uuid "bca18f2f-a607-4a7a-b195-5ef8528d3863")
 		)
 		(pin "7"
-			(uuid "c811d400-1806-418f-9e91-215cd8cc1859")
+			(uuid "6be43a40-dd06-445f-90c1-e5360875c3c7")
 		)
 		(pin "5"
-			(uuid "935e0d68-b1e8-4234-8eff-a713888566a5")
+			(uuid "44d93d7c-cb06-4abe-bfc1-edc374a34535")
 		)
 		(pin "11"
-			(uuid "ce8c9dd8-a47e-468e-bceb-9a2f9aa1c08b")
+			(uuid "27266d90-98bc-4ddd-9853-d2a6041d074d")
 		)
 		(pin "3"
-			(uuid "f1f32170-4c23-4a8a-b5a8-7c087849b5ed")
+			(uuid "c07cdc69-596e-4390-88c0-9f1799732f01")
 		)
 		(pin "9"
-			(uuid "3ab350d2-3afa-4a1a-8cb8-00445163848e")
+			(uuid "626c7ecd-132a-4c04-93eb-0631f56e674f")
 		)
 		(pin "1"
-			(uuid "4b2ddbd6-9fcf-430a-8971-46d42e6053c6")
+			(uuid "2ee9bde9-66d4-4c70-a552-dbd96e2b80bc")
 		)
 		(instances
-			(project ""
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "U28")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "U4")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "U5")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "U6")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
 					(reference "U27")
 					(unit 1)
 				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "U15")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "U28")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "U18")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "U29")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "U19")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "U30")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "U20")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "U32")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "U1")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "U2")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+					(reference "U31")
 					(unit 1)
 				)
 			)
@@ -997,7 +985,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4e98fbe2-3765-4fd1-9b88-f58842b493a4")
-		(property "Reference" "C37"
+		(property "Reference" "C1"
 			(at 173.99 100.3299 0)
 			(effects
 				(font
@@ -1042,24 +1030,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Murata"
-			(at 170.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRT1555C1H221FA02D"
-			(at 170.18 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" "C0G/NP0"
 			(at 170.18 101.6 0)
 			(effects
@@ -1087,50 +1057,53 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 170.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "dfccf8b7-c11e-4be2-8e03-4b8dcdb5c9a6")
+			(uuid "6e2fe150-5b33-4d0e-90e0-68da690c48f9")
 		)
 		(pin "1"
-			(uuid "91123458-2825-440c-8096-9c4ee86f2779")
+			(uuid "99a6cac2-a211-4e3b-b75d-38c53aa4004e")
 		)
 		(instances
-			(project ""
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
+					(reference "C77")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C83")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C89")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "C95")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C107")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C1")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C7")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
 					(reference "C101")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C37")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C44")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C51")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C94")
-					(unit 1)
-				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C56")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C66")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C73")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -1146,7 +1119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88225b82-2edb-41f2-a615-b97daa3dfa5a")
-		(property "Reference" "C41"
+		(property "Reference" "C6"
 			(at 187.96 107.9499 0)
 			(effects
 				(font
@@ -1191,24 +1164,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Murata"
-			(at 184.785 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRM188R61E106KA73D"
-			(at 184.785 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Tolerance" "10"
 			(at 184.785 109.22 0)
 			(effects
@@ -1236,50 +1191,62 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 184.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM188R61E106KA73D"
+			(at 184.785 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "07e7cd14-177e-49cb-a8f8-6fee16643e8d")
+			(uuid "b0fd5466-bca1-4cea-b8db-2f148fc8cfb1")
 		)
 		(pin "1"
-			(uuid "ebe81fc1-358f-4eeb-8667-8a723647f6b1")
+			(uuid "a5b8a232-08af-48c5-a630-392569422308")
 		)
 		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "C105")
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
+					(reference "C82")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C41")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C88")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C48")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C94")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C55")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "C100")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C98")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C112")
 					(unit 1)
 				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C60")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C6")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C70")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C12")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C77")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C84")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -1295,7 +1262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cfa45dc-98cf-4ea5-85af-6e0995fbe774")
-		(property "Reference" "C39"
+		(property "Reference" "C4"
 			(at 115.57 107.9499 0)
 			(effects
 				(font
@@ -1340,24 +1307,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Murata"
-			(at 111.76 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRM155R61E104KA87D"
-			(at 111.76 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" "X5R"
 			(at 111.76 109.22 0)
 			(effects
@@ -1385,50 +1334,62 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 111.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM155R61E104KA87D"
+			(at 111.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "a928281e-753e-40d8-bf39-d9d32e7bb8af")
+			(uuid "28b2aa1a-7e0f-42db-bcea-7c6eae09a81f")
 		)
 		(pin "1"
-			(uuid "b7a13358-d9f7-4e7d-b68c-d611237a774f")
+			(uuid "2f36aaa2-dd24-40ff-b915-acabc7cce487")
 		)
 		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "C103")
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
+					(reference "C80")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C39")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C86")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C46")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C92")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C53")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "C98")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C96")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C110")
 					(unit 1)
 				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C58")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C4")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C68")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C10")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C75")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C82")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -1444,7 +1405,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c2b6961e-ffb5-450f-9169-11519c44518d")
-		(property "Reference" "C40"
+		(property "Reference" "C5"
 			(at 173.99 107.9499 0)
 			(effects
 				(font
@@ -1489,24 +1450,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Murata"
-			(at 170.18 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRT1555C1H221FA02D"
-			(at 170.18 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Temperture Coefficient" "C0G/NP0"
 			(at 170.18 109.22 0)
 			(effects
@@ -1534,148 +1477,8 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "daf2a3ac-7db5-4ce2-be95-df9a8833607f")
-		)
-		(pin "1"
-			(uuid "0f8fa3d2-72a8-4493-a551-2fb87595f027")
-		)
-		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "C104")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C40")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C47")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C54")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C97")
-					(unit 1)
-				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C59")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C69")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C76")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 124.46 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eca25cb9-5f75-4fe8-a2f5-430acc26e6a8")
-		(property "Reference" "C42"
-			(at 128.27 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 128.27 120.6499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 125.4252 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Murata"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRM188R61E106KA73D"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "10"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "25"
-			(at 124.46 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperture Coefficient" "X5R"
-			(at 124.46 119.38 0)
+		(property "Manufacturer" "Murata"
+			(at 170.18 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1684,49 +1487,43 @@
 			)
 		)
 		(pin "2"
-			(uuid "f9c713b5-0155-4c7d-97ce-774515856eae")
+			(uuid "26ff3c42-2018-4d48-a2f9-373b6773c762")
 		)
 		(pin "1"
-			(uuid "3930d323-8b65-4b28-a456-94617acb377f")
+			(uuid "aa38c48c-2cbf-4836-bd4c-02ce225430d8")
 		)
 		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
-					(reference "C106")
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
+					(reference "C81")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C42")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C87")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C49")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C93")
 					(unit 1)
 				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C56")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
 					(reference "C99")
 					(unit 1)
 				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C61")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C111")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C71")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C5")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C78")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C11")
 					(unit 1)
 				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C85")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -1742,7 +1539,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f86c244c-0f82-4c35-9d93-f4a3605a6fc0")
-		(property "Reference" "C38"
+		(property "Reference" "C2"
 			(at 187.96 100.3299 0)
 			(effects
 				(font
@@ -1787,24 +1584,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "Murata"
-			(at 184.785 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "GRM188R61E106KA73D"
-			(at 184.785 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Tolerance" "10"
 			(at 184.785 101.6 0)
 			(effects
@@ -1832,50 +1611,62 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Murata"
+			(at 184.785 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM188R61E106KA73D"
+			(at 184.785 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
-			(uuid "b7bd6925-869c-462d-9f66-e5adf305b60d")
+			(uuid "d2d535c8-6ba0-42fb-9008-2f411ee565f5")
 		)
 		(pin "1"
-			(uuid "dc1a043e-8e2c-4ac2-b2c0-7d38902fde96")
+			(uuid "d67e6b86-a759-489a-9cd4-517f02be17a6")
 		)
 		(instances
-			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
+					(reference "C78")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/3951bdfb-8afe-4992-aba6-59a6b08e4052"
+					(reference "C84")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/89ef1c95-2553-4bd4-b336-8be2628b2008"
+					(reference "C90")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/365e30aa-57e3-49e2-b136-6964bfe03313/b5add008-bc0f-44e8-9313-1653bbc364ed"
+					(reference "C96")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
+					(reference "C108")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/0717395c-0a89-46b0-a298-ca7e0588c871"
+					(reference "C2")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/7dfbb2aa-02fd-494c-8e2d-fae42b5270c7"
+					(reference "C8")
+					(unit 1)
+				)
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/53211e67-c677-4be8-893d-9825fa308902/a96e8afd-8b3c-4e12-820c-86caa1a14769"
 					(reference "C102")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/4f83ada3-39c3-49cb-bc7e-b35233b0e659"
-					(reference "C38")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/8ef13ba3-4aa4-4ee3-bfa2-75083ef40e6c"
-					(reference "C45")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C52")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C95")
-					(unit 1)
-				)
-			)
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/1eca9f06-ee22-4107-bb6c-b4078e2c77bd"
-					(reference "C57")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/3951bdfb-8afe-4992-aba6-59a6b08e4052"
-					(reference "C67")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/89ef1c95-2553-4bd4-b336-8be2628b2008"
-					(reference "C74")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/6161e047-2bb5-4856-b93a-088a3805633f/b5add008-bc0f-44e8-9313-1653bbc364ed"
-					(reference "C81")
 					(unit 1)
 				)
 			)

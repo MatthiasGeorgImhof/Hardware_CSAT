@@ -272,166 +272,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Pack02_Split"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RN"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Pack02_Split"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "2 resistor network, parallel topology, split"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R network parallel topology isolated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Pack02_Split_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Pack02_Split_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R1.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R1.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Pack02_Split_2_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R2.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R2.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Memory_NVRAM:MR25H40"
 			(pin_names
 				(offset 1.016)
@@ -768,16 +608,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 121.92) (xy 171.45 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1348171a-261c-44bf-9434-e05d7242cb82")
-	)
-	(wire
-		(pts
 			(xy 148.59 109.22) (xy 158.75 109.22)
 		)
 		(stroke
@@ -908,26 +738,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 119.38) (xy 171.45 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6cfa852-496f-4563-950b-ebf5e6cec205")
-	)
-	(wire
-		(pts
-			(xy 168.91 116.84) (xy 171.45 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8500fa3-f388-45f7-a47e-bcbd66288110")
-	)
-	(wire
-		(pts
 			(xy 156.21 130.81) (xy 158.75 130.81)
 		)
 		(stroke
@@ -948,14 +758,14 @@
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape output)
-		(at 179.07 119.38 0)
+		(at 168.91 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "3c4a93b7-fcc7-4113-a9f2-46a2f38e6f6b")
+		(uuid "05a9ed05-3381-4124-99ce-4f59da1ff2bd")
 	)
 	(hierarchical_label "VDD"
 		(shape output)
@@ -968,6 +778,17 @@
 		)
 		(uuid "856e9c0c-61f8-4937-802b-429854b7211a")
 	)
+	(hierarchical_label "SPI_SCK"
+		(shape input)
+		(at 168.91 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b78bfc33-bf39-4c0e-a012-faddb0986371")
+	)
 	(hierarchical_label "VSS"
 		(shape input)
 		(at 148.59 137.16 180)
@@ -979,16 +800,16 @@
 		)
 		(uuid "c2fd3ef5-2617-473c-ac4d-63ad3fed50bd")
 	)
-	(hierarchical_label "SPI_CLK"
-		(shape output)
-		(at 179.07 116.84 0)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 168.91 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "dd39c0e1-fcda-495e-875e-0b5926d021f3")
+		(uuid "e165f744-8a24-4494-8f2a-5534e62395b5")
 	)
 	(hierarchical_label "SPI_CS"
 		(shape output)
@@ -1000,17 +821,6 @@
 			(justify right)
 		)
 		(uuid "f57e18d3-b776-4069-904d-2f79934d8185")
-	)
-	(hierarchical_label "SPI_MOSI"
-		(shape output)
-		(at 179.07 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f87c8ffc-3405-4d9f-9f22-3f57998946e7")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1278,284 +1088,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Pack02_Split")
-		(at 175.26 116.84 270)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "034cf5eb-bc0a-4dee-b182-c1c1fc2b3b7d")
-		(property "Reference" "RN15"
-			(at 172.72 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 179.07 124.46 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
-			(at 175.26 118.872 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "2 resistor network, parallel topology, split"
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Panasonic"
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "EXB-24V220JX"
-			(at 175.26 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6f33db86-cf90-4c8f-b597-c33d84a3de3f")
-		)
-		(pin "3"
-			(uuid "1f63007e-3b98-41e3-a5e5-e40e5d702037")
-		)
-		(pin "1"
-			(uuid "09e8f684-c409-412b-a9da-a732005f8910")
-		)
-		(pin "4"
-			(uuid "a190b7f7-32d7-4957-8d5a-217ddbf55e45")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/00000000-0000-0000-0000-00005ea7cbb1"
-					(reference "RN15")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Pack02_Split")
-		(at 175.26 121.92 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d5e1d0b-27a9-4f8a-9ad8-6c70c6426f9d")
-		(property "Reference" "RN15"
-			(at 172.72 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 179.07 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
-			(at 175.26 123.952 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-			(at 175.26 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "2 resistor network, parallel topology, split"
-			(at 175.26 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Panasonic"
-			(at 175.26 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "EXB-24V220JX"
-			(at 175.26 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b57a440-31a2-49ac-9500-58025fe39262")
-		)
-		(pin "4"
-			(uuid "9bcf7c8e-96ca-4d2c-bc68-cf06b878f14e")
-		)
-		(pin "2"
-			(uuid "1ba26a32-69a9-46ab-b831-37c3437e63a2")
-		)
-		(pin "3"
-			(uuid "fbd6bcb7-6847-441e-8745-85b0e3b4944a")
-		)
-		(instances
-			(project ""
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/00000000-0000-0000-0000-00005ea7cbb1"
-					(reference "RN15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 175.26 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "39b822f1-57cb-4226-89f0-f4b731f94feb")
-		(property "Reference" "R5"
-			(at 171.45 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 179.07 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 175.26 121.158 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
-			(at 175.26 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 175.26 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 175.26 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 175.26 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0722RL"
-			(at 175.26 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba6d1fb7-d53a-4fad-8139-246ffd247652")
-		)
-		(pin "2"
-			(uuid "6e193bc3-3ca2-4f64-99d1-32406cb13fc1")
-		)
-		(instances
-			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/00000000-0000-0000-0000-00005ea7cbb1"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 132.715 113.03 0)
 		(unit 1)
@@ -1654,7 +1186,7 @@
 			)
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c53d"
-					(reference "R29")
+					(reference "R28")
 					(unit 1)
 				)
 			)

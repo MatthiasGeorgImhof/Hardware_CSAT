@@ -592,7 +592,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 92.71 113.03 180)
+		(at 92.075 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -600,6 +600,17 @@
 			(justify right)
 		)
 		(uuid "42bb1753-d87e-4dcc-896a-7ced01403c8e")
+	)
+	(hierarchical_label "VIN2"
+		(shape input)
+		(at 92.075 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "84e322ea-9288-412f-8905-3dc04f66297f")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -656,7 +667,7 @@
 		)
 		(uuid "c6a6520f-0915-4be5-8b49-b4920beb06eb")
 	)
-	(hierarchical_label "VIN"
+	(hierarchical_label "VIN2"
 		(shape input)
 		(at 124.46 115.57 180)
 		(effects
@@ -667,9 +678,9 @@
 		)
 		(uuid "dcfc171b-14e2-444d-98f8-6bba83551895")
 	)
-	(hierarchical_label "VIN"
+	(hierarchical_label "VIN1"
 		(shape input)
-		(at 92.71 105.41 180)
+		(at 92.075 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -678,7 +689,7 @@
 		)
 		(uuid "f3513b7b-14b8-4231-a728-8041d5d3b83c")
 	)
-	(hierarchical_label "VIN"
+	(hierarchical_label "VIN1"
 		(shape input)
 		(at 124.46 95.25 180)
 		(effects
@@ -689,9 +700,20 @@
 		)
 		(uuid "f447d98a-7b3c-46a8-9961-5cfb5eb544a7")
 	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 92.075 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f5bf2e11-1247-41dc-94ac-60092ab5a73f")
+	)
 	(symbol
 		(lib_id "Device:C")
-		(at 92.71 109.22 0)
+		(at 92.075 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -699,8 +721,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b32ce66-44ad-4c1d-99f7-19137983b6a6")
-		(property "Reference" "C52"
-			(at 96.52 107.9499 0)
+		(property "Reference" "C98"
+			(at 95.885 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -709,7 +731,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 96.52 110.4899 0)
+			(at 95.885 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,7 +740,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 93.6752 113.03 0)
+			(at 93.0402 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -727,7 +749,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -736,7 +758,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -745,7 +767,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -754,7 +776,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -763,7 +785,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -772,7 +794,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -781,7 +803,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 92.71 109.22 0)
+			(at 92.075 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,12 +853,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C52")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C94")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C98")
 					(unit 1)
 				)
 			)
@@ -870,7 +888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24ba5cc2-0bfb-4ae2-8593-5bcfea2f1da3")
-		(property "Reference" "U6"
+		(property "Reference" "U28"
 			(at 147.32 86.36 0)
 			(effects
 				(font
@@ -1002,12 +1020,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "U6")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "U27")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "U28")
 					(unit 1)
 				)
 			)
@@ -1041,7 +1055,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4e98fbe2-3765-4fd1-9b88-f58842b493a4")
-		(property "Reference" "C50"
+		(property "Reference" "C96"
 			(at 173.99 100.3299 0)
 			(effects
 				(font
@@ -1164,12 +1178,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C50")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C92")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -1203,7 +1213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88225b82-2edb-41f2-a615-b97daa3dfa5a")
-		(property "Reference" "C55"
+		(property "Reference" "C101"
 			(at 187.96 107.9499 0)
 			(effects
 				(font
@@ -1335,12 +1345,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C55")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C97")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -1374,7 +1380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cfa45dc-98cf-4ea5-85af-6e0995fbe774")
-		(property "Reference" "C53"
+		(property "Reference" "C99"
 			(at 115.57 107.9499 0)
 			(effects
 				(font
@@ -1506,12 +1512,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C53")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C95")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C99")
 					(unit 1)
 				)
 			)
@@ -1545,7 +1547,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c2b6961e-ffb5-450f-9169-11519c44518d")
-		(property "Reference" "C54"
+		(property "Reference" "C100"
 			(at 173.99 107.9499 0)
 			(effects
 				(font
@@ -1668,12 +1670,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C54")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C96")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C100")
 					(unit 1)
 				)
 			)
@@ -1699,6 +1697,121 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 92.075 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f540abd1-637a-4ce4-a155-75289fae3ad4")
+		(property "Reference" "C102"
+			(at 95.885 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 95.885 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 93.0402 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" "X5R"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM188R61E106KA73D"
+			(at 92.075 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f9319c6-ed30-4edd-b13a-3602c68ccc02")
+		)
+		(pin "1"
+			(uuid "41a1015f-cede-4529-9147-6c8d291a25da")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 184.785 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1707,7 +1820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f86c244c-0f82-4c35-9d93-f4a3605a6fc0")
-		(property "Reference" "C51"
+		(property "Reference" "C97"
 			(at 187.96 100.3299 0)
 			(effects
 				(font
@@ -1839,12 +1952,8 @@
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/0653e279-5ac5-4fd5-819c-e8ef4edad0cf"
-					(reference "C51")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/bffa887c-2d4a-4897-aa07-de3665bc885a/a96e8afd-8b3c-4e12-820c-86caa1a14769"
-					(reference "C93")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/494c050a-ddc6-4c7b-845c-e35cdf3b4f0e"
+					(reference "C97")
 					(unit 1)
 				)
 			)

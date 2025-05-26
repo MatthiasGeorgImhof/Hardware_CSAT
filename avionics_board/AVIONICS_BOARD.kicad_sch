@@ -221,6 +221,234 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Pack02"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at -5.08 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Pack02"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2 resistor network, parallel topology"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R network parallel topology isolated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Pack02_0_1"
+				(rectangle
+					(start -3.81 -2.413)
+					(end 1.27 2.413)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.175 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.905) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.635 1.905)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Pack02_1_1"
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "R1.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "R2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -785,6 +1013,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.325 201.295) (xy 57.785 201.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04793b03-cd69-44b2-a5ad-67741fab47a0")
+	)
+	(wire
+		(pts
 			(xy 203.835 133.985) (xy 206.375 133.985)
 		)
 		(stroke
@@ -792,6 +1030,16 @@
 			(type default)
 		)
 		(uuid "07196556-42f9-4ffb-854c-ef64c2293bc3")
+	)
+	(wire
+		(pts
+			(xy 95.25 26.67) (xy 98.425 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09cc7337-1277-4d6b-877c-4180f4e85c90")
 	)
 	(wire
 		(pts
@@ -805,6 +1053,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.245 191.135) (xy 57.785 191.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bda112f-80d8-4100-87ab-6445b119b679")
+	)
+	(wire
+		(pts
 			(xy 146.685 73.025) (xy 222.25 73.025)
 		)
 		(stroke
@@ -815,13 +1073,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 29.21) (xy 85.09 29.21)
+			(xy 63.5 29.21) (xy 86.36 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "129ff81e-b1d3-4ad9-8ffd-61c1d5ffe930")
+	)
+	(wire
+		(pts
+			(xy 96.52 78.105) (xy 98.425 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1322c658-1778-4631-b4ea-4d822e2025fe")
 	)
 	(wire
 		(pts
@@ -855,7 +1123,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 29.21) (xy 98.425 29.21)
+			(xy 93.98 29.21) (xy 98.425 29.21)
 		)
 		(stroke
 			(width 0)
@@ -915,6 +1183,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.185 96.52) (xy 85.725 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26366bff-6bca-4215-b4a5-34571bed469d")
+	)
+	(wire
+		(pts
 			(xy 63.5 31.75) (xy 98.425 31.75)
 		)
 		(stroke
@@ -962,16 +1240,6 @@
 			(type default)
 		)
 		(uuid "2e5b7ff4-1bda-4fc1-a6c2-2f53f24155a9")
-	)
-	(wire
-		(pts
-			(xy 46.99 193.675) (xy 60.325 193.675)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3090b7fa-739c-4e35-b445-c7ee1f0c1c13")
 	)
 	(wire
 		(pts
@@ -1035,6 +1303,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 90.17) (xy 198.12 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3931028e-1d5b-4b10-a212-6dcea367969a")
+	)
+	(wire
+		(pts
 			(xy 230.505 158.115) (xy 232.41 158.115)
 		)
 		(stroke
@@ -1052,16 +1330,6 @@
 			(type default)
 		)
 		(uuid "3ae418b9-70ae-48df-a336-b0a0022957a0")
-	)
-	(wire
-		(pts
-			(xy 46.99 193.675) (xy 46.99 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd41857-a1f9-4421-a1a9-b670220e4143")
 	)
 	(wire
 		(pts
@@ -1125,6 +1393,26 @@
 	)
 	(wire
 		(pts
+			(xy 52.705 201.295) (xy 55.245 201.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435a20b3-7234-4dd3-9e2e-458a2cad49d3")
+	)
+	(wire
+		(pts
+			(xy 95.25 24.13) (xy 98.425 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46344f9b-4a68-4eb3-a3ab-730d26677839")
+	)
+	(wire
+		(pts
 			(xy 203.835 136.525) (xy 203.835 139.065)
 		)
 		(stroke
@@ -1132,16 +1420,6 @@
 			(type default)
 		)
 		(uuid "483b8c5e-5a9c-459d-8d4a-67e4ac8edae1")
-	)
-	(wire
-		(pts
-			(xy 93.98 78.105) (xy 98.425 78.105)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ab4a73b-aebc-4302-b584-6ccdcbc14745")
 	)
 	(wire
 		(pts
@@ -1162,16 +1440,6 @@
 			(type default)
 		)
 		(uuid "4cdc0381-5cf5-4b9e-9ada-1fee8f03758a")
-	)
-	(wire
-		(pts
-			(xy 88.265 106.68) (xy 88.265 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ee29d38-b6eb-40fc-987d-a027cfdf3213")
 	)
 	(wire
 		(pts
@@ -1202,26 +1470,6 @@
 			(type default)
 		)
 		(uuid "5aec3610-1bec-4a61-8828-95db72fb8830")
-	)
-	(wire
-		(pts
-			(xy 193.04 90.805) (xy 206.375 90.805)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5baaca7e-e6b9-4a78-acd6-853b9258aa6f")
-	)
-	(wire
-		(pts
-			(xy 88.265 96.52) (xy 88.265 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bc5d118-0898-4d5b-a09a-16966d11d6f3")
 	)
 	(wire
 		(pts
@@ -1335,16 +1583,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 26.67) (xy 98.425 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b52341a-e638-4186-aca0-7a19a44b41dc")
-	)
-	(wire
-		(pts
 			(xy 203.835 131.445) (xy 203.835 133.985)
 		)
 		(stroke
@@ -1435,16 +1673,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 80.645) (xy 98.425 80.645)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f1a0bfa-6822-4143-9165-9bb62a86466e")
-	)
-	(wire
-		(pts
 			(xy 278.13 139.065) (xy 278.13 140.335)
 		)
 		(stroke
@@ -1472,6 +1700,16 @@
 			(type default)
 		)
 		(uuid "8365e086-2ef3-4e75-8483-bec42b14bd87")
+	)
+	(wire
+		(pts
+			(xy 200.025 100.33) (xy 198.12 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8387104e-cab2-4648-a81c-e31f144338dd")
 	)
 	(wire
 		(pts
@@ -1545,13 +1783,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 24.13) (xy 98.425 24.13)
+			(xy 80.645 106.68) (xy 83.185 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b7c105c-91fe-42ed-a39b-db3d1f6db487")
+		(uuid "98fab085-c462-40d6-bd1e-2483e9f58f68")
 	)
 	(wire
 		(pts
@@ -1605,16 +1843,6 @@
 	)
 	(wire
 		(pts
-			(xy 206.375 100.33) (xy 206.375 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a099a01f-383f-463d-919f-70286646ec81")
-	)
-	(wire
-		(pts
 			(xy 232.41 160.655) (xy 232.41 162.56)
 		)
 		(stroke
@@ -1665,6 +1893,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.265 106.68) (xy 85.725 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71b60c5-aaf4-4ebc-bbec-a3541456f9ee")
+	)
+	(wire
+		(pts
 			(xy 206.375 128.905) (xy 203.835 128.905)
 		)
 		(stroke
@@ -1695,16 +1933,6 @@
 	)
 	(wire
 		(pts
-			(xy 206.375 90.805) (xy 206.375 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc95a774-1a95-49b7-b32e-2664111ff478")
-	)
-	(wire
-		(pts
 			(xy 158.75 34.29) (xy 165.1 34.29)
 		)
 		(stroke
@@ -1722,16 +1950,6 @@
 			(type default)
 		)
 		(uuid "bf3a0bcc-5488-4079-b350-1b20e1e6444a")
-	)
-	(wire
-		(pts
-			(xy 193.04 90.805) (xy 193.04 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf8f4965-2d73-4304-918b-3c254997f6b4")
 	)
 	(wire
 		(pts
@@ -1765,16 +1983,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.835 96.52) (xy 76.835 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c24ced8b-17b1-4f73-8020-79ce9235e35d")
-	)
-	(wire
-		(pts
 			(xy 63.5 123.19) (xy 98.425 123.19)
 		)
 		(stroke
@@ -1785,17 +1993,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.835 96.52) (xy 88.265 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c47354cb-9dde-4433-a7c4-b64965495293")
-	)
-	(wire
-		(pts
-			(xy 63.5 74.93) (xy 86.36 74.93)
+			(xy 63.5 74.93) (xy 87.63 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1832,16 +2030,6 @@
 			(type default)
 		)
 		(uuid "cd9f1ec5-5e31-4ce0-8cfd-7abb56953bcf")
-	)
-	(wire
-		(pts
-			(xy 46.99 203.2) (xy 46.99 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce096775-2fe8-4d77-8644-d2aa6022ef1e")
 	)
 	(wire
 		(pts
@@ -1915,6 +2103,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 80.645) (xy 98.425 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dadadcb1-9b29-49bd-b7a7-d4a566b1eb3b")
+	)
+	(wire
+		(pts
 			(xy 230.505 135.89) (xy 232.41 135.89)
 		)
 		(stroke
@@ -1955,26 +2153,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.325 193.675) (xy 60.325 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4137a42-b906-4039-84c6-c8e3410c5424")
-	)
-	(wire
-		(pts
-			(xy 193.04 100.33) (xy 193.04 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e54c09ee-a398-42cd-a59d-32e83f034c85")
-	)
-	(wire
-		(pts
 			(xy 203.835 139.065) (xy 206.375 139.065)
 		)
 		(stroke
@@ -1992,16 +2170,6 @@
 			(type default)
 		)
 		(uuid "e8f36f27-f3fe-4b3c-9515-9bd97708f698")
-	)
-	(wire
-		(pts
-			(xy 76.835 106.68) (xy 76.835 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e92242dc-e140-4393-bb0b-e582ba5e9ae1")
 	)
 	(wire
 		(pts
@@ -2035,7 +2203,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 74.93) (xy 98.425 74.93)
+			(xy 95.25 74.93) (xy 98.425 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2065,13 +2233,13 @@
 	)
 	(wire
 		(pts
-			(xy 60.325 203.2) (xy 60.325 201.93)
+			(xy 193.04 100.33) (xy 195.58 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f38a2a70-2b02-4a0e-893a-c4ffb778204f")
+		(uuid "f3f32747-b2f3-4ead-af1d-069d192ab731")
 	)
 	(wire
 		(pts
@@ -2314,7 +2482,7 @@
 		(uuid "2abf0202-2e19-43cd-b70f-68a3cce8e9ef")
 	)
 	(label "I2C2_SDA"
-		(at 193.04 100.33 0)
+		(at 200.025 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2434,7 +2602,7 @@
 		(uuid "4e049b33-ed39-42c8-b203-006f30eb596a")
 	)
 	(label "3.3V_ACS_LOGIC"
-		(at 46.99 193.675 180)
+		(at 55.245 191.135 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2504,7 +2672,7 @@
 		(uuid "5c5d9698-d512-4ce8-aa09-1dc9b7073cbb")
 	)
 	(label "3.3V_SUN"
-		(at 82.55 96.52 180)
+		(at 83.185 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2514,12 +2682,12 @@
 		(uuid "5c872458-4c3b-4d63-a580-eb8b642bd5e4")
 	)
 	(label "I2C4_SDA"
-		(at 88.265 106.68 0)
+		(at 80.645 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5e63c38b-1555-4d55-a882-33d16faf8dba")
 	)
@@ -2554,7 +2722,7 @@
 		(uuid "6f211677-cffb-4181-852b-d644630e2712")
 	)
 	(label "3.3V_AUX"
-		(at 193.04 90.805 180)
+		(at 195.58 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2774,7 +2942,7 @@
 		(uuid "ac867c88-0002-4fd8-b64f-6df2a10f9a4c")
 	)
 	(label "I2C1_SCL"
-		(at 60.325 203.2 0)
+		(at 60.325 201.295 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2864,12 +3032,12 @@
 		(uuid "c51156ad-af20-47b7-aaec-20c3dd3db04e")
 	)
 	(label "I2C1_SDA"
-		(at 46.99 203.2 0)
+		(at 52.705 201.295 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c690838a-686a-45df-af37-630a2aaec4cc")
 	)
@@ -2904,12 +3072,12 @@
 		(uuid "ce01dcbc-0df2-4892-bfbb-cd4ccb6c2575")
 	)
 	(label "I2C2_SCL"
-		(at 206.375 100.33 0)
+		(at 193.04 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "ceac55a2-5240-475a-a212-511c031543f2")
 	)
@@ -2984,7 +3152,7 @@
 		(uuid "ee89163b-4bd1-4183-a061-075b69626b2c")
 	)
 	(label "I2C4_SCL"
-		(at 76.835 106.68 0)
+		(at 88.265 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3012,418 +3180,6 @@
 			(justify left bottom)
 		)
 		(uuid "f8102089-fd29-4164-bd84-9c849189ba42")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.265 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060e8f17b")
-		(property "Reference" "R38"
-			(at 92.075 99.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5K1"
-			(at 92.075 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 86.487 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 88.265 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c059f908-5a93-40f8-8d61-4b41a7575a3f")
-		)
-		(pin "1"
-			(uuid "aaf36ff9-01a4-4707-b7c7-8696ca44e1bd")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 76.835 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060ec8cf2")
-		(property "Reference" "R37"
-			(at 73.66 99.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5K1"
-			(at 73.66 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 75.057 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 76.835 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "95e367a2-e235-4131-b921-8a649ea82181")
-		)
-		(pin "2"
-			(uuid "3291878b-17b4-4f83-ba17-febecb0ebb10")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 60.325 198.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000616e0bc7")
-		(property "Reference" "R24"
-			(at 57.15 196.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5K1"
-			(at 57.15 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 58.547 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 60.325 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9e5e691d-815e-4397-a9ff-08c8300caf69")
-		)
-		(pin "1"
-			(uuid "9f95a99e-947b-4364-a67d-e9136761de3f")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 46.99 198.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000616e0bcf")
-		(property "Reference" "R23"
-			(at 43.815 196.215 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "5K1"
-			(at 43.815 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 45.212 198.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 46.99 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c122085-0ed8-4569-9b2b-a8c0b662d710")
-		)
-		(pin "2"
-			(uuid "90cf3591-3f26-4bc2-b021-e60770bf99f6")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "AVIONICS_BOARD-rescue:GND-power")
@@ -3485,6 +3241,98 @@
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 85.725 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05bb610d-5250-4fd4-b5f3-63b240d8697e")
+		(property "Reference" "RN4"
+			(at 88.265 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5K6"
+			(at 88.265 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 90.17 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.725 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 85.725 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 85.725 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 85.725 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5b1c6b4a-1a69-4011-a130-b38aa7d64f0c")
+		)
+		(pin "3"
+			(uuid "cbd7af9d-1282-4c7e-a31a-c9e82f099e03")
+		)
+		(pin "1"
+			(uuid "8efb608c-58de-4437-9dc0-398dcae29fbc")
+		)
+		(pin "4"
+			(uuid "2ebb2e1c-3d30-4126-8fa7-74d3b3217d51")
+		)
+		(instances
+			(project ""
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
+					(reference "RN4")
 					(unit 1)
 				)
 			)
@@ -3618,6 +3466,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 243.205 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.205 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4dc32262-bb64-4116-839d-7be600fbd98f")
 		)
@@ -3625,109 +3489,6 @@
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
 					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.9 24.13 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "375a7ccd-4614-49c7-b810-226017ac617a")
-		(property "Reference" "R11"
-			(at 86.36 16.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 90.17 16.51 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 88.9 25.908 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0722RL"
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 88.9 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ade116f3-c5f8-477d-898e-159b94bc9483")
-		)
-		(pin "2"
-			(uuid "133ff91b-ebb7-4fc8-b617-66bb625c1a11")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3807,7 +3568,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "457e5a39-4a00-4abf-b407-9d56db59946b")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR07"
 			(at 278.13 146.685 0)
 			(effects
 				(font
@@ -3857,7 +3618,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "#PWR06")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4005,7 +3766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "518fb9a6-ba57-42d9-8fa6-2cb7d050ca8b")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 240.665 171.45 0)
 			(effects
 				(font
@@ -4055,7 +3816,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4255,6 +4016,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 243.205 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.205 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f0e04503-51b9-4261-aeb5-c1d2caf067d1")
 		)
@@ -4268,32 +4045,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 206.375 95.25 0)
+		(lib_id "Device:R_Pack02")
+		(at 91.44 78.105 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "779fb61b-9202-4901-9f37-07eda4a345e2")
-		(property "Reference" "R45"
-			(at 203.2 93.345 0)
+		(uuid "78f1942c-3d09-4398-b829-c8ecf2f4b19d")
+		(property "Reference" "RN2"
+			(at 88.9 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "5K1"
-			(at 203.2 95.25 0)
+		(property "Value" "22R"
+			(at 93.98 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 204.597 95.25 90)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 91.44 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,8 +4079,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 206.375 95.25 0)
+		(property "Datasheet" "~"
+			(at 91.44 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,8 +4088,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 206.375 95.25 0)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 91.44 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,52 +4097,38 @@
 				(hide yes)
 			)
 		)
-		(property "Alt" ""
-			(at 206.375 95.25 0)
+		(property "Manufactorer" ""
+			(at 91.44 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 206.375 95.25 0)
+		(property "Sim.Pins" ""
+			(at 91.44 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 206.375 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "94a926b3-964b-457b-a444-5c1eb365aff6")
 		)
-		(property "Tolerance" "1"
-			(at 206.375 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "86c43992-85f4-4007-baf8-f5ef25595efb")
 		)
 		(pin "2"
-			(uuid "ce42bc60-c12c-47fc-a676-5544e0834516")
+			(uuid "3744a6fc-e51e-4cdd-bc92-3634d359641f")
 		)
 		(pin "1"
-			(uuid "959ef026-f053-4fca-a9ff-c6efe8f5af42")
+			(uuid "59e90816-1d3d-4a64-9b60-9b0c3d7579ca")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R45")
+					(reference "RN2")
 					(unit 1)
 				)
 			)
@@ -4438,6 +4202,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 57.785 196.215 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fb3657e-52dd-4a07-be12-3cd7dcf8c6d2")
+		(property "Reference" "RN5"
+			(at 60.325 194.9449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "5K6"
+			(at 60.325 197.4849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 62.23 196.215 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.785 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 57.785 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 57.785 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 57.785 196.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fc6200aa-a720-47a1-86d3-99fb91f4ffc9")
+		)
+		(pin "3"
+			(uuid "a2f0cb1c-60c8-4f08-abaf-4f5da5586bf8")
+		)
+		(pin "1"
+			(uuid "67e30713-3a55-4b99-a8f1-4d1cb4688c0e")
+		)
+		(pin "4"
+			(uuid "b0f44086-7495-4d7b-8709-202d4b60ea25")
+		)
+		(instances
+			(project "AVIONICS_BOARD"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
+					(reference "RN5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "AVIONICS_BOARD-rescue:GND-power")
 		(at 156.21 158.75 0)
 		(mirror y)
@@ -4447,7 +4304,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87e4d328-cef3-4b62-8241-d6a1d94227b4")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR08"
 			(at 156.21 165.1 0)
 			(effects
 				(font
@@ -4497,7 +4354,96 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "#PWR09")
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 90.17 26.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "896a7f5f-16a2-479e-8111-35940c03a3a0")
+		(property "Reference" "RN1"
+			(at 86.36 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22R"
+			(at 91.44 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 90.17 31.115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 90.17 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 90.17 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 90.17 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "bfd0e93f-6d51-476b-9efa-3eeb344a05cc")
+		)
+		(pin "3"
+			(uuid "290cc894-86f5-4f2c-b83b-e421d1ed4bef")
+		)
+		(pin "2"
+			(uuid "32fc3a71-f3df-405d-bec1-c15338ff9884")
+		)
+		(pin "1"
+			(uuid "2363551d-2332-4887-9bb5-21aebba10df7")
+		)
+		(instances
+			(project "AVIONICS_BOARD"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
+					(reference "RN1")
 					(unit 1)
 				)
 			)
@@ -4566,6 +4512,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 243.205 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.205 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7750ce7e-e1a5-48f2-926e-b7051572c6d9")
 		)
@@ -4587,7 +4549,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d09726a-2dd3-487d-93a7-97753f5f0b28")
-		(property "Reference" "R6"
+		(property "Reference" "R7"
 			(at 182.88 54.61 0)
 			(effects
 				(font
@@ -4668,6 +4630,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 184.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 184.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "38acc044-8535-4c18-a366-a2b5694382fc")
 		)
@@ -4677,7 +4655,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R6")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4749,41 +4727,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 193.04 95.25 0)
+		(lib_id "Device:R_Pack02")
+		(at 198.12 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a976d521-1b77-479b-8334-3b2fbd57bc20")
-		(property "Reference" "R44"
-			(at 189.865 93.345 0)
+		(fields_autoplaced yes)
+		(uuid "a7ed2185-680e-4a3a-9cae-81c380aeb463")
+		(property "Reference" "RN3"
+			(at 200.66 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "5K1"
-			(at 189.865 95.25 0)
+		(property "Value" "5K6"
+			(at 200.66 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 191.262 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 193.04 95.25 0)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 202.565 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4791,8 +4763,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 193.04 95.25 0)
+		(property "Datasheet" "~"
+			(at 198.12 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4800,8 +4772,8 @@
 				(hide yes)
 			)
 		)
-		(property "Alt" ""
-			(at 193.04 95.25 0)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 198.12 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4809,43 +4781,38 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 193.04 95.25 0)
+		(property "Manufactorer" ""
+			(at 198.12 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0402FR-075K1L"
-			(at 193.04 95.25 0)
+		(property "Sim.Pins" ""
+			(at 198.12 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
-		)
-		(property "Tolerance" "1"
-			(at 193.04 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8fac65b-ffb7-46af-9434-589db6e573eb")
 		)
 		(pin "2"
-			(uuid "09892ab6-6788-4e34-addf-c825f49f19a5")
+			(uuid "ddc49e8f-f8ff-4bb5-b535-c3cca993d0e4")
+		)
+		(pin "3"
+			(uuid "f679f276-a8eb-433d-8d98-88a36d1c917b")
+		)
+		(pin "1"
+			(uuid "851f775e-9b4f-41e2-96cd-bd582f11cabd")
+		)
+		(pin "4"
+			(uuid "3f1a9bd6-ec9a-4c77-80ae-ca082d9b8e73")
 		)
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R44")
+					(reference "RN3")
 					(unit 1)
 				)
 			)
@@ -4860,7 +4827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b20ae63f-7053-4575-85c0-3dd08383c606")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 150.495 54.61 0)
 			(effects
 				(font
@@ -4932,6 +4899,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 153.035 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 153.035 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f3aa25ac-f760-4e1b-bc69-0d1b2ffc506d")
 		)
@@ -4941,7 +4924,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4949,15 +4932,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 90.17 74.93 90)
+		(at 91.44 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b4bec7f0-9fa6-497d-9c6f-2bf12a130b7c")
-		(property "Reference" "R22"
-			(at 88.9 83.82 90)
+		(property "Reference" "R8"
+			(at 88.9 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4965,7 +4948,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 93.98 83.82 90)
+			(at 93.98 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,7 +4956,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 90.17 76.708 90)
+			(at 91.44 76.708 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +4965,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +4974,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +4983,7 @@
 			)
 		)
 		(property "Alt" ""
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +4992,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +5001,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-0722RL"
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5027,12 +5010,28 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 90.17 74.93 0)
+			(at 91.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 91.44 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 91.44 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -5044,7 +5043,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R22")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -5059,7 +5058,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6b07060-c15b-40d4-a361-562e1231de96")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 168.91 54.61 0)
 			(effects
 				(font
@@ -5131,6 +5130,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 171.45 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 171.45 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7886d981-8ea1-44b3-87d4-2a506e850388")
 		)
@@ -5140,7 +5155,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5156,7 +5171,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf14f0e2-3c63-46df-9a44-7b9522081477")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 203.835 145.415 0)
 			(effects
 				(font
@@ -5206,7 +5221,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5221,7 +5236,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c42f0c16-c5db-49e4-9242-a72ed4d19f9d")
-		(property "Reference" "R2"
+		(property "Reference" "R3"
 			(at 156.21 54.61 0)
 			(effects
 				(font
@@ -5293,6 +5308,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a53bdd79-1029-4422-9d77-c27b0ac06623")
 		)
@@ -5302,7 +5333,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5317,7 +5348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d0db25dd-c4e5-4906-bbb4-68570822ea6a")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR010"
 			(at 203.835 173.355 0)
 			(effects
 				(font
@@ -5367,110 +5398,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 90.17 78.105 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3420453-6fef-4c2c-a21c-c1f54753f3ba")
-		(property "Reference" "R46"
-			(at 88.9 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 93.98 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 90.17 79.883 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0722RL"
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 90.17 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc0a77b9-b742-427d-bb6a-4c4aa101410b")
-		)
-		(pin "2"
-			(uuid "0c9b550b-bae1-4897-b871-4fe7d1726444")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R46")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -5543,220 +5471,14 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 88.9 26.67 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e1faeb33-79d6-4e7c-bcb8-3474bcfebc62")
-		(property "Reference" "R12"
-			(at 86.36 19.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 90.17 19.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 88.9 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0722RL"
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 88.9 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e22a19a9-f145-4b34-adc5-7e304967e513")
-		)
-		(pin "2"
-			(uuid "11bffc5a-b40f-4f28-a9d6-d0968196c4b7")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 90.17 80.645 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4542b19-a0d4-4a74-a43e-348345ca4168")
-		(property "Reference" "R47"
-			(at 88.9 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22R"
-			(at 93.98 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 90.17 82.423 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0722RL"
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 90.17 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24216317-ead4-49e7-bafb-e3ec09c1b6ed")
-		)
-		(pin "2"
-			(uuid "a02301bf-cc66-40cd-ab33-64ece67d76d1")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 88.9 29.21 90)
+		(at 90.17 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e47c0744-9589-4ce7-8a8d-3148db56b5ea")
-		(property "Reference" "R21"
+		(property "Reference" "R1"
 			(at 86.36 21.59 90)
 			(effects
 				(font
@@ -5764,8 +5486,8 @@
 				)
 			)
 		)
-		(property "Value" "22"
-			(at 90.17 21.59 90)
+		(property "Value" "22R"
+			(at 91.44 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5773,7 +5495,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 88.9 30.988 90)
+			(at 90.17 30.988 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5782,7 +5504,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +5513,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,7 +5522,7 @@
 			)
 		)
 		(property "Alt" ""
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5809,7 +5531,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5818,7 +5540,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-0722RL"
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5827,12 +5549,28 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 88.9 29.21 0)
+			(at 90.17 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 90.17 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 90.17 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -5844,7 +5582,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R21")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5859,7 +5597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9e08c2b-7a67-460a-b121-984b9c0b8ae4")
-		(property "Reference" "R5"
+		(property "Reference" "R6"
 			(at 176.53 54.61 0)
 			(effects
 				(font
@@ -5940,6 +5678,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8b1ba5f4-8429-4b63-ac26-9c109b410551")
 		)
@@ -5949,7 +5703,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R5")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -5964,7 +5718,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eece86ea-b1c9-4747-8c6e-29e23305664d")
-		(property "Reference" "R3"
+		(property "Reference" "R4"
 			(at 162.56 54.61 0)
 			(effects
 				(font
@@ -6036,6 +5790,22 @@
 				(hide yes)
 			)
 		)
+		(property "Manufactorer" ""
+			(at 165.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 165.1 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c58e2d28-42d0-48af-bee8-b4803df24194")
 		)
@@ -6045,7 +5815,7 @@
 		(instances
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6112,6 +5882,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Manufactorer" ""
+			(at 243.205 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 243.205 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

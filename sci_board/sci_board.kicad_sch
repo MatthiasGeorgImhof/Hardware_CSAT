@@ -2077,6 +2077,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.325 35.56) (xy 62.865 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8deab209-f1fe-4e44-97ff-11329401c96c")
+	)
+	(wire
+		(pts
 			(xy 48.26 88.265) (xy 88.265 88.265)
 		)
 		(stroke
@@ -2164,6 +2174,16 @@
 			(type default)
 		)
 		(uuid "9f43d112-465b-445d-aa0f-a265ae2a2f0c")
+	)
+	(wire
+		(pts
+			(xy 67.31 45.72) (xy 62.865 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a02ce96a-20e4-442a-85f9-0dfced1d9447")
 	)
 	(wire
 		(pts
@@ -2354,6 +2374,16 @@
 			(type default)
 		)
 		(uuid "bee0732d-6731-4224-90c1-6a06ad33b1cd")
+	)
+	(wire
+		(pts
+			(xy 54.61 45.72) (xy 60.325 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2693321-d7d2-4a4a-b66e-7d5c0e726f8b")
 	)
 	(wire
 		(pts
@@ -2715,6 +2745,16 @@
 		)
 		(uuid "0adb5e9a-b5f5-411f-b642-905ccb8a9c8e")
 	)
+	(label "I2C2_SCK"
+		(at 73.025 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0b9c219d-1c5a-4324-9e0b-18bf316778a1")
+	)
 	(label "I2C4_SCK"
 		(at 60.325 168.275 180)
 		(effects
@@ -2885,6 +2925,16 @@
 		)
 		(uuid "6e4a01fd-eff9-488b-9fbb-d033c981177d")
 	)
+	(label "I2C2_SDA"
+		(at 64.135 56.515 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73156dee-68b4-4c0a-9291-c7bbdc96ee79")
+	)
 	(label "CAN1_L"
 		(at 22.225 90.805 180)
 		(effects
@@ -2894,6 +2944,26 @@
 			(justify right bottom)
 		)
 		(uuid "740a9413-3735-485e-953f-bc374b1ff291")
+	)
+	(label "3V3_Imager"
+		(at 60.325 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7c640dca-4717-48e8-8555-dc7bd3ace031")
+	)
+	(label "I2C2_SDA"
+		(at 67.31 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "832fb17b-c52b-4935-ac16-de424e116b87")
 	)
 	(label "CAN1_SHDN"
 		(at 86.36 88.265 180)
@@ -3125,6 +3195,16 @@
 		)
 		(uuid "f98266e1-88ae-46ec-a5f4-36f2d1bdccaf")
 	)
+	(label "I2C2_SCK"
+		(at 54.61 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fc72b4ce-ce02-4658-abcb-6371bfb00e3f")
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 29.845 20.32 0)
@@ -3326,7 +3406,7 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 97.79 177.8 0)
 			(effects
 				(font
@@ -3335,25 +3415,7 @@
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 97.79 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "RC0402FR-07100KL"
-			(at 97.79 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
+		(property "Part Number" "RC0402FR-07100KL"
 			(at 97.79 177.8 0)
 			(effects
 				(font
@@ -3414,7 +3476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
 			(at 66.04 163.195 0)
 			(effects
 				(font
@@ -3424,6 +3486,33 @@
 			)
 		)
 		(property "Description" "2 resistor network, parallel topology"
+			(at 66.04 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 66.04 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V562JX"
+			(at 66.04 163.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5"
 			(at 66.04 163.195 0)
 			(effects
 				(font
@@ -3574,42 +3663,6 @@
 			)
 		)
 		(property "Note" ""
-			(at 272.415 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 272.415 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 272.415 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 272.415 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 272.415 160.02 0)
 			(effects
 				(font
@@ -3817,42 +3870,6 @@
 			)
 		)
 		(property "Note" ""
-			(at 224.79 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 224.79 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 224.79 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 224.79 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 224.79 160.02 0)
 			(effects
 				(font
@@ -4071,42 +4088,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 249.555 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 249.555 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 249.555 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 249.555 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "7242759d-1514-4996-b88c-c42426c0d69b")
 		)
@@ -4154,7 +4135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
 			(at 134.62 123.825 0)
 			(effects
 				(font
@@ -4165,6 +4146,33 @@
 		)
 		(property "Description" "2 resistor network, parallel topology"
 			(at 134.62 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 134.62 123.825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V220JX"
+			(at 134.62 123.825 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5"
+			(at 134.62 123.825 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,24 +4384,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 130.175 33.655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "RC0402FR-0710KL"
-			(at 130.175 33.655 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Tolerance" "1"
 			(at 130.175 33.655 0)
 			(effects
@@ -4405,6 +4395,24 @@
 		)
 		(property "Note" "current limiter"
 			(at 130.175 33.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 130.175 33.655 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 130.175 33.655 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5055,7 +5063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 134.62 126.365 0)
 			(effects
 				(font
@@ -5082,44 +5090,26 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 134.62 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 134.62 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "RC0402FR-0722RL"
-			(at 134.62 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 134.62 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Note" "SPI"
 			(at 134.62 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 134.62 126.365 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0722RL"
+			(at 134.62 126.365 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5198,42 +5188,6 @@
 			)
 		)
 		(property "Note" ""
-			(at 200.66 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 200.66 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 200.66 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 200.66 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
 			(at 200.66 160.02 0)
 			(effects
 				(font
@@ -5791,6 +5745,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 62.865 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92e75561-87f4-49a6-857f-9222c9e2caeb")
+		(property "Reference" "RN8"
+			(at 64.77 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5K6"
+			(at 64.77 41.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 67.31 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
+			(at 62.865 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 62.865 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 62.865 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V562JX"
+			(at 62.865 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5"
+			(at 62.865 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b857fc21-17c3-4722-b968-c715a619c48a")
+		)
+		(pin "1"
+			(uuid "16ff8896-ec4b-4c1c-94c1-981f69509abc")
+		)
+		(pin "4"
+			(uuid "7f0d2de1-61c9-4a2e-9c97-afeade9da963")
+		)
+		(pin "2"
+			(uuid "6db561e1-0ad2-438c-8ae2-dd42f3d6c651")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580"
+					(reference "RN8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 168.275 154.305 0)
 		(unit 1)
@@ -6173,24 +6229,6 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "YAGEO"
-			(at 130.175 36.195 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "RC0402FR-0710KL"
-			(at 130.175 36.195 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Tolerance" "1"
 			(at 130.175 36.195 0)
 			(effects
@@ -6202,6 +6240,24 @@
 		)
 		(property "Note" "current limiter"
 			(at 130.175 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 130.175 36.195 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-0710KL"
+			(at 130.175 36.195 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6454,7 +6510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
 			(at 158.115 69.215 0)
 			(effects
 				(font
@@ -6464,6 +6520,33 @@
 			)
 		)
 		(property "Description" "2 resistor network, parallel topology"
+			(at 158.115 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 158.115 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V562JX"
+			(at 158.115 69.215 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5"
 			(at 158.115 69.215 0)
 			(effects
 				(font
@@ -6631,7 +6714,7 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 116.205 177.8 0)
 			(effects
 				(font
@@ -6640,25 +6723,7 @@
 				(hide yes)
 			)
 		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 116.205 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "RC0402FR-07330KL"
-			(at 116.205 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
+		(property "Part Number" "RC0402FR-13330K"
 			(at 116.205 177.8 0)
 			(effects
 				(font

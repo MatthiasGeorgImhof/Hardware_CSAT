@@ -1815,6 +1815,26 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 49.53) (xy 70.485 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2ba9c0-991e-459c-94e6-b4d3ae387db7")
+	)
+	(wire
+		(pts
+			(xy 77.47 49.53) (xy 73.025 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c6a0c8a-dc98-4d12-8da2-eb8d0cf3551c")
+	)
+	(wire
+		(pts
 			(xy 126.365 105.41) (xy 177.165 105.41)
 		)
 		(stroke
@@ -2072,6 +2092,16 @@
 			(type default)
 		)
 		(uuid "8a46543b-2403-4701-8268-beda0ff6e7ab")
+	)
+	(wire
+		(pts
+			(xy 70.485 39.37) (xy 73.025 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f5e778d-cf70-4ca9-8104-86966b91b0f1")
 	)
 	(wire
 		(pts
@@ -2673,6 +2703,16 @@
 		)
 		(uuid "00bd21fd-ed92-4006-853b-0b9def49cfd8")
 	)
+	(label "I2C2_SCK"
+		(at 76.835 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00c7282d-4038-48c9-b963-5cb4ffedae5f")
+	)
 	(label "3V3_Cameras"
 		(at 155.575 64.135 180)
 		(effects
@@ -2862,6 +2902,16 @@
 			(justify left bottom)
 		)
 		(uuid "622cf847-2ba0-4b4a-8618-3928d99f6bae")
+	)
+	(label "I2C2_SDA"
+		(at 67.945 56.515 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "627cd66c-c182-491c-809a-97be084f9eb4")
 	)
 	(label "CAN2_STB"
 		(at 86.36 106.68 180)
@@ -3073,6 +3123,16 @@
 		)
 		(uuid "dda204dd-bba0-4dc3-b50c-c8980827abda")
 	)
+	(label "I2C2_SCK"
+		(at 64.77 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e1e08222-dc6e-443e-9281-31074aee95da")
+	)
 	(label "3V3_Imager"
 		(at 34.925 128.27 180)
 		(effects
@@ -3093,6 +3153,16 @@
 		)
 		(uuid "e80551e9-4c14-482f-be75-0aaed1d1b643")
 	)
+	(label "3V3_Imager"
+		(at 70.485 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f58e1a2f-cb06-43f4-bbb3-7ebf205059cf")
+	)
 	(label "CAN2_H"
 		(at 22.225 109.855 180)
 		(effects
@@ -3112,6 +3182,16 @@
 			(justify right bottom)
 		)
 		(uuid "f98266e1-88ae-46ec-a5f4-36f2d1bdccaf")
+	)
+	(label "I2C2_SDA"
+		(at 77.47 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa9fe481-6f6f-4c28-ae39-c54a2c9fa68b")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5773,6 +5853,81 @@
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 73.025 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92e75561-87f4-49a6-857f-9222c9e2caeb")
+		(property "Reference" "RN8"
+			(at 74.93 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5K6"
+			(at 74.93 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 77.47 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.025 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 73.025 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b857fc21-17c3-4722-b968-c715a619c48a")
+		)
+		(pin "1"
+			(uuid "16ff8896-ec4b-4c1c-94c1-981f69509abc")
+		)
+		(pin "4"
+			(uuid "7f0d2de1-61c9-4a2e-9c97-afeade9da963")
+		)
+		(pin "2"
+			(uuid "6db561e1-0ad2-438c-8ae2-dd42f3d6c651")
+		)
+		(instances
+			(project "sci_board_wo_switches"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580"
+					(reference "RN8")
 					(unit 1)
 				)
 			)
@@ -8666,7 +8821,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "thermal_imager.kicad_sch"
+		(property "Sheetfile" "../sci_board/thermal_imager.kicad_sch"
 			(at 38.735 59.0046 0)
 			(effects
 				(font

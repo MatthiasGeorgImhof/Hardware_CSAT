@@ -2013,24 +2013,258 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Pack02"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at -5.08 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Pack02"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2 resistor network, parallel topology"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R network parallel topology isolated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Pack02_0_1"
+				(rectangle
+					(start -3.81 -2.413)
+					(end 1.27 2.413)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.175 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.905) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.635 1.905)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Pack02_1_1"
+				(pin passive line
+					(at -2.54 5.08 270)
+					(length 2.54)
+					(name "R1.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -5.08 90)
+					(length 2.54)
+					(name "R1.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "R2.2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "R2.1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
-		(at 128.27 34.925)
+		(at 128.27 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0521fdc1-d9a0-42b4-ac32-f0d851f19e3a")
 	)
 	(junction
-		(at 135.89 43.815)
+		(at 135.89 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10f148eb-e509-4fe7-acbb-807b6de80939")
 	)
 	(junction
-		(at 106.045 34.925)
+		(at 106.045 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "169bacc2-af08-48d5-ad6f-b021af4a22f4")
+	)
+	(junction
+		(at 144.145 52.705)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b7c63af-4a92-49fa-b111-fd6b59be6280")
 	)
 	(junction
 		(at 173.99 141.605)
@@ -2039,25 +2273,25 @@
 		(uuid "251d0cb2-5547-4232-b286-4eb0efbe375f")
 	)
 	(junction
-		(at 98.425 34.925)
+		(at 98.425 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26526bc8-4b35-4753-b457-f49708d44aa4")
 	)
 	(junction
-		(at 158.75 34.925)
+		(at 158.75 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "367c93a1-9c4c-4e65-9537-4cb59e21902c")
 	)
 	(junction
-		(at 98.425 43.815)
+		(at 98.425 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "399953e0-f524-4f7e-a6f1-296bf31dd681")
 	)
 	(junction
-		(at 113.03 43.815)
+		(at 113.03 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41dda75c-b0e0-432a-b5d9-7e3ff17efec6")
@@ -2087,19 +2321,19 @@
 		(uuid "748010da-4ea0-4420-8948-750d1c92a4d4")
 	)
 	(junction
-		(at 151.13 43.815)
+		(at 151.13 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76c0ad9a-0ac1-414d-90c1-fbfbe06a4710")
 	)
 	(junction
-		(at 128.27 43.815)
+		(at 128.27 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a8f1c1c-5d2a-48d1-b979-8e2c3c132426")
 	)
 	(junction
-		(at 151.13 34.925)
+		(at 151.13 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f1f7f80-88f0-48d5-8a70-7f9200cf1a9d")
@@ -2111,7 +2345,7 @@
 		(uuid "888cf89c-4e09-44f5-9240-77e253345943")
 	)
 	(junction
-		(at 120.65 34.925)
+		(at 120.65 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8dd59963-37a7-44a3-9319-368d62bc6ab6")
@@ -2123,7 +2357,7 @@
 		(uuid "9b75c28b-1192-4c33-9fdf-e5f609fd3ad4")
 	)
 	(junction
-		(at 143.51 43.815)
+		(at 143.51 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a04b3169-a8db-4463-a114-2220e70af516")
@@ -2135,40 +2369,34 @@
 		(uuid "adf1bb64-f498-4a9d-a46a-67a6aafd7ace")
 	)
 	(junction
-		(at 113.03 34.925)
+		(at 113.03 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3021bfd-269e-418a-a8cb-10d65126b80c")
 	)
 	(junction
-		(at 120.65 43.815)
+		(at 120.65 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1bec8d6-7b68-418a-95fa-045865b7e196")
 	)
 	(junction
-		(at 135.89 34.925)
+		(at 135.89 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4367dc3-a690-4f6c-9a7d-8d2e6cb076bb")
 	)
 	(junction
-		(at 106.045 43.815)
+		(at 106.045 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8e0d7a0-b27e-4cf9-8448-eedc62a43d37")
 	)
 	(junction
-		(at 143.51 34.925)
+		(at 143.51 32.385)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec92674c-9304-431b-a453-1f130929ba2d")
-	)
-	(junction
-		(at 49.53 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f17fc669-3835-41be-b19e-92cdfce381d9")
 	)
 	(junction
 		(at 173.99 47.625)
@@ -2198,7 +2426,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 34.925) (xy 106.045 34.925)
+			(xy 113.03 32.385) (xy 106.045 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2218,7 +2446,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 34.925) (xy 143.51 34.925)
+			(xy 135.89 32.385) (xy 143.51 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2228,7 +2456,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 34.925) (xy 90.805 34.925)
+			(xy 98.425 32.385) (xy 90.805 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2238,7 +2466,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 74.93) (xy 60.96 74.93)
+			(xy 42.545 59.055) (xy 45.085 59.055)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07870da4-b0fe-4892-8986-fc54e6380a33")
+	)
+	(wire
+		(pts
+			(xy 62.865 55.88) (xy 64.77 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2248,7 +2486,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 43.815) (xy 128.27 43.815)
+			(xy 120.65 41.275) (xy 128.27 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2268,7 +2506,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 34.925) (xy 120.65 36.195)
+			(xy 120.65 32.385) (xy 120.65 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2278,13 +2516,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 34.925) (xy 135.89 36.195)
+			(xy 135.89 32.385) (xy 135.89 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1996ff87-1ed2-4d42-99b8-316d97dccabe")
+	)
+	(wire
+		(pts
+			(xy 144.145 44.45) (xy 144.145 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d91b407-56d5-40d1-9c57-c82334ff6431")
 	)
 	(wire
 		(pts
@@ -2298,7 +2546,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 34.925) (xy 158.75 34.925)
+			(xy 151.13 32.385) (xy 158.75 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2308,7 +2556,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 36.195) (xy 113.03 34.925)
+			(xy 113.03 33.655) (xy 113.03 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2318,7 +2566,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 43.815) (xy 143.51 43.815)
+			(xy 135.89 41.275) (xy 143.51 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2328,23 +2576,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.045 43.815) (xy 113.03 43.815)
+			(xy 106.045 41.275) (xy 113.03 41.275)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3afea6d9-3f83-4f9a-bf8a-3a4ec878ad5b")
-	)
-	(wire
-		(pts
-			(xy 60.96 55.88) (xy 60.96 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b41b254-9bda-4999-b775-3ab5d056ad17")
 	)
 	(wire
 		(pts
@@ -2358,16 +2596,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 55.88) (xy 64.77 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e2f544b-5d53-49f8-a86a-efe9b82e2c90")
-	)
-	(wire
-		(pts
 			(xy 107.95 83.185) (xy 106.045 83.185)
 		)
 		(stroke
@@ -2378,7 +2606,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 34.925) (xy 98.425 36.195)
+			(xy 98.425 32.385) (xy 98.425 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2388,23 +2616,13 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.815) (xy 135.89 43.815)
+			(xy 128.27 41.275) (xy 135.89 41.275)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "43fe573d-783e-45c4-8022-950dec2e0def")
-	)
-	(wire
-		(pts
-			(xy 43.815 74.93) (xy 49.53 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4425c50a-247a-42a1-a55d-6e6da096ad9a")
 	)
 	(wire
 		(pts
@@ -2418,7 +2636,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 34.925) (xy 143.51 36.195)
+			(xy 143.51 32.385) (xy 143.51 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2428,7 +2646,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 34.925) (xy 135.89 34.925)
+			(xy 128.27 32.385) (xy 135.89 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2438,7 +2656,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 34.925) (xy 166.37 34.925)
+			(xy 158.75 32.385) (xy 166.37 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2478,7 +2696,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 43.815) (xy 158.75 43.815)
+			(xy 151.13 41.275) (xy 158.75 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2488,7 +2706,7 @@
 	)
 	(wire
 		(pts
-			(xy 79.375 52.705) (xy 156.21 52.705)
+			(xy 79.375 52.705) (xy 144.145 52.705)
 		)
 		(stroke
 			(width 0)
@@ -2498,7 +2716,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 34.925) (xy 151.13 34.925)
+			(xy 143.51 32.385) (xy 151.13 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2508,7 +2726,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 34.925) (xy 128.27 34.925)
+			(xy 120.65 32.385) (xy 128.27 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2518,7 +2736,17 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 36.195) (xy 158.75 34.925)
+			(xy 142.24 44.45) (xy 144.145 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "849b5303-c6e2-4551-a54f-4abd5b0c6314")
+	)
+	(wire
+		(pts
+			(xy 158.75 33.655) (xy 158.75 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2538,16 +2766,6 @@
 	)
 	(wire
 		(pts
-			(xy 47.625 67.31) (xy 49.53 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f22dd6f-a27b-477c-8688-b8042114b1fd")
-	)
-	(wire
-		(pts
 			(xy 168.91 47.625) (xy 171.45 47.625)
 		)
 		(stroke
@@ -2558,7 +2776,17 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 43.815) (xy 120.65 43.815)
+			(xy 144.145 52.705) (xy 156.21 52.705)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96b5b854-43b9-499b-927f-86090c0b700b")
+	)
+	(wire
+		(pts
+			(xy 113.03 41.275) (xy 120.65 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2598,7 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.805 34.925) (xy 90.805 36.195)
+			(xy 90.805 32.385) (xy 90.805 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2608,7 +2836,17 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 34.925) (xy 128.27 36.195)
+			(xy 52.07 69.215) (xy 45.085 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d04f39-48ae-46ed-9fdc-62483dd76427")
+	)
+	(wire
+		(pts
+			(xy 128.27 32.385) (xy 128.27 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2628,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 43.815) (xy 151.13 43.815)
+			(xy 143.51 41.275) (xy 151.13 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2658,7 +2896,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 34.925) (xy 120.65 34.925)
+			(xy 113.03 32.385) (xy 120.65 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2678,6 +2916,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.005 69.215) (xy 42.545 69.215)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec2629a-b183-4291-a58d-e3a22f6052ef")
+	)
+	(wire
+		(pts
 			(xy 168.91 141.605) (xy 171.45 141.605)
 		)
 		(stroke
@@ -2688,7 +2936,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 34.925) (xy 151.13 36.195)
+			(xy 151.13 32.385) (xy 151.13 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2698,7 +2946,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.805 43.815) (xy 98.425 43.815)
+			(xy 90.805 41.275) (xy 98.425 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2718,7 +2966,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.045 34.925) (xy 98.425 34.925)
+			(xy 106.045 32.385) (xy 98.425 32.385)
 		)
 		(stroke
 			(width 0)
@@ -2728,7 +2976,7 @@
 	)
 	(wire
 		(pts
-			(xy 98.425 43.815) (xy 106.045 43.815)
+			(xy 98.425 41.275) (xy 106.045 41.275)
 		)
 		(stroke
 			(width 0)
@@ -2738,7 +2986,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.045 34.925) (xy 106.045 36.195)
+			(xy 106.045 32.385) (xy 106.045 33.655)
 		)
 		(stroke
 			(width 0)
@@ -2768,7 +3016,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 34.925) (xy 166.37 47.625)
+			(xy 166.37 32.385) (xy 166.37 47.625)
 		)
 		(stroke
 			(width 0)
@@ -2785,6 +3033,16 @@
 			(justify right bottom)
 		)
 		(uuid "0409ebaa-a1f4-49aa-8b05-b06b0d4ac884")
+	)
+	(label "RESET"
+		(at 55.88 49.53 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "07a48914-b545-489b-a9b4-8040dba0f79e")
 	)
 	(label "USART1_TX"
 		(at 189.23 75.565 0)
@@ -2816,7 +3074,7 @@
 		)
 		(uuid "2011de4a-1fa3-4a30-b3c3-bffd5aff75da")
 	)
-	(label "RESET"
+	(label "NRST"
 		(at 156.21 52.705 180)
 		(effects
 			(font
@@ -2996,6 +3254,16 @@
 		)
 		(uuid "c9c37712-8bde-4402-b005-fa0f08c1f273")
 	)
+	(label "RESET"
+		(at 52.07 69.215 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "db0a5055-8249-450d-944c-e0e655760a24")
+	)
 	(label "BOOT"
 		(at 233.68 158.115 180)
 		(effects
@@ -3006,7 +3274,7 @@
 		)
 		(uuid "dd442afe-c952-4653-b19c-d1d2ed533d1f")
 	)
-	(label "RESET"
+	(label "NRST"
 		(at 233.68 161.29 180)
 		(effects
 			(font
@@ -3025,16 +3293,6 @@
 			(justify right bottom)
 		)
 		(uuid "dfcb3059-748b-497a-8543-66a03ed77f6d")
-	)
-	(label "EXTR_RST"
-		(at 60.96 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e2c3c7eb-65b8-4a4c-97ee-a18799a2cd57")
 	)
 	(label "LED3"
 		(at 156.21 93.345 180)
@@ -3091,7 +3349,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 166.37 34.925 0)
+		(at 166.37 32.385 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3146,12 +3404,12 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 35.56 54.61 180)
+		(at 53.34 45.085 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "191fa098-232e-4994-bb18-93612e39098d")
 	)
@@ -3243,6 +3501,17 @@
 		)
 		(uuid "3bb900fe-c296-435a-9583-7d7b4ca0f43e")
 	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 45.085 59.055 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cfb15d2-6189-4cdf-9308-a6116d5e99ee")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 252.73 88.9 0)
@@ -3278,7 +3547,7 @@
 	)
 	(hierarchical_label "COMM1_RST"
 		(shape input)
-		(at 43.815 74.93 180)
+		(at 62.865 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3286,6 +3555,17 @@
 			(justify right)
 		)
 		(uuid "66592c23-167b-42aa-8dc8-803d90ff3a79")
+	)
+	(hierarchical_label "COMM1_RST"
+		(shape input)
+		(at 40.005 69.215 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "68925ac0-d67c-46b2-ad21-536887cbe2eb")
 	)
 	(hierarchical_label "SPI3_MISO"
 		(shape output)
@@ -3355,7 +3635,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 90.805 43.815 180)
+		(at 90.805 41.275 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3385,6 +3665,17 @@
 			(justify left)
 		)
 		(uuid "9816da60-0742-4d3e-b484-5288e4d8546b")
+	)
+	(hierarchical_label "3V3"
+		(shape input)
+		(at 142.24 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a3876cb8-8234-47f3-9d0e-c0a60cdfe01a")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -3495,17 +3786,6 @@
 			(justify right)
 		)
 		(uuid "c477775b-0f82-4a5e-8365-68d959df5e87")
-	)
-	(hierarchical_label "3V3"
-		(shape input)
-		(at 35.56 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cbcf4263-3ab0-4f17-91dc-b088dc37493d")
 	)
 	(hierarchical_label "3V3"
 		(shape input)
@@ -3639,20 +3919,9 @@
 		)
 		(uuid "ff0db58b-0c22-4a82-8a55-9774355604d2")
 	)
-	(hierarchical_label "3V3"
-		(shape input)
-		(at 47.625 67.31 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffad29ff-04d3-411c-a110-55c184821616")
-	)
 	(symbol
 		(lib_id "Device:C")
-		(at 158.75 40.005 0)
+		(at 158.75 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3660,7 +3929,7 @@
 		(dnp no)
 		(uuid "02698302-3a15-4bd1-b76d-bffc8153823e")
 		(property "Reference" "C80"
-			(at 157.48 29.845 0)
+			(at 157.48 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +3938,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 157.48 32.385 0)
+			(at 157.48 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3678,7 +3947,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 159.7152 43.815 0)
+			(at 159.7152 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3687,7 +3956,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3696,7 +3965,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3705,7 +3974,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3714,7 +3983,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3723,7 +3992,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3732,7 +4001,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3741,7 +4010,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,7 +4019,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3759,7 +4028,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3768,7 +4037,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3777,7 +4046,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 158.75 40.005 0)
+			(at 158.75 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3802,7 +4071,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 151.13 40.005 0)
+		(at 151.13 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3810,7 +4079,7 @@
 		(dnp no)
 		(uuid "12f7d7a5-c35c-42b8-af63-b9bf5f099e21")
 		(property "Reference" "C79"
-			(at 149.86 29.845 0)
+			(at 149.86 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3819,7 +4088,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 149.86 32.385 0)
+			(at 149.86 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3828,7 +4097,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 152.0952 43.815 0)
+			(at 152.0952 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,7 +4106,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3846,7 +4115,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3855,7 +4124,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3864,7 +4133,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3873,7 +4142,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3882,7 +4151,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3891,7 +4160,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3900,7 +4169,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3909,7 +4178,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +4187,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3927,7 +4196,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 151.13 40.005 0)
+			(at 151.13 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3952,7 +4221,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 135.89 40.005 0)
+		(at 135.89 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3960,7 +4229,7 @@
 		(dnp no)
 		(uuid "20c8d85c-541b-48c5-8a6d-ff36d9b223d9")
 		(property "Reference" "C77"
-			(at 134.62 29.845 0)
+			(at 134.62 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +4238,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 134.62 32.385 0)
+			(at 134.62 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,7 +4247,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 136.8552 43.815 0)
+			(at 136.8552 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3987,7 +4256,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3996,7 +4265,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4005,7 +4274,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4014,7 +4283,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +4292,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4032,7 +4301,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4041,7 +4310,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4050,7 +4319,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4059,7 +4328,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4068,7 +4337,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,7 +4346,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 135.89 40.005 0)
+			(at 135.89 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4102,7 +4371,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 49.53 71.12 0)
+		(at 144.145 48.895 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4111,7 +4380,7 @@
 		(fields_autoplaced yes)
 		(uuid "3685ae66-9731-42b2-8cb6-bbc56afdc4de")
 		(property "Reference" "R33"
-			(at 51.435 69.8499 0)
+			(at 146.05 47.6249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4120,7 +4389,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 51.435 72.3899 0)
+			(at 146.05 50.1649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4129,7 +4398,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 47.752 71.12 90)
+			(at 142.367 48.895 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4138,7 +4407,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4147,7 +4416,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4156,7 +4425,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4434,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4443,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-07100KL"
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4452,7 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 49.53 71.12 0)
+			(at 144.145 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4208,7 +4477,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 40.005 0)
+		(at 113.03 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4216,7 +4485,7 @@
 		(dnp no)
 		(uuid "3cd72b35-a914-4df0-93a3-d886d1a45c0d")
 		(property "Reference" "C74"
-			(at 111.76 29.845 0)
+			(at 111.76 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4494,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 111.76 32.385 0)
+			(at 111.76 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4234,7 +4503,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 113.9952 43.815 0)
+			(at 113.9952 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4243,7 +4512,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4252,7 +4521,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4261,7 +4530,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4270,7 +4539,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4279,7 +4548,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4288,7 +4557,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4297,7 +4566,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4306,7 +4575,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4315,7 +4584,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4324,7 +4593,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4333,7 +4602,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 113.03 40.005 0)
+			(at 113.03 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4358,7 +4627,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 120.65 40.005 0)
+		(at 120.65 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4366,7 +4635,7 @@
 		(dnp no)
 		(uuid "459370e0-e7ca-4f71-bac0-b44a39b9e46e")
 		(property "Reference" "C75"
-			(at 119.38 29.845 0)
+			(at 119.38 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +4644,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 119.38 32.385 0)
+			(at 119.38 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +4653,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 121.6152 43.815 0)
+			(at 121.6152 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +4662,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4402,7 +4671,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4411,7 +4680,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4420,7 +4689,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4429,7 +4698,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4438,7 +4707,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4447,7 +4716,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,7 +4725,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4465,7 +4734,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4474,7 +4743,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,7 +4752,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 120.65 40.005 0)
+			(at 120.65 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4524,7 +4793,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "300K"
+		(property "Value" "330K"
 			(at 213.36 153.67 0)
 			(effects
 				(font
@@ -4578,7 +4847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0402FR-07300KL"
+		(property "Part Number" "RC0402FR-07330KL"
 			(at 210.82 151.765 0)
 			(effects
 				(font
@@ -4606,6 +4875,107 @@
 			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1"
 					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack02")
+		(at 45.085 64.135 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "883282a1-eb94-4df4-83f1-8ae60ec345d8")
+		(property "Reference" "RN7"
+			(at 49.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 49.53 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_2x0402"
+			(at 49.53 64.135 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
+			(at 45.085 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2 resistor network, parallel topology"
+			(at 45.085 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 45.085 64.135 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "EXB-24V104JX"
+			(at 45.085 64.135 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "5"
+			(at 45.085 64.135 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "24cf131a-6ec6-4765-b450-03f24ad35d3f")
+		)
+		(pin "2"
+			(uuid "23e923fa-37da-4915-ac45-02509db978d4")
+		)
+		(pin "3"
+			(uuid "060e5bab-55f4-408a-b297-38884ffcb6d4")
+		)
+		(pin "1"
+			(uuid "da3fe9c2-6816-46cf-81d8-705929e1d31e")
+		)
+		(instances
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1"
+					(reference "RN7")
 					(unit 1)
 				)
 			)
@@ -4915,7 +5285,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 90.805 40.005 0)
+		(at 90.805 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4923,7 +5293,7 @@
 		(dnp no)
 		(uuid "ab43c31c-224a-4f5b-a61b-74f3dad44b1d")
 		(property "Reference" "C71"
-			(at 89.535 29.845 0)
+			(at 89.535 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4932,7 +5302,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 89.535 32.385 0)
+			(at 89.535 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4941,7 +5311,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 91.7702 43.815 0)
+			(at 91.7702 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4950,7 +5320,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4959,7 +5329,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4968,7 +5338,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4977,7 +5347,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,7 +5356,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4995,7 +5365,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5004,7 +5374,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5013,7 +5383,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5022,7 +5392,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5031,7 +5401,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,7 +5410,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 90.805 40.005 0)
+			(at 90.805 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5065,7 +5435,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 128.27 40.005 0)
+		(at 128.27 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5073,7 +5443,7 @@
 		(dnp no)
 		(uuid "ac79d81b-293c-49c1-85c5-c176d2e80b11")
 		(property "Reference" "C76"
-			(at 127 29.845 0)
+			(at 127 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5082,7 +5452,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 127 32.385 0)
+			(at 127 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5091,7 +5461,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 129.2352 43.815 0)
+			(at 129.2352 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5100,7 +5470,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5109,7 +5479,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5118,7 +5488,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5127,7 +5497,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5136,7 +5506,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5145,7 +5515,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5154,7 +5524,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5163,7 +5533,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5172,7 +5542,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5181,7 +5551,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5190,7 +5560,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 128.27 40.005 0)
+			(at 128.27 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5215,7 +5585,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 143.51 40.005 0)
+		(at 143.51 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5223,7 +5593,7 @@
 		(dnp no)
 		(uuid "cae55722-f6af-48bd-b898-1e66955855f4")
 		(property "Reference" "C78"
-			(at 142.24 29.845 0)
+			(at 142.24 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5232,7 +5602,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 142.24 32.385 0)
+			(at 142.24 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5241,7 +5611,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 144.4752 43.815 0)
+			(at 144.4752 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5250,7 +5620,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5259,7 +5629,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5268,7 +5638,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5277,7 +5647,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5286,7 +5656,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5295,7 +5665,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +5674,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5313,7 +5683,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5322,7 +5692,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5331,7 +5701,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,7 +5710,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 143.51 40.005 0)
+			(at 143.51 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5365,7 +5735,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 98.425 40.005 0)
+		(at 98.425 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5373,7 +5743,7 @@
 		(dnp no)
 		(uuid "e4fadb4f-84d7-4203-83a4-2e0d02493a1d")
 		(property "Reference" "C72"
-			(at 97.155 29.845 0)
+			(at 97.155 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5382,7 +5752,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 97.155 32.385 0)
+			(at 97.155 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5391,7 +5761,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 99.3902 43.815 0)
+			(at 99.3902 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5400,7 +5770,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5409,7 +5779,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5418,7 +5788,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5427,7 +5797,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5436,7 +5806,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5445,7 +5815,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5454,7 +5824,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5463,7 +5833,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5472,7 +5842,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5481,7 +5851,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5490,7 +5860,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 98.425 40.005 0)
+			(at 98.425 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5885,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 106.045 40.005 0)
+		(at 106.045 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5523,7 +5893,7 @@
 		(dnp no)
 		(uuid "eebc713e-e24d-4e33-9e02-2be9fb842087")
 		(property "Reference" "C73"
-			(at 104.775 29.845 0)
+			(at 104.775 27.305 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5532,7 +5902,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 104.775 32.385 0)
+			(at 104.775 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +5911,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 107.0102 43.815 0)
+			(at 107.0102 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +5920,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,7 +5929,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +5938,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5577,7 +5947,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5586,7 +5956,7 @@
 			)
 		)
 		(property "Note" ""
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5595,7 +5965,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5604,7 +5974,7 @@
 			)
 		)
 		(property "Load Capacitance" ""
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5613,7 +5983,7 @@
 			)
 		)
 		(property "Amps" ""
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5622,7 +5992,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5631,7 +6001,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5640,7 +6010,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 106.045 40.005 0)
+			(at 106.045 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +6353,7 @@
 		)
 	)
 	(sheet
-		(at 35.56 46.99)
+		(at 35.56 41.91)
 		(size 17.78 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5999,7 +6369,7 @@
 		)
 		(uuid "4970b3a5-e48c-4e2f-a825-cd6a14be31b4")
 		(property "Sheetname" "RESET"
-			(at 35.56 46.2784 0)
+			(at 35.56 41.1984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6008,7 +6378,7 @@
 			)
 		)
 		(property "Sheetfile" "../sci_board/reset.kicad_sch"
-			(at 35.56 57.7346 0)
+			(at 35.56 52.6546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6017,13 +6387,13 @@
 			)
 		)
 		(pin "GND" input
-			(at 35.56 54.61 180)
+			(at 53.34 45.085 0)
 			(uuid "67f1f8ac-4182-44e7-87b0-d01c70ddafc2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "RESET" output
@@ -6034,16 +6404,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "VIO" input
-			(at 35.56 49.53 180)
-			(uuid "ab1fd5e8-9fe0-4f13-a65d-103e225dff77")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances

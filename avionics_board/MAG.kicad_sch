@@ -535,107 +535,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 132.08 69.85)
@@ -672,12 +571,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1459dc7-11e7-4d94-a121-45c23132043a")
-	)
-	(junction
-		(at 152.4 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dacb2f6f-fb59-45db-9289-0971c75a552f")
 	)
 	(junction
 		(at 163.195 64.135)
@@ -783,16 +676,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.035 91.44) (xy 152.4 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b129a0c-fa32-4ca9-b554-afb8cbc1f44f")
-	)
-	(wire
-		(pts
 			(xy 163.195 64.135) (xy 153.67 64.135)
 		)
 		(stroke
@@ -873,7 +756,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 91.44) (xy 151.13 91.44)
+			(xy 151.13 91.44) (xy 153.035 91.44)
 		)
 		(stroke
 			(width 0)
@@ -998,7 +881,7 @@
 		(uuid "9bdf3659-485f-45a2-a04f-2a2f0a3e5509")
 	)
 	(hierarchical_label "VSS"
-		(shape output)
+		(shape input)
 		(at 128.27 119.38 180)
 		(effects
 			(font
@@ -1007,6 +890,17 @@
 			(justify right)
 		)
 		(uuid "a464d8af-c627-48e6-84cf-467e107d65b9")
+	)
+	(hierarchical_label "VSS"
+		(shape input)
+		(at 161.29 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aef88634-02b2-4413-9609-b6108b43fbef")
 	)
 	(hierarchical_label "VSS"
 		(shape output)
@@ -1856,72 +1750,6 @@
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/b4b77cb2-7683-4a8b-8fdc-370cfc88d806"
 					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 152.4 91.44 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e498c1ec-bba9-4c2c-9348-582ef85d8933")
-		(property "Reference" "#FLG05"
-			(at 152.4 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 152.4 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 152.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20a4cda2-abf0-47ea-a508-e965e60d256d")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/b4b77cb2-7683-4a8b-8fdc-370cfc88d806"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)

@@ -9,130 +9,6 @@
 		(date "2020-05-05")
 	)
 	(lib_symbols
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Thermistor_NTC"
 			(pin_numbers
 				(hide yes)
@@ -435,17 +311,6 @@
 		)
 		(uuid "6625481f-0a60-44ae-87df-c0b0f0a81f63")
 	)
-	(text "Rbias\n"
-		(exclude_from_sim no)
-		(at 133.35 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "84d73fa4-8f4b-481e-89b5-d6b963066bca")
-	)
 	(text "Maximum ADC resolution when Rbias is matched with thermistor around temperature of interest.\nMax linearity around temperature X when Rbias==Rt @ temperature X. \n"
 		(exclude_from_sim no)
 		(at 148.59 64.77 0)
@@ -468,7 +333,7 @@
 		)
 		(uuid "c91a1f84-eedb-4ac8-bc3c-cfbdf460ba92")
 	)
-	(text "47K ohm NTC thermistor @ 25C\n"
+	(text "50K ohm NTC thermistor @ 25C\n"
 		(exclude_from_sim no)
 		(at 125.73 88.9 0)
 		(effects
@@ -501,31 +366,15 @@
 		)
 		(uuid "ec3f298c-0476-47e9-a746-42361098ed84")
 	)
-	(junction
-		(at 120.65 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c905ffa7-8cdb-40f6-8d66-9f9acf981ca7")
-	)
 	(wire
 		(pts
-			(xy 120.65 60.96) (xy 33.02 60.96)
+			(xy 120.65 60.96) (xy 116.205 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0b77bf3d-cbb8-467c-96ac-1e83d81b4a1b")
-	)
-	(wire
-		(pts
-			(xy 120.65 52.07) (xy 120.65 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "606cfc5b-b31f-4cdf-bf65-5f487f029070")
 	)
 	(wire
 		(pts
@@ -549,16 +398,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 35.56) (xy 120.65 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ebb9f91-d76f-4081-b057-985392f4c016")
-	)
-	(wire
-		(pts
 			(xy 120.65 60.96) (xy 120.65 71.12)
 		)
 		(stroke
@@ -567,19 +406,9 @@
 		)
 		(uuid "9647faca-7512-4da1-ad3d-aae987cf3bf8")
 	)
-	(wire
-		(pts
-			(xy 120.65 35.56) (xy 120.65 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e388080a-5e00-447d-8b42-bfba3de4b72a")
-	)
 	(hierarchical_label "VOUT"
 		(shape output)
-		(at 33.02 60.96 180)
+		(at 116.205 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -587,17 +416,6 @@
 			(justify right)
 		)
 		(uuid "24e94c24-4227-4b64-81cc-87ae597148cb")
-	)
-	(hierarchical_label "VDD"
-		(shape input)
-		(at 116.84 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "29f726e3-b023-4c17-b337-a57e5049187d")
 	)
 	(hierarchical_label "VSS"
 		(shape input)
@@ -628,7 +446,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Thermistor_NTC"
+		(property "Value" "50K"
 			(at 124.5362 76.073 0)
 			(effects
 				(font
@@ -646,7 +464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/ntc/r44e.ashx?la=en-us"
+		(property "Datasheet" "https://www.amphenol-sensors.com/hubfs/Documents/AAS-920-574A-Thermometrics-NTC-Type-MS-032114-web.pdf"
 			(at 120.65 76.2 0)
 			(effects
 				(font
@@ -655,7 +473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Thermistor_NTC"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -664,7 +482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Alt" ""
+		(property "Alt" "NXFT15WB473FA2B150"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -673,7 +491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "generic"
+		(property "Part Number" "vertical"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -691,7 +509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Note" "NXFT15WB473FA2B150"
+		(property "Note" "Amphenol RL0503-27.53K-120-MS "
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -738,139 +556,6 @@
 				)
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02e43"
 					(reference "TH3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 120.65 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005eb42947")
-		(property "Reference" "R11"
-			(at 122.428 47.0916 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "47K"
-			(at 122.428 49.403 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 122.428 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Alt" ""
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-0747KL"
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 120.65 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1fe04991-1de5-4f7b-86c5-56ab130b4628")
-		)
-		(pin "2"
-			(uuid "3270aa38-d31c-473f-8313-cc358f00f8ea")
-		)
-		(instances
-			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005eb419ee"
-					(reference "R17")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec0237f"
-					(reference "R18")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02646"
-					(reference "R11")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec0264b"
-					(reference "R12")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02e34"
-					(reference "R14")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02e39"
-					(reference "R15")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02e3e"
-					(reference "R16")
-					(unit 1)
-				)
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/4b32b6cb-e4ab-41a8-b61c-93e0ce1b94ae/00000000-0000-0000-0000-00005ec02e43"
-					(reference "R13")
 					(unit 1)
 				)
 			)

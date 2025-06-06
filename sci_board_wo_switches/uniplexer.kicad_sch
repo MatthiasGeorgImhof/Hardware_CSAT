@@ -823,7 +823,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.685 132.08) (xy 19.685 132.715)
+			(xy 24.13 132.08) (xy 24.13 132.715)
 		)
 		(stroke
 			(width 0)
@@ -853,7 +853,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.005 132.715) (xy 19.685 132.715)
+			(xy 40.005 132.715) (xy 24.13 132.715)
 		)
 		(stroke
 			(width 0)
@@ -1211,7 +1211,7 @@
 	)
 	(hierarchical_label "VIO"
 		(shape input)
-		(at 19.685 124.46 180)
+		(at 24.13 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1329,6 +1329,17 @@
 			(justify right)
 		)
 		(uuid "7352798b-a0d5-49e2-93d2-dfcb318c444e")
+	)
+	(hierarchical_label "I2C_RST"
+		(shape input)
+		(at 24.13 132.715 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "768193e9-8f8b-4216-bb69-fe16f1f21fce")
 	)
 	(hierarchical_label "DCMI_04_B"
 		(shape output)
@@ -1936,7 +1947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC BUS SWITCH 2 X 1:4 16-TSSOP"
 			(at 40.005 117.475 0)
 			(effects
 				(font
@@ -2022,7 +2033,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 19.685 128.27 0)
+		(at 24.13 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2030,8 +2041,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94b1dbbb-d710-4657-abc1-8fefec22f04b")
-		(property "Reference" "R13"
-			(at 21.59 126.9999 0)
+		(property "Reference" "R11"
+			(at 26.035 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +2051,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 21.59 129.5399 0)
+			(at 26.035 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2049,7 +2060,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 17.907 128.27 90)
+			(at 22.352 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2057,8 +2068,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf"
-			(at 19.685 128.27 0)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 24.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2067,7 +2078,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 19.685 128.27 0)
+			(at 24.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2076,7 +2087,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 19.685 128.27 0)
+			(at 24.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2085,7 +2096,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-07100KL"
-			(at 19.685 128.27 0)
+			(at 24.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2094,7 +2105,7 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 19.685 128.27 0)
+			(at 24.13 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,7 +2122,7 @@
 		(instances
 			(project ""
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/5e5b27f8-7a4c-45d0-95f8-aff71797fcd3/9605d53d-4070-4037-ab55-0e19ed326c8d"
-					(reference "R13")
+					(reference "R11")
 					(unit 1)
 				)
 			)

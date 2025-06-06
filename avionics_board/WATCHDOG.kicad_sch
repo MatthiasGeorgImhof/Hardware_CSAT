@@ -1069,7 +1069,17 @@
 		)
 		(uuid "abe1dafb-b9da-4123-9d50-21d08df5ded7")
 	)
-	(text "5 seconds"
+	(text "First 9 Time Intervals\ntIP (ms) Resistance (Ω) Closest Real Value (Ω)\n100 500 500\n200 1000 1000\n300 1500 1500\n400 2000 2000\n500 2500 2500\n600 3000 3000\n700 3500 3500\n800 4000 4000\n900 4500 4501\n\nMost Common Time Intervals Between 1s to 1min\ntIP Calculated Resistance (kΩ) Closest Real Value (kΩ)\n1s 5.20 5.202\n2s 6.79 6.788\n3s 7.64 7.628\n4s 8.30 8.306\n5s 8.85 8.852\n6s 9.27 9.223\n7s 9.71 9.673\n8s 10.18 10.180\n9s 10.68 10.68\n10s 11.20 11.199\n20s 14.41 14.405\n30s 16.78 16.778\n40s 18.75 18.748\n50s 20.047 20.047\n\nMost Common Time Intervals Between 1min to 2h\ntIP Calculated Resistance (kΩ) Closest Real Value (kΩ)\n1min 22.02 22.021\n2min 29.35 29.349\n3min 34.73 34.729\n4min 39.11 39.097\n5min 42.90 42.887\n6min 46.29 46.301\n7min 49.38 49.392\n8min 52.24 52.224\n9min 54.92 54.902\n10min 57.44 57.437\n20min 77.57 77.579\n30min 92.43 92.233\n40min 104.67 104.625\n50min 115.33 115.331\n1h 124.91 124.856\n1h30min 149.39 149.398\n2h 170.00 170.00"
+		(exclude_from_sim no)
+		(at 46.99 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad1d945d-2ec3-496c-aea3-228051238223")
+	)
+	(text "1 min"
 		(exclude_from_sim no)
 		(at 172.72 99.06 0)
 		(effects
@@ -1079,17 +1089,6 @@
 			(justify right bottom)
 		)
 		(uuid "d6630bf4-913c-4c56-a74e-a912ae0b8c93")
-	)
-	(text "Use 1% Resistors\n\n100 ms == 500 ohm\n200 ms == 1000 ohm\n300 ms == 1500 ohm\n400 ms == 2000 ohm\n500 ms == 2500 ohm\n1 s     ==  5.2 Kohm\n2 s     == 6.79 Kohm\n5 s     == 8.85 Kohm\n10 s    == 11.20 Kohm"
-		(exclude_from_sim no)
-		(at 195.58 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "de37a0a7-83a0-4c03-8870-8abf1b1d32a7")
 	)
 	(junction
 		(at 175.26 88.9)
@@ -1365,7 +1364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00006310c545")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 158.75 82.5814 0)
 			(effects
 				(font
@@ -1459,7 +1458,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -1474,7 +1473,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006310c546")
-		(property "Reference" "C34"
+		(property "Reference" "C40"
 			(at 123.571 77.5716 0)
 			(effects
 				(font
@@ -1585,7 +1584,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "C34")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -1697,7 +1696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006310c549")
-		(property "Reference" "R20"
+		(property "Reference" "R11"
 			(at 177.038 97.8916 0)
 			(effects
 				(font
@@ -1706,7 +1705,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "8K87"
+		(property "Value" "22K"
 			(at 177.038 100.203 0)
 			(effects
 				(font
@@ -1751,7 +1750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "RC0402FR-078K87L"
+		(property "Part Number" "RC0402FR-078K22KL"
 			(at 175.26 99.06 0)
 			(effects
 				(font
@@ -1790,7 +1789,7 @@
 			)
 			(project ""
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00005eab0a1f"
-					(reference "R20")
+					(reference "R11")
 					(unit 1)
 				)
 			)

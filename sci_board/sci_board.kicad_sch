@@ -1198,6 +1198,12 @@
 		(uuid "690b16c8-13f3-41b8-a60d-90609e359812")
 	)
 	(junction
+		(at 81.28 177.165)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d202e63-d711-445e-b9da-81c554c8d00f")
+	)
+	(junction
 		(at 139.065 126.365)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1454,6 +1460,16 @@
 			(type default)
 		)
 		(uuid "0a2be648-f549-4ac9-898c-79723a881994")
+	)
+	(wire
+		(pts
+			(xy 90.805 186.055) (xy 90.805 184.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bfc4e72-c8ec-44fb-a2ed-d50c6ec03e61")
 	)
 	(wire
 		(pts
@@ -2687,6 +2703,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 177.165) (xy 90.805 177.165)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc3901b9-19ff-4562-82b8-6af82ebc51c0")
+	)
+	(wire
+		(pts
 			(xy 145.415 121.285) (xy 149.86 121.285)
 		)
 		(stroke
@@ -2864,6 +2890,16 @@
 			(justify left bottom)
 		)
 		(uuid "41510f7c-1b58-45f7-8bf2-7d4ade1a4f4b")
+	)
+	(label "ATTN"
+		(at 90.805 186.055 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "47fea430-2177-4563-9ccf-d096fa80bc26")
 	)
 	(label "CAN1_H"
 		(at 22.86 88.265 180)
@@ -6627,6 +6663,111 @@
 			(project "sci_board"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 90.805 180.975 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e08bcc99-9e72-4f8f-9f7a-43724813996d")
+		(property "Reference" "R6"
+			(at 93.98 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330K"
+			(at 93.98 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 89.027 180.975 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Note" "generic pullup/down"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-13330K"
+			(at 90.805 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ba388ca-d7fc-44ff-a0b8-26347ad65ae7")
+		)
+		(pin "1"
+			(uuid "ed8ff92b-3219-4b04-a4e9-300dd611d71d")
+		)
+		(instances
+			(project "sci_board"
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580"
+					(reference "R6")
 					(unit 1)
 				)
 			)

@@ -9,3 +9,16 @@
     (condition "A.Type == 'via' && B.Type == 'via'")
     (constraint physical_hole_clearance (min 0.1mm))
     )
+
+(rule "/GYRO/SDA"
+	(condition "A.NetName == '/GYRO/SDA'")
+	(constraint clearance (min 0.15mm))  
+	(constraint track_width (min 0.15mm))      
+)
+
+(rule "/GYRO/SCL"
+	(condition "A.NetName == '/GYRO/SCL'")
+	(constraint clearance (min 0.15mm))  
+	(constraint track_width (min 0.15mm))      
+)
+

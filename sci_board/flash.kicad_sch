@@ -404,136 +404,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-	)
-	(junction
-		(at 69.85 73.025)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f265e258-ff52-40a8-9b56-ce5b7ec1f04e")
 	)
 	(wire
 		(pts
@@ -554,16 +424,6 @@
 			(type default)
 		)
 		(uuid "17913a01-0a01-4c26-9b0f-ee0fa15b950e")
-	)
-	(wire
-		(pts
-			(xy 67.31 73.025) (xy 69.85 73.025)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bcb3282-946f-4df1-88a0-de974a99b70a")
 	)
 	(wire
 		(pts
@@ -597,16 +457,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.025) (xy 69.85 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e2f2934-abda-44a8-9c75-71ed00218682")
-	)
-	(wire
-		(pts
 			(xy 67.31 78.105) (xy 72.39 78.105)
 		)
 		(stroke
@@ -617,23 +467,13 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.025) (xy 72.39 73.025)
+			(xy 67.31 73.025) (xy 72.39 73.025)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ba92dd6f-2fdf-44f6-95ff-2bb987d4a689")
-	)
-	(wire
-		(pts
-			(xy 69.85 60.96) (xy 66.04 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bba943de-23f4-4a29-b2ac-b29d4321cf8c")
 	)
 	(wire
 		(pts
@@ -677,17 +517,6 @@
 			(justify right)
 		)
 		(uuid "3a52aeb9-135a-4107-b59f-88affbd6b85b")
-	)
-	(hierarchical_label "VDD"
-		(shape input)
-		(at 66.04 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4454af02-f6ac-4507-b63a-dd33c20144a1")
 	)
 	(hierarchical_label "SPI_CS"
 		(shape input)
@@ -775,7 +604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "217a63df-0d80-49f2-bee2-723802afaecf")
-		(property "Reference" "C59"
+		(property "Reference" "C63"
 			(at 143.891 70.5866 0)
 			(effects
 				(font
@@ -904,11 +733,11 @@
 			)
 			(project "sci_board_wo_switches"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "C81")
+					(reference "C64")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "C80")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -924,7 +753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24390024-185f-4fbe-a57a-a11af97dbbcb")
-		(property "Reference" "U18"
+		(property "Reference" "U12"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -1035,132 +864,11 @@
 			)
 			(project "sci_board_wo_switches"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "U22")
+					(reference "U13")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "U21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 69.85 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3f804b8f-d839-4397-8a71-9791fb86446a")
-		(property "Reference" "R33"
-			(at 72.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 71.628 65.913 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 68.072 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "pullup/pulldown"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-07100KL"
-			(at 69.85 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "146d8ade-d70e-4ee0-8743-db1646ad5c77")
-		)
-		(pin "2"
-			(uuid "f0bad738-3cc6-450c-aac6-d634cf417362")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/682960a1-a976-4d44-853a-3532060930ae"
-					(reference "R33")
-					(unit 1)
-				)
-			)
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
-					(reference "R39")
-					(unit 1)
-				)
-			)
-			(project "sci_board_wo_switches"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R27")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R26")
+					(reference "U12")
 					(unit 1)
 				)
 			)

@@ -1266,6 +1266,16 @@
 		)
 		(uuid "60d4d086-7a5b-4af1-b7ae-9ab0040a82c2")
 	)
+	(label "SPI1_CS_LAN"
+		(at 200.66 100.33 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "719ba0ea-b55f-4939-8158-743dbc0d2444")
+	)
 	(label "I2C2_SDA"
 		(at 144.78 173.99 180)
 		(effects
@@ -1316,6 +1326,26 @@
 		)
 		(uuid "8e2f3b87-a2a6-4d65-90d3-a0ad62ec9594")
 	)
+	(label "3V3_MRAM"
+		(at 207.01 132.715 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98cd49f5-ebb8-4b3b-b25d-cc21bf227eae")
+	)
+	(label "SPI1_CS_MRAM"
+		(at 200.66 80.645 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "aaa8ee7f-b92d-4ca4-a6c4-5631a2a3442f")
+	)
 	(label "I2C2_SCL"
 		(at 154.94 173.99 0)
 		(effects
@@ -1325,6 +1355,16 @@
 			(justify left bottom)
 		)
 		(uuid "abaf71a5-b51a-4f8b-9b55-26bfdf9da2a0")
+	)
+	(label "SPI1_CS_MRAM"
+		(at 207.01 140.335 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "ad5b3246-afdf-4f45-a886-0b317faa8c92")
 	)
 	(label "Power_RST"
 		(at 116.205 109.855 180)
@@ -1345,6 +1385,16 @@
 			(justify left bottom)
 		)
 		(uuid "d8296019-19ad-4824-aa6e-b9b93686ed79")
+	)
+	(label "SPI1_CS_LAN"
+		(at 217.17 140.335 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "dfbbc5df-aa91-48a9-b83b-3d6cab0b7958")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1389,6 +1439,17 @@
 			(justify right)
 		)
 		(uuid "167b4230-cfbf-4393-b5bc-3f0b856a63b1")
+	)
+	(hierarchical_label "3V3_LAN"
+		(shape input)
+		(at 217.17 132.715 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18ddfba9-2756-4558-85ec-20117d445b4e")
 	)
 	(hierarchical_label "ATTENTION"
 		(shape bidirectional)
@@ -1769,7 +1830,7 @@
 		(dnp no)
 		(uuid "1bd7703c-c2ac-4a1e-a0b5-30178fbedbb8")
 		(property "Reference" "RN3"
-			(at 184.15 93.98 90)
+			(at 184.15 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1777,7 +1838,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 190.5 93.98 90)
+			(at 190.5 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,6 +2207,218 @@
 			(project ""
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0"
 					(reference "RN5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 217.17 136.525 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a54705d6-65cd-41da-82db-bcee09fb1085")
+		(property "Reference" "R19"
+			(at 219.075 135.2549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 219.075 137.7949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 215.392 136.525 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-07100KL"
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 217.17 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a2e7ba3b-12da-4997-b639-271065e8370b")
+		)
+		(pin "1"
+			(uuid "f55e5a46-54fc-4718-9cab-fd10a968f092")
+		)
+		(instances
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 207.01 136.525 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8204b86-4ef1-4fa2-96c0-ef21993a708f")
+		(property "Reference" "R18"
+			(at 208.915 135.2549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 208.915 137.7949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 205.232 136.525 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Color" ""
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-07100KL"
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 207.01 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5fa5158e-e957-405c-a500-da68f293f09b")
+		)
+		(pin "1"
+			(uuid "dc5e75d3-04f2-4048-b332-7c727a89752a")
+		)
+		(instances
+			(project "openlst-hw"
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -3176,7 +3449,7 @@
 			)
 		)
 		(pin "SPI3_CS_FLASH" output
-			(at 176.53 100.33 0)
+			(at 176.53 80.645 0)
 			(uuid "c77875bd-8024-4dbd-abec-652acbe96484")
 			(effects
 				(font
@@ -3226,7 +3499,7 @@
 			)
 		)
 		(pin "SPI1_CS_LAN" output
-			(at 176.53 80.645 0)
+			(at 176.53 100.33 0)
 			(uuid "24964bcb-85fc-4d27-abdf-ac27216c5935")
 			(effects
 				(font

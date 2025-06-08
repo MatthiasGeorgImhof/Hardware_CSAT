@@ -6304,6 +6304,16 @@
 		)
 		(uuid "560729e7-4ead-4aa3-b486-bf2fdff2cccf")
 	)
+	(label "MRAM_CS"
+		(at 377.825 112.395 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "586aeb23-9654-42fc-8f4f-062c95fa487e")
+	)
 	(label "USART1_RX"
 		(at 241.3 97.79 0)
 		(effects
@@ -7599,6 +7609,17 @@
 			(justify left)
 		)
 		(uuid "fecf3ac7-47e8-4dac-8efc-715b5139dd05")
+	)
+	(hierarchical_label "3V3_MRAM"
+		(shape input)
+		(at 377.825 120.015 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffb2090e-eaa9-4316-b4f2-3a70e9e06b90")
 	)
 	(symbol
 		(lib_id "AVIONICS_BOARD-rescue:GND-power")
@@ -11010,6 +11031,103 @@
 			(project "AVIONICS_BOARD"
 				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93"
 					(reference "RN8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 377.825 116.205 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b61f068f-e617-4852-81cd-ee202548d813")
+		(property "Reference" "R10"
+			(at 379.73 114.9349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 379.73 117.4749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 376.047 116.205 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 377.825 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 377.825 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 377.825 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "RC0402FR-07100KL"
+			(at 377.825 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1"
+			(at 377.825 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb673cfb-f49d-4e10-a507-b8a5a6508a17")
+		)
+		(pin "2"
+			(uuid "8af068ed-16ee-4c55-a826-13ed3fa9bca6")
+		)
+		(instances
+			(project "AVIONICS_BOARD"
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93"
+					(reference "R10")
 					(unit 1)
 				)
 			)

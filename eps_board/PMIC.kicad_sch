@@ -3529,7 +3529,7 @@
 	)
 	(text "1.5V-5.5V "
 		(exclude_from_sim no)
-		(at 313.055 190.5 0)
+		(at 76.2 89.535 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3562,7 +3562,7 @@
 	)
 	(text "Leave OSC32_OUT as NC \nwhen using TCXO\n\n"
 		(exclude_from_sim no)
-		(at 298.45 186.69 0)
+		(at 61.595 85.725 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3573,7 +3573,7 @@
 	)
 	(text "MRAM"
 		(exclude_from_sim no)
-		(at 300.355 163.83 0)
+		(at 302.895 155.575 0)
 		(effects
 			(font
 				(size 3.5052 3.5052)
@@ -3595,7 +3595,7 @@
 	)
 	(text "3.0V-3.6V\n40mA peak, budget 80mA"
 		(exclude_from_sim no)
-		(at 300.355 152.4 0)
+		(at 302.895 144.145 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3606,7 +3606,7 @@
 	)
 	(text "32kHz \nTCXO "
 		(exclude_from_sim no)
-		(at 326.39 203.2 0)
+		(at 89.535 102.235 0)
 		(effects
 			(font
 				(size 3.5052 3.5052)
@@ -3753,10 +3753,6 @@
 		(uuid "41d797ce-983d-4f88-a741-67b62466cb7a")
 	)
 	(no_connect
-		(at 194.31 162.56)
-		(uuid "4580d917-73dd-46e9-b7c1-3ddfaab0a8a5")
-	)
-	(no_connect
 		(at 148.59 111.76)
 		(uuid "56783f17-a1fc-4010-a189-4a9f8d9017d0")
 	)
@@ -3808,7 +3804,7 @@
 	)
 	(wire
 		(pts
-			(xy 296.545 198.755) (xy 300.355 198.755)
+			(xy 59.69 97.79) (xy 63.5 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3848,7 +3844,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 149.86) (xy 260.35 149.86)
+			(xy 248.92 141.605) (xy 262.89 141.605)
 		)
 		(stroke
 			(width 0)
@@ -4138,7 +4134,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 152.4) (xy 243.205 152.4)
+			(xy 238.76 144.145) (xy 234.315 144.145)
 		)
 		(stroke
 			(width 0)
@@ -4258,7 +4254,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 156.845) (xy 248.92 156.845)
+			(xy 233.68 148.59) (xy 240.03 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4368,7 +4364,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 160.02) (xy 257.81 160.02)
+			(xy 262.89 151.765) (xy 233.68 151.765)
 		)
 		(stroke
 			(width 0)
@@ -4378,7 +4374,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 156.845) (xy 260.35 156.845)
+			(xy 247.65 148.59) (xy 262.89 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4478,7 +4474,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 149.86) (xy 247.65 149.86)
+			(xy 233.68 141.605) (xy 238.76 141.605)
 		)
 		(stroke
 			(width 0)
@@ -4538,7 +4534,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 152.4) (xy 257.81 152.4)
+			(xy 262.89 144.145) (xy 248.92 144.145)
 		)
 		(stroke
 			(width 0)
@@ -4578,7 +4574,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 193.675) (xy 300.355 193.675)
+			(xy 60.325 92.71) (xy 63.5 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4708,7 +4704,7 @@
 	)
 	(wire
 		(pts
-			(xy 296.545 196.215) (xy 300.355 196.215)
+			(xy 59.69 95.25) (xy 63.5 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4836,7 +4832,17 @@
 		)
 		(uuid "096bdfea-6ea1-41a6-a793-a6497499849b")
 	)
-	(label "SPI2_CS"
+	(label "SPI_MOSI"
+		(at 251.46 144.145 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0980d234-78cc-4575-b786-90b3f9a9f450")
+	)
+	(label "SPI2_MRAM_CS"
 		(at 194.31 167.64 0)
 		(effects
 			(font
@@ -4847,7 +4853,7 @@
 		(uuid "105570fd-48fc-4bae-85a0-0eb67bec9cd5")
 	)
 	(label "SPI2_MISO"
-		(at 242.57 156.845 180)
+		(at 233.68 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4855,6 +4861,16 @@
 			(justify right bottom)
 		)
 		(uuid "12ca4b19-9c90-4c1a-8518-6d2b5463850c")
+	)
+	(label "SPI2_FLASH_CS"
+		(at 263.525 191.135 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "12e50463-87f9-473d-aec7-f2742b475694")
 	)
 	(label "LED_1"
 		(at 194.31 96.52 0)
@@ -4896,8 +4912,8 @@
 		)
 		(uuid "162a3aff-6ead-4aaa-be92-ac5a4a5ab10d")
 	)
-	(label "SPI2_CS"
-		(at 257.81 160.02 180)
+	(label "SPI2_MRAM_CS"
+		(at 233.68 151.765 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4915,6 +4931,16 @@
 			(justify right bottom)
 		)
 		(uuid "3539b8e7-3566-4274-8cbc-be75b252af93")
+	)
+	(label "SPI_SCK"
+		(at 263.525 183.515 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3da6be15-3b41-4437-91cc-be6708829d52")
 	)
 	(label "CAN2_STBY"
 		(at 194.31 208.28 0)
@@ -4947,7 +4973,7 @@
 		(uuid "438269d0-285f-4080-81ea-c59dcc797e73")
 	)
 	(label "SPI2_SCK"
-		(at 242.57 149.86 180)
+		(at 233.68 141.605 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4997,7 +5023,7 @@
 		(uuid "51ea3bfc-e1a9-47be-99c6-46a1d95ed770")
 	)
 	(label "SPI2_MOSI"
-		(at 243.205 152.4 180)
+		(at 234.315 144.145 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5107,7 +5133,7 @@
 		(uuid "798c4fc1-cde4-4c34-8356-9e98ec8b0ef3")
 	)
 	(label "RCC_OSC32_IN"
-		(at 297.18 193.675 180)
+		(at 60.325 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5135,6 +5161,16 @@
 			(justify right bottom)
 		)
 		(uuid "95d6edc5-9969-44c4-960a-9cff354e3c35")
+	)
+	(label "SPI2_FLASH_CS"
+		(at 194.31 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9df10346-83fa-4295-98ef-dc76d0f0745d")
 	)
 	(label "SWD_SWCLK"
 		(at 194.31 132.08 0)
@@ -5165,6 +5201,26 @@
 			(justify right bottom)
 		)
 		(uuid "b1a122d9-425a-4395-85b7-8c86e70aecfd")
+	)
+	(label "SPI_MISO"
+		(at 251.46 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3558be4-4709-4bfe-b70e-4a4505337c40")
+	)
+	(label "SPI_SCK"
+		(at 251.46 141.605 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bb29fade-b08c-4d34-aeb0-324397b5b8cc")
 	)
 	(label "SPI2_MOSI"
 		(at 194.31 177.8 0)
@@ -5236,6 +5292,16 @@
 		)
 		(uuid "d7790127-fbfa-49c4-9c82-349733bb79c0")
 	)
+	(label "SPI_MOSI"
+		(at 263.525 186.055 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e06e60cf-e795-428c-ba6d-57b6c59b6587")
+	)
 	(label "SPI2_MISO"
 		(at 194.31 175.26 0)
 		(effects
@@ -5245,6 +5311,16 @@
 			(justify left bottom)
 		)
 		(uuid "e16ece54-ccca-4a31-84a8-0a1659cc6ea6")
+	)
+	(label "SPI_MISO"
+		(at 263.525 188.595 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e23ea09a-6d6a-48bd-b9b6-c83a5b4d255e")
 	)
 	(label "CAN2_SHDN"
 		(at 194.31 210.82 0)
@@ -5372,6 +5448,17 @@
 		)
 		(uuid "0f96c8cb-0563-403f-a6ad-6fd927494efd")
 	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 263.525 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "11f7af26-be12-499e-8788-e980af629b1b")
+	)
 	(hierarchical_label "BC_2_SUSP"
 		(shape bidirectional)
 		(at 148.59 142.24 180)
@@ -5470,6 +5557,17 @@
 			(justify right)
 		)
 		(uuid "43b58cdf-eb47-49c6-9ddb-b184ebd11722")
+	)
+	(hierarchical_label "3V3_FLASH"
+		(shape input)
+		(at 263.525 198.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45273e42-27bb-4688-948c-26e4d7389fc9")
 	)
 	(hierarchical_label "CAN1_L"
 		(shape bidirectional)
@@ -5671,7 +5769,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 260.35 170.815 180)
+		(at 262.89 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5803,7 +5901,7 @@
 	)
 	(hierarchical_label "3V3_STM_CORE"
 		(shape input)
-		(at 296.545 196.215 180)
+		(at 59.69 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5880,7 +5978,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 296.545 198.755 180)
+		(at 59.69 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5935,7 +6033,7 @@
 	)
 	(hierarchical_label "3V3_MRAM"
 		(shape input)
-		(at 260.35 167.64 180)
+		(at 262.89 159.385 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6372,7 +6470,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35e09ed7-25df-4663-8c96-fbc678f57f08")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 182.245 62.23 90)
 			(effects
 				(font
@@ -6469,7 +6567,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -6477,7 +6575,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 252.73 156.845 270)
+		(at 243.84 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6485,7 +6583,7 @@
 		(dnp no)
 		(uuid "47adb318-bf47-4a95-81af-e1462aba6d7f")
 		(property "Reference" "R4"
-			(at 248.92 146.05 90)
+			(at 240.03 137.795 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6493,7 +6591,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 254 146.05 90)
+			(at 245.11 137.795 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6501,7 +6599,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 252.73 155.067 90)
+			(at 243.84 146.812 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6510,7 +6608,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 252.73 156.845 0)
+			(at 243.84 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6519,7 +6617,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 252.73 156.845 0)
+			(at 243.84 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6528,7 +6626,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 252.73 156.845 90)
+			(at 243.84 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6635,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-0722RL"
-			(at 252.73 156.845 90)
+			(at 243.84 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6546,7 +6644,7 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 252.73 156.845 90)
+			(at 243.84 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6579,7 +6677,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74abac94-279b-4de5-8ae4-eebca3b90e8d")
-		(property "Reference" "C21"
+		(property "Reference" "C20"
 			(at 202.565 75.565 0)
 			(effects
 				(font
@@ -6676,7 +6774,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C21")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -6691,7 +6789,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "79d28eab-e80d-48a7-93af-e704092a356e")
-		(property "Reference" "C18"
+		(property "Reference" "C21"
 			(at 137.16 80.01 90)
 			(effects
 				(font
@@ -6788,7 +6886,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C18")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -7028,7 +7126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a70be2c7-10d9-472f-a951-14a4bf47add1")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 182.245 76.2 90)
 			(effects
 				(font
@@ -7125,7 +7223,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -7272,7 +7370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1ee51de-a8b4-4fce-ab9b-730eff8370fb")
-		(property "Reference" "C20"
+		(property "Reference" "C19"
 			(at 196.85 75.565 0)
 			(effects
 				(font
@@ -7369,7 +7467,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C20")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -8106,7 +8204,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3605d80-bcf6-490b-ae30-3a9ad74d407f")
-		(property "Reference" "C19"
+		(property "Reference" "C17"
 			(at 157.48 74.295 90)
 			(effects
 				(font
@@ -8203,7 +8301,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C19")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -8330,7 +8428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d79a8149-e35d-4794-86ac-065a8d957153")
-		(property "Reference" "C15"
+		(property "Reference" "C14"
 			(at 157.48 60.325 90)
 			(effects
 				(font
@@ -8427,7 +8525,7 @@
 		(instances
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
-					(reference "C15")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -8435,7 +8533,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack02")
-		(at 252.73 152.4 270)
+		(at 243.84 144.145 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8443,7 +8541,7 @@
 		(dnp no)
 		(uuid "f2a4b2d6-e266-4937-8c16-3b01ca608683")
 		(property "Reference" "RN12"
-			(at 251.46 143.51 90)
+			(at 242.57 135.255 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8452,7 +8550,7 @@
 			)
 		)
 		(property "Value" "22R"
-			(at 256.54 143.51 90)
+			(at 247.65 135.255 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8461,7 +8559,7 @@
 			)
 		)
 		(property "Footprint" "Common:R_Array_Convex_2x0402_widepads"
-			(at 252.73 156.845 90)
+			(at 243.84 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8470,7 +8568,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-			(at 252.73 152.4 0)
+			(at 243.84 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,7 +8577,7 @@
 			)
 		)
 		(property "Description" "2 resistor network, parallel topology"
-			(at 252.73 152.4 0)
+			(at 243.84 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8488,7 +8586,7 @@
 			)
 		)
 		(property "Manufacturer" "Panasonic"
-			(at 252.73 152.4 0)
+			(at 243.84 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8497,7 +8595,7 @@
 			)
 		)
 		(property "Part Number" "EXB-24V562JX"
-			(at 252.73 152.4 0)
+			(at 243.84 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8527,7 +8625,7 @@
 		)
 	)
 	(sheet
-		(at 260.35 147.701)
+		(at 262.89 139.446)
 		(size 40.64 25.019)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8543,7 +8641,7 @@
 		)
 		(uuid "00000000-0000-0000-0000-00005ea7cbb1")
 		(property "Sheetname" "MRAM"
-			(at 260.35 146.9894 0)
+			(at 262.89 138.7344 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8552,7 +8650,7 @@
 			)
 		)
 		(property "Sheetfile" "../avionics_board/MRAM.kicad_sch"
-			(at 260.35 173.3046 0)
+			(at 262.89 165.0496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8561,7 +8659,7 @@
 			)
 		)
 		(pin "SPI_MOSI" output
-			(at 260.35 152.4 180)
+			(at 262.89 144.145 180)
 			(uuid "d7fefc19-5bf1-44ec-97b2-42bc9ab142d8")
 			(effects
 				(font
@@ -8571,7 +8669,7 @@
 			)
 		)
 		(pin "SPI_MISO" output
-			(at 260.35 156.845 180)
+			(at 262.89 148.59 180)
 			(uuid "a2568c90-84ea-41a8-b2e2-c69ca350925e")
 			(effects
 				(font
@@ -8581,7 +8679,7 @@
 			)
 		)
 		(pin "SPI_CS" output
-			(at 260.35 160.02 180)
+			(at 262.89 151.765 180)
 			(uuid "b0c09e89-ed81-4e32-a325-6d108c42e86c")
 			(effects
 				(font
@@ -8591,7 +8689,7 @@
 			)
 		)
 		(pin "VSS" output
-			(at 260.35 170.815 180)
+			(at 262.89 162.56 180)
 			(uuid "1635ea39-93e7-4e26-befb-5e1ee485a5a5")
 			(effects
 				(font
@@ -8601,7 +8699,7 @@
 			)
 		)
 		(pin "VDD" output
-			(at 260.35 167.64 180)
+			(at 262.89 159.385 180)
 			(uuid "c10f7f61-d503-485d-87ac-5af24fe44578")
 			(effects
 				(font
@@ -8611,7 +8709,7 @@
 			)
 		)
 		(pin "SPI_SCK" input
-			(at 260.35 149.86 180)
+			(at 262.89 141.605 180)
 			(uuid "e83ab7eb-37e9-456b-9acf-b30a6f427569")
 			(effects
 				(font
@@ -8801,7 +8899,7 @@
 		)
 	)
 	(sheet
-		(at 300.355 187.96)
+		(at 63.5 86.995)
 		(size 23.495 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8817,7 +8915,7 @@
 		)
 		(uuid "00000000-0000-0000-0000-00005fedb823")
 		(property "Sheetname" "OSC32_TCXO"
-			(at 300.355 187.2484 0)
+			(at 63.5 86.2834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8826,7 +8924,7 @@
 			)
 		)
 		(property "Sheetfile" "../avionics_board/OSC32_TCXO.kicad_sch"
-			(at 300.355 203.7846 0)
+			(at 63.5 102.8196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8835,7 +8933,7 @@
 			)
 		)
 		(pin "PWR" input
-			(at 300.355 196.215 180)
+			(at 63.5 95.25 180)
 			(uuid "3347b81d-23ba-4928-98f8-76ccd05aed36")
 			(effects
 				(font
@@ -8845,7 +8943,7 @@
 			)
 		)
 		(pin "GND" input
-			(at 300.355 198.755 180)
+			(at 63.5 97.79 180)
 			(uuid "12ce27fd-bc32-4106-b1e5-4730ba22ba52")
 			(effects
 				(font
@@ -8855,7 +8953,7 @@
 			)
 		)
 		(pin "OUT" input
-			(at 300.355 193.675 180)
+			(at 63.5 92.71 180)
 			(uuid "273dcff1-4ffc-453f-b7da-8f45daaea372")
 			(effects
 				(font
@@ -9112,6 +9210,108 @@
 			(project "EPS"
 				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
 					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 263.525 179.705)
+		(size 40.005 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "682960a1-a976-4d44-853a-3532060930ae")
+		(property "Sheetname" "Flash Memory"
+			(at 263.525 178.9934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "../sci_board/flash.kicad_sch"
+			(at 263.525 203.1496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SPI_CLK" input
+			(at 263.525 183.515 180)
+			(uuid "39ee2266-e60e-40fd-81db-a7d5d42b34ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_CS" input
+			(at 263.525 191.135 180)
+			(uuid "7794cd07-dac3-4e01-b1fb-eb8a21b6b44e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MISO" bidirectional
+			(at 263.525 188.595 180)
+			(uuid "624309bf-2f7b-4055-af28-9369e20eae8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MOSI" input
+			(at 263.525 186.055 180)
+			(uuid "5bbdd873-950c-4f07-b98c-1ea7cc78a202")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VDD" input
+			(at 263.525 198.12 180)
+			(uuid "0a5667e6-4212-4908-9a5a-37fd8653f043")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VSS" input
+			(at 263.525 200.66 180)
+			(uuid "1eae62a9-16ba-4ff9-9bc8-ce3ff3235796")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
+					(page "36")
 				)
 			)
 		)

@@ -530,14 +530,14 @@
 		)
 	)
 	(junction
-		(at 64.77 73.025)
+		(at 69.85 73.025)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "846b2abd-8c8d-40ae-9a54-0cdce179a669")
+		(uuid "f265e258-ff52-40a8-9b56-ce5b7ec1f04e")
 	)
 	(wire
 		(pts
-			(xy 60.96 80.645) (xy 72.39 80.645)
+			(xy 67.31 80.645) (xy 72.39 80.645)
 		)
 		(stroke
 			(width 0)
@@ -557,7 +557,17 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 75.565) (xy 72.39 75.565)
+			(xy 67.31 73.025) (xy 69.85 73.025)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bcb3282-946f-4df1-88a0-de974a99b70a")
+	)
+	(wire
+		(pts
+			(xy 67.31 75.565) (xy 72.39 75.565)
 		)
 		(stroke
 			(width 0)
@@ -587,7 +597,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 73.025) (xy 64.77 68.58)
+			(xy 69.85 73.025) (xy 69.85 68.58)
 		)
 		(stroke
 			(width 0)
@@ -597,17 +607,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 75.565) (xy 110.49 75.565)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8365169b-191b-4222-b9e7-4052c41a44d2")
-	)
-	(wire
-		(pts
-			(xy 49.53 78.105) (xy 72.39 78.105)
+			(xy 67.31 78.105) (xy 72.39 78.105)
 		)
 		(stroke
 			(width 0)
@@ -617,27 +617,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 73.025) (xy 72.39 73.025)
+			(xy 69.85 73.025) (xy 72.39 73.025)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0f734c7-fdcc-4f98-a0af-d9abe1136a89")
+		(uuid "ba92dd6f-2fdf-44f6-95ff-2bb987d4a689")
 	)
 	(wire
 		(pts
-			(xy 127.635 75.565) (xy 127 75.565)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae42da49-ca39-4213-9ba8-8d5aa69641fd")
-	)
-	(wire
-		(pts
-			(xy 64.77 60.96) (xy 60.96 60.96)
+			(xy 69.85 60.96) (xy 66.04 60.96)
 		)
 		(stroke
 			(width 0)
@@ -654,16 +644,6 @@
 			(type default)
 		)
 		(uuid "e650b897-53c3-4c97-9eb1-ea64c03070c0")
-	)
-	(wire
-		(pts
-			(xy 60.96 73.025) (xy 64.77 73.025)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffbc9279-520f-465d-b27c-f71da74cd362")
 	)
 	(hierarchical_label "SPI_CLK"
 		(shape input)
@@ -688,8 +668,8 @@
 		(uuid "2003dd2f-896a-4d88-868a-e758a2d86277")
 	)
 	(hierarchical_label "SPI_MISO"
-		(shape bidirectional)
-		(at 60.96 75.565 180)
+		(shape output)
+		(at 67.31 75.565 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -700,7 +680,7 @@
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 60.96 60.96 180)
+		(at 66.04 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -711,7 +691,7 @@
 	)
 	(hierarchical_label "SPI_CS"
 		(shape input)
-		(at 60.96 73.025 180)
+		(at 67.31 73.025 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -733,7 +713,7 @@
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 127.635 75.565 0)
+		(at 110.49 75.565 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -766,7 +746,7 @@
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 41.91 78.105 180)
+		(at 67.31 78.105 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -777,7 +757,7 @@
 	)
 	(hierarchical_label "VSS"
 		(shape input)
-		(at 60.96 80.645 180)
+		(at 67.31 80.645 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -795,7 +775,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "217a63df-0d80-49f2-bee2-723802afaecf")
-		(property "Reference" "C63"
+		(property "Reference" "C59"
 			(at 143.891 70.5866 0)
 			(effects
 				(font
@@ -911,6 +891,12 @@
 		)
 		(instances
 			(project "openlst-hw"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/682960a1-a976-4d44-853a-3532060930ae"
+					(reference "C59")
+					(unit 1)
+				)
+			)
+			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
 					(reference "C91")
 					(unit 1)
@@ -918,11 +904,11 @@
 			)
 			(project "sci_board_wo_switches"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "C64")
+					(reference "C81")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "C63")
+					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -938,7 +924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24390024-185f-4fbe-a57a-a11af97dbbcb")
-		(property "Reference" "U12"
+		(property "Reference" "U18"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -1036,6 +1022,12 @@
 		)
 		(instances
 			(project "openlst-hw"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/682960a1-a976-4d44-853a-3532060930ae"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
 					(reference "U17")
 					(unit 1)
@@ -1043,11 +1035,11 @@
 			)
 			(project "sci_board_wo_switches"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "U13")
+					(reference "U22")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "U12")
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -1055,130 +1047,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 45.72 78.105 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3a598daa-b47d-46e3-aa7b-cd38b1fe8843")
-		(property "Reference" "R22"
-			(at 44.45 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 44.45 76.2 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 45.72 79.883 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "pullup/pulldown"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-07100KL"
-			(at 45.72 78.105 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e04c0d3-070b-42c7-b71f-af665ed73055")
-		)
-		(pin "2"
-			(uuid "505f2de4-7960-419e-a91b-ced10afdf7c2")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
-					(reference "R41")
-					(unit 1)
-				)
-			)
-			(project "sci_board_wo_switches"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R25")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 64.77 64.77 0)
+		(at 69.85 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3f804b8f-d839-4397-8a71-9791fb86446a")
-		(property "Reference" "R20"
-			(at 67.31 63.5 0)
+		(property "Reference" "R33"
+			(at 72.39 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1064,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 66.548 65.913 0)
+			(at 71.628 65.913 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1073,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 62.992 64.77 90)
+			(at 68.072 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1205,7 +1082,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1091,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1223,7 +1100,7 @@
 			)
 		)
 		(property "Note" "pullup/pulldown"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1109,7 @@
 			)
 		)
 		(property "Tolerance" "1"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1241,7 +1118,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,7 +1127,7 @@
 			)
 		)
 		(property "Part Number" "RC0402FR-07100KL"
-			(at 64.77 64.77 0)
+			(at 69.85 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1266,6 +1143,12 @@
 		)
 		(instances
 			(project "openlst-hw"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/682960a1-a976-4d44-853a-3532060930ae"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+			(project "openlst-hw"
 				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
 					(reference "R39")
 					(unit 1)
@@ -1273,126 +1156,11 @@
 			)
 			(project "sci_board_wo_switches"
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R23")
+					(reference "R27")
 					(unit 1)
 				)
 				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 123.19 75.565 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47081f18-270b-4bd0-982c-e5c1bbd1a4f7")
-		(property "Reference" "R21"
-			(at 121.92 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 121.92 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 123.19 77.343 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" "pullup/pulldown"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "1"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "RC0402FR-07100KL"
-			(at 123.19 75.565 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4223e4de-f657-4d84-91bf-0b3912c06fde")
-		)
-		(pin "2"
-			(uuid "acab6eff-07fc-40df-a7fc-701ae851f944")
-		)
-		(instances
-			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/b9f0274a-ffb6-4101-9729-5e363cf887cd"
-					(reference "R40")
-					(unit 1)
-				)
-			)
-			(project "sci_board_wo_switches"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/1e53aba3-dd28-4d46-80f1-455dd7d8f930"
-					(reference "R24")
-					(unit 1)
-				)
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/f6b358f0-c3e5-4f27-97bc-30bc2986accd"
-					(reference "R21")
+					(reference "R26")
 					(unit 1)
 				)
 			)

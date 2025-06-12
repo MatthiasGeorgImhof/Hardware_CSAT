@@ -9,3 +9,8 @@
     (condition "A.Type == 'via' && B.Type == 'via'")
     (constraint physical_hole_clearance (min 0.1mm))
     )
+
+(rule "pad_to_pad"
+    (condition "A.Type == 'pad' && B.Type == 'pad'")
+    (constraint clearance (min 0.2mm))
+    )

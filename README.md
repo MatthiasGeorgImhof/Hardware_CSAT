@@ -9,7 +9,7 @@ Hardware design files 1 cubesat:
   - IMU and magnetometer
   - sun detectors
   - magnetorquer control
-- [Science board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/sci_board)
+- [Science board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/sci_board_wo_switches)
   - cameras and imagers
 - [Communication board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/openlst-hw)
   - 435 MHz link

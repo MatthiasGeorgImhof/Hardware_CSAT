@@ -1,6 +1,6 @@
 # Hardware_CSAT
 
-Hardware design files 1 cubesat:
+Hardware design files for 1x cubesat:
 - [EPS board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/eps_board)
   - batteries and battery management for solar cells charging
   - voltage regulatars

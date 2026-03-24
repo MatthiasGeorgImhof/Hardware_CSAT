@@ -1608,6 +1608,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Swapped SDA and SCL"
+		(exclude_from_sim no)
+		(at 95.25 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4d054b3c-fcdf-4c8f-a4e6-4819e1550477")
+	)
 	(junction
 		(at 221.615 159.385)
 		(diameter 0)
@@ -1673,6 +1683,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f96621e6-6ac2-4f3b-a0c2-652e95e2e719")
+	)
+	(no_connect
+		(at 142.24 158.115)
+		(uuid "aeed3ad7-8b79-4db9-9b93-da5e533427bb")
+	)
+	(no_connect
+		(at 142.24 160.655)
+		(uuid "cd29d771-a998-4dd2-8692-e8aff4e9e9ad")
 	)
 	(wire
 		(pts
@@ -3602,7 +3620,7 @@
 	)
 	(hierarchical_label "I2C_SCK"
 		(shape input)
-		(at 107.95 161.29 180)
+		(at 107.95 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3811,7 +3829,7 @@
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape input)
-		(at 107.95 163.83 180)
+		(at 107.95 161.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8118,6 +8136,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "I2C_SCK_D" output
+			(at 142.24 158.115 0)
+			(uuid "29dafa89-56d4-4dca-b520-2312139613e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SDA_D" bidirectional
+			(at 142.24 160.655 0)
+			(uuid "c4adb5f7-7314-4958-b8ac-c4c8bcc8ca44")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

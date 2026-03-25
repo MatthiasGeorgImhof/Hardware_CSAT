@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.6096,
-          "width": 2.1082
+          "drill": 4.3,
+          "height": 7.5,
+          "width": 7.5
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -143,7 +143,7 @@
         "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -486,7 +486,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "openlst-hw.kicad_pro",
+    "filename": "comm_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1026,6 +1026,36 @@
           "label": "Temperature Coefficient",
           "name": "Temperature Coefficient",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -1081,12 +1111,8 @@
       "Root"
     ],
     [
-      "f5534efb-fc6e-465a-a57b-daca63f2ce0c",
-      "MCU"
-    ],
-    [
-      "d6d0e934-53b0-468d-8d79-aec6d2c37df2",
-      "RF"
+      "d79182f6-05b1-430d-80fa-5059fd71383c",
+      "SPI_LAN"
     ],
     [
       "0626f4ed-250b-407a-9d18-c746696be78b",
@@ -1111,10 +1137,6 @@
     [
       "158b6ecf-5b25-4ecb-8b1c-83236ab855da",
       "Power Switch"
-    ],
-    [
-      "c171d91e-9701-4504-a2fc-7e1958ded09e",
-      "SPI_LAN"
     ],
     [
       "a96e8afd-8b3c-4e12-820c-86caa1a14769",
@@ -1155,6 +1177,18 @@
     [
       "0653e279-5ac5-4fd5-819c-e8ef4edad0cf",
       "Dual Switch3"
+    ],
+    [
+      "cdf29bef-ab1b-4d91-9ee5-f57b74d23019",
+      "Flash"
+    ],
+    [
+      "113c7673-2657-4fe9-b65a-3a1a0fef4100",
+      "RF_915MHz"
+    ],
+    [
+      "93c2e394-b29d-4d97-9ea8-78e4d8e9c3c1",
+      "PW_RF_915MHz"
     ]
   ],
   "text_variables": {}

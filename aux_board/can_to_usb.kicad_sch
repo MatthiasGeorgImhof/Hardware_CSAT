@@ -2299,6 +2299,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 205.74 142.24)
@@ -3056,6 +3157,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 83.82) (xy 265.43 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a054619-ac63-41cd-b142-129ee05c4a1c")
+	)
+	(wire
+		(pts
 			(xy 140.97 130.81) (xy 139.065 130.81)
 		)
 		(stroke
@@ -3093,6 +3204,16 @@
 			(type default)
 		)
 		(uuid "949c50cb-87bf-456f-83c9-07e23c54dd1e")
+	)
+	(wire
+		(pts
+			(xy 265.43 79.375) (xy 266.7 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "971cddba-ac59-463d-9113-3c8f72452a42")
 	)
 	(wire
 		(pts
@@ -3286,6 +3407,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 81.28) (xy 266.7 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c283d985-f6e3-4e0e-86be-63d6d40cd04b")
+	)
+	(wire
+		(pts
 			(xy 189.865 111.76) (xy 193.04 111.76)
 		)
 		(stroke
@@ -3303,6 +3434,16 @@
 			(type default)
 		)
 		(uuid "ca6379e4-3eee-416f-867e-5c8cf0e092e3")
+	)
+	(wire
+		(pts
+			(xy 265.43 81.28) (xy 266.7 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb1de4f7-bdab-415f-a831-310593195055")
 	)
 	(wire
 		(pts
@@ -4340,6 +4481,17 @@
 		)
 		(uuid "5f794e92-d8c3-4b76-b486-9afe67703995")
 	)
+	(hierarchical_label "VBUS1"
+		(shape input)
+		(at 273.685 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c256ee3-2985-4991-84cb-35ea5e503b14")
+	)
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 90.805 122.555 180)
@@ -4485,7 +4637,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 265.43 83.82 0)
+		(at 266.7 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4584,7 +4736,7 @@
 	)
 	(hierarchical_label "VBUS1"
 		(shape input)
-		(at 265.43 81.28 0)
+		(at 266.7 79.375 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5434,6 +5586,73 @@
 			(project "aux_board"
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 273.685 96.52 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fb25fde-640c-4b61-9b0d-13085b99cbdc")
+		(property "Reference" "#FLG07"
+			(at 271.78 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 270.51 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.685 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.685 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 273.685 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3195dc0-40c3-406f-ac4a-e9caf0211fe7")
+		)
+		(instances
+			(project ""
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0"
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -6601,7 +6820,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/DEBUG_INTERFACE.kicad_sch"
+		(property "Sheetfile" "../common/sheets/DEBUG_INTERFACE.kicad_sch"
 			(at 92.71 145.3646 0)
 			(effects
 				(font
@@ -6773,7 +6992,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/CAN_TRANSCEIVER.kicad_sch"
+		(property "Sheetfile" "../common/sheets/CAN_TRANSCEIVER.kicad_sch"
 			(at 25.4 76.1496 0)
 			(effects
 				(font
@@ -6997,7 +7216,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/CAN_TRANSCEIVER.kicad_sch"
+		(property "Sheetfile" "../common/sheets/CAN_TRANSCEIVER.kicad_sch"
 			(at 25.4 102.1846 0)
 			(effects
 				(font
@@ -7118,14 +7337,13 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/OSC_HSE_TCXO.kicad_sch"
-			(at 120.015 71.12 0)
+		(property "Sheetfile" "../common/sheets/OSC_HSE_TCXO.kicad_sch"
+			(at 105.41 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "OE" input
@@ -7201,14 +7419,13 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/boot.kicad_sch"
+		(property "Sheetfile" "../common/sheets/boot.kicad_sch"
 			(at 162.56 68.5296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "VIO" input
@@ -7274,7 +7491,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../avionics_board/OSC32_TCXO.kicad_sch"
+		(property "Sheetfile" "../common/sheets/OSC32_TCXO.kicad_sch"
 			(at 169.545 114.8846 0)
 			(effects
 				(font
@@ -7448,7 +7665,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb.kicad_sch"
+		(property "Sheetfile" "../common/sheets/USB.kicad_sch"
 			(at 252.73 86.9446 0)
 			(effects
 				(font
@@ -7487,9 +7704,19 @@
 				(justify left)
 			)
 		)
-		(pin "VBUS" output
+		(pin "VBUS1" output
 			(at 265.43 81.28 0)
-			(uuid "7325a0ff-c393-4ae1-8b13-52321842749f")
+			(uuid "e7644126-2f2c-4981-870e-dc57cb12eb98")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBUS2" output
+			(at 265.43 79.375 0)
+			(uuid "b93f5831-a1f5-4fbc-a787-32ed93e66bc6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7530,14 +7757,13 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "../sci_board/reset.kicad_sch"
+		(property "Sheetfile" "../common/sheets/reset.kicad_sch"
 			(at 162.56 58.3696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "GND" input

@@ -2,53 +2,52 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "3b411d25-2562-41c1-b3d5-a001cbcff12a")
+	(uuid "069d5d17-0c6c-426b-b78f-960ffa26b084")
 	(paper "A")
 	(title_block
-		(title "10MHz TCXO")
+		(title "32kHz TCXO")
 		(date "2020-05-25")
 	)
 	(lib_symbols
-		(symbol "Common:ECS-TXO-2016-33-100-TR"
+		(symbol "Common:ECS-2520MVLC"
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "X"
-				(at -15.2838 8.1513 0)
+				(at 12.192 8.382 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "ECS-TXO-2016-33-100-TR"
-				(at -15.2592 -12.716 0)
+			(property "Value" "TG2520SMN EPS"
+				(at 12.192 5.842 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "ECS-TXO-2016-33-100-TR:OSC_ECS-1618-300-BN-TR"
-				(at 0 0 0)
+			(property "Footprint" "TG2520_EPS"
+				(at 7.112 14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 0 0 0)
+			(property "Datasheet" "TG2520SMN EPS"
+				(at 8.382 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
@@ -62,108 +61,104 @@
 					(hide yes)
 				)
 			)
-			(property "STANDARD" "MANUFACTURER RECOMMENDATIONS"
+			(property "ki_keywords" "TG2520SMN 32.0000M-ECGNNM3"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "ECS INC"
+			(property "ki_fp_filters" "TG2520_EPS"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "ECS-TXO-2016-33-100-TR_0_0"
+			(symbol "ECS-2520MVLC_1_1"
 				(rectangle
-					(start -15.24 7.62)
-					(end 15.24 -10.16)
+					(start 7.62 3.81)
+					(end 16.51 -5.08)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type background)
 					)
 				)
-				(pin input line
-					(at -20.32 -2.54 0)
-					(length 5.08)
-					(name "TRI-STATE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 2.54 180)
-					(length 5.08)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin power_in line
-					(at 20.32 -7.62 180)
-					(length 5.08)
-					(name "GND"
+					(at 0 1.27 0)
+					(length 7.62)
+					(name "VCC"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(symbol "ECS-TXO-2016-33-100-TR_1_0"
-				(pin power_in line
-					(at -20.32 2.54 0)
-					(length 5.08)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 24.13 1.27 180)
+					(length 7.62)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 24.13 -2.54 180)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -312,146 +307,146 @@
 		)
 	)
 	(junction
-		(at 182.88 107.95)
+		(at 129.54 127.635)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9d07ad61-64b7-4b16-a928-65cd366c30e9")
+		(uuid "cf6bd463-8796-4145-81c3-e9f12df801af")
+	)
+	(junction
+		(at 129.54 120.015)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d75a8fd7-d4bf-4001-936e-ed2c857afec8")
 	)
 	(wire
 		(pts
-			(xy 184.785 107.95) (xy 182.88 107.95)
+			(xy 129.54 127.635) (xy 127.635 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b972551-8098-4e76-8488-70bc47bb2f81")
+		(uuid "33c73993-37ed-4013-9c76-480bbf871ff8")
 	)
 	(wire
 		(pts
-			(xy 182.88 116.205) (xy 184.785 116.205)
+			(xy 137.16 125.73) (xy 137.16 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "295f9f12-4c1e-413c-a17d-a47b881ee1e0")
+		(uuid "3ddcb0e9-aa9e-47c1-84ca-14766e7ece7c")
 	)
 	(wire
 		(pts
-			(xy 182.88 115.57) (xy 182.88 116.205)
+			(xy 137.16 127.635) (xy 129.54 127.635)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6bbe8f72-687e-450b-84c5-12cc4918f82e")
+		(uuid "67230b87-bfca-4840-8ef8-927bfc3076a1")
 	)
 	(wire
 		(pts
-			(xy 182.88 107.95) (xy 174.625 107.95)
+			(xy 137.16 120.015) (xy 137.16 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "927550f9-1801-4f63-98e1-1623eb57de25")
+		(uuid "80eb1ef2-a823-4c03-a7de-81dba1fb1181")
 	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 184.785 116.205 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 127.635 120.015) (xy 129.54 120.015)
 		)
-		(uuid "3afa325b-eef5-4066-8f96-757a3a819910")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a72c0e0-356a-4cca-ba2e-ad83366ccd3f")
 	)
-	(hierarchical_label "OE"
-		(shape input)
-		(at 174.625 113.03 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 129.54 120.015) (xy 137.16 120.015)
 		)
-		(uuid "bc46c9cd-b38d-4e50-91c4-7b525bbcbd0d")
-	)
-	(hierarchical_label "GND"
-		(shape input)
-		(at 133.985 118.11 180)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(uuid "da656f68-cf2c-43d0-80cc-943d027fbf57")
+		(uuid "ecc226cc-1355-4ef8-9f81-d4b0c4985fea")
 	)
 	(hierarchical_label "PWR"
 		(shape input)
-		(at 184.785 107.95 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "f9dce1ff-619c-4849-ab48-5569bd2ee9ae")
-	)
-	(hierarchical_label "OUT"
-		(shape input)
-		(at 133.985 107.95 180)
+		(at 127.635 120.015 180)
 		(effects
 			(font
 				(size 1.524 1.524)
 			)
 			(justify right)
 		)
-		(uuid "ff47b58a-9e08-4a3a-a7f6-b0ea4a73fc77")
+		(uuid "c1504ed5-78fa-40b9-9797-4568994d15a5")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 127.635 127.635 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "ff9aa1c9-6540-4813-bece-6cf351a2328d")
+	)
+	(hierarchical_label "OUT"
+		(shape input)
+		(at 161.29 121.92 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "ffcecf80-0348-4acd-91cb-5e56254524f7")
 	)
 	(symbol
-		(lib_id "Common:ECS-TXO-2016-33-100-TR")
-		(at 154.305 110.49 0)
-		(mirror y)
+		(lib_id "Common:ECS-2520MVLC")
+		(at 137.16 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060074db6")
+		(uuid "00000000-0000-0000-0000-00005fedc1f7")
 		(property "Reference" "X2"
-			(at 153.67 99.06 0)
+			(at 157.48 113.665 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "10MHz"
-			(at 148.59 101.6 0)
+		(property "Value" "32.768KHZ"
+			(at 157.48 116.205 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm"
-			(at 154.305 110.49 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-2520MVLC.pdf"
-			(at 154.305 110.49 0)
+		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-327MVATX.pdf"
+			(at 139.7 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -460,25 +455,7 @@
 			)
 		)
 		(property "Description" "Oscillator"
-			(at 154.305 110.49 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 154.305 110.49 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Color" ""
-			(at 154.305 110.49 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -487,7 +464,7 @@
 			)
 		)
 		(property "Manufacturer" "ECS"
-			(at 154.305 110.49 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -495,8 +472,8 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "ECS-2520MVLC-100-CN-TR"
-			(at 154.305 110.49 0)
+		(property "Part Number" "ECS-327MVATX-2-CN-TR3"
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -505,7 +482,7 @@
 			)
 		)
 		(property "Alt" ""
-			(at 154.305 110.49 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -514,7 +491,7 @@
 			)
 		)
 		(property "Tolerance" "25ppm"
-			(at 154.305 110.49 0)
+			(at 137.16 123.19 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -522,46 +499,46 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "cca601e2-63eb-4778-b0a4-77dcf4db8a01")
-		)
 		(pin "2"
-			(uuid "bee518f0-d316-4426-88de-3b72c0ac228c")
+			(uuid "7f48345d-2195-4668-af97-e3ed9c1f97a9")
 		)
 		(pin "3"
-			(uuid "6fcc358f-4f58-4d7d-8751-4b324a17d4bf")
+			(uuid "1be0df3d-1670-4db3-96c9-b34d92626c4c")
 		)
 		(pin "4"
-			(uuid "a5e44012-db81-42fd-a2c9-bc65671c5fd9")
+			(uuid "d67ca872-4b46-4a76-a44d-26bdcb681c0f")
+		)
+		(pin "1"
+			(uuid "c557eb4e-c6d2-45a9-991a-f7fbc1a8760b")
 		)
 		(instances
 			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/472d7eb2-dc66-4c59-afee-a04cc39a6bc9"
-					(reference "X2")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/00000000-0000-0000-0000-00005fedb823"
+					(reference "X1")
 					(unit 1)
 				)
 			)
 			(project "aux_board"
-				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
-					(reference "X1")
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/af693d39-031b-43ec-ba62-61057858f334"
+					(reference "X2")
 					(unit 1)
 				)
 			)
 			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/0626f4ed-250b-407a-9d18-c746696be78b"
-					(reference "X2")
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/49259889-dfb0-48da-bee7-89a24c8c9a64"
+					(reference "X3")
 					(unit 1)
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f03967bc-d0fd-41f7-bf23-ddb6554c2ae1"
-					(reference "X2")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9565b29f-739e-499d-a066-98bd4c80d38b"
+					(reference "X3")
 					(unit 1)
 				)
 			)
 			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "X1")
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c56a"
+					(reference "X2")
 					(unit 1)
 				)
 			)
@@ -569,15 +546,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 182.88 111.76 0)
+		(at 129.54 123.825 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000600759a7")
-		(property "Reference" "C59"
-			(at 185.801 110.5916 0)
+		(uuid "00000000-0000-0000-0000-00005fede147")
+		(property "Reference" "C44"
+			(at 132.461 122.6566 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -586,7 +563,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 185.801 112.903 0)
+			(at 132.461 124.968 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -595,7 +572,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 183.8452 115.57 0)
+			(at 130.5052 127.635 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -604,7 +581,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -613,7 +590,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -622,25 +599,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 182.88 111.76 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Load Capacitance" ""
-			(at 182.88 111.76 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Amps" ""
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -649,16 +608,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 182.88 111.76 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Note" ""
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -667,7 +617,7 @@
 			)
 		)
 		(property "Color" ""
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -676,7 +626,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -685,7 +635,7 @@
 			)
 		)
 		(property "Part Number" "GRM155R61E104KA87D"
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -694,7 +644,7 @@
 			)
 		)
 		(property "Alt" ""
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -703,7 +653,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 182.88 111.76 0)
+			(at 129.54 123.825 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -712,39 +662,39 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec51545a-dd14-45dd-b8ff-94707c0d01f7")
+			(uuid "587e9a01-9248-4edd-ae07-8b5a17a3eabf")
 		)
 		(pin "2"
-			(uuid "59b39b0b-76f0-4df7-a308-64d12f914268")
+			(uuid "d42bf0e4-f0e7-4ce3-a4aa-7b1bb7b8b3c4")
 		)
 		(instances
 			(project "EPS"
-				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/472d7eb2-dc66-4c59-afee-a04cc39a6bc9"
-					(reference "C97")
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6/00000000-0000-0000-0000-00005fedb823"
+					(reference "C27")
 					(unit 1)
 				)
 			)
 			(project "aux_board"
-				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/84780269-b8cb-44bc-ab72-b0ed2668fd84"
-					(reference "C30")
+				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/af693d39-031b-43ec-ba62-61057858f334"
+					(reference "C32")
 					(unit 1)
 				)
 			)
 			(project "openlst-hw"
-				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/0626f4ed-250b-407a-9d18-c746696be78b"
-					(reference "C17")
+				(path "/a863a5ec-a5d4-4f54-be53-e8c01d5e3ac4/53f12969-e593-459a-9671-cc23a5a9aea0/f4ff56ce-2fa2-4b99-a709-c113709260c1/49259889-dfb0-48da-bee7-89a24c8c9a64"
+					(reference "C48")
 					(unit 1)
 				)
 			)
 			(project "sci_board"
-				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/f03967bc-d0fd-41f7-bf23-ddb6554c2ae1"
-					(reference "C59")
+				(path "/b4b2c88d-f6cd-4e60-862d-e21f68728580/840799ac-4fe6-4a8e-96a2-299affeec8e4/9565b29f-739e-499d-a066-98bd4c80d38b"
+					(reference "C60")
 					(unit 1)
 				)
 			)
 			(project "AVIONICS_BOARD"
-				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-0000600564fd"
-					(reference "C41")
+				(path "/f6cc00ab-17f1-4973-862f-7ac95fe70668/00000000-0000-0000-0000-00005ea31c93/00000000-0000-0000-0000-00006310c56a"
+					(reference "C44")
 					(unit 1)
 				)
 			)

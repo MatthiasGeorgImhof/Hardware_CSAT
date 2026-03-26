@@ -11,8 +11,8 @@ Hardware design files for 1x cubesat:
   - magnetorquer control
 - [Science board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/sci_board_wo_switches)
   - cameras and imagers
-- [Communication board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/openlst-hw)
-  - 435 MHz link
+- [Communication board](https://github.com/MatthiasGeorgImhof/Hardware_CSAT/tree/master/comm_board)
+  - 915 MHz link
   - ethernet port for satelite modem
 
 In addition, there is also

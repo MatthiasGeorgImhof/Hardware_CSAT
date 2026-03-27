@@ -3890,10 +3890,22 @@
 		(uuid "d61bdae8-a676-4cc7-8ffc-d014919a738f")
 	)
 	(junction
+		(at 142.24 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7af65de-a50f-46e6-b901-34e5280adc7f")
+	)
+	(junction
 		(at 179.07 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1ec9883-15d5-4e65-bd5c-cdef6f68de95")
+	)
+	(junction
+		(at 142.24 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3c6bd64-6ba9-4fe8-b25d-829a00da5f3b")
 	)
 	(junction
 		(at 161.29 83.185)
@@ -4213,6 +4225,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 100.33) (xy 147.32 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334e871c-9d7e-4e2f-ad9b-e8db18fdb7ee")
+	)
+	(wire
+		(pts
 			(xy 374.65 130.81) (xy 360.68 130.81)
 		)
 		(stroke
@@ -4293,7 +4315,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.065 100.33) (xy 147.32 100.33)
+			(xy 132.715 100.33) (xy 142.24 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4353,7 +4375,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.065 105.41) (xy 147.32 105.41)
+			(xy 132.715 105.41) (xy 142.24 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4780,6 +4802,16 @@
 			(type default)
 		)
 		(uuid "b6b2af4e-93c1-4493-a1ce-e593685897e4")
+	)
+	(wire
+		(pts
+			(xy 142.24 105.41) (xy 147.32 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac581a7-bfd9-4624-8566-c23c271ba2b6")
 	)
 	(wire
 		(pts
@@ -5372,7 +5404,7 @@
 		(uuid "66f3a631-fb81-4978-bd1c-69da0af76c8a")
 	)
 	(label "VREF+"
-		(at 139.065 100.33 180)
+		(at 132.715 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6429,7 +6461,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 139.065 105.41 180)
+		(at 132.715 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7307,6 +7339,119 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 142.24 102.87 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c6a3db5-dc60-43ba-b1aa-412b91152916")
+		(property "Reference" "C112"
+			(at 146.05 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 146.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R61E104KA87-01.pdf"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "25"
+			(at 140.97 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "GRM155R61E104KA87D"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "10"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperture Coefficient" "X5R"
+			(at 142.24 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9a0fdf7-5d41-4b07-993e-75b2f4ce540c")
+		)
+		(pin "2"
+			(uuid "04eea383-12d9-4b77-a93c-548002f97fd3")
+		)
+		(instances
+			(project "EPS"
+				(path "/05170af6-30ef-4c3a-b972-f098085da1bc/00000000-0000-0000-0000-00005fbffcb6"
+					(reference "C112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 203.2 81.915 0)
 		(mirror x)
 		(unit 1)
@@ -7532,7 +7677,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 139.065 102.87 180)
+		(at 132.715 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7540,7 +7685,7 @@
 		(dnp no)
 		(uuid "8de854e4-878f-4a2e-8a85-638869606c07")
 		(property "Reference" "C26"
-			(at 143.51 104.14 0)
+			(at 137.16 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7548,7 +7693,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 143.51 101.6 0)
+			(at 137.16 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7556,7 +7701,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7565,7 +7710,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61E106KA73-01.pdf"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,7 +7719,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7583,7 +7728,7 @@
 			)
 		)
 		(property "Voltage" "25"
-			(at 142.875 102.87 0)
+			(at 136.525 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7592,7 +7737,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7601,7 +7746,7 @@
 			)
 		)
 		(property "Part Number" "GRM188R61E106KA73D"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7610,7 +7755,7 @@
 			)
 		)
 		(property "Tolerance" "10"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7619,7 +7764,7 @@
 			)
 		)
 		(property "Temperture Coefficient" "X5R"
-			(at 139.065 102.87 0)
+			(at 132.715 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)

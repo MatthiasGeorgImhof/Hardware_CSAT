@@ -1,7 +1,7 @@
 (footprint "AMPHENOL_10155435-00011LF"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at -1.62 -8.405 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d950a62b-a9a4-436a-90e8-5493084a2fa2")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -212,7 +200,7 @@
 		(drill
 			(offset 0 -0.1)
 		)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "599414cc-d974-46cc-9004-61d8c936f6ef")
 	)
 	(pad "A4_B9" smd rect
@@ -221,31 +209,31 @@
 		(drill
 			(offset 0 -0.1)
 		)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "59e54e8f-d39f-4d1e-a7b4-5a0c0c095226")
 	)
 	(pad "A5" smd rect
 		(at -1.25 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "47a50437-9751-4165-a46a-3fdb89eac4d8")
 	)
 	(pad "A6" smd rect
 		(at -0.25 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "ccf9198c-df3f-410b-a614-bec60337b2ae")
 	)
 	(pad "A7" smd rect
 		(at 0.25 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "f462eae8-2f54-4b07-966c-8cdfb0ec3962")
 	)
 	(pad "A8" smd rect
 		(at 1.25 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "dd24b8f5-70e7-4d08-a21c-84352b7f0098")
 	)
 	(pad "B1_A12" smd rect
@@ -254,7 +242,7 @@
 		(drill
 			(offset 0 -0.1)
 		)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "fe61dc34-d5c5-45ae-a925-8b0847b69608")
 	)
 	(pad "B4_A9" smd rect
@@ -263,31 +251,31 @@
 		(drill
 			(offset 0 -0.1)
 		)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "6f492a93-249f-4f61-9486-f9c2493e677d")
 	)
 	(pad "B5" smd rect
 		(at 1.75 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "e323ca2b-3717-407a-a4eb-64cebfcbd470")
 	)
 	(pad "B6" smd rect
 		(at 0.75 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "4cd7a314-8cc0-4d8f-a26f-7890199ef32e")
 	)
 	(pad "B7" smd rect
 		(at -0.75 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "d1757a96-7656-45ed-9bcf-cc591029b031")
 	)
 	(pad "B8" smd rect
 		(at -1.75 -4.75)
 		(size 0.3 1.14)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "27cd7a3b-bb2c-4bcd-a757-b34d67aedcc9")
 	)
 	(pad "SH1" thru_hole oval
@@ -326,7 +314,8 @@
 		(solder_mask_margin 0.075)
 		(uuid "a9d64831-9d13-4cb9-8847-62cd81ab8108")
 	)
-	(model "/home/mgi/Data/kicad/3rdParty/rgw3d/1KCubeSat_Hardware/common/step3d/10155435-00011LF.step"
+	(embedded_fonts no)
+	(model "/home/mgi/Data/kicad/Hardware_CSAT/common/step3d/10155435-00011LF.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -334,7 +323,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

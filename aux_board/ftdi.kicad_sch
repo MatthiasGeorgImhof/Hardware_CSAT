@@ -1443,6 +1443,26 @@
 	)
 	(wire
 		(pts
+			(xy 79.375 93.98) (xy 79.375 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e1f662-977f-4715-9163-6cd0c67cf9d0")
+	)
+	(wire
+		(pts
+			(xy 79.375 93.98) (xy 81.915 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6f04a6-34a3-4772-84e0-8548dd9fa62d")
+	)
+	(wire
+		(pts
 			(xy 170.815 76.835) (xy 182.245 76.835)
 		)
 		(stroke
@@ -1510,6 +1530,16 @@
 			(type default)
 		)
 		(uuid "d1063933-8abf-4698-b238-fe636c3d5d16")
+	)
+	(wire
+		(pts
+			(xy 79.375 96.52) (xy 81.915 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbbd8c2-525f-4894-a598-6c687b83f63b")
 	)
 	(wire
 		(pts
@@ -1657,12 +1687,12 @@
 	)
 	(hierarchical_label "VUSB"
 		(shape output)
-		(at 94.615 93.98 0)
+		(at 79.375 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "9aa61946-b481-48b2-805b-cd9285b13df7")
 	)
@@ -2888,7 +2918,7 @@
 					(unit 1)
 				)
 				(path "/85134265-2435-454a-99c4-e49d8e69c5c2/490a0c5b-9225-4953-ad7a-fe6abb29cde0/d0d594aa-f069-4758-ae70-ed6ba42e7e43"
-					(reference "#FLG06")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -3914,7 +3944,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb.kicad_sch"
+		(property "Sheetfile" "../common/sheets/USB.kicad_sch"
 			(at 81.915 98.3746 0)
 			(effects
 				(font
@@ -3926,16 +3956,6 @@
 		(pin "GND" input
 			(at 94.615 96.52 0)
 			(uuid "46b602b6-f31b-4368-be9f-103ada713742")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VBUS" output
-			(at 94.615 93.98 0)
-			(uuid "2710e329-4582-4c6c-91a9-d9412c73408c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3961,6 +3981,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VBUS1" output
+			(at 81.915 93.98 180)
+			(uuid "f3a7b37c-d439-4cb3-8ba6-b8dda911ecd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBUS2" output
+			(at 81.915 96.52 180)
+			(uuid "58a2f7ac-2d26-4fcb-9eb3-589dc338c092")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

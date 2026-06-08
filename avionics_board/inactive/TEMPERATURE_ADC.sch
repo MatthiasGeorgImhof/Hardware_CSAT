@@ -1,0 +1,223 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 12 23
+Title "Temperature Sensors"
+Date "2020-05-05"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1600 1250 0    50   Input ~ 0
+VDD
+$Sheet
+S 4175 1925 950  600 
+U 5EB419EE
+F0 "NTC_THERMISTOR" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 4175 2200 50 
+F3 "VDD" I L 4175 2100 50 
+F4 "VOUT" O L 4175 2400 50 
+$EndSheet
+$Sheet
+S 4175 2850 950  600 
+U 5EC0237F
+F0 "sheet5EC0237A" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 4175 3125 50 
+F3 "VDD" I L 4175 3025 50 
+F4 "VOUT" O L 4175 3325 50 
+$EndSheet
+$Sheet
+S 4175 3775 950  600 
+U 5EC02646
+F0 "sheet5EC02640" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 4175 4050 50 
+F3 "VDD" I L 4175 3950 50 
+F4 "VOUT" O L 4175 4250 50 
+$EndSheet
+$Sheet
+S 4175 4700 950  600 
+U 5EC0264B
+F0 "sheet5EC02641" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 4175 4975 50 
+F3 "VDD" I L 4175 4875 50 
+F4 "VOUT" O L 4175 5175 50 
+$EndSheet
+$Sheet
+S 6600 1950 950  600 
+U 5EC02E34
+F0 "sheet5EC02E2C" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 6600 2225 50 
+F3 "VDD" I L 6600 2125 50 
+F4 "VOUT" O L 6600 2425 50 
+$EndSheet
+$Sheet
+S 6600 2875 950  600 
+U 5EC02E39
+F0 "sheet5EC02E2D" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 6600 3150 50 
+F3 "VDD" I L 6600 3050 50 
+F4 "VOUT" O L 6600 3350 50 
+$EndSheet
+$Sheet
+S 6600 3800 950  600 
+U 5EC02E3E
+F0 "sheet5EC02E2E" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 6600 4075 50 
+F3 "VDD" I L 6600 3975 50 
+F4 "VOUT" O L 6600 4275 50 
+$EndSheet
+$Sheet
+S 6600 4725 950  600 
+U 5EC02E43
+F0 "sheet5EC02E2F" 50
+F1 "NTC_THERMISTOR.sch" 50
+F2 "VSS" I L 6600 5000 50 
+F3 "VDD" I L 6600 4900 50 
+F4 "VOUT" O L 6600 5200 50 
+$EndSheet
+Wire Wire Line
+	4000 2200 4175 2200
+Text HLabel 4000 2400 0    50   Output ~ 0
+OUT1
+Wire Wire Line
+	4000 2400 4175 2400
+Wire Wire Line
+	4000 3125 4175 3125
+Text HLabel 4000 3325 0    50   Output ~ 0
+OUT2
+Wire Wire Line
+	4000 3325 4175 3325
+Wire Wire Line
+	4000 4050 4175 4050
+Text HLabel 4000 4250 0    50   Output ~ 0
+OUT3
+Wire Wire Line
+	4000 4250 4175 4250
+Wire Wire Line
+	4000 4975 4175 4975
+Text HLabel 4000 5175 0    50   Output ~ 0
+OUT4
+Wire Wire Line
+	4000 5175 4175 5175
+Wire Wire Line
+	6425 2225 6600 2225
+Text HLabel 6425 2425 0    50   Output ~ 0
+OUT5
+Wire Wire Line
+	6425 2425 6600 2425
+Wire Wire Line
+	6425 3150 6600 3150
+Text HLabel 6425 3350 0    50   Output ~ 0
+OUT6
+Wire Wire Line
+	6425 3350 6600 3350
+Wire Wire Line
+	6425 4075 6600 4075
+Text HLabel 6425 4275 0    50   Output ~ 0
+OUT7
+Wire Wire Line
+	6425 4275 6600 4275
+Wire Wire Line
+	6425 5000 6600 5000
+Text HLabel 6425 5200 0    50   Output ~ 0
+OUT8
+Wire Wire Line
+	6425 5200 6600 5200
+Text Notes 3475 2250 0    118  ~ 0
+1
+Text Notes 3475 3200 0    118  ~ 0
+2
+Text Notes 3450 4100 0    118  ~ 0
+3
+Text Notes 3475 5000 0    118  ~ 0
+4
+Text Notes 5950 2275 0    118  ~ 0
+5
+Text Notes 5950 3200 0    118  ~ 0
+6
+Text Notes 6000 4125 0    118  ~ 0
+7
+Text Notes 6000 5025 0    118  ~ 0
+8
+Text HLabel 4000 2200 0    50   Input ~ 0
+GND
+Text HLabel 4000 3125 0    50   Input ~ 0
+GND
+Text HLabel 4000 4050 0    50   Input ~ 0
+GND
+Text HLabel 4000 4975 0    50   Input ~ 0
+GND
+Text HLabel 6425 5000 0    50   Input ~ 0
+GND
+Text HLabel 6425 4075 0    50   Input ~ 0
+GND
+Text HLabel 6425 3150 0    50   Input ~ 0
+GND
+Text HLabel 6425 2225 0    50   Input ~ 0
+GND
+$Comp
+L Device:R R?
+U 1 1 63F792FA
+P 1875 1250
+AR Path="/5EA31C93/5EAB13AE/63F792FA" Ref="R?"  Part="1" 
+AR Path="/5EA31C93/5EAB0B79/63F792FA" Ref="R8"  Part="1" 
+F 0 "R8" V 1668 1250 50  0000 C CNN
+F 1 "0" V 1759 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1805 1250 50  0001 C CNN
+F 3 "~" H 1875 1250 50  0001 C CNN
+F 4 "RK73Z1JTTD" H 1875 1250 50  0001 C CNN "Mfr. #"
+F 5 "https://www.digikey.com/product-detail/en/koa-speer-electronics-inc/RK73Z1JTTD/2019-RK73Z1JTTDCT-ND/9847522" H 1875 1250 50  0001 C CNN "Order"
+	1    1875 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 1250 1725 1250
+Wire Wire Line
+	2025 1250 2475 1250
+Text Label 2475 1250 2    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	4175 2100 3725 2100
+Text Label 3725 2100 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	4175 3025 3725 3025
+Text Label 3725 3025 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	4175 3950 3725 3950
+Text Label 3725 3950 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	4175 4875 3725 4875
+Text Label 3725 4875 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	6600 4900 6150 4900
+Text Label 6150 4900 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	6600 3975 6150 3975
+Text Label 6150 3975 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	6600 3050 6150 3050
+Text Label 6150 3050 0    50   ~ 0
+INTRNL_VDD
+Wire Wire Line
+	6600 2125 6150 2125
+Text Label 6150 2125 0    50   ~ 0
+INTRNL_VDD
+$EndSCHEMATC
